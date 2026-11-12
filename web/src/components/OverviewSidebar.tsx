@@ -94,12 +94,12 @@ export function OverviewSidebar<T extends string>({
         setIsSidebarHovered(false);
         setHoverId(null);
       }}
-      className={`overview-glass-sidebar rounded-[28px] shrink-0 lg:sticky lg:top-3 lg:max-h-[calc(100vh-1.5rem)] flex flex-col justify-between select-none overflow-hidden transition-[width,padding,gap,box-shadow] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+      className={`overview-glass-sidebar rounded-[30px] shrink-0 lg:sticky lg:top-4 lg:min-h-[calc(100vh-2rem)] flex flex-col justify-between select-none overflow-hidden transition-[width,padding,gap,box-shadow] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
         isCollapsed
           ? isSidebarHovered
-            ? "w-full lg:w-[124px] px-2 py-3 gap-2.5 shadow-[0_24px_64px_rgba(10,56,130,0.22)] dark:shadow-[0_28px_70px_rgba(0,0,0,0.85)]"
-            : "w-full lg:w-[100px] px-1.5 py-2.5 gap-2"
-          : "w-full lg:w-[240px] px-3 py-2.5 gap-2"
+            ? "w-full lg:w-[126px] px-2.5 py-4 gap-3.5 shadow-[0_24px_64px_rgba(10,56,130,0.22)] dark:shadow-[0_28px_70px_rgba(0,0,0,0.85)]"
+            : "w-full lg:w-[102px] px-2 py-3.5 gap-3"
+          : "w-full lg:w-[248px] p-4 gap-4"
       }`}
     >
       {/* Optical Glass Caustics */}
@@ -114,14 +114,14 @@ export function OverviewSidebar<T extends string>({
       </div>
 
       {/* Top Brand Header + Vertical Functions List with Cursor-Following Sliding Glass Slider */}
-      <div className="relative z-10 flex-1 min-h-0 flex flex-col space-y-1.5 overflow-hidden">
+      <div className="relative z-10 space-y-3.5">
         <a
           href="https://stg.yottaflex.ai"
           target="_blank"
           rel="noopener noreferrer"
           title="https://stg.yottaflex.ai (Click to open, or navigate via sidebar)"
           className={`group flex flex-col items-center text-center rounded-2xl transition-all duration-500 ${
-            isCollapsed ? "pt-0.5 pb-0.5 px-1" : "pt-1 pb-0.5 px-2"
+            isCollapsed ? "pt-1 pb-1 px-1" : "pt-2 pb-1 px-2"
           }`}
         >
           <img
@@ -130,23 +130,25 @@ export function OverviewSidebar<T extends string>({
             className={`object-contain dark:brightness-0 dark:invert drop-shadow-[0_6px_16px_rgba(14,72,165,0.20)] dark:drop-shadow-[0_8px_18px_rgba(56,189,248,0.28)] transition-all duration-500 group-hover:-translate-y-0.5 ${
               isCollapsed
                 ? isSidebarHovered
-                  ? "w-[42px] h-[42px] scale-105"
-                  : "w-[38px] h-[38px]"
-                : "w-[48px] h-[48px] group-hover:scale-105"
+                  ? "w-[50px] h-[50px] scale-105"
+                  : "w-[44px] h-[44px]"
+                : "w-[68px] h-[68px] group-hover:scale-105"
             }`}
           />
           <div
             className={`overflow-hidden transition-all duration-400 ease-in-out ${
               isCollapsed
                 ? "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
-                : "max-h-20 opacity-100 translate-y-0 mt-1"
+                : "max-h-24 opacity-100 translate-y-0 mt-2.5"
             }`}
           >
-            <div className="text-[17px] font-bold tracking-tight text-slate-950 dark:text-white group-hover:text-azure-700 dark:group-hover:text-sky-300 transition-colors leading-tight">
+            <div className="text-[19px] font-bold tracking-tight text-slate-950 dark:text-white group-hover:text-azure-700 dark:group-hover:text-sky-300 transition-colors">
               YottaFlex
             </div>
-            <div className="text-[11px] font-medium text-slate-700/85 dark:text-sky-100/75 leading-tight mt-0.5">
-              AML Risk &amp; Ledger Triage
+            <div className="text-[12.5px] font-medium text-slate-700/85 dark:text-sky-100/75 leading-snug mt-0.5">
+              AML Risk &amp; Ledger
+              <br />
+              Triage
             </div>
           </div>
         </a>
@@ -154,7 +156,7 @@ export function OverviewSidebar<T extends string>({
         <nav
           ref={navRef}
           onMouseLeave={() => setHoverId(null)}
-          className={`relative grid gap-1 overflow-y-auto overflow-x-hidden scrollbar-none transition-all duration-300 ${
+          className={`relative grid gap-1.5 transition-all duration-300 ${
             isCollapsed ? "grid-cols-2 sm:grid-cols-4 lg:grid-cols-1" : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-1"
           }`}
           aria-label="All Workbench Functions"
@@ -204,9 +206,9 @@ export function OverviewSidebar<T extends string>({
                 className={`relative z-10 w-full select-none focus:outline-none transition-all duration-300 ${
                   isCollapsed
                     ? isSidebarHovered
-                      ? "flex flex-col items-center justify-center px-1 py-2 rounded-2xl text-center"
-                      : "flex flex-col items-center justify-center px-1 py-1.5 rounded-2xl text-center"
-                    : "flex items-center justify-between gap-2 px-3 py-1.5 rounded-full text-[12px]"
+                      ? "flex flex-col items-center justify-center px-1.5 py-2.5 rounded-2xl text-center"
+                      : "flex flex-col items-center justify-center px-1 py-2 rounded-2xl text-center"
+                    : "flex items-center justify-between gap-2 px-3.5 py-2.5 rounded-full text-[13px]"
                 } ${
                   !isCollapsed && isHighlighted ? "scale-[1.02]" : ""
                 }`}
@@ -228,7 +230,7 @@ export function OverviewSidebar<T extends string>({
                       >
                         {React.isValidElement(item.icon)
                           ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, {
-                              className: isSidebarHovered ? "w-4 h-4" : "w-[17px] h-[17px]",
+                              className: isSidebarHovered ? "w-5 h-5" : "w-[18px] h-[18px]",
                             })
                           : item.icon}
                       </span>
@@ -257,17 +259,13 @@ export function OverviewSidebar<T extends string>({
                   </div>
                 ) : (
                   <>
-                    <span className="flex items-center gap-2 min-w-0">
+                    <span className="flex items-center gap-2.5 min-w-0">
                       <span
                         className={`shrink-0 transition-colors duration-200 ${
                           isHighlighted ? "text-azure-700 dark:text-white" : "text-slate-600 dark:text-zinc-300"
                         }`}
                       >
-                        {React.isValidElement(item.icon)
-                          ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, {
-                              className: "w-3.5 h-3.5",
-                            })
-                          : item.icon}
+                        {item.icon}
                       </span>
                       <span
                         className={`truncate select-none ${
@@ -280,7 +278,7 @@ export function OverviewSidebar<T extends string>({
                     </span>
 
                     {item.badge !== undefined && item.badge > 0 && (
-                      <span className="shrink-0 px-1.5 py-[0.5px] rounded-full text-[9px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider">
+                      <span className="shrink-0 px-2 py-0.5 rounded-full text-[10px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider">
                         {item.badge}
                       </span>
                     )}
@@ -324,9 +322,9 @@ export function OverviewSidebar<T extends string>({
                   className={`relative z-10 w-full select-none focus:outline-none transition-all duration-300 ${
                     isCollapsed
                       ? isSidebarHovered
-                        ? "flex flex-col items-center justify-center px-1 py-2 rounded-2xl text-center"
-                        : "flex flex-col items-center justify-center px-1 py-1.5 rounded-2xl text-center"
-                      : "flex items-center justify-between gap-2 px-3 py-1.5 rounded-full text-[12px]"
+                        ? "flex flex-col items-center justify-center px-1.5 py-2.5 rounded-2xl text-center"
+                        : "flex flex-col items-center justify-center px-1 py-2 rounded-2xl text-center"
+                      : "flex items-center justify-between gap-2 px-3.5 py-2.5 rounded-full text-[13px]"
                   } ${
                     !isCollapsed && isHighlighted ? "scale-[1.02]" : ""
                   }`}
@@ -348,7 +346,7 @@ export function OverviewSidebar<T extends string>({
                         >
                           {React.isValidElement(item.icon)
                             ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, {
-                                className: isSidebarHovered ? "w-4 h-4" : "w-[17px] h-[17px]",
+                                className: isSidebarHovered ? "w-5 h-5" : "w-[18px] h-[18px]",
                               })
                             : item.icon}
                         </span>
@@ -377,17 +375,13 @@ export function OverviewSidebar<T extends string>({
                     </div>
                   ) : (
                     <>
-                      <span className="flex items-center gap-2 min-w-0">
+                      <span className="flex items-center gap-2.5 min-w-0">
                         <span
                           className={`shrink-0 transition-colors duration-200 ${
                             isHighlighted ? "text-azure-700 dark:text-white" : "text-slate-600 dark:text-zinc-300"
                           }`}
                         >
-                          {React.isValidElement(item.icon)
-                            ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, {
-                                className: "w-3.5 h-3.5",
-                              })
-                            : item.icon}
+                          {item.icon}
                         </span>
                         <span
                           className={`truncate select-none ${
@@ -400,7 +394,7 @@ export function OverviewSidebar<T extends string>({
                       </span>
 
                       {item.badge !== undefined && item.badge > 0 && (
-                        <span className="shrink-0 px-1.5 py-[0.5px] rounded-full text-[9px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider">
+                        <span className="shrink-0 px-2 py-0.5 rounded-full text-[10px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider">
                           {item.badge}
                         </span>
                       )}
@@ -414,21 +408,21 @@ export function OverviewSidebar<T extends string>({
 
         {/* Small Glass Arrow at the bottom to reduce length / elongate menu */}
         {flowItem && (
-          <div className="flex justify-center pt-0.5 pb-0.5">
+          <div className="flex justify-center pt-0.5">
             <button
               type="button"
               onClick={() => setIsMenuExpanded((prev) => !prev)}
               title={isMenuExpanded ? "Collapse menu (hide Flow Graph)" : "Elongate menu (display Flow Graph)"}
               aria-label={isMenuExpanded ? "Collapse menu (hide Flow Graph)" : "Elongate menu (display Flow Graph)"}
               aria-expanded={isMenuExpanded}
-              className={`w-5 h-5 rounded-full flex items-center justify-center transition-all duration-300 ${
+              className={`w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${
                 isMenuExpanded
                   ? "bg-white/45 dark:bg-white/[0.14] text-azure-700 dark:text-sky-300 shadow-sm"
                   : "bg-white/20 dark:bg-white/[0.05] text-slate-500 dark:text-zinc-400 hover:bg-white/40 dark:hover:bg-white/[0.12] hover:text-slate-900 dark:hover:text-white"
               } border border-white/50 dark:border-white/18 hover:scale-110 active:scale-95`}
             >
               <ChevronDown
-                className={`w-3 h-3 transition-transform duration-300 ${
+                className={`w-3.5 h-3.5 transition-transform duration-300 ${
                   isMenuExpanded ? "rotate-180" : "rotate-0"
                 }`}
               />
@@ -438,35 +432,35 @@ export function OverviewSidebar<T extends string>({
       </div>
 
       {/* Bottom Settings, Help & Support, and User Profile Card */}
-      <div className="relative z-10 pt-2 border-t border-white/45 dark:border-white/18 space-y-1">
+      <div className="relative z-10 pt-3 border-t border-white/45 dark:border-white/18 space-y-2">
         {isCollapsed ? (
-          <div className="flex flex-col items-center gap-1.5">
+          <div className="flex flex-col items-center gap-2">
             <button
               type="button"
               title="Settings"
               onClick={onOpenProfile}
               className={`rounded-full flex items-center justify-center text-slate-700 dark:text-zinc-200 hover:bg-white/45 dark:hover:bg-white/[0.14] transition-all duration-300 hover:scale-110 ${
-                isSidebarHovered ? "w-9 h-9" : "w-8 h-8"
+                isSidebarHovered ? "w-11 h-11" : "w-10 h-10"
               }`}
             >
-              <Settings className={isSidebarHovered ? "w-4 h-4 text-slate-700 dark:text-white" : "w-[16px] h-[16px] text-slate-600 dark:text-sky-100/75"} />
+              <Settings className={isSidebarHovered ? "w-5 h-5 text-slate-700 dark:text-white" : "w-[18px] h-[18px] text-slate-600 dark:text-sky-100/75"} />
             </button>
             <button
               type="button"
               title="Help & Support"
               onClick={onOpenSupport}
               className={`rounded-full flex items-center justify-center text-slate-700 dark:text-zinc-200 hover:bg-white/45 dark:hover:bg-white/[0.14] transition-all duration-300 hover:scale-110 ${
-                isSidebarHovered ? "w-9 h-9" : "w-8 h-8"
+                isSidebarHovered ? "w-11 h-11" : "w-10 h-10"
               }`}
             >
-              <HelpCircle className={isSidebarHovered ? "w-4 h-4 text-slate-700 dark:text-white" : "w-[16px] h-[16px] text-slate-600 dark:text-sky-100/75"} />
+              <HelpCircle className={isSidebarHovered ? "w-5 h-5 text-slate-700 dark:text-white" : "w-[18px] h-[18px] text-slate-600 dark:text-sky-100/75"} />
             </button>
             <button
               type="button"
               title={`${user.full_name} (${roleLabel})`}
               onClick={onOpenProfile}
-              className={`mt-0.5 rounded-full bg-gradient-to-br from-sky-400/90 to-azure-600/95 dark:from-sky-400/70 dark:to-azure-600/75 border border-white/85 dark:border-white/45 shadow-[0_4px_14px_rgba(56,189,248,0.35)] flex items-center justify-center font-bold text-white transition-all duration-300 hover:scale-115 ${
-                isSidebarHovered ? "w-9 h-9 text-xs shadow-[0_6px_20px_rgba(56,189,248,0.50)]" : "w-8 h-8 text-[11px]"
+              className={`mt-1 rounded-full bg-gradient-to-br from-sky-400/90 to-azure-600/95 dark:from-sky-400/70 dark:to-azure-600/75 border border-white/85 dark:border-white/45 shadow-[0_4px_14px_rgba(56,189,248,0.35)] flex items-center justify-center font-bold text-white transition-all duration-300 hover:scale-115 ${
+                isSidebarHovered ? "w-11 h-11 text-sm shadow-[0_6px_20px_rgba(56,189,248,0.50)]" : "w-10 h-10 text-xs"
               }`}
             >
               {initials}
@@ -477,35 +471,35 @@ export function OverviewSidebar<T extends string>({
             <button
               type="button"
               onClick={onOpenProfile}
-              className="w-full flex items-center gap-2 px-3 py-1 rounded-full text-[12px] font-medium text-slate-800 dark:text-zinc-200/90 hover:bg-white/40 dark:hover:bg-white/[0.10] hover:text-slate-950 dark:hover:text-white border border-transparent hover:border-white/55 dark:hover:border-white/25 transition"
+              className="w-full flex items-center gap-2.5 px-3.5 py-2 rounded-full text-[13px] font-medium text-slate-800 dark:text-zinc-200/90 hover:bg-white/40 dark:hover:bg-white/[0.10] hover:text-slate-950 dark:hover:text-white border border-transparent hover:border-white/55 dark:hover:border-white/25 transition"
             >
-              <Settings className="w-3.5 h-3.5 text-slate-600 dark:text-sky-100/75 shrink-0" />
+              <Settings className="w-4 h-4 text-slate-600 dark:text-sky-100/75 shrink-0" />
               <span className="truncate">Settings</span>
             </button>
 
             <button
               type="button"
               onClick={onOpenSupport}
-              className="w-full flex items-center gap-2 px-3 py-1 rounded-full text-[12px] font-medium text-slate-800 dark:text-zinc-200/90 hover:bg-white/40 dark:hover:bg-white/[0.10] hover:text-slate-950 dark:hover:text-white border border-transparent hover:border-white/55 dark:hover:border-white/25 transition"
+              className="w-full flex items-center gap-2.5 px-3.5 py-2 rounded-full text-[13px] font-medium text-slate-800 dark:text-zinc-200/90 hover:bg-white/40 dark:hover:bg-white/[0.10] hover:text-slate-950 dark:hover:text-white border border-transparent hover:border-white/55 dark:hover:border-white/25 transition"
             >
-              <HelpCircle className="w-3.5 h-3.5 text-slate-600 dark:text-sky-100/75 shrink-0" />
+              <HelpCircle className="w-4 h-4 text-slate-600 dark:text-sky-100/75 shrink-0" />
               <span className="truncate">Help &amp; Support</span>
             </button>
 
             <button
               type="button"
               onClick={onOpenProfile}
-              className="mt-1 w-full flex items-center justify-between gap-2 px-2.5 py-1.5 rounded-2xl bg-white/35 dark:bg-white/[0.08] hover:bg-white/55 dark:hover:bg-white/[0.14] border border-white/60 dark:border-white/28 shadow-[inset_0_1px_1px_rgba(255,255,255,0.45)] transition text-left"
+              className="mt-2 w-full flex items-center justify-between gap-2.5 px-2.5 py-2 rounded-2xl bg-white/35 dark:bg-white/[0.08] hover:bg-white/55 dark:hover:bg-white/[0.14] border border-white/60 dark:border-white/28 shadow-[inset_0_1px_1px_rgba(255,255,255,0.45)] transition text-left"
             >
-              <span className="flex items-center gap-2 min-w-0">
-                <span className="w-7.5 h-7.5 rounded-full bg-gradient-to-br from-sky-400/90 to-azure-600/95 dark:from-sky-400/70 dark:to-azure-600/75 border border-white/85 dark:border-white/45 shadow-[0_4px_14px_rgba(56,189,248,0.35)] flex items-center justify-center text-[11px] font-bold text-white shrink-0">
+              <span className="flex items-center gap-2.5 min-w-0">
+                <span className="w-9 h-9 rounded-full bg-gradient-to-br from-sky-400/90 to-azure-600/95 dark:from-sky-400/70 dark:to-azure-600/75 border border-white/85 dark:border-white/45 shadow-[0_4px_14px_rgba(56,189,248,0.35)] flex items-center justify-center text-xs font-bold text-white shrink-0">
                   {initials}
                 </span>
                 <span className="min-w-0">
-                  <span className="block text-[12px] font-bold text-slate-950 dark:text-white truncate leading-tight">
+                  <span className="block text-[12.5px] font-bold text-slate-950 dark:text-white truncate">
                     {user.full_name}
                   </span>
-                  <span className="block text-[10px] font-medium text-slate-700/85 dark:text-sky-100/70 truncate leading-tight">
+                  <span className="block text-[10.5px] font-medium text-slate-700/85 dark:text-sky-100/70 truncate">
                     {roleLabel}
                   </span>
                 </span>

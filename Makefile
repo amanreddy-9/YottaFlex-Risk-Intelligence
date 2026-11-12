@@ -1,8 +1,11 @@
-.PHONY: generate-starter generate-full verify-repro validate evaluate run-all build-web test serve
+.PHONY: setup generate-starter generate-full verify-repro validate evaluate run-all build-web test serve
 
 SEED ?= 20261022
 SCALE ?= full
 PORT ?= 8080
+
+setup:
+	chmod +x setup.sh && ./setup.sh
 
 generate-starter:
 	PYTHONPATH=src python3 -m yottaflex.cli generate --scale starter --seed $(SEED)

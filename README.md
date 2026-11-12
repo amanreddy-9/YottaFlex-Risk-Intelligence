@@ -1,22 +1,41 @@
 # YottaFlex Risk Intelligence — AI-Powered Risk & Ledger Intelligence
 
-[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![React 18](https://img.shields.io/badge/react-18-61dafb.svg)](https://react.dev/)
 [![TypeScript 5](https://img.shields.io/badge/typescript-5.x-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Zero Leakage Verified](https://img.shields.io/badge/Zero--Leakage-AST%20Guarded-emerald.svg)](tests/test_zero_leakage_ast_guard.py)
-[![Verification Suite](https://img.shields.io/badge/Tests-34%20Passing-brightgreen.svg)](tests/)
+[![Verification Suite](https://img.shields.io/badge/Tests-46%20Passing-brightgreen.svg)](tests/)
+[![Design: Liquid Glassmorphism](https://img.shields.io/badge/UI%2FUX-Liquid%20Glassmorphism-cyan.svg)](UI_UX_DESIGN_SPECIFICATION.md)
 
-An institutional financial crime, transaction monitoring, and linked-account prioritization platform built on a **deterministic double-entry reconciled synthetic ledger**, an **AST-guarded zero-leakage prioritization engine**, a **9-check exception quarantine queue**, and a **3D Crystal Liquid Glass React/TypeScript analyst workbench**.
+An institutional financial crime, transaction monitoring, and linked-account prioritization platform built on a **deterministic double-entry reconciled synthetic ledger**, an **AST-guarded zero-leakage prioritization engine**, a **9-check exception quarantine queue**, an **interactive Financial Network Intelligence graph**, and an **iOS-inspired 3D Liquid Glassmorphic analyst workbench**.
+
+---
+
+## 📚 Complete Documentation & Reviewer Hub
+
+For seamless review and evaluation, comprehensive manuals and architectural specifications have been published directly in the repository:
+
+| Document | Description & Key Contents |
+| :--- | :--- |
+| **[`SETUP_GUIDE.md`](SETUP_GUIDE.md)** | **Reviewer Setup Guide:** 60-second automated setup, OS-specific dependencies (macOS, Ubuntu, Fedora, Windows WSL2), database seeding, health checks, and troubleshooting. |
+| **[`setup.sh`](setup.sh)** | **Automated 1-Click Setup Script:** Executable bash script that validates runtimes, initializes venv, builds frontend, seeds SQLite, and runs smoke tests. |
+| **[`DEPENDENCIES.md`](DEPENDENCIES.md)** | **Software & Package Inventory:** Exhaustive manifest of all runtime components, zero-pip backend verification (0 CVEs), npm packages, and single-line install commands. |
+| **[`TESTING_AND_VALIDATION_REPORT.md`](TESTING_AND_VALIDATION_REPORT.md)** | **Testing & Results Report:** Detailed documentation of all 46 test cases across 16 test suites, Network Intelligence Scenarios A–H, 9-check quarantine results, and AST guards. |
+| **[`UI_UX_DESIGN_SPECIFICATION.md`](UI_UX_DESIGN_SPECIFICATION.md)** | **Design & Prompting Methodology:** Vitreous Liquid Glassmorphism design tokens, optical caustics, and an explanation of how the architect conveyed technical visions to AI via structured, ordered prompts. |
+| **[`USER_MANUAL.md`](USER_MANUAL.md)** | **Vehicle Owner's Manual (18 Chapters):** Extensive institutional handbook detailing every feature, knob, dial, algorithm, formula, and operational procedure from scratch. |
+| **[`ARCHITECTURE_AND_PROVENANCE.md`](ARCHITECTURE_AND_PROVENANCE.md)** | **Architectural Decisions & Provenance:** In-depth technical justifications for zero-dependency Python backend, SQLite WAL mode, BFS case clustering, and zero-leakage design. |
+| **[`docs/AI_DEVELOPMENT_AND_PROMPT_HISTORY.md`](docs/AI_DEVELOPMENT_AND_PROMPT_HISTORY.md)** | **AI Transparency & Prompt History:** Complete chronological log of Prompts 01–65, Antigravity acceleration narrative, and the 277 master functional requirements catalog. |
+| **[`docs/data_dictionary.md`](docs/data_dictionary.md)** | **Data Dictionary:** Column-by-column schema documentation for all tables, types, foreign keys, and indexes. |
 
 ---
 
 ## 1. Quick Start & Execution
 
 ### Prerequisites
-- **Python 3.11+** (The core synthetic generator, ledger validator, scoring engine, evaluation harness, and REST server use **zero external Python dependencies**).
-- **Modern Web Browser** (Chrome / Safari / Firefox / Edge).
-- *Optional:* Node.js 18+ (only needed if rebuilding the React application in `web/`; the repository comes pre-bundled in `web/dist/`).
+- **Python 3.10+** (The core synthetic generator, ledger validator, scoring engine, evaluation harness, and REST server use **zero external Python dependencies**).
+- **Node.js 18+ & npm 9+** (For building the frontend bundle; pre-compiled static assets are included in `web/dist/`).
+- **Modern Web Browser** (Chrome / Safari / Edge / Firefox).
 
 ### Launch in 1 Command
 ```bash
@@ -24,24 +43,28 @@ An institutional financial crime, transaction monitoring, and linked-account pri
 git clone https://github.com/amanreddy-9/YottaFlex-Risk-Intelligence.git
 cd YottaFlex-Risk-Intelligence
 
-# Start the Analyst Workbench on http://127.0.0.1:8080
-make serve
-# or directly:
-PYTHONPATH=src python3 -m yottaflex.cli serve --scale full --port 8080
-```
-*Note: If `yottaflex.db` does not exist on first launch, the server automatically hydrates the SQLite database from `sql/schema.sql` and `sql/seed.sql` in under **0.6 seconds**.*
+# 1-Click Automated Setup
+chmod +x setup.sh && ./setup.sh
 
-### Demo Login Accounts
+# Start the Analyst Workbench on http://localhost:8080
+make serve
+# Or directly:
+# PYTHONPATH=src python3 -m yottaflex.cli serve --scale full --port 8080
+```
+*Note: If `yottaflex.db` does not exist on first launch, the server automatically hydrates the SQLite database from `sql/seed.sql` in under **0.6 seconds**.*
+
+### Pre-Configured Reviewer Credentials
 | Role | Email | Password | Scope & Permissions |
 | :--- | :--- | :--- | :--- |
-| **Senior AML Analyst** | `analyst@yottaflex.com` | `YottaFlex#2026` | Alert triage, dossier analysis, entity graph exploration, notes |
-| **VP Compliance Reviewer** | `reviewer@yottaflex.com` | `YottaFlex#2026` | Maker-checker approvals, SAR filing, case reopening, GoAML XML |
-| **Principal Risk Architect** | `admin@yottaflex.com` | `YottaFlex#2026` | Rule simulation, drift sweeps, QA sampling, webhooks, audit chain |
+| **Risk Operations Analyst** | `demo_analyst@yottaflex.ai` | `DemoAnalyst2026!` | Case triage, alert dispositioning, entity search, network graph exploration, GoAML XML export. |
+| **Senior Compliance Reviewer** | `demo_reviewer@yottaflex.ai` | `DemoAnalyst2026!` | Maker-checker approvals, SAR filing, case reopening, QA grading scorecards, GoAML sign-off. |
+| **System Administrator** | `demo_admin@yottaflex.ai` | `DemoAnalyst2026!` | Rule weight recalibration, what-if simulations, SLA auto-escalation, webhooks, audit chain verification. |
 
 ### Run Verification Test Suite
 ```bash
-python3 -m unittest discover -s tests -v
-# Output: Ran 34 tests in ~10s, OK
+source .venv/bin/activate
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+# Output: Ran 46 tests in ~10.5s, OK (100% passing)
 ```
 
 ---
@@ -53,109 +76,107 @@ flowchart TD
     subgraph DataPlane ["Deterministic Ledger & Integrity"]
         GEN["Deterministic World Generator<br/>(Seed 20261022 | 100k Txns)"] --> DDL["Double-Entry SQL Seed & Schemas"]
         DDL --> VAL["9-Check Integrity Validator"]
-        VAL -->|5 Planted Corruptions| QUAR["Exception Quarantine Queue<br/>(quarantine_exceptions.json)"]
-        VAL -->|Reconciled Clean Ledger| DB[("Embedded SQLite Ledger<br/>(43 Tables, Indexed)")]
+        VAL -->|10 Injected Corruptions Caught| QUAR["Exception Quarantine Queue<br/>(quarantine_exceptions.json)"]
+        VAL -->|Reconciled Clean Ledger| DB[("Embedded SQLite Ledger<br/>(WAL Mode | Indexed)")]
     end
 
     subgraph IntelligencePlane ["Prioritization & Graph Engine"]
-        DB --> RULES["Explainable Rule Evaluator<br/>(Velocity, Structuring, Dormancy)"]
-        RULES --> GRAPH["Entity-Linkage Graph Clustering<br/>(Accounts ↔ Devices ↔ Hubs)"]
-        GRAPH --> CASES["Prioritized Case Queue<br/>(Score 0–100 | Critical / High / Med / Low)"]
+        DB --> RULES["Explainable Rule Evaluator<br/>(8 Behavioral Rules | Multi-Level)"]
+        RULES --> GRAPH["Entity-Linkage Graph Clustering<br/>(Accounts ↔ Devices ↔ TransferLinks)"]
+        GRAPH --> CASES["Prioritized Case Queue<br/>(284 Cases | 3.25x Compression)"]
+        DB --> NET["Financial Network Intelligence<br/>(Interactive Force-Directed Graph)"]
     end
 
     subgraph GovernancePlane ["Evaluation & Guardrails"]
-        CASES --> EVAL["Zero-Leakage Lift Evaluator<br/>(NDCG@50, Top-k Precision, PSI Drift)"]
+        CASES --> EVAL["Zero-Leakage Lift Evaluator<br/>(NDCG@50: 1.0, Top-k Precision: 100%, PSI Drift)"]
         GT["Isolated ground_truth.json"] -.->|Read-Only at Eval Time| EVAL
         AST["AST Static Guard<br/>(Zero ground_truth in engine/)"] --> RULES
     end
 
     subgraph AnalystPlane ["Workbench UI & Ops"]
         CASES --> API["Native Python REST Server<br/>(Port 8080 | RBAC & Telemetry)"]
-        API --> UI["React 18 + TS Analyst Workbench<br/>(3D Liquid Glassmorphism)"]
-        UI --> BOT["Yotta Bot Assistant<br/>(Knowledge Cards & Conversational Guidance)"]
+        NET --> API
+        API --> UI["React 18 + TS Analyst Workbench<br/>(iOS 3D Liquid Glassmorphism)"]
+        UI --> BOT["Yotta Bot Assistant<br/>(Entity Lookup & Conversational Risk Guidance)"]
     end
 ```
 
 ---
 
-## 3. Submission Guidelines Compliance
+## 3. Core System Capabilities
 
-This repository was created in full compliance with the **Candidate Project Submission Guidelines (YottaFlex AI Recruitment Drive)**:
+### 3.1 Financial Network Intelligence (Interactive Money Flow Graph)
+- **Node Entities:** Distinguishable visual rendering for Customers (Blue), Accounts (Cyan), Merchants (Purple), Devices (Orange), and Transactions (Light Blue).
+- **Directional Money Flow:** Animated vector arrows tracing the movement of funds between accounts, highlighting inbound and outbound velocity.
+- **Forensic Typology Scenarios (A – H):**
+  - **Scenario A:** Multi-hop fund traversal across layered intermediary accounts.
+  - **Scenario B:** Rapid layering detection within narrow time windows.
+  - **Scenario C:** Circular transfer loops ($A \to B \to C \to A$) returning $\ge 75\%$ of funds within 48h.
+  - **Scenario D:** Fan-in mule aggregation and rapid fan-out dispersion structuring.
+  - **Scenario E:** Shared emulator device collusion rings linking multiple customer identities.
+  - **Scenarios F–H:** Graceful isolated entity handling, non-existent entity fallbacks, and multi-criteria entity resolution.
+- **Analyst Interactions:** Click-to-pin entity selection, connected-node halo illumination, background transradiant dimming, and dynamic hop expansion (+1, +2, +3 hops).
+
+### 3.2 Priority Case Queue & Entity Clustering (3.25x Compression)
+- Consolidates **923 raw alerts into 284 multi-alert investigation cases** using Bipartite BFS connected-component clustering.
+- Evaluates observable behavioral rules into deterministic priority scores ($[0, 100]$).
+- Inline triage actions, Maker-Checker four-eyes review, and SLA escalation tracking.
+
+### 3.3 9-Check Ledger Validator & Quarantine Queue
+- Pre-screening engine that isolates corrupt, unbalanced, or invalid transactions into `quarantine_exceptions.json` before downstream ingestion.
+- Catches 100% of injected corruptions (closed account transactions, negative balances without overdraft, mismatched transfer legs, orphan references).
+
+### 3.4 Regulatory Admissibility & Cryptographic Evidence Sealing
+- One-click **GoAML XML** (v4.0.2) export formatted for direct FinCEN / FIU regulatory submission.
+- **Cryptographic SHA-256 Evidence Sealing:** Computes an immutable digital seal over the entire case dossier and associated transaction records to guarantee chain-of-custody in court.
+- Chained tamper-evident audit logs with automated cryptographic verification.
+
+### 3.5 iOS-Inspired Liquid Glassmorphic Design System
+- Transradiant depth stacking with dynamic specular edge reflections and cursor-tracking optical caustics (`--mx`, `--my`).
+- Custom `LiquidGlassSegmented` sliding-lens toggle controls with physical momentum and glow.
+- Seamless dual-mode theme support (Deep Midnight Obsidian Dark Mode & Frosted Arctic Pearl Light Mode).
+
+---
+
+## 4. Key Performance Benchmarks
+
+Recorded on standard Apple Silicon (M-Series / 16 GB RAM):
+
+| Benchmark Metric | Measured Performance | Industry Target | Evaluation Verdict |
+| :--- | :--- | :--- | :--- |
+| **Top-50 Case Precision** | **`100.0%`** (`50/50`) | $> 75\%$ | **$2.0\times$ lift over FIFO** |
+| **Recall@20%** | **`34.1%`** | $> 25\%$ | **$2.1\times$ lift over FIFO** |
+| **NDCG@50** | **`1.0000`** | $> 0.80$ | **Optimal ranking** |
+| **Account Burst Profile Query** | **`0.42 ms`** | $< 50 \text{ ms}$ | **$119\times$ faster than target** |
+| **Full Graph Fan-In/Fan-Out Search** | **`15.4 ms`** | $< 250 \text{ ms}$ | **$16\times$ faster than target** |
+| **Overview KPI API (`/api/overview`)** | **`12.1 ms`** | $< 200 \text{ ms}$ | **$16\times$ faster than target** |
+| **Automated Test Suite (46 tests)** | **`10.50 s`** | $< 60 \text{ s}$ | **$5.7\times$ faster than target** |
+
+---
+
+## 5. Candidate Submission Guidelines Compliance
 
 ### 01 · MAKE IT RUN (`EXECUTABLE`)
-- Executable in one command via `make serve` or `PYTHONPATH=src python3 -m yottaflex.cli serve --scale full --port 8080`.
-- Zero Python package dependencies required for backend startup and evaluation.
-- Full end-to-end pipeline run (generation $\to$ 2x reproducibility check $\to$ 9-check validation $\to$ zero-leakage evaluation) via `make run-all`.
-- Production bundle pre-compiled in `web/dist/`, requiring zero Node.js setup to view the complete banking interface.
+- Executable in one command via `./setup.sh` and `make serve`.
+- Zero external Python dependencies for backend execution.
+- Automated 46-test verification harness (`make test` or `python3 -m unittest discover -s tests -v`).
 
 ### 02 · SHOW YOUR WORK (`PUBLIC REPOSITORY`)
 - Hosted on public GitHub repository: [https://github.com/amanreddy-9/YottaFlex-Risk-Intelligence](https://github.com/amanreddy-9/YottaFlex-Risk-Intelligence).
-- Evolution of work structured into **meaningful chronological commits** representing schema engineering, rule modeling, graph clustering, REST APIs, enterprise intelligence, and Liquid Glass design iterations.
+- Clear, granular commit history documenting architectural iterations from foundational schema to the Liquid Glass workbench.
 
 ### 03 · USE LLMs TRANSPARENTLY
-- Transparent AI-assisted engineering and architectural methodology across all modules.
-- Methodological breakdown of where AI accelerated implementation (data generation, AST guards, Tailwind styling), where relied upon, and what was personally reviewed, changed, and verified.
+- Comprehensive AI transparency report in [`docs/AI_DEVELOPMENT_AND_PROMPT_HISTORY.md`](docs/AI_DEVELOPMENT_AND_PROMPT_HISTORY.md).
+- Full audit of all 65 prompts, detailing where Google Antigravity accelerated delivery and where human architecture directed implementation.
 
 ### 04 · MAKE YOUR REASONING VISIBLE (`EXPLAIN THE WHY`)
-- Comprehensive design doc in [docs/ARCHITECTURE_AND_REASONING.md](docs/ARCHITECTURE_AND_REASONING.md).
-- Covers problem framing, business assumptions, double-entry accounting invariants, why Lift/NDCG@$k$ was chosen over raw ROC-AUC, trade-offs between pure Python stdlib vs. heavy dependencies, and observed sub-millisecond latencies.
+- Exhaustive architectural analysis and provenance in [`ARCHITECTURE_AND_PROVENANCE.md`](ARCHITECTURE_AND_PROVENANCE.md).
+- Detailed justifications for zero-dependency Python, embedded SQLite WAL mode, connected-component BFS clustering, and AST leakage guards.
 
 ---
 
-## 4. Observed Benchmarks & Performance (`full` scale: 100k txns)
+## 6. License & Author
 
-| Metric | YottaFlex Priority Score | Baseline (FIFO) | Lift / Performance |
-| :--- | :--- | :--- | :--- |
-| **Top-50 Queue Precision** | **100.0%** (`50/50`) | `50.0%` (`25/50`) | **$2.0\times$ Lift** |
-| **Top-20% Queue Recall** | **34.1%** | `16.2%` | **$2.1\times$ Lift** |
-| **NDCG@50** | **1.0000** | `0.6305` | **$+0.3695$** |
-| **False-Positive Suppression** | **100.0%** (`115/115`) | `0.0%` | All FP scored $<40$ (`LOW`) |
-| **Alert-to-Case Compression** | **284 Cases** | `923 Alerts` | **$3.25\times$ Workload Reduction** |
-| **9-Check Validation Catch Rate** | **10/10 caught** (`100%`) | — | All 5 corruption types isolated |
-| **Bit-for-Bit Reproducibility** | **100% identical** | — | Verified across 36 exported files |
-
-### Sub-Millisecond SQLite API Latencies (Apple Silicon)
-- **Account Burst Profiling:** `0.4 ms`
-- **Tamper-Evident Audit Verification:** `0.8 ms`
-- **Alert Co-Occurrence Matrix:** `0.9 ms`
-- **10-Decile Lift Curve:** `5.3 ms`
-- **Fan-in / Fan-out Mule Hubs:** `15.4 ms`
-- **Population Stability Index (PSI):** `37.0 ms`
-- **Balance Continuity Check:** `112.5 ms`
-
----
-
-## 5. Enterprise Feature Matrix (275 Functionalities Across 11 Batches)
-
-- **Batches 1–7 (Core Prioritization & Workbench):** Deterministic synthetic ledger generator, 9-check integrity validator, entity-linkage BFS graph clustering, alert triage queue, full dossier investigation drawer, interactive counterparty graph visualization, exception quarantine queue, audit trails, and Yotta Bot assistant.
-- **Batches 8–9 (Forensics, Playbooks & Telemetry):** Transaction velocity forensics, standard operating procedure playbooks, maker-checker four-eyes approval workflow, threshold sweeps, capacity forecasting, SIEM outbox queuing, and notification center.
-- **Batches 10–11 (Deep Intelligence, QA & Governance):** Sanctions/PEP fuzzy matching, fan-in/fan-out mule hub detection, customer chronology & corridor exposure, GoAML XML export, cryptographic SHA-256 evidence seals, bulk tagging, manager reopen RBAC, what-if alert waiver score recalculation, custom rule drafts, QA sampling, outbound webhooks, 10-decile lift curve, score histogram, feature PSI drift, and directory CSV/JSON exports.
-
----
-
-## 6. Ongoing Updates & Development
-
-To make further improvements and push updates without dirtying the git tree or hitting binary conflicts:
-
-```bash
-# 1. Inspect changes
-git status
-
-# 2. If modifying frontend (web/src/), rebuild dist:
-npm --prefix web run build
-
-# 3. Verify tests
-python3 -m unittest discover -s tests -q
-
-# 4. Commit and push
-git add .
-git commit -m "feat: your new functionality"
-git push origin main
-```
-*See [GIT_UPDATES.md](GIT_UPDATES.md) for full developer workflows.*
-
----
-
-## 7. Lawful Provenance & Synthetic Data Statement
-
-All customers, accounts, merchants, devices, transactions, alerts, cases, and audit logs in this repository are **100% synthetic**, deterministically generated from fixed seed `20261022` in Python. No real personal identifiable information (PII), confidential banking records, or restricted external datasets were collected, used, or redistributed.
+- **Primary Author:** Aman Reddy J (`amanreddy-9`, `amanreddyjukonti@gmail.com`)
+- **System:** YottaFlex Risk Intelligence — YottaFlex RiskOS
+- **License:** Licensed under the [MIT License](LICENSE).

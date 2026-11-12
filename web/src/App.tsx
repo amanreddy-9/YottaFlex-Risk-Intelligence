@@ -1,0 +1,1202 @@
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import {
+  ArrowLeftRight,
+  BarChart3,
+  Bell,
+  CreditCard,
+  FolderSearch,
+  Keyboard,
+  Layers,
+  LayoutDashboard,
+  Moon,
+  Scale,
+  Search,
+  ShieldAlert,
+  Sun,
+  UserCircle2,
+  Users,
+  X,
+} from "lucide-react";
+import { api, getStoredToken, setStoredToken } from "./api/client";
+import { AccountsView } from "./components/AccountsView";
+import { AlertsView, type AlertFiltersState } from "./components/AlertsView";
+import { AuthScreen } from "./components/AuthScreen";
+import { CustomersView } from "./components/CustomersView";
+import { DashboardView } from "./components/DashboardView";
+import { DossierView } from "./components/DossierView";
+import { EvaluationView } from "./components/EvaluationView";
+import { Footer } from "./components/Footer";
+import { GlobalSearchModal } from "./components/GlobalSearchModal";
+import { GovernanceView } from "./components/GovernanceView";
+import { LiquidGlassNav, type NavItem } from "./components/LiquidGlassNav";
+import { NotificationBellButton, NotificationWindowPanel, type AnchorRect } from "./components/NotificationWidget";
+import { OverviewSidebar } from "./components/OverviewSidebar";
+import { ProfileModal } from "./components/ProfileModal";
+import { QuarantineView } from "./components/QuarantineView";
+import { QueueView } from "./components/QueueView";
+import { TransactionsView, type TransactionFiltersState } from "./components/TransactionsView";
+import { YottaBotWidget, type BotAction } from "./components/YottaBotWidget";
+import type {
+  AccountDetail,
+  AccountListItem,
+  AlertDetail,
+  AlertListItem,
+  AuthUser,
+  CaseDossier,
+  CaseListItem,
+  CustomerListItem,
+  CustomerProfile,
+  DashboardData,
+  EvaluationData,
+  NotificationItem,
+  OverviewData,
+  QuarantineData,
+  RiskRuleItem,
+  RiskScoringOverview,
+  TransactionDetail,
+  TransactionItem,
+  UserPreferences,
+} from "./types/workbench";
+
+type Tab =
+  | "overview"
+  | "queue"
+  | "customers"
+  | "accounts"
+  | "transactions"
+  | "alerts"
+  | "dossier"
+  | "quarantine"
+  | "evaluation"
+  | "governance";
+
+export const App: React.FC = () => {
+  const [user, setUser] = useState<AuthUser | null>(null);
+  const [authChecked, setAuthChecked] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
+  const [showSpotlight, setShowSpotlight] = useState(false);
+  const [showNotifs, setShowNotifs] = useState(false);
+  const [notifAnchor, setNotifAnchor] = useState<AnchorRect>({ top: 18, right: 180 });
+  const [notifications, setNotifications] = useState<NotificationItem[]>([]);
+  const [unreadCount, setUnreadCount] = useState(0);
+  const [showShortcuts, setShowShortcuts] = useState(false);
+
+  const [tab, setTab] = useState<Tab>("overview");
+  const prevTabRef = useRef<Tab>("overview");
+  const [arrivalBeaconKey, setArrivalBeaconKey] = useState(0);
+  const [darkMode, setDarkMode] = useState<boolean>(() => {
+    const saved = localStorage.getItem("yottaflex_theme");
+    return saved !== "light";
+  });
+
+  const [overview, setOverview] = useState<OverviewData | null>(null);
+  const [dashboard, setDashboard] = useState<DashboardData | null>(null);
+  const [dashFilters, setDashFilters] = useState({
+    period: "ALL",
+    start_date: "",
+    end_date: "",
+    risk_level: "ALL",
+    txn_type: "ALL",
+    status: "ALL",
+  });
+
+  const [cases, setCases] = useState<CaseListItem[]>([]);
+  const [totalCases, setTotalCases] = useState(0);
+  const [dossier, setDossier] = useState<CaseDossier | null>(null);
+  const [quarantine, setQuarantine] = useState<QuarantineData | null>(null);
+  const [evaluation, setEvaluation] = useState<EvaluationData | null>(null);
+  const [rules, setRules] = useState<RiskRuleItem[]>([]);
+  const [error, setError] = useState<string | null>(null);
+
+  // Queue filters & pagination (30 default)
+  const [queuePage, setQueuePage] = useState(0);
+  const [queuePageSize, setQueuePageSize] = useState(30);
+  const [sort, setSort] = useState<"priority" | "fifo">("priority");
+  const [tier, setTier] = useState("ALL");
+  const [status, setStatus] = useState("ALL");
+  const [linkage, setLinkage] = useState("ALL");
+  const [search, setSearch] = useState("");
+  const [queueAssignee, setQueueAssignee] = useState("ALL");
+  const [queueSla, setQueueSla] = useState("ALL");
+  const [queueMinExp, setQueueMinExp] = useState("");
+  const [queueMaxExp, setQueueMaxExp] = useState("");
+  const [queueStartDate, setQueueStartDate] = useState("");
+  const [queueEndDate, setQueueEndDate] = useState("");
+
+  // Customer directory & 360 profile (30 default)
+  const [custPageSize, setCustPageSize] = useState(30);
+  const [customers, setCustomers] = useState<CustomerListItem[]>([]);
+  const [totalCustomers, setTotalCustomers] = useState(0);
+  const [custPage, setCustPage] = useState(0);
+  const [custSearch, setCustSearch] = useState("");
+  const [custKyc, setCustKyc] = useState("ALL");
+  const [custRisk, setCustRisk] = useState("ALL");
+  const [custAcctStatus, setCustAcctStatus] = useState("ALL");
+  const [custMultiSuspicious, setCustMultiSuspicious] = useState(false);
+  const [selectedCustomer, setSelectedCustomer] = useState<CustomerProfile | null>(null);
+
+  // Account management & 360 detail (30 default)
+  const [acctPageSize, setAcctPageSize] = useState(30);
+  const [accounts, setAccounts] = useState<AccountListItem[]>([]);
+  const [totalAccounts, setTotalAccounts] = useState(0);
+  const [acctPage, setAcctPage] = useState(0);
+  const [acctSearch, setAcctSearch] = useState("");
+  const [acctStatus, setAcctStatus] = useState("ALL");
+  const [acctDormant, setAcctDormant] = useState(false);
+  const [selectedAccount, setSelectedAccount] = useState<AccountDetail | null>(null);
+
+  // Transaction monitoring & risk scoring (30 default)
+  const [txnPageSize, setTxnPageSize] = useState(30);
+  const [transactions, setTransactions] = useState<TransactionItem[]>([]);
+  const [totalTransactions, setTotalTransactions] = useState(0);
+  const [txnPage, setTxnPage] = useState(0);
+  const [selectedTransaction, setSelectedTransaction] = useState<TransactionDetail | null>(null);
+  const [riskScoring, setRiskScoring] = useState<RiskScoringOverview | null>(null);
+  const [txnFilters, setTxnFilters] = useState<TransactionFiltersState>({
+    search: "",
+    start_date: "",
+    end_date: "",
+    min_amount: "",
+    max_amount: "",
+    txn_type: "ALL",
+    risk_level: "ALL",
+    status: "ALL",
+    pattern: "ALL",
+    sort_by: "occurred_at",
+    sort_dir: "desc",
+  });
+
+  // Alert management directory & 360 detail (30 default)
+  const [alertPageSize, setAlertPageSize] = useState(30);
+  const [alerts, setAlerts] = useState<AlertListItem[]>([]);
+  const [totalAlerts, setTotalAlerts] = useState(0);
+  const [alertPage, setAlertPage] = useState(0);
+  const [selectedAlert, setSelectedAlert] = useState<AlertDetail | null>(null);
+  const [alertFilters, setAlertFilters] = useState<AlertFiltersState>({
+    search: "",
+    severity: "ALL",
+    rule_id: "ALL",
+    status: "ALL",
+    owner_analyst: "ALL",
+    sla_breached: "ALL",
+    start_date: "",
+    end_date: "",
+    sort_by: "risk_score",
+    sort_dir: "desc",
+  });
+
+  useEffect(() => {
+    if (prevTabRef.current === "overview" && tab !== "overview") {
+      setArrivalBeaconKey((k) => k + 1);
+    } else if (tab === "overview") {
+      setArrivalBeaconKey(0);
+    }
+    prevTabRef.current = tab;
+  }, [tab]);
+
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      const inInput =
+        target != null &&
+        (target.tagName === "INPUT" ||
+          target.tagName === "TEXTAREA" ||
+          target.tagName === "SELECT" ||
+          target.isContentEditable);
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
+        e.preventDefault();
+        setShowSpotlight((s) => !s);
+      } else if (e.key === "?" && !inInput) {
+        e.preventDefault();
+        setShowShortcuts((s) => !s);
+      } else if (e.key === "Escape") {
+        setShowSpotlight(false);
+        setShowNotifs(false);
+        setShowShortcuts(false);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    if (darkMode) {
+      root.classList.add("dark");
+      localStorage.setItem("yottaflex_theme", "dark");
+    } else {
+      root.classList.remove("dark");
+      localStorage.setItem("yottaflex_theme", "light");
+    }
+  }, [darkMode]);
+
+  // Track pointer position & directional refraction angle across glass containers (excluding navbar docks)
+  useEffect(() => {
+    const selector =
+      ".liquid-glass, .liquid-glass-hero, .liquid-glass-rose, .liquid-glass-amber, .liquid-glass-emerald, .overview-glass-sidebar, .ybot-glass-box, .ybot-glass-icon";
+    const onMove = (e: MouseEvent) => {
+      if (!(e.target instanceof Element)) return;
+      let box = e.target.closest<HTMLElement>(selector);
+      while (box) {
+        const rect = box.getBoundingClientRect();
+        const lx = e.clientX - rect.left;
+        const ly = e.clientY - rect.top;
+        const dx = e.clientX - (rect.left + rect.width / 2);
+        const dy = e.clientY - (rect.top + rect.height / 2);
+        const ang = Math.atan2(dx, -dy) * (180 / Math.PI);
+        box.style.setProperty("--mx", `${lx}px`);
+        box.style.setProperty("--my", `${ly}px`);
+        box.style.setProperty("--bx", `${lx}px`);
+        box.style.setProperty("--by", `${ly}px`);
+        box.style.setProperty("--ang", `${ang.toFixed(1)}deg`);
+        box = box.parentElement ? box.parentElement.closest<HTMLElement>(selector) : null;
+      }
+    };
+    document.addEventListener("mousemove", onMove, { passive: true });
+    return () => document.removeEventListener("mousemove", onMove);
+  }, []);
+
+  // Verify existing session token on boot
+  useEffect(() => {
+    const tok = getStoredToken();
+    if (!tok) {
+      setAuthChecked(true);
+      return;
+    }
+    api.auth
+      .me()
+      .then((res) => setUser(res.user))
+      .catch(() => setStoredToken(null))
+      .finally(() => setAuthChecked(true));
+  }, []);
+
+  const applyPreferences = useCallback((prefs: UserPreferences, applyLandingTab = false) => {
+    if (prefs.default_page_size >= 5 && prefs.default_page_size <= 200) {
+      setQueuePageSize(prefs.default_page_size);
+      setCustPageSize(prefs.default_page_size);
+      setAcctPageSize(prefs.default_page_size);
+      setTxnPageSize(prefs.default_page_size);
+      setAlertPageSize(prefs.default_page_size);
+    }
+    if (applyLandingTab && prefs.default_tab) {
+      const validTabs: Tab[] = ["overview", "queue", "customers", "accounts", "transactions", "alerts", "quarantine", "evaluation", "governance"];
+      if (validTabs.includes(prefs.default_tab as Tab)) {
+        setTab(prefs.default_tab as Tab);
+      }
+    }
+  }, []);
+
+  const refreshNotifications = useCallback(async () => {
+    if (!user) return;
+    try {
+      const res = await api.notifications();
+      setNotifications(res.items);
+      setUnreadCount(res.unread_count);
+    } catch {
+      // non-fatal header poll
+    }
+  }, [user]);
+
+  useEffect(() => {
+    if (!user) {
+      setNotifications([]);
+      setUnreadCount(0);
+      return;
+    }
+    api.preferences().then((prefs) => applyPreferences(prefs, true)).catch(() => {});
+    refreshNotifications();
+  }, [user, applyPreferences, refreshNotifications]);
+
+  const refreshQueue = useCallback(async () => {
+    if (!user) return;
+    const res = await api.cases({
+      sort,
+      tier,
+      status,
+      linkage,
+      search,
+      assigned_analyst: queueAssignee,
+      sla_breached: queueSla === "ALL" ? undefined : queueSla,
+      min_exposure: queueMinExp,
+      max_exposure: queueMaxExp,
+      start_date: queueStartDate,
+      end_date: queueEndDate,
+      limit: queuePageSize,
+      offset: queuePage * queuePageSize,
+    });
+    setCases(res.items);
+    setTotalCases(res.total);
+  }, [user, sort, tier, status, linkage, search, queueAssignee, queueSla, queueMinExp, queueMaxExp, queueStartDate, queueEndDate, queuePage, queuePageSize]);
+
+  const refreshCustomers = useCallback(async () => {
+    if (!user) return;
+    const res = await api.customers({
+      search: custSearch,
+      kyc_tier: custKyc,
+      risk_rating: custRisk,
+      account_status: custAcctStatus,
+      multi_suspicious: custMultiSuspicious ? "1" : "0",
+      limit: custPageSize,
+      offset: custPage * custPageSize,
+    });
+    setCustomers(res.items);
+    setTotalCustomers(res.total);
+  }, [user, custSearch, custKyc, custRisk, custAcctStatus, custMultiSuspicious, custPage, custPageSize]);
+
+  const refreshAccounts = useCallback(async () => {
+    if (!user) return;
+    const res = await api.accounts({
+      search: acctSearch,
+      status: acctStatus,
+      dormant_reactivated: acctDormant ? "1" : "0",
+      limit: acctPageSize,
+      offset: acctPage * acctPageSize,
+    });
+    setAccounts(res.items);
+    setTotalAccounts(res.total);
+  }, [user, acctSearch, acctStatus, acctDormant, acctPage, acctPageSize]);
+
+  const refreshTransactions = useCallback(async () => {
+    if (!user) return;
+    const res = await api.transactions({
+      search: txnFilters.search,
+      start_date: txnFilters.start_date,
+      end_date: txnFilters.end_date,
+      min_amount: txnFilters.min_amount,
+      max_amount: txnFilters.max_amount,
+      txn_type: txnFilters.txn_type,
+      risk_level: txnFilters.risk_level,
+      status: txnFilters.status,
+      pattern: txnFilters.pattern,
+      sort_by: txnFilters.sort_by,
+      sort_dir: txnFilters.sort_dir,
+      limit: txnPageSize,
+      offset: txnPage * txnPageSize,
+    });
+    setTransactions(res.items);
+    setTotalTransactions(res.total);
+  }, [user, txnFilters, txnPage, txnPageSize]);
+
+  const refreshAlerts = useCallback(async () => {
+    if (!user) return;
+    const res = await api.alerts({
+      search: alertFilters.search,
+      severity: alertFilters.severity,
+      rule_id: alertFilters.rule_id,
+      status: alertFilters.status,
+      owner_analyst: alertFilters.owner_analyst,
+      sla_breached: alertFilters.sla_breached === "ALL" ? undefined : alertFilters.sla_breached,
+      start_date: alertFilters.start_date,
+      end_date: alertFilters.end_date,
+      sort_by: alertFilters.sort_by,
+      sort_dir: alertFilters.sort_dir,
+      limit: alertPageSize,
+      offset: alertPage * alertPageSize,
+    });
+    setAlerts(res.items);
+    setTotalAlerts(res.total);
+  }, [user, alertFilters, alertPage, alertPageSize]);
+
+  const refreshDashboard = useCallback(async () => {
+    if (!user) return;
+    const res = await api.dashboard(dashFilters);
+    setDashboard(res);
+  }, [user, dashFilters]);
+
+  const refreshAll = useCallback(async () => {
+    if (!user) return;
+    try {
+      const [ov, q, ev, ru, rs] = await Promise.all([
+        api.overview(),
+        api.quarantine(),
+        api.evaluation(),
+        api.rules(),
+        api.riskScoring(),
+      ]);
+      setOverview(ov);
+      setQuarantine(q);
+      setEvaluation(ev);
+      setRules(ru.rules);
+      setRiskScoring(rs);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to load workbench data");
+    }
+  }, [user]);
+
+  useEffect(() => {
+    refreshAll();
+  }, [refreshAll]);
+
+  useEffect(() => {
+    refreshDashboard().catch((err) => setError(err instanceof Error ? err.message : "Dashboard error"));
+  }, [refreshDashboard]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      refreshQueue().catch((err) => setError(err instanceof Error ? err.message : "Queue fetch error"));
+    }, 120);
+    return () => clearTimeout(timer);
+  }, [refreshQueue]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      refreshCustomers().catch((err) => setError(err instanceof Error ? err.message : "Customer fetch error"));
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [refreshCustomers]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      refreshAccounts().catch((err) => setError(err instanceof Error ? err.message : "Account fetch error"));
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [refreshAccounts]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      refreshTransactions().catch((err) => setError(err instanceof Error ? err.message : "Transaction fetch error"));
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [refreshTransactions]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      refreshAlerts().catch((err) => setError(err instanceof Error ? err.message : "Alert fetch error"));
+    }, 150);
+    return () => clearTimeout(timer);
+  }, [refreshAlerts]);
+
+  const handleSelectAlert = async (alertId: string) => {
+    try {
+      setError(null);
+      setTab("alerts");
+      const det = await api.alertDetail(alertId);
+      setSelectedAlert(det);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to load alert detail");
+    }
+  };
+
+  const handleSelectCase = async (caseId: string) => {
+    try {
+      setError(null);
+      setTab("dossier");
+      const d = await api.dossier(caseId);
+      setDossier(d);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to load case dossier");
+    }
+  };
+
+  const handleSelectCustomer = async (customerId: string) => {
+    try {
+      setError(null);
+      setTab("customers");
+      const prof = await api.customerProfile(customerId);
+      setSelectedCustomer(prof);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to load customer profile");
+    }
+  };
+
+  const handleSelectAccount = async (accountId: string) => {
+    try {
+      setError(null);
+      setTab("accounts");
+      const detail = await api.accountDetail(accountId);
+      setSelectedAccount(detail);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to load account detail");
+    }
+  };
+
+  const handleSelectTransaction = async (transactionId: string) => {
+    try {
+      setError(null);
+      setTab("transactions");
+      const det = await api.transactionDetail(transactionId);
+      setSelectedTransaction(det);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to load transaction detail");
+    }
+  };
+
+  const handleSubmitAction = async (payload: {
+    analyst_id: string;
+    action_type: string;
+    rationale: string;
+  }): Promise<string> => {
+    if (!dossier) return "";
+    const cid = dossier.case.case_id;
+    const res = await api.submitAction(cid, payload);
+    const [updated] = await Promise.all([api.dossier(cid), refreshQueue(), refreshAll(), refreshDashboard()]);
+    setDossier(updated);
+    return `Recorded ${res.action.action_id} → ${res.new_status}`;
+  };
+
+  const handleLogout = async () => {
+    try {
+      await api.auth.logout();
+    } catch {
+      // ignore
+    }
+    setStoredToken(null);
+    setUser(null);
+    setShowProfile(false);
+  };
+
+  const handleBotAction = (act: BotAction) => {
+    if (act.type === "tab") {
+      setTab(act.id as Tab);
+    } else if (act.type === "case") {
+      handleSelectCase(act.id);
+    } else if (act.type === "alert") {
+      handleSelectAlert(act.id);
+    } else if (act.type === "txn") {
+      handleSelectTransaction(act.id);
+    } else if (act.type === "account") {
+      handleSelectAccount(act.id);
+    } else if (act.type === "customer") {
+      handleSelectCustomer(act.id);
+    }
+  };
+
+  if (!authChecked) {
+    return (
+      <div className="yf-backdrop-light min-h-screen flex items-center justify-center text-xs font-semibold text-slate-700 dark:text-zinc-300">
+        Verifying session...
+      </div>
+    );
+  }
+
+  if (!user) {
+    return (
+      <>
+        <AuthScreen
+          darkMode={darkMode}
+          onToggleTheme={() => setDarkMode((d) => !d)}
+          onAuthenticated={(u) => setUser(u)}
+        />
+        <YottaBotWidget isAuthenticated={false} />
+      </>
+    );
+  }
+
+  const navItems: Array<NavItem<Tab>> = [
+    { id: "overview", label: "Overview", icon: <LayoutDashboard className="w-3.5 h-3.5" /> },
+    { id: "queue", label: "Queue", icon: <Layers className="w-3.5 h-3.5" /> },
+    { id: "customers", label: "Customers", icon: <Users className="w-3.5 h-3.5" /> },
+    { id: "accounts", label: "Accounts", icon: <CreditCard className="w-3.5 h-3.5" /> },
+    { id: "transactions", label: "Txns", icon: <ArrowLeftRight className="w-3.5 h-3.5" /> },
+    { id: "alerts", label: "Alerts", icon: <Bell className="w-3.5 h-3.5" /> },
+    {
+      id: "dossier",
+      label: dossier ? dossier.case.case_id.replace("CASE-2026-", "Case #") : "Dossier",
+      icon: <FolderSearch className="w-3.5 h-3.5" />,
+    },
+    {
+      id: "quarantine",
+      label: "Quarantine",
+      icon: <ShieldAlert className="w-3.5 h-3.5" />,
+      badge: quarantine?.total_exceptions,
+    },
+    { id: "evaluation", label: "Evaluation", icon: <BarChart3 className="w-3.5 h-3.5" /> },
+    { id: "governance", label: "Governance", icon: <Scale className="w-3.5 h-3.5" /> },
+  ];
+
+  const sidebarNavItems: Array<NavItem<Tab>> = [
+    { id: "overview", label: "Overview", icon: <LayoutDashboard className="w-4 h-4" /> },
+    {
+      id: "queue",
+      label: "Queue",
+      icon: <Layers className="w-4 h-4" />,
+      badge: overview?.counts?.open_cases,
+    },
+    { id: "customers", label: "Customers", icon: <Users className="w-4 h-4" /> },
+    { id: "accounts", label: "Accounts", icon: <CreditCard className="w-4 h-4" /> },
+    { id: "transactions", label: "Txns", icon: <ArrowLeftRight className="w-4 h-4" /> },
+    { id: "alerts", label: "Alerts", icon: <Bell className="w-4 h-4" /> },
+    {
+      id: "dossier",
+      label: dossier ? dossier.case.case_id.replace("CASE-2026-", "Case #") : "Dossier",
+      icon: <FolderSearch className="w-4 h-4" />,
+    },
+    {
+      id: "quarantine",
+      label: "Quarantine",
+      icon: <ShieldAlert className="w-4 h-4" />,
+      badge: quarantine?.total_exceptions,
+    },
+    { id: "evaluation", label: "Evaluation", icon: <BarChart3 className="w-4 h-4" /> },
+    { id: "governance", label: "Governance", icon: <Scale className="w-4 h-4" /> },
+  ];
+
+  const overviewTopNavItems: Array<NavItem<Tab>> = [
+    { id: "overview", label: "Overview", icon: <LayoutDashboard className="w-3.5 h-3.5" /> },
+    {
+      id: "queue",
+      label: "Queue",
+      icon: <Layers className="w-3.5 h-3.5" />,
+      badge: overview?.counts?.open_cases,
+    },
+    { id: "alerts", label: "Alerts", icon: <Bell className="w-3.5 h-3.5" /> },
+    { id: "transactions", label: "Txns", icon: <ArrowLeftRight className="w-3.5 h-3.5" /> },
+  ];
+
+  const handleMarkAllRead = async () => {
+    try {
+      await api.markNotificationsRead();
+      await refreshNotifications();
+    } catch {
+      // non-fatal
+    }
+  };
+
+  const handleOpenNotif = async (item: NotificationItem) => {
+    if (!item.is_read) {
+      api.markNotificationsRead(item.notif_id).then(refreshNotifications).catch(() => {});
+    }
+    setShowNotifs(false);
+    if (item.entity_type === "case" && item.entity_id) handleSelectCase(item.entity_id);
+    else if (item.entity_type === "alert" && item.entity_id) handleSelectAlert(item.entity_id);
+    else if (item.entity_type === "customer" && item.entity_id) handleSelectCustomer(item.entity_id);
+    else if (item.entity_type === "account" && item.entity_id) handleSelectAccount(item.entity_id);
+    else if (item.entity_type === "governance") setTab("governance");
+  };
+
+  const renderNotifBell = (variant: "overview" | "dock") => (
+    <NotificationBellButton
+      open={showNotifs}
+      unreadCount={unreadCount}
+      variant={variant}
+      onOpenFromRect={(rect) => {
+        setNotifAnchor(rect);
+        setShowNotifs(true);
+        refreshNotifications();
+      }}
+    />
+  );
+
+  const renderShortcutsBtn = (btnClass: string) => (
+    <button
+      type="button"
+      onClick={() => setShowShortcuts(true)}
+      title="Keyboard Shortcuts (?)"
+      className={btnClass}
+    >
+      <Keyboard className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
+      <span className="hidden xl:inline font-mono text-[10px] text-slate-600 dark:text-zinc-300">?</span>
+    </button>
+  );
+
+  return (
+    <div className="yf-backdrop-light relative min-h-screen flex flex-col text-slate-900 dark:text-zinc-100 transition-colors duration-300 overflow-x-hidden">
+      {/* Translucent Atmospheric Geometric Background + Larger Darker YottaFlex Watermark */}
+      <div aria-hidden="true" className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="absolute -top-24 -right-24 w-[560px] h-[560px] rounded-[72px] rotate-12 bg-white/25 dark:bg-azure-500/[0.04] border border-white/45 dark:border-azure-400/[0.12] backdrop-blur-3xl" />
+        <div className="absolute bottom-[-120px] -left-24 w-[460px] h-[460px] rounded-[64px] -rotate-12 bg-white/20 dark:bg-white/[0.02] border border-white/40 dark:border-white/[0.05]" />
+        <img
+          src="/yottaflex-logo.webp"
+          alt=""
+          className="absolute right-[4%] bottom-[8%] w-[640px] max-w-[62vw] opacity-[0.17] dark:opacity-[0.24] dark:brightness-125 dark:saturate-150 select-none drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)]"
+        />
+        <div className="hidden lg:block absolute right-10 bottom-6 text-[88px] font-bold tracking-tighter text-white/35 dark:text-azure-400/[0.12] select-none leading-none">
+          YottaFlex
+        </div>
+      </div>
+
+      {tab === "overview" ? (
+        <div className="relative z-10 flex-1 max-w-[1640px] w-full mx-auto px-5 py-4 flex flex-col lg:flex-row items-start gap-5">
+          {/* Left Glassmorphic Window Navigation (Overview Page Only) */}
+          <OverviewSidebar
+            items={sidebarNavItems}
+            activeId={tab}
+            onChange={setTab}
+            user={user}
+            onOpenProfile={() => setShowProfile(true)}
+            onOpenSupport={() => window.dispatchEvent(new CustomEvent("yottabot:open"))}
+          />
+
+          {/* Right Workspace: Compact 4-Option Top Nav + Top-Right Light Mode Button + Dashboard */}
+          <div className="flex-1 min-w-0 w-full flex flex-col gap-5">
+            <header className="sticky top-3 z-30 flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center overflow-x-auto max-w-full">
+                <LiquidGlassNav items={overviewTopNavItems} activeId={tab} onChange={setTab} />
+              </div>
+
+              <div className="flex items-center gap-2 ml-auto shrink-0">
+                <button
+                  type="button"
+                  onClick={() => setShowSpotlight(true)}
+                  title="Global Spotlight Search (Cmd/Ctrl + K)"
+                  className="liquid-dock inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:scale-[1.02] transition"
+                >
+                  <Search className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
+                  <span className="hidden sm:inline">Search</span>
+                  <kbd className="hidden md:inline font-mono text-[10px] px-1.5 py-0.2 rounded bg-white/60 dark:bg-white/10 text-slate-600 dark:text-zinc-300">
+                    ⌘K
+                  </kbd>
+                </button>
+
+                {renderNotifBell("overview")}
+
+                {renderShortcutsBtn(
+                  "liquid-dock inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:scale-[1.02] transition"
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => setShowProfile(true)}
+                  className="liquid-dock inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:scale-[1.02] transition"
+                >
+                  <UserCircle2 className="w-4 h-4 text-azure-600 dark:text-white" />
+                  <span className="hidden sm:inline">{user.full_name}</span>
+                  <span className="badge-glass badge-glass-blue font-mono ios-num text-[9.5px] leading-[1.25] px-1.5 py-[1px] rounded-full">
+                    {user.role === "OPS_ANALYST" ? "ANALYST" : user.role === "RISK_REVIEWER" ? "REVIEWER" : "ADMIN"}
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setDarkMode((d) => !d)}
+                  title="Toggle Light / Pure-Black Dark Theme"
+                  className="liquid-dock inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:scale-[1.02] transition"
+                >
+                  {darkMode ? (
+                    <Sun className="w-4 h-4 text-amber-400" />
+                  ) : (
+                    <Moon className="w-4 h-4 text-azure-600" />
+                  )}
+                  <span>{darkMode ? "Light Mode" : "Dark Mode"}</span>
+                </button>
+              </div>
+            </header>
+
+            <main className="w-full">
+              {error && (
+                <div className="mb-4 liquid-glass rounded-2xl border-rose-300/60 dark:border-rose-500/30 px-4 py-3 text-xs font-semibold text-rose-700 dark:text-rose-300 flex justify-between">
+                  <span>{error}</span>
+                  <button type="button" onClick={() => setError(null)} className="underline">
+                    Dismiss
+                  </button>
+                </div>
+              )}
+
+              <DashboardView
+                data={dashboard}
+                darkMode={darkMode}
+                filters={dashFilters}
+                onFiltersChange={setDashFilters}
+                onOpenCustomer={handleSelectCustomer}
+                onOpenAccount={handleSelectAccount}
+                onOpenTransaction={handleSelectTransaction}
+                onFilterTransactionsRisk={(lvl) => {
+                  setSelectedTransaction(null);
+                  setTxnFilters((prev) => ({ ...prev, risk_level: lvl, pattern: "ALL" }));
+                  setTxnPage(0);
+                  setTab("transactions");
+                }}
+                onOpenCase={handleSelectCase}
+              />
+            </main>
+          </div>
+        </div>
+      ) : (
+        <>
+          {/* Existing Top Navigation Header for All Other Pages */}
+          <header className="sticky top-0 z-30 pt-3 px-6">
+            <div className="max-w-[1560px] mx-auto liquid-dock rounded-full px-4 h-16 flex items-center justify-between gap-3">
+              {/* Top-Left YottaFlex Logo & Link */}
+              <a
+                href="https://stg.yottaflex.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="https://stg.yottaflex.ai"
+                className="group flex items-center gap-2.5 pl-1 shrink-0 cursor-pointer"
+              >
+                <div className="w-10 h-10 rounded-xl glass-pill flex items-center justify-center p-1.5 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-1.5 group-hover:scale-110 group-hover:shadow-[0_12px_24px_rgba(10,102,230,0.28)] dark:group-hover:shadow-[0_12px_24px_rgba(255,255,255,0.16)]">
+                  <img
+                    src="/yottaflex-logo.webp"
+                    alt="YottaFlex Logo"
+                    className="w-full h-full object-contain dark:brightness-0 dark:invert transition"
+                  />
+                </div>
+                <div className="hidden sm:block">
+                  <div className="text-sm font-bold tracking-tight text-slate-950 dark:text-white group-hover:text-azure-700 dark:group-hover:text-sky-300 transition-colors duration-300">
+                    YottaFlex
+                  </div>
+                  <div className="text-[10.5px] font-medium text-slate-600 dark:text-zinc-400">
+                    AML Risk &amp; Ledger Triage
+                  </div>
+                </div>
+              </a>
+
+              {/* iOS 26 / 27 Sliding Liquid-Glass Magnifier Navigation */}
+              <div className="min-w-0 flex-1 flex items-center justify-center">
+                <LiquidGlassNav items={navItems} activeId={tab} onChange={setTab} beaconKey={arrivalBeaconKey} />
+              </div>
+
+              {/* Right Controls: Spotlight Search + Notifications + Shortcuts + User Profile Pill + Theme Toggle */}
+              <div className="flex items-center gap-2 pr-1 shrink-0">
+                <button
+                  type="button"
+                  onClick={() => setShowSpotlight(true)}
+                  title="Global Spotlight Search (Cmd/Ctrl + K)"
+                  className="glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+                >
+                  <Search className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
+                  <span className="hidden xl:inline font-mono ios-num text-[10px] text-slate-600 dark:text-zinc-300">⌘K</span>
+                </button>
+
+                {renderNotifBell("dock")}
+
+                {renderShortcutsBtn(
+                  "glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => setShowProfile(true)}
+                  className="glass-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+                >
+                  <UserCircle2 className="w-4 h-4 text-azure-600 dark:text-white" />
+                  <span className="hidden lg:inline">{user.full_name}</span>
+                  <span className="badge-glass badge-glass-blue font-mono ios-num text-[9.5px] leading-[1.25] px-1.5 py-[1px] rounded-full">
+                    {user.role === "OPS_ANALYST" ? "ANALYST" : user.role === "RISK_REVIEWER" ? "REVIEWER" : "ADMIN"}
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => setDarkMode((d) => !d)}
+                  title="Toggle Light / Pure-Black Dark Theme"
+                  className="glass-pill inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+                >
+                  {darkMode ? (
+                    <Sun className="w-3.5 h-3.5 text-amber-400" />
+                  ) : (
+                    <Moon className="w-3.5 h-3.5 text-azure-600" />
+                  )}
+                  <span className="hidden sm:inline">{darkMode ? "Light" : "Dark"}</span>
+                </button>
+              </div>
+            </div>
+          </header>
+
+          <main className="relative z-10 flex-1 max-w-[1560px] w-full mx-auto px-6 py-6">
+            {error && (
+              <div className="mb-4 liquid-glass rounded-2xl border-rose-300/60 dark:border-rose-500/30 px-4 py-3 text-xs font-semibold text-rose-700 dark:text-rose-300 flex justify-between">
+                <span>{error}</span>
+                <button type="button" onClick={() => setError(null)} className="underline">
+                  Dismiss
+                </button>
+              </div>
+            )}
+
+        {tab === "queue" && (
+          <QueueView
+            overview={overview}
+            evaluation={evaluation}
+            cases={cases}
+            totalCases={totalCases}
+            page={queuePage}
+            pageSize={queuePageSize}
+            sort={sort}
+            tier={tier}
+            status={status}
+            linkage={linkage}
+            search={search}
+            assignedAnalyst={queueAssignee}
+            slaFilter={queueSla}
+            minExposure={queueMinExp}
+            maxExposure={queueMaxExp}
+            startDate={queueStartDate}
+            endDate={queueEndDate}
+            onSortChange={(v) => { setSort(v); setQueuePage(0); }}
+            onTierChange={(v) => { setTier(v); setQueuePage(0); }}
+            onStatusChange={(v) => { setStatus(v); setQueuePage(0); }}
+            onLinkageChange={(v) => { setLinkage(v); setQueuePage(0); }}
+            onSearchChange={(v) => { setSearch(v); setQueuePage(0); }}
+            onAssignedAnalystChange={(v) => { setQueueAssignee(v); setQueuePage(0); }}
+            onSlaFilterChange={(v) => { setQueueSla(v); setQueuePage(0); }}
+            onMinExposureChange={(v) => { setQueueMinExp(v); setQueuePage(0); }}
+            onMaxExposureChange={(v) => { setQueueMaxExp(v); setQueuePage(0); }}
+            onStartDateChange={(v) => { setQueueStartDate(v); setQueuePage(0); }}
+            onEndDateChange={(v) => { setQueueEndDate(v); setQueuePage(0); }}
+            onPageChange={setQueuePage}
+            onPageSizeChange={(sz) => {
+              setQueuePageSize(sz);
+              setQueuePage(0);
+            }}
+            onSelectCase={handleSelectCase}
+            onQueueUpdated={async () => {
+              await Promise.all([refreshQueue(), refreshAll()]);
+            }}
+          />
+        )}
+
+        {tab === "customers" && (
+          <CustomersView
+            customers={customers}
+            total={totalCustomers}
+            page={custPage}
+            pageSize={custPageSize}
+            search={custSearch}
+            kycTier={custKyc}
+            riskRating={custRisk}
+            accountStatus={custAcctStatus}
+            multiSuspicious={custMultiSuspicious}
+            selectedProfile={selectedCustomer}
+            onSearchChange={(v) => {
+              setCustSearch(v);
+              setCustPage(0);
+            }}
+            onKycChange={(v) => {
+              setCustKyc(v);
+              setCustPage(0);
+            }}
+            onRiskChange={(v) => {
+              setCustRisk(v);
+              setCustPage(0);
+            }}
+            onAccountStatusChange={(v) => {
+              setCustAcctStatus(v);
+              setCustPage(0);
+            }}
+            onMultiSuspiciousChange={(v) => {
+              setCustMultiSuspicious(v);
+              setCustPage(0);
+            }}
+            onPageChange={setCustPage}
+            onPageSizeChange={(sz) => {
+              setCustPageSize(sz);
+              setCustPage(0);
+            }}
+            onSelectCustomer={handleSelectCustomer}
+            onCloseProfile={() => setSelectedCustomer(null)}
+            onOpenAccount={handleSelectAccount}
+            onOpenTransaction={handleSelectTransaction}
+            onOpenCase={handleSelectCase}
+          />
+        )}
+
+        {tab === "accounts" && (
+          <AccountsView
+            accounts={accounts}
+            total={totalAccounts}
+            page={acctPage}
+            pageSize={acctPageSize}
+            search={acctSearch}
+            status={acctStatus}
+            dormantReactivated={acctDormant}
+            selectedDetail={selectedAccount}
+            onSearchChange={(v) => {
+              setAcctSearch(v);
+              setAcctPage(0);
+            }}
+            onStatusChange={(v) => {
+              setAcctStatus(v);
+              setAcctPage(0);
+            }}
+            onDormantChange={(v) => {
+              setAcctDormant(v);
+              setAcctPage(0);
+            }}
+            onPageChange={setAcctPage}
+            onPageSizeChange={(sz) => {
+              setAcctPageSize(sz);
+              setAcctPage(0);
+            }}
+            onSelectAccount={handleSelectAccount}
+            onCloseDetail={() => setSelectedAccount(null)}
+            onOpenCustomer={handleSelectCustomer}
+            onOpenTransaction={handleSelectTransaction}
+          />
+        )}
+
+        {tab === "transactions" && (
+          <TransactionsView
+            transactions={transactions}
+            total={totalTransactions}
+            page={txnPage}
+            pageSize={txnPageSize}
+            filters={txnFilters}
+            selectedDetail={selectedTransaction}
+            riskScoring={riskScoring}
+            userRole={user.role}
+            onRefreshScoring={async () => {
+              await Promise.all([refreshAll(), refreshAlerts(), refreshTransactions()]);
+            }}
+            onFiltersChange={(next) => {
+              setTxnFilters(next);
+              setTxnPage(0);
+            }}
+            onPageChange={setTxnPage}
+            onPageSizeChange={(sz) => {
+              setTxnPageSize(sz);
+              setTxnPage(0);
+            }}
+            onSelectTransaction={handleSelectTransaction}
+            onCloseDetail={() => setSelectedTransaction(null)}
+            onOpenAccount={handleSelectAccount}
+            onOpenCustomer={handleSelectCustomer}
+          />
+        )}
+
+        {tab === "alerts" && (
+          <AlertsView
+            alerts={alerts}
+            total={totalAlerts}
+            page={alertPage}
+            pageSize={alertPageSize}
+            rules={rules}
+            filters={alertFilters}
+            selectedDetail={selectedAlert}
+            onFiltersChange={(next) => {
+              setAlertFilters(next);
+              setAlertPage(0);
+            }}
+            onPageChange={setAlertPage}
+            onPageSizeChange={(sz) => {
+              setAlertPageSize(sz);
+              setAlertPage(0);
+            }}
+            onSelectAlert={handleSelectAlert}
+            onCloseDetail={() => setSelectedAlert(null)}
+            onOpenTransaction={handleSelectTransaction}
+            onOpenAccount={handleSelectAccount}
+            onOpenCustomer={handleSelectCustomer}
+            onOpenCase={handleSelectCase}
+            onAlertsUpdated={async () => {
+              await Promise.all([refreshAlerts(), refreshQueue(), refreshAll()]);
+            }}
+          />
+        )}
+
+        {tab === "dossier" && (
+          <DossierView
+            dossier={dossier}
+            darkMode={darkMode}
+            onBack={() => setTab("queue")}
+            onSubmitAction={handleSubmitAction}
+            onDossierUpdated={async (cid) => {
+              const [updated] = await Promise.all([api.dossier(cid), refreshQueue(), refreshAll()]);
+              setDossier(updated);
+            }}
+            onOpenCase={handleSelectCase}
+          />
+        )}
+
+            {tab === "quarantine" && (
+              <QuarantineView
+                data={quarantine}
+                onRefresh={async () => {
+                  await refreshAll();
+                }}
+                onOpenAccount={handleSelectAccount}
+                onOpenTransaction={handleSelectTransaction}
+              />
+            )}
+
+            {tab === "evaluation" && <EvaluationView evaluation={evaluation} rules={rules} darkMode={darkMode} />}
+
+            {tab === "governance" && (
+              <GovernanceView
+                user={user}
+                onOpenCase={handleSelectCase}
+                onOpenCustomer={handleSelectCustomer}
+                onOpenAccount={handleSelectAccount}
+                onRefreshQueue={async () => {
+                  await Promise.all([refreshQueue(), refreshAlerts(), refreshAll()]);
+                }}
+              />
+            )}
+          </main>
+        </>
+      )}
+
+      <Footer />
+
+      <GlobalSearchModal
+        open={showSpotlight}
+        onClose={() => setShowSpotlight(false)}
+        onSelectEntity={(group, id) => {
+          if (group === "cases") handleSelectCase(id);
+          else if (group === "alerts") handleSelectAlert(id);
+          else if (group === "customers") handleSelectCustomer(id);
+          else if (group === "accounts") handleSelectAccount(id);
+          else if (group === "transactions") handleSelectTransaction(id);
+          else if (group === "quarantine") setTab("quarantine");
+        }}
+      />
+
+      {showProfile && (
+        <ProfileModal
+          user={user}
+          onClose={() => setShowProfile(false)}
+          onProfileUpdated={(u) => setUser(u)}
+          onPreferencesUpdated={(prefs) => applyPreferences(prefs, false)}
+          onLogout={handleLogout}
+        />
+      )}
+
+      {showShortcuts && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-sky-950/20 dark:bg-black/55 backdrop-blur-md"
+          onClick={() => setShowShortcuts(false)}
+        >
+          <div
+            className="liquid-glass w-full max-w-md rounded-3xl p-5 space-y-4 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-white/60 dark:border-white/10 pb-3">
+              <div className="flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white">
+                <Keyboard className="w-4 h-4 text-azure-600 dark:text-sky-300" />
+                <span>Workbench Keyboard Shortcuts</span>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowShortcuts(false)}
+                className="glass-pill p-1.5 rounded-full text-slate-700 dark:text-zinc-200 hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+            <div className="space-y-2 text-xs">
+              {[
+                { keys: "⌘K / Ctrl+K", desc: "Toggle Global Spotlight entity search" },
+                { keys: "?", desc: "Open / close this Keyboard Shortcuts overlay" },
+                { keys: "Esc", desc: "Dismiss Spotlight, Notifications, or Shortcuts modal" },
+                { keys: "Click Pill", desc: "Jump directly from Notification alerts into Case Dossier" },
+                { keys: "Rows / Page", desc: "Customize page density (default 30) in GlassPagination or Profile" },
+              ].map((row) => (
+                <div
+                  key={row.keys}
+                  className="flex items-center justify-between gap-3 rounded-xl bg-white/22 dark:bg-white/[0.04] backdrop-blur-md px-3 py-2 border border-white/65 dark:border-white/12"
+                >
+                  <span className="text-slate-700 dark:text-zinc-300">{row.desc}</span>
+                  <kbd className="glass-pill font-mono ios-num text-[11px] font-semibold px-2.5 py-0.5 rounded-full text-slate-900 dark:text-white shrink-0">
+                    {row.keys}
+                  </kbd>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      <NotificationWindowPanel
+        open={showNotifs}
+        anchor={notifAnchor}
+        onClose={() => setShowNotifs(false)}
+        notifications={notifications}
+        unreadCount={unreadCount}
+        onRefresh={refreshNotifications}
+        onMarkAllRead={handleMarkAllRead}
+        onSelectNotification={handleOpenNotif}
+      />
+
+      <YottaBotWidget isAuthenticated={true} onAction={handleBotAction} />
+    </div>
+  );
+};

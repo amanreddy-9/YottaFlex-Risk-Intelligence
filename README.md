@@ -14,14 +14,6 @@ An institutional financial crime, transaction monitoring, and linked-account pri
 
 ---
 
-  ██╗   ██╗ ██████╗ ████████╗████████╗ █████╗ ███████╗██╗     ███████╗██╗  ██╗
-  ╚██╗ ██╔╝██╔═══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔════╝██║     ██╔════╝╚██╗██╔╝
-   ╚████╔╝ ██║   ██║   ██║      ██║   ███████║█████╗  ██║     █████╗   ╚███╔╝ 
-    ╚██╔╝  ██║   ██║   ██║      ██║   ██╔══██║██╔══╝  ██║     ██╔══╝   ██╔██╗ 
-     ██║   ╚██████╔╝   ██║      ██║   ██║  ██║██║     ███████╗███████╗██╔╝ ██╗
-     ╚═╝    ╚═════╝    ╚═╝      ╚═╝   ╚═╝  ╚═╝╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝
-                    R I S K   I N T E L L I G E N C E   O S
-
 ## 📚 Complete Documentation & Reviewer Hub
 
 For seamless review and evaluation, comprehensive manuals and architectural specifications have been published directly in the repository:

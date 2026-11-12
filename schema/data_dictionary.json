@@ -1,0 +1,2170 @@
+{
+  "schema_version": "1.0.0",
+  "enums": {
+    "kyc_tier": [
+      "LOW",
+      "STANDARD",
+      "ENHANCED"
+    ],
+    "customer_risk_rating": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ],
+    "customer_status": [
+      "ACTIVE",
+      "RESTRICTED",
+      "OFFBOARDED"
+    ],
+    "account_type": [
+      "CHECKING",
+      "SAVINGS",
+      "BUSINESS"
+    ],
+    "account_status": [
+      "ACTIVE",
+      "DORMANT",
+      "FROZEN",
+      "CLOSED"
+    ],
+    "ownership_role": [
+      "PRIMARY",
+      "JOINT",
+      "AUTHORIZED_SIGNER"
+    ],
+    "device_os": [
+      "iOS",
+      "Android",
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
+    "device_risk_tier": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ],
+    "merchant_risk_tier": [
+      "LOW",
+      "MEDIUM",
+      "HIGH"
+    ],
+    "txn_type": [
+      "PAYROLL_CREDIT",
+      "MERCHANT_PURCHASE",
+      "ATM_WITHDRAWAL",
+      "INTERNAL_TRANSFER_OUT",
+      "INTERNAL_TRANSFER_IN",
+      "P2P_TRANSFER_OUT",
+      "P2P_TRANSFER_IN",
+      "WIRE_OUT",
+      "WIRE_IN",
+      "FEE"
+    ],
+    "txn_direction": [
+      "DEBIT",
+      "CREDIT"
+    ],
+    "txn_channel": [
+      "MOBILE_APP",
+      "WEB",
+      "POS",
+      "ATM",
+      "WIRE",
+      "ACH"
+    ],
+    "txn_status": [
+      "POSTED",
+      "REVERSED",
+      "FAILED"
+    ],
+    "transfer_status": [
+      "SETTLED",
+      "MISMATCHED",
+      "INCOMPLETE"
+    ],
+    "rule_category": [
+      "VELOCITY",
+      "DEVICE",
+      "NETWORK",
+      "LIFECYCLE",
+      "GEO_MERCHANT",
+      "STRUCTURING",
+      "KYC_DEVIATION"
+    ],
+    "severity": [
+      "LOW",
+      "MEDIUM",
+      "HIGH",
+      "CRITICAL"
+    ],
+    "alert_status": [
+      "OPEN",
+      "GROUPED",
+      "RESOLVED",
+      "DISMISSED"
+    ],
+    "case_status": [
+      "OPEN",
+      "IN_REVIEW",
+      "ESCALATED",
+      "SAR_FILED",
+      "CLOSED_CONFIRMED_FRAUD",
+      "CLOSED_FALSE_POSITIVE"
+    ],
+    "analyst_action_type": [
+      "CLAIM_REVIEW",
+      "ESCALATE",
+      "FILE_SAR",
+      "CONFIRM_FRAUD",
+      "MARK_FALSE_POSITIVE",
+      "ADD_NOTE"
+    ],
+    "linkage_reason": [
+      "SINGLE_ACCOUNT_BURST",
+      "TRANSFER_RING",
+      "SHARED_DEVICE",
+      "SHARED_OWNERSHIP",
+      "MULTI_RULE_ACCOUNT"
+    ]
+  },
+  "entities": [
+    {
+      "entity_name": "Customer",
+      "table_name": "customers",
+      "category": "Master",
+      "primary_key": "customer_id",
+      "id_pattern": "^CUS-\\d{6}$",
+      "relationships": [
+        "Customer N:M Account via AccountOwnership (1 customer owns >=1 accounts; joint accounts link >=2 customers)",
+        "Customer 1:N Alert (optional direct attribution via primary owner)"
+      ],
+      "lifecycle_states": "ACTIVE -> RESTRICTED -> OFFBOARDED",
+      "effective_date_fields": "kyc_verified_at, created_at",
+      "description": "Registered account holder and KYC profile master table.",
+      "fields": [
+        {
+          "name": "customer_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "CUS-000001 .. CUS-999999",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^CUS-\\d{6}$",
+          "description": "Immutable deterministic customer identifier.",
+          "fk": null
+        },
+        {
+          "name": "full_name",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Non-empty synthetic full name",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Length 3..120",
+          "description": "Synthetic customer full name.",
+          "fk": null
+        },
+        {
+          "name": "email",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Synthetic email address",
+          "units": "none",
+          "uniqueness": "UNIQUE",
+          "validation_rule": "Valid email format",
+          "description": "Synthetic customer email address.",
+          "fk": null
+        },
+        {
+          "name": "phone",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Synthetic E.164 phone",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Matches ^\\+1-555-\\d{3}-\\d{4}$",
+          "description": "Synthetic customer contact phone number.",
+          "fk": null
+        },
+        {
+          "name": "segment",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "RETAIL | AFFLUENT | SMB",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed segment enum",
+          "description": "Customer banking segment.",
+          "fk": null
+        },
+        {
+          "name": "kyc_tier",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "LOW | STANDARD | ENHANCED",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed kyc_tier enum",
+          "description": "Identity verification level.",
+          "fk": null
+        },
+        {
+          "name": "kyc_verified_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "kyc_verified_at >= created_at",
+          "description": "Timestamp when KYC profile was verified.",
+          "fk": null
+        },
+        {
+          "name": "declared_annual_income",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": ">= 12000.00",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "declared_annual_income > 0",
+          "description": "Self-declared annual income used for deviation rules.",
+          "fk": null
+        },
+        {
+          "name": "home_country",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ISO-3166 alpha-2 (US, CA, GB, DE, SG, IN, BR, MX, AE)",
+          "units": "country code",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "2 uppercase ASCII letters",
+          "description": "Primary tax/residency country.",
+          "fk": null
+        },
+        {
+          "name": "risk_rating",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "LOW | MEDIUM | HIGH",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed risk_rating enum",
+          "description": "Baseline onboarding KYC risk rating.",
+          "fk": null
+        },
+        {
+          "name": "status",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ACTIVE | RESTRICTED | OFFBOARDED",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed customer_status enum",
+          "description": "Current customer relationship status.",
+          "fk": null
+        },
+        {
+          "name": "created_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Valid ISO-8601 <= 2026-10-28T23:59:59Z",
+          "description": "Customer onboarding timestamp.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "Account",
+      "table_name": "accounts",
+      "category": "Master",
+      "primary_key": "account_id",
+      "id_pattern": "^ACC-CUS-\\d{6}-\\d{2}$",
+      "relationships": [
+        "Account N:1 primary Customer (primary_customer_id)",
+        "Account N:M Customer via AccountOwnership (supports joint accounts)",
+        "Account 1:N AccountStateEvent (append-only lifecycle history)",
+        "Account 1:N Transaction (ordered financial ledger)",
+        "Account N:M Device via AccountDeviceLink"
+      ],
+      "lifecycle_states": "ACTIVE <-> DORMANT -> FROZEN -> CLOSED",
+      "effective_date_fields": "opened_at, closed_at (optional)",
+      "description": "Financial ledger account with ownership, overdraft policy, and derived reconciled balance.",
+      "fields": [
+        {
+          "name": "account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "ACC-CUS-000001-01",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^ACC-CUS-\\d{6}-\\d{2}$",
+          "description": "Immutable deterministic account identifier.",
+          "fk": null
+        },
+        {
+          "name": "primary_customer_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing CUS-XXXXXX",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> customers.customer_id",
+          "description": "Primary owning customer ID.",
+          "fk": "customers.customer_id"
+        },
+        {
+          "name": "account_type",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "CHECKING | SAVINGS | BUSINESS",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed account_type enum",
+          "description": "Account product category.",
+          "fk": null
+        },
+        {
+          "name": "currency",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "USD",
+          "units": "ISO-4217",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Equals 'USD'",
+          "description": "Account settlement currency.",
+          "fk": null
+        },
+        {
+          "name": "status",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ACTIVE | DORMANT | FROZEN | CLOSED",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Matches latest AccountStateEvent.new_status",
+          "description": "Latest derived account lifecycle state.",
+          "fk": null
+        },
+        {
+          "name": "overdraft_allowed",
+          "logical_type": "boolean",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": "0 | 1",
+          "units": "flag (0/1)",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In {0, 1}",
+          "description": "Whether negative balance up to overdraft_limit is permitted.",
+          "fk": null
+        },
+        {
+          "name": "overdraft_limit",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": ">= 0.00",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "0.00 if overdraft_allowed=0 else > 0",
+          "description": "Maximum permitted negative balance.",
+          "fk": null
+        },
+        {
+          "name": "opening_balance",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": ">= 0.00",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "opening_balance >= 0",
+          "description": "Initial funded balance at account opening.",
+          "fk": null
+        },
+        {
+          "name": "current_balance",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": "Derived from ledger",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Equals opening_balance + sum(posted signed txns)",
+          "description": "Reconciled ending balance.",
+          "fk": null
+        },
+        {
+          "name": "opened_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "opened_at >= primary customer created_at",
+          "description": "Account opening timestamp.",
+          "fk": null
+        },
+        {
+          "name": "closed_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "UTC ISO-8601 or NULL",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL unless status='CLOSED'; closed_at >= opened_at",
+          "description": "Optional closure timestamp.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "AccountOwnership",
+      "table_name": "account_ownerships",
+      "category": "Bridge",
+      "primary_key": "ownership_id",
+      "id_pattern": "^OWN-\\d{6}$",
+      "relationships": [
+        "Bridge resolving N:M Customer <-> Account ownership with effective date range"
+      ],
+      "lifecycle_states": "Effective interval [effective_from, effective_to]",
+      "effective_date_fields": "effective_from, effective_to (optional)",
+      "description": "Many-to-many bridge linking customers to primary and joint accounts.",
+      "fields": [
+        {
+          "name": "ownership_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "OWN-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^OWN-\\d{6}$",
+          "description": "Bridge primary key.",
+          "fk": null
+        },
+        {
+          "name": "account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ACC-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> accounts.account_id",
+          "description": "Owned account.",
+          "fk": "accounts.account_id"
+        },
+        {
+          "name": "customer_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing CUS-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> customers.customer_id",
+          "description": "Owning customer.",
+          "fk": "customers.customer_id"
+        },
+        {
+          "name": "ownership_role",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "PRIMARY | JOINT | AUTHORIZED_SIGNER",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed ownership_role enum",
+          "description": "Role of customer on the account.",
+          "fk": null
+        },
+        {
+          "name": "ownership_pct",
+          "logical_type": "decimal(5,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": "0.00 .. 100.00",
+          "units": "percent",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "0 < ownership_pct <= 100",
+          "description": "Ownership share percentage.",
+          "fk": null
+        },
+        {
+          "name": "effective_from",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "effective_from >= account.opened_at",
+          "description": "Start of ownership relationship.",
+          "fk": null
+        },
+        {
+          "name": "effective_to",
+          "logical_type": "datetime",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "UTC ISO-8601 or NULL",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL or effective_to >= effective_from",
+          "description": "Optional end of ownership relationship.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "Merchant",
+      "table_name": "merchants",
+      "category": "Master",
+      "primary_key": "merchant_id",
+      "id_pattern": "^MER-\\d{6}$",
+      "relationships": [
+        "Merchant 1:N Transaction (optional; only merchant-facing purchases)"
+      ],
+      "lifecycle_states": "Static master reference with risk_tier",
+      "effective_date_fields": "registered_at",
+      "description": "Synthetic merchant directory with MCC codes, geography, and risk tiers.",
+      "fields": [
+        {
+          "name": "merchant_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "MER-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^MER-\\d{6}$",
+          "description": "Immutable deterministic merchant identifier.",
+          "fk": null
+        },
+        {
+          "name": "merchant_name",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Non-empty synthetic name",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Length 2..120",
+          "description": "Synthetic merchant DBA name.",
+          "fk": null
+        },
+        {
+          "name": "mcc",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "4-digit MCC string",
+          "units": "MCC",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Matches ^\\d{4}$",
+          "description": "Merchant Category Code.",
+          "fk": null
+        },
+        {
+          "name": "category",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "GROCERY | UTILITIES | TRAVEL | RETAIL | ELECTRONICS | CRYPTO_EXCHANGE | GAMING | LUXURY | EDUCATION | HEALTHCARE",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty category",
+          "description": "Human-readable merchant sector.",
+          "fk": null
+        },
+        {
+          "name": "country",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ISO-3166 alpha-2",
+          "units": "country code",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "2 uppercase ASCII letters",
+          "description": "Merchant settlement jurisdiction.",
+          "fk": null
+        },
+        {
+          "name": "risk_tier",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "LOW | MEDIUM | HIGH",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed merchant_risk_tier enum",
+          "description": "Inherent merchant AML/fraud risk tier.",
+          "fk": null
+        },
+        {
+          "name": "is_high_risk_mcc",
+          "logical_type": "boolean",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": "0 | 1",
+          "units": "flag (0/1)",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In {0, 1}",
+          "description": "Flag for elevated-risk MCC sectors (crypto, gaming, luxury).",
+          "fk": null
+        },
+        {
+          "name": "registered_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Valid ISO-8601",
+          "description": "Merchant onboarding timestamp.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "Device",
+      "table_name": "devices",
+      "category": "Master",
+      "primary_key": "device_id",
+      "id_pattern": "^DEV-\\d{6}$",
+      "relationships": [
+        "Device N:M Account via AccountDeviceLink",
+        "Device 1:N Transaction (optional; digital channel transactions)"
+      ],
+      "lifecycle_states": "Active fingerprint with emulator/VPN risk attributes",
+      "effective_date_fields": "first_observed_at",
+      "description": "Endpoint device fingerprint catalog used to detect new-device and shared-mule-device rings.",
+      "fields": [
+        {
+          "name": "device_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "DEV-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^DEV-\\d{6}$",
+          "description": "Immutable deterministic device identifier.",
+          "fk": null
+        },
+        {
+          "name": "device_fingerprint",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "32-char hex digest",
+          "units": "none",
+          "uniqueness": "UNIQUE",
+          "validation_rule": "Matches ^[a-f0-9]{32}$",
+          "description": "Unique deterministic hardware/browser fingerprint.",
+          "fk": null
+        },
+        {
+          "name": "os_family",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "iOS | Android | Windows | macOS | Linux",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed device_os enum",
+          "description": "Operating system family.",
+          "fk": null
+        },
+        {
+          "name": "is_emulator",
+          "logical_type": "boolean",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": "0 | 1",
+          "units": "flag (0/1)",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In {0, 1}",
+          "description": "True if virtualized/emulator environment detected.",
+          "fk": null
+        },
+        {
+          "name": "ip_country",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ISO-3166 alpha-2",
+          "units": "country code",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "2 uppercase ASCII letters",
+          "description": "Primary observed IP country.",
+          "fk": null
+        },
+        {
+          "name": "risk_tier",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "LOW | MEDIUM | HIGH",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed device_risk_tier enum",
+          "description": "Baseline device risk classification.",
+          "fk": null
+        },
+        {
+          "name": "first_observed_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Valid ISO-8601",
+          "description": "First global sighting of device.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "AccountDeviceLink",
+      "table_name": "account_device_links",
+      "category": "Bridge",
+      "primary_key": "link_id",
+      "id_pattern": "^ADL-\\d{6}$",
+      "relationships": [
+        "Bridge resolving N:M Account <-> Device bindings"
+      ],
+      "lifecycle_states": "TRUSTED | UNVERIFIED | FLAGGED_SHARED",
+      "effective_date_fields": "first_seen_at, last_seen_at",
+      "description": "Many-to-many association tracking when each device was bound to or used on each account.",
+      "fields": [
+        {
+          "name": "link_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "ADL-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^ADL-\\d{6}$",
+          "description": "Bridge primary key.",
+          "fk": null
+        },
+        {
+          "name": "account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ACC-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> accounts.account_id",
+          "description": "Associated account.",
+          "fk": "accounts.account_id"
+        },
+        {
+          "name": "device_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing DEV-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> devices.device_id",
+          "description": "Associated device.",
+          "fk": "devices.device_id"
+        },
+        {
+          "name": "first_seen_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "first_seen_at >= account.opened_at",
+          "description": "First usage timestamp on this account.",
+          "fk": null
+        },
+        {
+          "name": "last_seen_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "last_seen_at >= first_seen_at",
+          "description": "Most recent usage timestamp on this account.",
+          "fk": null
+        },
+        {
+          "name": "is_trusted",
+          "logical_type": "boolean",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": "0 | 1",
+          "units": "flag (0/1)",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In {0, 1}",
+          "description": "Whether device completed MFA / long-standing trust.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "AccountStateEvent",
+      "table_name": "account_state_events",
+      "category": "History",
+      "primary_key": "event_id",
+      "id_pattern": "^ASE-2026-\\d{6}$",
+      "relationships": [
+        "Account 1:N AccountStateEvent (append-only state transitions)"
+      ],
+      "lifecycle_states": "OPENED(NULL)->ACTIVE, ACTIVE->DORMANT, DORMANT->ACTIVE, ACTIVE->CLOSED",
+      "effective_date_fields": "effective_at",
+      "description": "Immutable append-only audit log of account lifecycle state changes.",
+      "fields": [
+        {
+          "name": "event_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "ASE-2026-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^ASE-2026-\\d{6}$",
+          "description": "Immutable state event ID.",
+          "fk": null
+        },
+        {
+          "name": "account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ACC-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> accounts.account_id",
+          "description": "Target account.",
+          "fk": "accounts.account_id"
+        },
+        {
+          "name": "prev_status",
+          "logical_type": "enum",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "NULL | ACTIVE | DORMANT | FROZEN | CLOSED",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL on initial opening else valid account_status",
+          "description": "Status prior to transition.",
+          "fk": null
+        },
+        {
+          "name": "new_status",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ACTIVE | DORMANT | FROZEN | CLOSED",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed account_status enum",
+          "description": "Status after transition.",
+          "fk": null
+        },
+        {
+          "name": "effective_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Monotonic per account",
+          "description": "Timestamp transition became effective.",
+          "fk": null
+        },
+        {
+          "name": "reason",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ACCOUNT_OPENING | INACTIVITY_90D | REACTIVATION_ACTIVITY | CUSTOMER_CLOSURE | RISK_FREEZE",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty reason code",
+          "description": "Business reason for transition.",
+          "fk": null
+        },
+        {
+          "name": "actor_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "SYSTEM | CUS-... | ADM-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty actor",
+          "description": "System or user executing transition.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "Transaction",
+      "table_name": "transactions",
+      "category": "Ledger",
+      "primary_key": "transaction_id",
+      "id_pattern": "^TXN-2026-\\d{8}$",
+      "relationships": [
+        "Transaction N:1 Account (mandatory)",
+        "Transaction N:1 Merchant (optional; NULL for transfers/ATM/payroll)",
+        "Transaction N:1 Device (optional; NULL for branch/ATM/ACH batch)",
+        "Transaction 1:1 TransferLink leg (optional; for paired transfers)",
+        "Transaction N:M Alert via AlertTriggerFact"
+      ],
+      "lifecycle_states": "POSTED | REVERSED | FAILED",
+      "effective_date_fields": "occurred_at",
+      "description": "Timestamped financial ledger event with reconciled before/after balances.",
+      "fields": [
+        {
+          "name": "transaction_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "TXN-2026-00000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^TXN-2026-\\d{8}$",
+          "description": "Immutable deterministic transaction identifier.",
+          "fk": null
+        },
+        {
+          "name": "account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ACC-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> accounts.account_id",
+          "description": "Ledger account impacted.",
+          "fk": "accounts.account_id"
+        },
+        {
+          "name": "txn_type",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "PAYROLL_CREDIT | MERCHANT_PURCHASE | ATM_WITHDRAWAL | INTERNAL_TRANSFER_OUT | INTERNAL_TRANSFER_IN | P2P_TRANSFER_OUT | P2P_TRANSFER_IN | WIRE_OUT | WIRE_IN | FEE",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed txn_type enum",
+          "description": "Transaction classification.",
+          "fk": null
+        },
+        {
+          "name": "direction",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "DEBIT | CREDIT",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "DEBIT or CREDIT",
+          "description": "Balance direction.",
+          "fk": null
+        },
+        {
+          "name": "amount",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": "> 0.00",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "amount > 0",
+          "description": "Unsigned transaction amount.",
+          "fk": null
+        },
+        {
+          "name": "currency",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "USD",
+          "units": "ISO-4217",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Equals 'USD'",
+          "description": "Transaction currency.",
+          "fk": null
+        },
+        {
+          "name": "balance_before",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": "Derived running balance",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Matches prior transaction balance_after",
+          "description": "Account balance immediately before transaction.",
+          "fk": null
+        },
+        {
+          "name": "balance_after",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": "Derived running balance",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "balance_before + signed_amount (if POSTED)",
+          "description": "Account balance immediately after transaction.",
+          "fk": null
+        },
+        {
+          "name": "channel",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "MOBILE_APP | WEB | POS | ATM | WIRE | ACH",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed txn_channel enum",
+          "description": "Origination channel.",
+          "fk": null
+        },
+        {
+          "name": "merchant_id",
+          "logical_type": "string",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "Existing MER-... or NULL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL or FK -> merchants.merchant_id",
+          "description": "Optional counterparty merchant.",
+          "fk": "merchants.merchant_id"
+        },
+        {
+          "name": "device_id",
+          "logical_type": "string",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "Existing DEV-... or NULL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL or FK -> devices.device_id",
+          "description": "Optional originating device.",
+          "fk": "devices.device_id"
+        },
+        {
+          "name": "counterparty_country",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ISO-3166 alpha-2",
+          "units": "country code",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "2 uppercase ASCII letters",
+          "description": "Jurisdiction of counterparty/terminal.",
+          "fk": null
+        },
+        {
+          "name": "status",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "POSTED | REVERSED | FAILED",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed txn_status enum",
+          "description": "Posting status.",
+          "fk": null
+        },
+        {
+          "name": "occurred_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "occurred_at >= account.opened_at",
+          "description": "Exact transaction UTC timestamp.",
+          "fk": null
+        },
+        {
+          "name": "reference_note",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Descriptive synthetic memo",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty memo",
+          "description": "Transaction memo / narrative.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "TransferLink",
+      "table_name": "transfer_links",
+      "category": "Ledger",
+      "primary_key": "transfer_id",
+      "id_pattern": "^TRL-2026-\\d{6}$",
+      "relationships": [
+        "TransferLink N:1 source Account & debit Transaction",
+        "TransferLink N:1 dest Account & optional credit Transaction (NULL only on injected incomplete-leg exception)"
+      ],
+      "lifecycle_states": "SETTLED | MISMATCHED | INCOMPLETE",
+      "effective_date_fields": "initiated_at, settled_at (optional)",
+      "description": "Explicit double-entry transfer bridge pairing outbound debit and inbound credit legs.",
+      "fields": [
+        {
+          "name": "transfer_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "TRL-2026-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^TRL-2026-\\d{6}$",
+          "description": "Immutable transfer link ID.",
+          "fk": null
+        },
+        {
+          "name": "debit_txn_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing TXN-...",
+          "units": "none",
+          "uniqueness": "UNIQUE",
+          "validation_rule": "FK -> transactions.transaction_id (DEBIT)",
+          "description": "Outbound debit transaction leg.",
+          "fk": "transactions.transaction_id"
+        },
+        {
+          "name": "credit_txn_id",
+          "logical_type": "string",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "Existing TXN-... or NULL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL only on INCOMPLETE exception; else FK -> transactions.transaction_id (CREDIT)",
+          "description": "Inbound credit transaction leg.",
+          "fk": "transactions.transaction_id"
+        },
+        {
+          "name": "source_account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ACC-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> accounts.account_id",
+          "description": "Originating account.",
+          "fk": "accounts.account_id"
+        },
+        {
+          "name": "dest_account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ACC-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> accounts.account_id; != source_account_id",
+          "description": "Receiving account.",
+          "fk": "accounts.account_id"
+        },
+        {
+          "name": "transfer_amount",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": "> 0.00",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Equals debit_txn.amount and credit_txn.amount when SETTLED",
+          "description": "Expected transfer principal.",
+          "fk": null
+        },
+        {
+          "name": "is_same_customer",
+          "logical_type": "boolean",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": "0 | 1",
+          "units": "flag (0/1)",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In {0, 1}",
+          "description": "Derived indicator: source and dest share an owner.",
+          "fk": null
+        },
+        {
+          "name": "status",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "SETTLED | MISMATCHED | INCOMPLETE",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed transfer_status enum",
+          "description": "Reconciliation status of transfer pair.",
+          "fk": null
+        },
+        {
+          "name": "initiated_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Equals debit_txn.occurred_at",
+          "description": "Transfer initiation timestamp.",
+          "fk": null
+        },
+        {
+          "name": "settled_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "UTC ISO-8601 or NULL",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "settled_at >= initiated_at when present",
+          "description": "Transfer settlement timestamp.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "RiskRule",
+      "table_name": "risk_rules",
+      "category": "Rule",
+      "primary_key": "rule_id",
+      "id_pattern": "^RULE-\\d{3}$",
+      "relationships": [
+        "RiskRule 1:N Alert (transparent rule definition powering each alert)",
+        "RiskRule 1:N AlertTriggerFact"
+      ],
+      "lifecycle_states": "ACTIVE | RETIRED (versioned)",
+      "effective_date_fields": "effective_from",
+      "description": "Transparent, versioned AML/fraud detection rules with explicit thresholds and priority weights.",
+      "fields": [
+        {
+          "name": "rule_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "RULE-001 .. RULE-999",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^RULE-\\d{3}$",
+          "description": "Rule identifier.",
+          "fk": null
+        },
+        {
+          "name": "rule_name",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Non-empty name",
+          "units": "none",
+          "uniqueness": "UNIQUE",
+          "validation_rule": "Length 3..100",
+          "description": "Human-readable rule title.",
+          "fk": null
+        },
+        {
+          "name": "category",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "VELOCITY | DEVICE | NETWORK | LIFECYCLE | GEO_MERCHANT | STRUCTURING | KYC_DEVIATION",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed rule_category enum",
+          "description": "Detection typology family.",
+          "fk": null
+        },
+        {
+          "name": "severity",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "LOW | MEDIUM | HIGH | CRITICAL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed severity enum",
+          "description": "Default severity tier.",
+          "fk": null
+        },
+        {
+          "name": "base_weight",
+          "logical_type": "integer",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": "1 .. 100",
+          "units": "points",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "1 <= base_weight <= 100",
+          "description": "Base priority score weight.",
+          "fk": null
+        },
+        {
+          "name": "threshold_desc",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Explicit formula/threshold",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty",
+          "description": "Transparent threshold specification.",
+          "fk": null
+        },
+        {
+          "name": "is_active",
+          "logical_type": "boolean",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": "0 | 1",
+          "units": "flag (0/1)",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In {0, 1}",
+          "description": "Whether rule is active.",
+          "fk": null
+        },
+        {
+          "name": "version",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "v1.0 ..",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Semver-like string",
+          "description": "Rule version.",
+          "fk": null
+        },
+        {
+          "name": "effective_from",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Valid ISO-8601",
+          "description": "Rule activation timestamp.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "Alert",
+      "table_name": "alerts",
+      "category": "Detection",
+      "primary_key": "alert_id",
+      "id_pattern": "^ALT-2026-\\d{6}$",
+      "relationships": [
+        "Alert N:1 RiskRule",
+        "Alert N:1 Account & N:1 Customer",
+        "Alert N:1 triggering Transaction (optional ONLY for injected orphan-alert edge case)",
+        "Alert N:M Transaction/TransferLink via AlertTriggerFact",
+        "Alert N:M Case via CaseAlertLink"
+      ],
+      "lifecycle_states": "OPEN -> GROUPED -> RESOLVED | DISMISSED",
+      "effective_date_fields": "created_at",
+      "description": "Rule-generated risk alert with explainable score and traceability to triggering facts.",
+      "fields": [
+        {
+          "name": "alert_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "ALT-2026-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^ALT-2026-\\d{6}$",
+          "description": "Immutable deterministic alert identifier.",
+          "fk": null
+        },
+        {
+          "name": "rule_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing RULE-XXX",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> risk_rules.rule_id",
+          "description": "Rule that fired.",
+          "fk": "risk_rules.rule_id"
+        },
+        {
+          "name": "account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ACC-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> accounts.account_id",
+          "description": "Subject account.",
+          "fk": "accounts.account_id"
+        },
+        {
+          "name": "customer_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing CUS-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> customers.customer_id",
+          "description": "Primary subject customer.",
+          "fk": "customers.customer_id"
+        },
+        {
+          "name": "primary_txn_id",
+          "logical_type": "string",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "Existing TXN-... or NULL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL only on ORPHAN_ALERT_NO_TRIGGER exception; else FK -> transactions.transaction_id",
+          "description": "Anchor triggering transaction.",
+          "fk": "transactions.transaction_id"
+        },
+        {
+          "name": "severity",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "LOW | MEDIUM | HIGH | CRITICAL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed severity enum",
+          "description": "Alert severity level.",
+          "fk": null
+        },
+        {
+          "name": "risk_score",
+          "logical_type": "decimal(5,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": "0.00 .. 100.00",
+          "units": "points (0-100)",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "0 <= risk_score <= 100",
+          "description": "Derived explainable alert score.",
+          "fk": null
+        },
+        {
+          "name": "trigger_txn_count",
+          "logical_type": "integer",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": ">= 0",
+          "units": "count",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Matches count of AlertTriggerFact rows",
+          "description": "Number of supporting transactions.",
+          "fk": null
+        },
+        {
+          "name": "trigger_total_amount",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": ">= 0.00",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Derived sum of triggering exposure",
+          "description": "Total dollar volume tied to alert.",
+          "fk": null
+        },
+        {
+          "name": "explanation_summary",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Transparent reason string",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty explanation",
+          "description": "Human-readable explanation of rule trigger.",
+          "fk": null
+        },
+        {
+          "name": "status",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "OPEN | GROUPED | RESOLVED | DISMISSED",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed alert_status enum",
+          "description": "Current alert lifecycle state.",
+          "fk": null
+        },
+        {
+          "name": "created_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "created_at >= primary_txn.occurred_at when present",
+          "description": "Timestamp alert was generated.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "AlertTriggerFact",
+      "table_name": "alert_trigger_facts",
+      "category": "Bridge",
+      "primary_key": "fact_id",
+      "id_pattern": "^ATF-2026-\\d{6}$",
+      "relationships": [
+        "Bridge resolving N:M Alert <-> Transaction (and optional TransferLink) with exact metrics"
+      ],
+      "lifecycle_states": "Immutable evidence record",
+      "effective_date_fields": "recorded_at",
+      "description": "Fact-level audit bridge linking every alert to the exact transactions and quantitative thresholds that triggered it.",
+      "fields": [
+        {
+          "name": "fact_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "ATF-2026-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^ATF-2026-\\d{6}$",
+          "description": "Bridge primary key.",
+          "fk": null
+        },
+        {
+          "name": "alert_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ALT-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> alerts.alert_id",
+          "description": "Parent alert.",
+          "fk": "alerts.alert_id"
+        },
+        {
+          "name": "transaction_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing TXN-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> transactions.transaction_id",
+          "description": "Supporting transaction.",
+          "fk": "transactions.transaction_id"
+        },
+        {
+          "name": "transfer_id",
+          "logical_type": "string",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "Existing TRL-... or NULL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL or FK -> transfer_links.transfer_id",
+          "description": "Optional supporting transfer link.",
+          "fk": "transfer_links.transfer_id"
+        },
+        {
+          "name": "rule_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing RULE-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> risk_rules.rule_id",
+          "description": "Rule evaluated.",
+          "fk": "risk_rules.rule_id"
+        },
+        {
+          "name": "metric_name",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "window_txn_count | device_age_hours | cycle_return_ratio | dormancy_days | ...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty",
+          "description": "Quantitative indicator measured.",
+          "fk": null
+        },
+        {
+          "name": "observed_value",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Numeric or descriptor",
+          "units": "mixed",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty",
+          "description": "Measured value that breached threshold.",
+          "fk": null
+        },
+        {
+          "name": "threshold_value",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Numeric or descriptor",
+          "units": "mixed",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty",
+          "description": "Rule threshold exceeded.",
+          "fk": null
+        },
+        {
+          "name": "recorded_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Equals alert.created_at",
+          "description": "Fact capture timestamp.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "Case",
+      "table_name": "cases",
+      "category": "Triage",
+      "primary_key": "case_id",
+      "id_pattern": "^CASE-2026-\\d{6}$",
+      "relationships": [
+        "Case N:M Alert via CaseAlertLink",
+        "Case 1:N CaseStateEvent (append-only lifecycle history)",
+        "Case 1:N AnalystAction (append-only analyst decisions)"
+      ],
+      "lifecycle_states": "OPEN -> IN_REVIEW -> ESCALATED | SAR_FILED | CLOSED_CONFIRMED_FRAUD | CLOSED_FALSE_POSITIVE",
+      "effective_date_fields": "created_at, updated_at",
+      "description": "Grouped investigation dossier aggregating linked alerts, accounts, and explainable priority score.",
+      "fields": [
+        {
+          "name": "case_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "CASE-2026-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^CASE-2026-\\d{6}$",
+          "description": "Immutable deterministic case identifier.",
+          "fk": null
+        },
+        {
+          "name": "primary_account_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ACC-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> accounts.account_id",
+          "description": "Highest-exposure anchor account.",
+          "fk": "accounts.account_id"
+        },
+        {
+          "name": "primary_customer_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing CUS-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> customers.customer_id",
+          "description": "Anchor customer.",
+          "fk": "customers.customer_id"
+        },
+        {
+          "name": "linkage_summary",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "SINGLE_ACCOUNT_BURST | TRANSFER_RING | SHARED_DEVICE | SHARED_OWNERSHIP | MULTI_RULE_ACCOUNT",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty linkage descriptor",
+          "description": "Primary graph reason alerts were clustered.",
+          "fk": null
+        },
+        {
+          "name": "linked_account_count",
+          "logical_type": "integer",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": ">= 1",
+          "units": "count",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Derived distinct accounts in linked alerts/transfers",
+          "description": "Blast-radius account count.",
+          "fk": null
+        },
+        {
+          "name": "alert_count",
+          "logical_type": "integer",
+          "sql_type": "INTEGER NOT NULL",
+          "required": true,
+          "allowed_values": ">= 1",
+          "units": "count",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Equals count of CaseAlertLink rows",
+          "description": "Number of alerts grouped into case.",
+          "fk": null
+        },
+        {
+          "name": "total_exposure_amount",
+          "logical_type": "decimal(14,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": ">= 0.00",
+          "units": "USD",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Derived exposure across linked alerts",
+          "description": "Total dollar exposure under review.",
+          "fk": null
+        },
+        {
+          "name": "priority_score",
+          "logical_type": "decimal(5,2)",
+          "sql_type": "REAL NOT NULL",
+          "required": true,
+          "allowed_values": "0.00 .. 100.00",
+          "units": "points (0-100)",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "0 <= priority_score <= 100",
+          "description": "Transparent composite priority score.",
+          "fk": null
+        },
+        {
+          "name": "priority_tier",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "LOW | MEDIUM | HIGH | CRITICAL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "CRITICAL>=80, HIGH>=60, MEDIUM>=40, LOW<40",
+          "description": "Derived queue priority tier.",
+          "fk": null
+        },
+        {
+          "name": "status",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "OPEN | IN_REVIEW | ESCALATED | SAR_FILED | CLOSED_CONFIRMED_FRAUD | CLOSED_FALSE_POSITIVE",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Matches latest CaseStateEvent.new_status",
+          "description": "Current case workflow status.",
+          "fk": null
+        },
+        {
+          "name": "created_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Equals min(linked alert created_at)",
+          "description": "Case opening timestamp.",
+          "fk": null
+        },
+        {
+          "name": "updated_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "updated_at >= created_at",
+          "description": "Latest event timestamp.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "CaseAlertLink",
+      "table_name": "case_alert_links",
+      "category": "Bridge",
+      "primary_key": "case_alert_id",
+      "id_pattern": "^CAL-2026-\\d{6}$",
+      "relationships": [
+        "Bridge resolving N:M Case <-> Alert clustering"
+      ],
+      "lifecycle_states": "Immutable clustering link",
+      "effective_date_fields": "linked_at",
+      "description": "Bridge linking individual alerts into multi-account or multi-rule investigation cases.",
+      "fields": [
+        {
+          "name": "case_alert_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "CAL-2026-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^CAL-2026-\\d{6}$",
+          "description": "Bridge primary key.",
+          "fk": null
+        },
+        {
+          "name": "case_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing CASE-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> cases.case_id",
+          "description": "Parent case.",
+          "fk": "cases.case_id"
+        },
+        {
+          "name": "alert_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing ALT-...",
+          "units": "none",
+          "uniqueness": "UNIQUE",
+          "validation_rule": "FK -> alerts.alert_id",
+          "description": "Grouped alert.",
+          "fk": "alerts.alert_id"
+        },
+        {
+          "name": "linkage_reason",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "SINGLE_ACCOUNT_BURST | TRANSFER_RING | SHARED_DEVICE | SHARED_OWNERSHIP | MULTI_RULE_ACCOUNT",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed linkage_reason enum",
+          "description": "Reason alert belongs to this case.",
+          "fk": null
+        },
+        {
+          "name": "linkage_key",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Account/Device/Ring ID",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty",
+          "description": "Graph key connecting the alert.",
+          "fk": null
+        },
+        {
+          "name": "linked_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "linked_at >= alert.created_at",
+          "description": "Timestamp alert was linked to case.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "AnalystAction",
+      "table_name": "analyst_actions",
+      "category": "Workflow",
+      "primary_key": "action_id",
+      "id_pattern": "^ACT-2026-\\d{6}$",
+      "relationships": [
+        "AnalystAction N:1 Case",
+        "AnalystAction 1:0..1 CaseStateEvent"
+      ],
+      "lifecycle_states": "Append-only immutable action log",
+      "effective_date_fields": "acted_at",
+      "description": "Immutable record of operations analyst and compliance reviewer triage actions and dispositions.",
+      "fields": [
+        {
+          "name": "action_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "ACT-2026-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^ACT-2026-\\d{6}$",
+          "description": "Immutable action identifier.",
+          "fk": null
+        },
+        {
+          "name": "case_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing CASE-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> cases.case_id",
+          "description": "Reviewed case.",
+          "fk": "cases.case_id"
+        },
+        {
+          "name": "analyst_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "ANL-001 .. ANL-999",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Matches ^ANL-\\d{3}$",
+          "description": "Reviewer identifier.",
+          "fk": null
+        },
+        {
+          "name": "analyst_role",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "OPS_ANALYST | RISK_REVIEWER | COMPLIANCE_OFFICER",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed analyst role enum",
+          "description": "Actor role.",
+          "fk": null
+        },
+        {
+          "name": "action_type",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "CLAIM_REVIEW | ESCALATE | FILE_SAR | CONFIRM_FRAUD | MARK_FALSE_POSITIVE | ADD_NOTE",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed analyst_action_type enum",
+          "description": "Action or disposition executed.",
+          "fk": null
+        },
+        {
+          "name": "rationale",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Structured review note",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Non-empty rationale",
+          "description": "Documented analyst justification.",
+          "fk": null
+        },
+        {
+          "name": "acted_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "acted_at >= max(linked alert created_at) unless negative edge case",
+          "description": "Timestamp analyst submitted action.",
+          "fk": null
+        }
+      ]
+    },
+    {
+      "entity_name": "CaseStateEvent",
+      "table_name": "case_state_events",
+      "category": "History",
+      "primary_key": "case_event_id",
+      "id_pattern": "^CSE-2026-\\d{6}$",
+      "relationships": [
+        "Case 1:N CaseStateEvent (append-only status transition audit log)",
+        "CaseStateEvent N:0..1 AnalystAction"
+      ],
+      "lifecycle_states": "OPEN -> IN_REVIEW -> ESCALATED | SAR_FILED | CLOSED_*",
+      "effective_date_fields": "effective_at",
+      "description": "Immutable append-only audit trail of every case status transition.",
+      "fields": [
+        {
+          "name": "case_event_id",
+          "logical_type": "string",
+          "sql_type": "TEXT PRIMARY KEY",
+          "required": true,
+          "allowed_values": "CSE-2026-000001 ..",
+          "units": "none",
+          "uniqueness": "PRIMARY KEY",
+          "validation_rule": "Matches ^CSE-2026-\\d{6}$",
+          "description": "Immutable case state event ID.",
+          "fk": null
+        },
+        {
+          "name": "case_id",
+          "logical_type": "string",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "Existing CASE-...",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "FK -> cases.case_id",
+          "description": "Target case.",
+          "fk": "cases.case_id"
+        },
+        {
+          "name": "prev_status",
+          "logical_type": "enum",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "NULL | OPEN | IN_REVIEW | ESCALATED | SAR_FILED | CLOSED_CONFIRMED_FRAUD | CLOSED_FALSE_POSITIVE",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL on case creation else valid case_status",
+          "description": "Prior case status.",
+          "fk": null
+        },
+        {
+          "name": "new_status",
+          "logical_type": "enum",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "OPEN | IN_REVIEW | ESCALATED | SAR_FILED | CLOSED_CONFIRMED_FRAUD | CLOSED_FALSE_POSITIVE",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "In allowed case_status enum",
+          "description": "Resulting case status.",
+          "fk": null
+        },
+        {
+          "name": "analyst_action_id",
+          "logical_type": "string",
+          "sql_type": "TEXT",
+          "required": false,
+          "allowed_values": "Existing ACT-... or NULL",
+          "units": "none",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "NULL on system open else FK -> analyst_actions.action_id",
+          "description": "Triggering analyst action.",
+          "fk": "analyst_actions.action_id"
+        },
+        {
+          "name": "effective_at",
+          "logical_type": "datetime",
+          "sql_type": "TEXT NOT NULL",
+          "required": true,
+          "allowed_values": "UTC ISO-8601",
+          "units": "UTC ISO-8601",
+          "uniqueness": "NON-UNIQUE",
+          "validation_rule": "Monotonic per case",
+          "description": "Transition timestamp.",
+          "fk": null
+        }
+      ]
+    }
+  ],
+  "ground_truth_isolation_policy": {
+    "files": [
+      "ground_truth.csv",
+      "ground_truth.json"
+    ],
+    "rule": "Strictly isolated from model/rule scoring inputs; used solely by the evaluation harness and integrity audit comparison.",
+    "fields": [
+      {
+        "name": "scenario_id",
+        "type": "string",
+        "description": "Unique planted scenario or edge-case identifier"
+      },
+      {
+        "name": "entity_type",
+        "type": "string",
+        "description": "Primary entity type (CASE, ALERT, TRANSACTION, TRANSFER_LINK)"
+      },
+      {
+        "name": "entity_id",
+        "type": "string",
+        "description": "ID of affected entity"
+      },
+      {
+        "name": "typology",
+        "type": "string",
+        "description": "Planted pattern: NORMAL | VELOCITY_SPIKE | NEW_DEVICE | CIRCULAR_TRANSFER | DORMANT_REACTIVATION | FALSE_POSITIVE | NEGATIVE_EDGE_CASE"
+      },
+      {
+        "name": "issue_type",
+        "type": "string",
+        "description": "NONE or exact negative scenario code (TXN_ON_CLOSED_ACCOUNT, NEGATIVE_BALANCE_NO_OVERDRAFT, UNRECONCILED_TRANSFER_LEG, ORPHAN_ALERT_NO_TRIGGER, DISPOSITION_PRECEDES_ALERT)"
+      },
+      {
+        "name": "is_true_positive_risk",
+        "type": "boolean",
+        "description": "True if genuinely suspicious risk scenario, False for normal/false-positive"
+      },
+      {
+        "name": "expected_decision",
+        "type": "string",
+        "description": "Expected analyst disposition or QUARANTINE_EXCEPTION"
+      },
+      {
+        "name": "notes",
+        "type": "string",
+        "description": "Human-readable audit provenance"
+      }
+    ]
+  }
+}

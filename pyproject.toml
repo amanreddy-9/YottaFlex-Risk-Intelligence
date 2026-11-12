@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yottaflex"
+version = "0.1.0"
+description = "Explainable Transaction & Account Prioritization System with Deterministic Synthetic Financial Ledger"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+api = ["fastapi>=0.115", "uvicorn>=0.30"]
+
+[project.scripts]
+yottaflex = "yottaflex.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

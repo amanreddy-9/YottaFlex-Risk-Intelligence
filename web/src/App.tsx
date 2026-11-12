@@ -184,6 +184,10 @@ export const App: React.FC = () => {
   });
 
   useEffect(() => {
+    document.title = "YottaFlex | RiskOS";
+  }, []);
+
+  useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement | null;
       const inInput =
@@ -676,48 +680,48 @@ export const App: React.FC = () => {
 
   const renderThemeSlider = (extraClass = "") => (
     <div
-      role="group"
-      aria-label="Theme switcher"
-      title={darkMode ? "Theme: Dark Mode (Click to switch to Light)" : "Theme: Light Mode (Click to switch to Dark)"}
-      className={`glass-theme-slider-track shrink-0 ${extraClass}`}
+      role="button"
+      tabIndex={0}
+      onClick={() => setDarkMode((d) => !d)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          setDarkMode((d) => !d);
+        }
+      }}
+      title={darkMode ? "Theme: Dark Mode (Click anywhere to switch to Light)" : "Theme: Light Mode (Click anywhere to switch to Dark)"}
+      aria-label="Toggle Light / Dark Theme"
+      className={`glass-theme-slider-track shrink-0 cursor-pointer ${extraClass}`}
     >
       {/* Elevated 3D Liquid Glass Sliding Thumb */}
       <div
-        className="glass-theme-slider-thumb"
+        className="glass-theme-slider-thumb pointer-events-none"
         style={{
           transform: darkMode ? "translate3d(32px, 0, 0)" : "translate3d(0, 0, 0)",
         }}
       />
 
-      {/* Sun Option (Light Mode) */}
-      <button
-        type="button"
-        onClick={() => setDarkMode(false)}
-        aria-label="Activate Light Mode"
-        title="Light Mode"
-        className={`w-[30px] h-7 rounded-full flex items-center justify-center relative z-10 transition-all duration-300 ${
+      {/* Sun Option (Left) */}
+      <div
+        className={`w-[30px] h-7 rounded-full flex items-center justify-center relative z-10 pointer-events-none transition-all duration-300 ${
           !darkMode
             ? "text-slate-900 dark:text-white scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
-            : "text-slate-400 dark:text-white/40 opacity-40 hover:opacity-75 scale-95"
+            : "text-slate-400 dark:text-white/40 opacity-40 scale-95"
         }`}
       >
         <Sun className="w-3.5 h-3.5" />
-      </button>
+      </div>
 
-      {/* Moon Option (Dark Mode) */}
-      <button
-        type="button"
-        onClick={() => setDarkMode(true)}
-        aria-label="Activate Dark Mode"
-        title="Dark Mode"
-        className={`w-[30px] h-7 rounded-full flex items-center justify-center relative z-10 transition-all duration-300 ${
+      {/* Moon Option (Right) */}
+      <div
+        className={`w-[30px] h-7 rounded-full flex items-center justify-center relative z-10 pointer-events-none transition-all duration-300 ${
           darkMode
             ? "text-white scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
-            : "text-slate-400 dark:text-white/40 opacity-40 hover:opacity-75 scale-95"
+            : "text-slate-400 dark:text-white/40 opacity-40 scale-95"
         }`}
       >
         <Moon className="w-3.5 h-3.5" />
-      </button>
+      </div>
     </div>
   );
 

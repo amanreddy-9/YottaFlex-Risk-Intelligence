@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import {
   ArrowLeftRight,
   BarChart3,
@@ -28,7 +28,7 @@ import { EvaluationView } from "./components/EvaluationView";
 import { Footer } from "./components/Footer";
 import { GlobalSearchModal } from "./components/GlobalSearchModal";
 import { GovernanceView } from "./components/GovernanceView";
-import { LiquidGlassNav, type NavItem } from "./components/LiquidGlassNav";
+import type { NavItem } from "./components/LiquidGlassNav";
 import { NotificationBellButton, NotificationWindowPanel, type AnchorRect } from "./components/NotificationWidget";
 import { OverviewSidebar } from "./components/OverviewSidebar";
 import { ProfileModal } from "./components/ProfileModal";
@@ -82,8 +82,6 @@ export const App: React.FC = () => {
   const [showShortcuts, setShowShortcuts] = useState(false);
 
   const [tab, setTab] = useState<Tab>("overview");
-  const prevTabRef = useRef<Tab>("overview");
-  const [arrivalBeaconKey, setArrivalBeaconKey] = useState(0);
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem("yottaflex_theme");
     return saved !== "light";
@@ -184,15 +182,6 @@ export const App: React.FC = () => {
     sort_by: "risk_score",
     sort_dir: "desc",
   });
-
-  useEffect(() => {
-    if (prevTabRef.current === "overview" && tab !== "overview") {
-      setArrivalBeaconKey((k) => k + 1);
-    } else if (tab === "overview") {
-      setArrivalBeaconKey(0);
-    }
-    prevTabRef.current = tab;
-  }, [tab]);
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
@@ -582,28 +571,6 @@ export const App: React.FC = () => {
     );
   }
 
-  const navItems: Array<NavItem<Tab>> = [
-    { id: "overview", label: "Overview", icon: <LayoutDashboard className="w-3.5 h-3.5" /> },
-    { id: "queue", label: "Queue", icon: <Layers className="w-3.5 h-3.5" /> },
-    { id: "customers", label: "Customers", icon: <Users className="w-3.5 h-3.5" /> },
-    { id: "accounts", label: "Accounts", icon: <CreditCard className="w-3.5 h-3.5" /> },
-    { id: "transactions", label: "Txns", icon: <ArrowLeftRight className="w-3.5 h-3.5" /> },
-    { id: "alerts", label: "Alerts", icon: <Bell className="w-3.5 h-3.5" /> },
-    {
-      id: "dossier",
-      label: dossier ? dossier.case.case_id.replace("CASE-2026-", "Case #") : "Dossier",
-      icon: <FolderSearch className="w-3.5 h-3.5" />,
-    },
-    {
-      id: "quarantine",
-      label: "Quarantine",
-      icon: <ShieldAlert className="w-3.5 h-3.5" />,
-      badge: quarantine?.total_exceptions,
-    },
-    { id: "evaluation", label: "Evaluation", icon: <BarChart3 className="w-3.5 h-3.5" /> },
-    { id: "governance", label: "Governance", icon: <Scale className="w-3.5 h-3.5" /> },
-  ];
-
   const sidebarNavItems: Array<NavItem<Tab>> = [
     { id: "overview", label: "Overview", icon: <LayoutDashboard className="w-4 h-4" /> },
     {
@@ -629,18 +596,6 @@ export const App: React.FC = () => {
     },
     { id: "evaluation", label: "Evaluation", icon: <BarChart3 className="w-4 h-4" /> },
     { id: "governance", label: "Governance", icon: <Scale className="w-4 h-4" /> },
-  ];
-
-  const overviewTopNavItems: Array<NavItem<Tab>> = [
-    { id: "overview", label: "Overview", icon: <LayoutDashboard className="w-3.5 h-3.5" /> },
-    {
-      id: "queue",
-      label: "Queue",
-      icon: <Layers className="w-3.5 h-3.5" />,
-      badge: overview?.counts?.open_cases,
-    },
-    { id: "alerts", label: "Alerts", icon: <Bell className="w-3.5 h-3.5" /> },
-    { id: "transactions", label: "Txns", icon: <ArrowLeftRight className="w-3.5 h-3.5" /> },
   ];
 
   const handleMarkAllRead = async () => {
@@ -689,6 +644,69 @@ export const App: React.FC = () => {
     </button>
   );
 
+  const currentTabMeta = {
+    overview: {
+      title: "Executive Overview",
+      subtitle: "Deterministic Risk Indicators, Ledger KPIs & Real-Time Intelligence",
+      icon: <LayoutDashboard className="w-4 h-4" />,
+      badge: overview?.scale ? `${overview.scale.toUpperCase()} SCALE` : undefined,
+    },
+    queue: {
+      title: "Priority Case Queue",
+      subtitle: "Entity-Linked Multi-Alert Case Triage & Prioritization",
+      icon: <Layers className="w-4 h-4" />,
+      badge: totalCases ? `${totalCases.toLocaleString()} Cases` : undefined,
+    },
+    customers: {
+      title: "Customers Directory",
+      subtitle: "KYC Profiles, Risk Ratings & Counterparty Corridors",
+      icon: <Users className="w-4 h-4" />,
+      badge: totalCustomers ? `${totalCustomers.toLocaleString()} Customers` : undefined,
+    },
+    accounts: {
+      title: "Accounts Ledger",
+      subtitle: "Double-Entry Balance Reconciliation & Burst Profiling",
+      icon: <CreditCard className="w-4 h-4" />,
+      badge: totalAccounts ? `${totalAccounts.toLocaleString()} Accounts` : undefined,
+    },
+    transactions: {
+      title: "Transactions Ledger",
+      subtitle: "Reconciled Debit/Credit Movements & Behavioral Forensics",
+      icon: <ArrowLeftRight className="w-4 h-4" />,
+      badge: totalTransactions ? `${totalTransactions.toLocaleString()} Txns` : undefined,
+    },
+    alerts: {
+      title: "Rule-Triggered Alerts",
+      subtitle: "Transparent Rule Factual Attributions & Fatigue Analysis",
+      icon: <Bell className="w-4 h-4" />,
+      badge: totalAlerts ? `${totalAlerts.toLocaleString()} Alerts` : undefined,
+    },
+    dossier: {
+      title: dossier ? `Investigation Dossier · ${dossier.case.case_id}` : "Case Dossier",
+      subtitle: "Entity Network Graph, Chronology, GoAML XML & Cryptographic Seal",
+      icon: <FolderSearch className="w-4 h-4" />,
+      badge: dossier ? `Score ${Math.round(dossier.case.priority_score)}` : undefined,
+    },
+    quarantine: {
+      title: "Exception Quarantine Queue",
+      subtitle: "9-Check Integrity Violations Isolated from Clean Processing",
+      icon: <ShieldAlert className="w-4 h-4" />,
+      badge: quarantine ? `${quarantine.total_exceptions} Quarantined` : undefined,
+    },
+    evaluation: {
+      title: "Model Calibration & Evaluation",
+      subtitle: "Zero Ground-Truth Leakage Lift Curves, Score Histograms & PSI Drift",
+      icon: <BarChart3 className="w-4 h-4" />,
+      badge: "Zero-Leakage Verified",
+    },
+    governance: {
+      title: "Governance, Controls & Audits",
+      subtitle: "Sanctions/PEP Screening, Four-Eyes Controls & Tamper-Evident Chain",
+      icon: <Scale className="w-4 h-4" />,
+      badge: "RBAC Active",
+    },
+  }[tab];
+
   return (
     <div className="yf-backdrop-light relative min-h-screen flex flex-col text-slate-900 dark:text-zinc-100 transition-colors duration-300 overflow-x-hidden">
       {/* Translucent Atmospheric Geometric Background + Larger Darker YottaFlex Watermark */}
@@ -705,147 +723,56 @@ export const App: React.FC = () => {
         </div>
       </div>
 
-      {tab === "overview" ? (
-        <div className="relative z-10 flex-1 max-w-[1640px] w-full mx-auto px-5 py-4 flex flex-col lg:flex-row items-start gap-5">
-          {/* Left Glassmorphic Window Navigation (Overview Page Only) */}
-          <OverviewSidebar
-            items={sidebarNavItems}
-            activeId={tab}
-            onChange={setTab}
-            user={user}
-            onOpenProfile={() => setShowProfile(true)}
-            onOpenSupport={() => window.dispatchEvent(new CustomEvent("yottabot:open"))}
-          />
+      {/* Unified Persistent Layout: Left Sidebar + Right Fluid Expanding Workspace */}
+      <div className="relative z-10 flex-1 max-w-[1720px] w-full mx-auto px-4 sm:px-5 py-4 flex flex-col lg:flex-row items-start gap-4 lg:gap-5">
+        {/* Left Glassmorphic Window Navigation (Persistent across ALL tabs; shrinks smoothly when tab !== "overview") */}
+        <OverviewSidebar
+          items={sidebarNavItems}
+          activeId={tab}
+          onChange={setTab}
+          user={user}
+          onOpenProfile={() => setShowProfile(true)}
+          onOpenSupport={() => window.dispatchEvent(new CustomEvent("yottabot:open"))}
+          isCollapsed={tab !== "overview"}
+        />
 
-          {/* Right Workspace: Compact 4-Option Top Nav + Top-Right Light Mode Button + Dashboard */}
-          <div className="flex-1 min-w-0 w-full flex flex-col gap-5">
-            <header className="sticky top-3 z-30 flex flex-wrap items-center justify-between gap-3">
-              <div className="flex items-center overflow-x-auto max-w-full">
-                <LiquidGlassNav items={overviewTopNavItems} activeId={tab} onChange={setTab} />
-              </div>
-
-              <div className="flex items-center gap-2 ml-auto shrink-0">
-                <button
-                  type="button"
-                  onClick={() => setShowSpotlight(true)}
-                  title="Global Spotlight Search (Cmd/Ctrl + K)"
-                  className="liquid-dock inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:scale-[1.02] transition"
-                >
-                  <Search className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
-                  <span className="hidden sm:inline">Search</span>
-                  <kbd className="hidden md:inline font-mono text-[10px] px-1.5 py-0.2 rounded bg-white/60 dark:bg-white/10 text-slate-600 dark:text-zinc-300">
-                    ⌘K
-                  </kbd>
-                </button>
-
-                {renderNotifBell("overview")}
-
-                {renderShortcutsBtn(
-                  "liquid-dock inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:scale-[1.02] transition"
-                )}
-
-                <button
-                  type="button"
-                  onClick={() => setShowProfile(true)}
-                  className="liquid-dock inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:scale-[1.02] transition"
-                >
-                  <UserCircle2 className="w-4 h-4 text-azure-600 dark:text-white" />
-                  <span className="hidden sm:inline">{user.full_name}</span>
-                  <span className="badge-glass badge-glass-blue font-mono ios-num text-[9.5px] leading-[1.25] px-1.5 py-[1px] rounded-full">
-                    {user.role === "OPS_ANALYST" ? "ANALYST" : user.role === "RISK_REVIEWER" ? "REVIEWER" : "ADMIN"}
-                  </span>
-                </button>
-
-                <button
-                  type="button"
-                  onClick={() => setDarkMode((d) => !d)}
-                  title="Toggle Light / Pure-Black Dark Theme"
-                  className="liquid-dock inline-flex items-center gap-2 px-3.5 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:scale-[1.02] transition"
-                >
-                  {darkMode ? (
-                    <Sun className="w-4 h-4 text-amber-400" />
-                  ) : (
-                    <Moon className="w-4 h-4 text-azure-600" />
-                  )}
-                  <span>{darkMode ? "Light Mode" : "Dark Mode"}</span>
-                </button>
-              </div>
-            </header>
-
-            <main className="w-full">
-              {error && (
-                <div className="mb-4 liquid-glass rounded-2xl border-rose-300/60 dark:border-rose-500/30 px-4 py-3 text-xs font-semibold text-rose-700 dark:text-rose-300 flex justify-between">
-                  <span>{error}</span>
-                  <button type="button" onClick={() => setError(null)} className="underline">
-                    Dismiss
-                  </button>
-                </div>
-              )}
-
-              <DashboardView
-                data={dashboard}
-                darkMode={darkMode}
-                filters={dashFilters}
-                onFiltersChange={setDashFilters}
-                onOpenCustomer={handleSelectCustomer}
-                onOpenAccount={handleSelectAccount}
-                onOpenTransaction={handleSelectTransaction}
-                onFilterTransactionsRisk={(lvl) => {
-                  setSelectedTransaction(null);
-                  setTxnFilters((prev) => ({ ...prev, risk_level: lvl, pattern: "ALL" }));
-                  setTxnPage(0);
-                  setTab("transactions");
-                }}
-                onOpenCase={handleSelectCase}
-              />
-            </main>
-          </div>
-        </div>
-      ) : (
-        <>
-          {/* Existing Top Navigation Header for All Other Pages */}
-          <header className="sticky top-0 z-30 pt-3 px-6">
-            <div className="max-w-[1560px] mx-auto liquid-dock rounded-full px-4 h-16 flex items-center justify-between gap-3">
-              {/* Top-Left YottaFlex Logo & Link */}
-              <a
-                href="https://stg.yottaflex.ai"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="https://stg.yottaflex.ai"
-                className="group flex items-center gap-2.5 pl-1 shrink-0 cursor-pointer"
-              >
-                <div className="w-10 h-10 rounded-xl glass-pill flex items-center justify-center p-1.5 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-1.5 group-hover:scale-110 group-hover:shadow-[0_12px_24px_rgba(10,102,230,0.28)] dark:group-hover:shadow-[0_12px_24px_rgba(255,255,255,0.16)]">
-                  <img
-                    src="/yottaflex-logo.webp"
-                    alt="YottaFlex Logo"
-                    className="w-full h-full object-contain dark:brightness-0 dark:invert transition"
-                  />
-                </div>
-                <div className="hidden sm:block">
-                  <div className="text-sm font-bold tracking-tight text-slate-950 dark:text-white group-hover:text-azure-700 dark:group-hover:text-sky-300 transition-colors duration-300">
-                    YottaFlex
+        {/* Right Workspace: Smoothly expands to the left when the sidebar shrinks */}
+        <div className="flex-1 min-w-0 w-full flex flex-col gap-5 transition-[width,margin] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+          {/* Top Unified Executive Utility Header (Active Section Breadcrumb + Utilities, NO long nav bar) */}
+          <header className="sticky top-3 z-30 w-full">
+            <div className="liquid-glass rounded-full px-4 sm:px-5 py-2.5 flex items-center justify-between gap-3 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
+              {/* Left: Active Section Indicator / Breadcrumb */}
+              <div className="flex items-center gap-2.5 min-w-0">
+                <span className="w-8 h-8 rounded-full glass-pill flex items-center justify-center shrink-0 text-azure-600 dark:text-sky-300">
+                  {currentTabMeta.icon}
+                </span>
+                <div className="min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold tracking-tight text-slate-950 dark:text-white truncate">
+                      {currentTabMeta.title}
+                    </span>
+                    {currentTabMeta.badge && (
+                      <span className="badge-glass badge-glass-blue font-mono ios-num text-[10px] leading-tight px-2 py-0.5 rounded-full">
+                        {currentTabMeta.badge}
+                      </span>
+                    )}
                   </div>
-                  <div className="text-[10.5px] font-medium text-slate-600 dark:text-zinc-400">
-                    AML Risk &amp; Ledger Triage
+                  <div className="hidden sm:block text-[11px] font-medium text-slate-500 dark:text-zinc-400 truncate">
+                    {currentTabMeta.subtitle}
                   </div>
                 </div>
-              </a>
-
-              {/* iOS 26 / 27 Sliding Liquid-Glass Magnifier Navigation */}
-              <div className="min-w-0 flex-1 flex items-center justify-center">
-                <LiquidGlassNav items={navItems} activeId={tab} onChange={setTab} beaconKey={arrivalBeaconKey} />
               </div>
 
               {/* Right Controls: Spotlight Search + Notifications + Shortcuts + User Profile Pill + Theme Toggle */}
-              <div className="flex items-center gap-2 pr-1 shrink-0">
+              <div className="flex items-center gap-2 pr-0.5 shrink-0">
                 <button
                   type="button"
                   onClick={() => setShowSpotlight(true)}
                   title="Global Spotlight Search (Cmd/Ctrl + K)"
-                  className="glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+                  className="glass-pill inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
                 >
                   <Search className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
-                  <span className="hidden xl:inline font-mono ios-num text-[10px] text-slate-600 dark:text-zinc-300">⌘K</span>
+                  <span className="hidden md:inline font-mono ios-num text-[10px] text-slate-600 dark:text-zinc-300">⌘K</span>
                 </button>
 
                 {renderNotifBell("dock")}
@@ -860,7 +787,7 @@ export const App: React.FC = () => {
                   className="glass-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
                 >
                   <UserCircle2 className="w-4 h-4 text-azure-600 dark:text-white" />
-                  <span className="hidden lg:inline">{user.full_name}</span>
+                  <span className="hidden xl:inline">{user.full_name}</span>
                   <span className="badge-glass badge-glass-blue font-mono ios-num text-[9.5px] leading-[1.25] px-1.5 py-[1px] rounded-full">
                     {user.role === "OPS_ANALYST" ? "ANALYST" : user.role === "RISK_REVIEWER" ? "REVIEWER" : "ADMIN"}
                   </span>
@@ -883,7 +810,7 @@ export const App: React.FC = () => {
             </div>
           </header>
 
-          <main className="relative z-10 flex-1 max-w-[1560px] w-full mx-auto px-6 py-6">
+          <main className="w-full">
             {error && (
               <div className="mb-4 liquid-glass rounded-2xl border-rose-300/60 dark:border-rose-500/30 px-4 py-3 text-xs font-semibold text-rose-700 dark:text-rose-300 flex justify-between">
                 <span>{error}</span>
@@ -891,6 +818,25 @@ export const App: React.FC = () => {
                   Dismiss
                 </button>
               </div>
+            )}
+
+            {tab === "overview" && (
+              <DashboardView
+                data={dashboard}
+                darkMode={darkMode}
+                filters={dashFilters}
+                onFiltersChange={setDashFilters}
+                onOpenCustomer={handleSelectCustomer}
+                onOpenAccount={handleSelectAccount}
+                onOpenTransaction={handleSelectTransaction}
+                onFilterTransactionsRisk={(lvl) => {
+                  setSelectedTransaction(null);
+                  setTxnFilters((prev) => ({ ...prev, risk_level: lvl, pattern: "ALL" }));
+                  setTxnPage(0);
+                  setTab("transactions");
+                }}
+                onOpenCase={handleSelectCase}
+              />
             )}
 
         {tab === "queue" && (
@@ -1112,8 +1058,8 @@ export const App: React.FC = () => {
               />
             )}
           </main>
-        </>
-      )}
+        </div>
+      </div>
 
       <Footer />
 

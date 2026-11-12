@@ -438,3 +438,17 @@ The following transcripts document every instruction and refinement made during 
 ### Prompt 67 — `2026-11-12T18:13:42Z` *(+1 screenshot attachment)*
 
 > increase the width of this box when it is shrunk , and also when hovered over it , increase its width a little more and diplay the texts and icons a little more clearly (large).
+
+### Prompt 68 — `2026-11-12T18:24:06Z` *(+1 screenshot attachment)*
+
+> remove this long panel enclosing th three buttons on the top right side , instead all a text note in Ios glass font welcome back "User name " . Yotta Flex RiskOS Watch Inspect Act (refine the wording ) . this change has to be made in the overview page
+
+### Prompt 69 — `2026-11-12T18:31:00Z` *(+6 visual reference screenshot attachments)*
+
+> [Visual Specification Set]
+> 1. Current green badge ("GROUPED") showing border tint
+> 2. Current red badge ("SLA") showing border tint
+> 3. Target reference: 3D colorless liquid glass capsule with radiant electric-green neon glowing text and specular curved refraction highlights
+> 4. Reference blue badge ("SHARED_DEVICE") in crystal glass capsule
+> 5. Collapsed sidebar with red notification pills ("244", "10") to be styled with the liquid glass micro-capsule
+> 6. Overview top header bar ("Executive Overview...") confirming removal of the long enclosing panel in favor of the iOS glass welcome note and floating action pills

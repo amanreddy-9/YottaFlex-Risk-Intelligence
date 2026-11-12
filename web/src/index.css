@@ -835,65 +835,124 @@ select option {
     0 6px 16px rgba(0, 0, 0, 0.45);
 }
 
-/* 3D Colorless Crystal Liquid Glass Micro-Capsules (only text carries color) */
+/* ============================================================================
+   3D COLORLESS CRYSTAL LIQUID GLASS MICRO-CAPSULES (Image 3 & Image 4)
+   Clear glass lens body with 3D specular double-bevel, radiant neon text glow.
+   Capsule is completely colorless — only text and its phosphor aura carry color.
+   ============================================================================ */
 .badge-glass {
   position: relative;
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.01) 52%, rgba(255, 255, 255, 0.07) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.78);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.32) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.18) 100%
+  );
+  backdrop-filter: blur(10px) saturate(125%) brightness(1.08);
+  -webkit-backdrop-filter: blur(10px) saturate(125%) brightness(1.08);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   box-shadow:
-    0 1px 4px rgba(15, 23, 42, 0.06),
-    inset 0 1px 1px rgba(255, 255, 255, 0.90),
-    inset 0 -0.5px 1px rgba(255, 255, 255, 0.24);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+    0 2px 8px rgba(10, 40, 90, 0.08),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.95),
+    inset 0 -1px 1.5px rgba(255, 255, 255, 0.35);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Plus Jakarta Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
 }
+
 .dark .badge-glass {
-  background: linear-gradient(160deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 52%, rgba(255, 255, 255, 0.03) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.015) 52%,
+    rgba(255, 255, 255, 0.07) 100%
+  );
+  backdrop-filter: blur(12px) saturate(135%) brightness(1.10);
+  -webkit-backdrop-filter: blur(12px) saturate(135%) brightness(1.10);
+  border: 1px solid rgba(255, 255, 255, 0.30);
   box-shadow:
-    0 1px 6px rgba(0, 0, 0, 0.40),
-    inset 0 1px 0.75px rgba(255, 255, 255, 0.42),
-    inset 0 -0.5px 1px rgba(255, 255, 255, 0.12);
+    0 3px 12px rgba(0, 0, 0, 0.60),
+    0 0 10px rgba(255, 255, 255, 0.04),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.60),
+    inset 0 -1px 1.5px rgba(255, 255, 255, 0.18);
 }
 
-.badge-glass-critical {
-  color: #be123c;
-}
-.dark .badge-glass-critical {
-  color: #fda4af;
-}
-
-.badge-glass-high {
-  color: #b45309;
-}
-.dark .badge-glass-high {
-  color: #fcd34d;
-}
-
-.badge-glass-medium {
-  color: #0369a1;
-}
-.dark .badge-glass-medium {
-  color: #7dd3fc;
-}
-
+/* Radiant Neon Text Colors with Specular Phosphor Aura (Image 3: GROUPED emerald glow) */
 .badge-glass-low {
-  color: #047857;
+  color: #059669;
+  text-shadow: 0 0 8px rgba(16, 185, 129, 0.40);
 }
 .dark .badge-glass-low {
-  color: #6ee7b7;
+  color: #2ee59d;
+  text-shadow:
+    0 0 6px rgba(46, 229, 157, 0.95),
+    0 0 14px rgba(46, 229, 157, 0.65),
+    0 0 24px rgba(46, 229, 157, 0.30);
 }
 
+/* Radiant Neon Crimson Aura (Image 2: SLA red glow) */
+.badge-glass-critical {
+  color: #dc2626;
+  text-shadow: 0 0 8px rgba(239, 68, 68, 0.40);
+}
+.dark .badge-glass-critical {
+  color: #ff4d6d;
+  text-shadow:
+    0 0 6px rgba(255, 77, 109, 0.95),
+    0 0 14px rgba(255, 77, 109, 0.65),
+    0 0 24px rgba(255, 77, 109, 0.30);
+}
+
+/* Radiant Neon Amber Aura */
+.badge-glass-high {
+  color: #d97706;
+  text-shadow: 0 0 8px rgba(245, 158, 11, 0.40);
+}
+.dark .badge-glass-high {
+  color: #fbbf24;
+  text-shadow:
+    0 0 6px rgba(251, 191, 36, 0.95),
+    0 0 14px rgba(251, 191, 36, 0.65),
+    0 0 24px rgba(251, 191, 36, 0.30);
+}
+
+/* Radiant Neon Cyan / Sky Aura (Image 4: SHARED_DEVICE blue glow) */
+.badge-glass-medium {
+  color: #0284c7;
+  text-shadow: 0 0 8px rgba(14, 165, 233, 0.40);
+}
+.dark .badge-glass-medium {
+  color: #38bdf8;
+  text-shadow:
+    0 0 6px rgba(56, 189, 248, 0.95),
+    0 0 14px rgba(56, 189, 248, 0.65),
+    0 0 24px rgba(56, 189, 248, 0.30);
+}
+
+/* Radiant Neon Azure Aura */
 .badge-glass-blue {
-  color: #1d4ed8;
+  color: #0284c7;
+  text-shadow: 0 0 8px rgba(14, 165, 233, 0.40);
 }
 .dark .badge-glass-blue {
-  color: #93c5fd;
+  color: #60a5fa;
+  text-shadow:
+    0 0 6px rgba(96, 165, 250, 0.95),
+    0 0 14px rgba(96, 165, 250, 0.65),
+    0 0 24px rgba(96, 165, 250, 0.30);
 }
 
+/* Crisp Institutional Neutral Aura */
 .badge-glass-neutral {
-  color: #334155;
+  color: #475569;
 }
 .dark .badge-glass-neutral {
-  color: #e4e4e7;
+  color: #f1f5f9;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.45);
 }

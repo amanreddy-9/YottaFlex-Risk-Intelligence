@@ -212,7 +212,7 @@ export function OverviewSidebar<T extends string>({
                       </span>
                       {item.badge !== undefined && item.badge > 0 && (
                         <span
-                          className={`absolute -top-2 -right-3.5 px-1.5 py-[0.5px] rounded-full text-[9.5px] ios-num font-bold leading-none bg-rose-500 text-white shadow-[0_0_10px_rgba(244,63,94,0.70)] transition-transform duration-200 ${
+                          className={`absolute -top-1.5 -right-3 px-1.5 py-[0.5px] rounded-full text-[9px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider transition-transform duration-200 ${
                             isSidebarHovered ? "scale-105" : ""
                           }`}
                         >
@@ -246,13 +246,7 @@ export function OverviewSidebar<T extends string>({
                     </span>
 
                     {item.badge !== undefined && item.badge > 0 && (
-                      <span
-                        className={`shrink-0 px-2 py-0.5 rounded-full text-[10.5px] ios-num font-bold leading-none transition-colors ${
-                          isHighlighted
-                            ? "bg-rose-500 text-white dark:bg-white/25 dark:text-white shadow-[0_0_12px_rgba(244,63,94,0.45)] dark:shadow-[0_0_10px_rgba(255,255,255,0.28)]"
-                            : "bg-rose-500 text-white shadow-[0_0_12px_rgba(244,63,94,0.60)]"
-                        }`}
-                      >
+                      <span className="shrink-0 px-2 py-0.5 rounded-full text-[10px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider">
                         {item.badge}
                       </span>
                     )}

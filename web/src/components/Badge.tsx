@@ -20,6 +20,7 @@ export function statusVariant(status: string): Variant {
   if (status === "ESCALATED" || status === "SAR_FILED" || status === "CLOSED_CONFIRMED_FRAUD") return "CRITICAL";
   if (status === "IN_REVIEW") return "HIGH";
   if (status === "OPEN") return "BLUE";
+  if (status === "GROUPED" || status === "CLOSED_FALSE_POSITIVE" || status === "ACKNOWLEDGED" || status === "RESOLVED") return "LOW";
   return "LOW";
 }
 
@@ -29,7 +30,7 @@ export const Badge: React.FC<{ variant?: Variant; children: React.ReactNode; cla
   className = "",
 }) => (
   <span
-    className={`inline-flex items-center px-1.5 py-[1px] rounded-full ios-num text-[9.5px] leading-[1.25] font-semibold tracking-tight whitespace-nowrap ${STYLES[variant]} ${className}`}
+    className={`inline-flex items-center px-2 py-[1.5px] rounded-full text-[9px] leading-[1.25] font-bold tracking-wider uppercase whitespace-nowrap ${STYLES[variant]} ${className}`}
   >
     {children}
   </span>

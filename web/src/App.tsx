@@ -686,18 +686,30 @@ export const App: React.FC = () => {
     <div
       role="button"
       tabIndex={0}
-      onClick={() => setDarkMode((d) => !d)}
+      onClick={(e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        const clickX = e.clientX - rect.left;
+        const clickedRight = clickX >= rect.width / 2;
+        // Clicking right side activates Dark Mode (slides right)
+        // Clicking left side activates Light Mode (slides left)
+        // If clicking the current active side, toggle to the opposite side
+        setDarkMode((current) => {
+          if (clickedRight && !current) return true; // Slide Right to Dark
+          if (!clickedRight && current) return false; // Slide Left to Light
+          return !current; // Toggle
+        });
+      }}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           setDarkMode((d) => !d);
         }
       }}
-      title={darkMode ? "Theme: Dark Mode (Click anywhere to switch to Light)" : "Theme: Light Mode (Click anywhere to switch to Dark)"}
+      title={darkMode ? "Theme: Dark Mode (Click to switch to Light)" : "Theme: Light Mode (Click to switch to Dark)"}
       aria-label="Toggle Light / Dark Theme"
       className={`glass-theme-slider-track shrink-0 cursor-pointer ${extraClass}`}
     >
-      {/* Elevated 3D Liquid Glass Sliding Thumb */}
+      {/* Elevated 3D Transparent Liquid Glass Sliding Thumb */}
       <div
         className="glass-theme-slider-thumb pointer-events-none"
         style={{
@@ -709,7 +721,7 @@ export const App: React.FC = () => {
       <div
         className={`w-[30px] h-7 rounded-full flex items-center justify-center relative z-10 pointer-events-none transition-all duration-300 ${
           !darkMode
-            ? "text-slate-900 dark:text-white scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+            ? "text-amber-500 scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)] drop-shadow-[0_0_8px_rgba(245,158,11,0.5)]"
             : "text-slate-400 dark:text-white/40 opacity-40 scale-95"
         }`}
       >
@@ -720,7 +732,7 @@ export const App: React.FC = () => {
       <div
         className={`w-[30px] h-7 rounded-full flex items-center justify-center relative z-10 pointer-events-none transition-all duration-300 ${
           darkMode
-            ? "text-white scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+            ? "text-cyan-300 scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] drop-shadow-[0_0_8px_rgba(6,182,212,0.6)]"
             : "text-slate-400 dark:text-white/40 opacity-40 scale-95"
         }`}
       >

@@ -741,30 +741,25 @@ export const App: React.FC = () => {
           {/* Top Unified Executive Utility Header (Active Section Breadcrumb + Utilities, NO long nav bar) */}
           <header className="sticky top-3 z-30 w-full">
             {tab === "overview" ? (
-              <div className="px-2 sm:px-3 py-1 flex flex-col md:flex-row md:items-center justify-between gap-3">
+              <div className="px-2 sm:px-3 py-2 flex flex-col md:flex-row md:items-center justify-between gap-4">
                 {/* Left: iOS Glass Font Welcome Note */}
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2.5">
-                    <h1 className="text-lg sm:text-xl font-bold tracking-tight text-slate-950 dark:text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.15)] flex items-center gap-2">
-                      <span>Welcome back,</span>
-                      <span className="text-transparent bg-clip-text bg-gradient-to-r from-azure-600 via-sky-500 to-indigo-600 dark:from-white dark:via-sky-200 dark:to-azure-300">
-                        {user.full_name || "Analyst"}
-                      </span>
-                    </h1>
-                    <span className="badge-glass badge-glass-blue font-mono ios-num text-[9.5px] leading-tight px-2 py-0.5 rounded-full uppercase">
-                      {user.role === "OPS_ANALYST" ? "ANALYST" : user.role === "RISK_REVIEWER" ? "REVIEWER" : "ADMIN"}
+                  <h1 className="text-2xl sm:text-3xl lg:text-[32px] font-extrabold tracking-tight text-slate-950 dark:text-white leading-tight flex flex-wrap items-baseline gap-2.5">
+                    <span>Welcome back,</span>
+                    <span className="text-azure-600 dark:text-sky-300 font-black">
+                      {user.full_name || "Analyst"}
                     </span>
-                  </div>
-                  <div className="text-[11.5px] sm:text-[12px] font-medium text-slate-600 dark:text-zinc-300/90 mt-0.5 flex flex-wrap items-center gap-1.5 tracking-normal">
-                    <span className="font-semibold text-slate-800 dark:text-zinc-100">YottaFlex RiskOS</span>
-                    <span className="text-slate-400 dark:text-zinc-600">•</span>
-                    <span className="text-azure-700 dark:text-sky-300 font-semibold">Watch</span>
-                    <span className="text-slate-400 dark:text-zinc-600">•</span>
-                    <span className="text-azure-700 dark:text-sky-300 font-semibold">Inspect</span>
-                    <span className="text-slate-400 dark:text-zinc-600">•</span>
-                    <span className="text-azure-700 dark:text-sky-300 font-semibold">Act</span>
-                    <span className="hidden lg:inline text-slate-400 dark:text-zinc-600">•</span>
-                    <span className="hidden lg:inline text-slate-500 dark:text-zinc-400">Continuous Ledger Intelligence &amp; Autonomous Triage</span>
+                  </h1>
+                  <div className="text-sm sm:text-base font-semibold text-slate-700 dark:text-zinc-200 mt-1.5 flex flex-wrap items-center gap-2 tracking-normal">
+                    <span className="font-bold text-slate-950 dark:text-white">YottaFlex RiskOS</span>
+                    <span className="text-slate-400 dark:text-zinc-500">•</span>
+                    <span className="text-azure-600 dark:text-sky-300 font-bold">Watch</span>
+                    <span className="text-slate-400 dark:text-zinc-500">•</span>
+                    <span className="text-azure-600 dark:text-sky-300 font-bold">Inspect</span>
+                    <span className="text-slate-400 dark:text-zinc-500">•</span>
+                    <span className="text-azure-600 dark:text-sky-300 font-bold">Act</span>
+                    <span className="hidden xl:inline text-slate-400 dark:text-zinc-500">•</span>
+                    <span className="hidden xl:inline text-slate-600 dark:text-zinc-300 font-medium text-xs sm:text-sm">Continuous Ledger Intelligence &amp; Autonomous Triage</span>
                   </div>
                 </div>
 

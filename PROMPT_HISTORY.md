@@ -452,3 +452,7 @@ The following transcripts document every instruction and refinement made during 
 > 4. Reference blue badge ("SHARED_DEVICE") in crystal glass capsule
 > 5. Collapsed sidebar with red notification pills ("244", "10") to be styled with the liquid glass micro-capsule
 > 6. Overview top header bar ("Executive Overview...") confirming removal of the long enclosing panel in favor of the iOS glass welcome note and floating action pills
+
+### Prompt 70 — `2026-11-12T18:35:23Z` *(+1 screenshot attachment)*
+
+> remove analyst badge , enlarge the name , dont shadow it towards the end . enlarge all text significantly . make this change

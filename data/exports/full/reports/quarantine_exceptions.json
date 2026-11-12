@@ -1,0 +1,122 @@
+[
+  {
+    "exception_id": "QEXC-00001",
+    "check_name": "temporal_ordering",
+    "issue_type": "DISPOSITION_PRECEDES_ALERT",
+    "severity": "HIGH",
+    "entity_type": "ANALYST_ACTION",
+    "entity_id": "ACT-2026-000077",
+    "account_id": "ACC-CUS-001569-01",
+    "violated_invariant": "AnalystAction.acted_at >= earliest linked Alert.created_at",
+    "evidence": "Action MARK_FALSE_POSITIVE on CASE-2026-000282 at 2026-10-24T03:00:20Z precedes alert 2026-10-24T09:00:20Z",
+    "remediation": "Invalidate premature disposition and reopen case for compliant review."
+  },
+  {
+    "exception_id": "QEXC-00002",
+    "check_name": "temporal_ordering",
+    "issue_type": "DISPOSITION_PRECEDES_ALERT",
+    "severity": "HIGH",
+    "entity_type": "ANALYST_ACTION",
+    "entity_id": "ACT-2026-000078",
+    "account_id": "ACC-CUS-003173-01",
+    "violated_invariant": "AnalystAction.acted_at >= earliest linked Alert.created_at",
+    "evidence": "Action MARK_FALSE_POSITIVE on CASE-2026-000281 at 2026-10-24T02:00:20Z precedes alert 2026-10-24T08:00:20Z",
+    "remediation": "Invalidate premature disposition and reopen case for compliant review."
+  },
+  {
+    "exception_id": "QEXC-00003",
+    "check_name": "ledger_reconciliation",
+    "issue_type": "NEGATIVE_BALANCE_NO_OVERDRAFT",
+    "severity": "CRITICAL",
+    "entity_type": "TRANSACTION",
+    "entity_id": "TXN-2026-00099995",
+    "account_id": "ACC-CUS-000002-01",
+    "violated_invariant": "balance_after >= 0 when overdraft_allowed = 0",
+    "evidence": "Debit of $39,604.43 moved balance 38,354.43 -> -1,250.00 (overdraft_allowed=0)",
+    "remediation": "Freeze ledger posting and escalate to reconciliation ops."
+  },
+  {
+    "exception_id": "QEXC-00004",
+    "check_name": "ledger_reconciliation",
+    "issue_type": "NEGATIVE_BALANCE_NO_OVERDRAFT",
+    "severity": "CRITICAL",
+    "entity_type": "TRANSACTION",
+    "entity_id": "TXN-2026-00099999",
+    "account_id": "ACC-CUS-000007-01",
+    "violated_invariant": "balance_after >= 0 when overdraft_allowed = 0",
+    "evidence": "Debit of $16,651.93 moved balance 15,401.93 -> -1,250.00 (overdraft_allowed=0)",
+    "remediation": "Freeze ledger posting and escalate to reconciliation ops."
+  },
+  {
+    "exception_id": "QEXC-00005",
+    "check_name": "closed_account_enforcement",
+    "issue_type": "TXN_ON_CLOSED_ACCOUNT",
+    "severity": "HIGH",
+    "entity_type": "TRANSACTION",
+    "entity_id": "TXN-2026-00099994",
+    "account_id": "ACC-CUS-003356-01",
+    "violated_invariant": "Transaction occurred_at must precede account closed_at",
+    "evidence": "Txn at 2026-08-28T19:00:00Z ($185.00) after closed_at 2026-08-23T19:00:00Z",
+    "remediation": "Quarantine transaction from scoring & audit settlement channel."
+  },
+  {
+    "exception_id": "QEXC-00006",
+    "check_name": "closed_account_enforcement",
+    "issue_type": "TXN_ON_CLOSED_ACCOUNT",
+    "severity": "HIGH",
+    "entity_type": "TRANSACTION",
+    "entity_id": "TXN-2026-00099998",
+    "account_id": "ACC-CUS-004790-01",
+    "violated_invariant": "Transaction occurred_at must precede account closed_at",
+    "evidence": "Txn at 2026-08-13T19:00:00Z ($185.00) after closed_at 2026-08-07T19:00:00Z",
+    "remediation": "Quarantine transaction from scoring & audit settlement channel."
+  },
+  {
+    "exception_id": "QEXC-00007",
+    "check_name": "transfer_reconciliation",
+    "issue_type": "UNRECONCILED_TRANSFER_LEG",
+    "severity": "CRITICAL",
+    "entity_type": "TRANSFER_LINK",
+    "entity_id": "TRL-2026-004639",
+    "account_id": "ACC-CUS-000003-01",
+    "violated_invariant": "TransferLink must have matching SETTLED debit & credit legs",
+    "evidence": "status=MISMATCHED, debit=1400.0, credit_txn=TXN-2026-00099997, credit=1120.0",
+    "remediation": "Hold settlement & reconcile missing/mismatched counterparty leg."
+  },
+  {
+    "exception_id": "QEXC-00008",
+    "check_name": "transfer_reconciliation",
+    "issue_type": "UNRECONCILED_TRANSFER_LEG",
+    "severity": "CRITICAL",
+    "entity_type": "TRANSFER_LINK",
+    "entity_id": "TRL-2026-004640",
+    "account_id": "ACC-CUS-000008-01",
+    "violated_invariant": "TransferLink must have matching SETTLED debit & credit legs",
+    "evidence": "status=INCOMPLETE, debit=1400.0, credit_txn=None, credit=None",
+    "remediation": "Hold settlement & reconcile missing/mismatched counterparty leg."
+  },
+  {
+    "exception_id": "QEXC-00009",
+    "check_name": "alert_traceability",
+    "issue_type": "ORPHAN_ALERT_NO_TRIGGER",
+    "severity": "MEDIUM",
+    "entity_type": "ALERT",
+    "entity_id": "ALT-2026-000922",
+    "account_id": "ACC-CUS-004669-01",
+    "violated_invariant": "Every Alert must reference primary_txn_id and >= 1 AlertTriggerFact",
+    "evidence": "primary_txn_id=None, fact_count=0, rule=RULE-001",
+    "remediation": "Quarantine unsubstantiated alert; audit rule ingestion pipeline."
+  },
+  {
+    "exception_id": "QEXC-00010",
+    "check_name": "alert_traceability",
+    "issue_type": "ORPHAN_ALERT_NO_TRIGGER",
+    "severity": "MEDIUM",
+    "entity_type": "ALERT",
+    "entity_id": "ALT-2026-000923",
+    "account_id": "ACC-CUS-004269-01",
+    "violated_invariant": "Every Alert must reference primary_txn_id and >= 1 AlertTriggerFact",
+    "evidence": "primary_txn_id=None, fact_count=0, rule=RULE-001",
+    "remediation": "Quarantine unsubstantiated alert; audit rule ingestion pipeline."
+  }
+]

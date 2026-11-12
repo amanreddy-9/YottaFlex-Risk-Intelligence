@@ -1,0 +1,12 @@
+action_id,case_id,analyst_id,analyst_role,action_type,rationale,acted_at
+ACT-2026-000001,CASE-2026-000001,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-24T14:00:25Z
+ACT-2026-000002,CASE-2026-000001,ANL-001,OPS_ANALYST,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-24T22:00:25Z
+ACT-2026-000003,CASE-2026-000002,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-29T20:30:25Z
+ACT-2026-000004,CASE-2026-000002,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-29T23:30:25Z
+ACT-2026-000005,CASE-2026-000003,ANL-002,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-06T12:00:35Z
+ACT-2026-000006,CASE-2026-000003,ANL-002,OPS_ANALYST,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-06T15:00:35Z
+ACT-2026-000007,CASE-2026-000004,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-07T13:00:35Z
+ACT-2026-000008,CASE-2026-000004,ANL-001,OPS_ANALYST,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-07T16:00:35Z
+ACT-2026-000009,CASE-2026-000005,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-07T15:00:35Z
+ACT-2026-000010,CASE-2026-000005,ANL-001,OPS_ANALYST,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-08T01:00:35Z
+ACT-2026-000011,CASE-2026-000030,ANL-002,OPS_ANALYST,MARK_FALSE_POSITIVE,Injected invalid premature disposition preceding alert creation.,2026-10-24T13:00:20Z

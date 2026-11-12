@@ -1,0 +1,128 @@
+{
+  "export_dir": "/Users/amanreddyj/Downloads/YottaFlexproject/data/exports/full",
+  "dataset_counts": {
+    "alerts": 923,
+    "cases": 284,
+    "alert_to_case_compression": 3.25,
+    "true_positive_cases": 167,
+    "false_positive_cases": 115
+  },
+  "prioritization_metrics": {
+    "priority_top50": {
+      "k": 50,
+      "tp": 50,
+      "precision": 1.0,
+      "recall": 0.2994
+    },
+    "fifo_top50": {
+      "k": 50,
+      "tp": 25,
+      "precision": 0.5,
+      "recall": 0.1497
+    },
+    "priority_top20pct": {
+      "k": 57,
+      "tp": 57,
+      "precision": 1.0,
+      "recall": 0.3413
+    },
+    "fifo_top20pct": {
+      "k": 57,
+      "tp": 27,
+      "precision": 0.4737,
+      "recall": 0.1617
+    },
+    "priority_ndcg_at_50": 1.0,
+    "fifo_ndcg_at_50": 0.6305,
+    "priority_ndcg_full": 0.9991,
+    "fifo_ndcg_full": 0.9046,
+    "false_positive_suppression_rate_below_40": 1.0
+  },
+  "typology_breakdown": [
+    {
+      "typology": "CIRCULAR_TRANSFER",
+      "is_true_positive_risk": true,
+      "case_count": 26,
+      "avg_priority_score": 77.39,
+      "min_score": 70.88,
+      "max_score": 80.61,
+      "pct_below_medium_40": 0.0
+    },
+    {
+      "typology": "DORMANT_REACTIVATION",
+      "is_true_positive_risk": true,
+      "case_count": 40,
+      "avg_priority_score": 53.1,
+      "min_score": 41.44,
+      "max_score": 61.27,
+      "pct_below_medium_40": 0.0
+    },
+    {
+      "typology": "FALSE_POSITIVE",
+      "is_true_positive_risk": false,
+      "case_count": 115,
+      "avg_priority_score": 10.73,
+      "min_score": 5.0,
+      "max_score": 36.99,
+      "pct_below_medium_40": 1.0
+    },
+    {
+      "typology": "NEW_DEVICE",
+      "is_true_positive_risk": true,
+      "case_count": 65,
+      "avg_priority_score": 49.6,
+      "min_score": 31.09,
+      "max_score": 80.87,
+      "pct_below_medium_40": 0.4615
+    },
+    {
+      "typology": "ORPHAN_INJECTED",
+      "is_true_positive_risk": false,
+      "case_count": 2,
+      "avg_priority_score": 25.0,
+      "min_score": 25.0,
+      "max_score": 25.0,
+      "pct_below_medium_40": 1.0
+    },
+    {
+      "typology": "VELOCITY_SPIKE",
+      "is_true_positive_risk": true,
+      "case_count": 36,
+      "avg_priority_score": 36.23,
+      "min_score": 23.78,
+      "max_score": 49.02,
+      "pct_below_medium_40": 0.6944
+    }
+  ],
+  "validation_catch_rate": {
+    "injected_edge_cases": 10,
+    "quarantined_exceptions": 10,
+    "expected_issue_types": [
+      "DISPOSITION_PRECEDES_ALERT",
+      "NEGATIVE_BALANCE_NO_OVERDRAFT",
+      "ORPHAN_ALERT_NO_TRIGGER",
+      "TXN_ON_CLOSED_ACCOUNT",
+      "UNRECONCILED_TRANSFER_LEG"
+    ],
+    "caught_issue_types": [
+      "DISPOSITION_PRECEDES_ALERT",
+      "NEGATIVE_BALANCE_NO_OVERDRAFT",
+      "ORPHAN_ALERT_NO_TRIGGER",
+      "TXN_ON_CLOSED_ACCOUNT",
+      "UNRECONCILED_TRANSFER_LEG"
+    ],
+    "all_issue_types_caught": true,
+    "exact_entity_recall": 1.0
+  },
+  "zero_leakage": {
+    "zero_leakage_verified": true,
+    "files_inspected": [
+      "yottaflex/engine/__init__.py",
+      "yottaflex/engine/case_builder.py",
+      "yottaflex/engine/rule_evaluator.py",
+      "yottaflex/validation/__init__.py",
+      "yottaflex/validation/validator.py"
+    ],
+    "violations": []
+  }
+}

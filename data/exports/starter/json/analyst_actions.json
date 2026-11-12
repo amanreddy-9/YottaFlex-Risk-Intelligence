@@ -1,0 +1,101 @@
+[
+  {
+    "action_id": "ACT-2026-000001",
+    "case_id": "CASE-2026-000001",
+    "analyst_id": "ANL-001",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "CLAIM_REVIEW",
+    "rationale": "Claimed case from prioritized compliance queue for initial evidence review.",
+    "acted_at": "2026-09-24T14:00:25Z"
+  },
+  {
+    "action_id": "ACT-2026-000002",
+    "case_id": "CASE-2026-000001",
+    "analyst_id": "ANL-001",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "CONFIRM_FRAUD",
+    "rationale": "Confirmed anomalous pattern corroborated by transaction facts and entity linkage.",
+    "acted_at": "2026-09-24T22:00:25Z"
+  },
+  {
+    "action_id": "ACT-2026-000003",
+    "case_id": "CASE-2026-000002",
+    "analyst_id": "ANL-004",
+    "analyst_role": "COMPLIANCE_OFFICER",
+    "action_type": "CLAIM_REVIEW",
+    "rationale": "Claimed case from prioritized compliance queue for initial evidence review.",
+    "acted_at": "2026-09-29T20:30:25Z"
+  },
+  {
+    "action_id": "ACT-2026-000004",
+    "case_id": "CASE-2026-000002",
+    "analyst_id": "ANL-004",
+    "analyst_role": "COMPLIANCE_OFFICER",
+    "action_type": "CONFIRM_FRAUD",
+    "rationale": "Confirmed anomalous pattern corroborated by transaction facts and entity linkage.",
+    "acted_at": "2026-09-29T23:30:25Z"
+  },
+  {
+    "action_id": "ACT-2026-000005",
+    "case_id": "CASE-2026-000003",
+    "analyst_id": "ANL-002",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "CLAIM_REVIEW",
+    "rationale": "Claimed case from prioritized compliance queue for initial evidence review.",
+    "acted_at": "2026-10-06T12:00:35Z"
+  },
+  {
+    "action_id": "ACT-2026-000006",
+    "case_id": "CASE-2026-000003",
+    "analyst_id": "ANL-002",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "MARK_FALSE_POSITIVE",
+    "rationale": "Verified benign activity supported by payroll/own-account/KYC context.",
+    "acted_at": "2026-10-06T15:00:35Z"
+  },
+  {
+    "action_id": "ACT-2026-000007",
+    "case_id": "CASE-2026-000004",
+    "analyst_id": "ANL-001",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "CLAIM_REVIEW",
+    "rationale": "Claimed case from prioritized compliance queue for initial evidence review.",
+    "acted_at": "2026-10-07T13:00:35Z"
+  },
+  {
+    "action_id": "ACT-2026-000008",
+    "case_id": "CASE-2026-000004",
+    "analyst_id": "ANL-001",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "MARK_FALSE_POSITIVE",
+    "rationale": "Verified benign activity supported by payroll/own-account/KYC context.",
+    "acted_at": "2026-10-07T16:00:35Z"
+  },
+  {
+    "action_id": "ACT-2026-000009",
+    "case_id": "CASE-2026-000005",
+    "analyst_id": "ANL-001",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "CLAIM_REVIEW",
+    "rationale": "Claimed case from prioritized compliance queue for initial evidence review.",
+    "acted_at": "2026-10-07T15:00:35Z"
+  },
+  {
+    "action_id": "ACT-2026-000010",
+    "case_id": "CASE-2026-000005",
+    "analyst_id": "ANL-001",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "MARK_FALSE_POSITIVE",
+    "rationale": "Verified benign activity supported by payroll/own-account/KYC context.",
+    "acted_at": "2026-10-08T01:00:35Z"
+  },
+  {
+    "action_id": "ACT-2026-000011",
+    "case_id": "CASE-2026-000030",
+    "analyst_id": "ANL-002",
+    "analyst_role": "OPS_ANALYST",
+    "action_type": "MARK_FALSE_POSITIVE",
+    "rationale": "Injected invalid premature disposition preceding alert creation.",
+    "acted_at": "2026-10-24T13:00:20Z"
+  }
+]

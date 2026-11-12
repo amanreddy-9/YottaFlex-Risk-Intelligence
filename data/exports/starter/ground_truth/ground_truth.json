@@ -1,0 +1,2352 @@
+[
+  {
+    "scenario_id": "SCN-NDEV-0001",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000001",
+    "typology": "NEW_DEVICE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "New untrusted device DEV-000621 linked 2h before $4,406.63 outflow on ACC-CUS-000398-01"
+  },
+  {
+    "scenario_id": "SCN-VEL-0001",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000002",
+    "typology": "VELOCITY_SPIKE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "CONFIRM_FRAUD",
+    "notes": "Planted 8-txn 60m velocity burst on ACC-CUS-000319-01"
+  },
+  {
+    "scenario_id": "SCN-FP-BON-0001",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000003",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Verified annual payroll bonus followed by university tuition payment on ACC-CUS-000416-01"
+  },
+  {
+    "scenario_id": "SCN-FP-BON-0002",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000004",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Verified annual payroll bonus followed by university tuition payment on ACC-CUS-000168-01"
+  },
+  {
+    "scenario_id": "SCN-FP-BON-0003",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000005",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Verified annual payroll bonus followed by university tuition payment on ACC-CUS-000376-01"
+  },
+  {
+    "scenario_id": "SCN-FP-TRVL-0003",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000006",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Authorized international travel spend on Enhanced KYC account ACC-CUS-000333-01"
+  },
+  {
+    "scenario_id": "SCN-FP-SWEEP-0001",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000007",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Benign own-account sweep between ACC-CUS-000091-01 and ACC-CUS-000091-02 for customer CUS-000091"
+  },
+  {
+    "scenario_id": "SCN-FP-SWEEP-0002",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000008",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Benign own-account sweep between ACC-CUS-000021-01 and ACC-CUS-000021-02 for customer CUS-000021"
+  },
+  {
+    "scenario_id": "SCN-FP-TRVL-0001",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000009",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Authorized international travel spend on Enhanced KYC account ACC-CUS-000205-01"
+  },
+  {
+    "scenario_id": "SCN-FP-BON-0004",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000010",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Verified annual payroll bonus followed by university tuition payment on ACC-CUS-000044-01"
+  },
+  {
+    "scenario_id": "SCN-DORM-0001",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000011",
+    "typology": "DORMANT_REACTIVATION",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "Dormant account ACC-CUS-000488-01 reactivated after ~150d with $12,793.82 wire & outflow"
+  },
+  {
+    "scenario_id": "SCN-DORM-0004",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000012",
+    "typology": "DORMANT_REACTIVATION",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "Dormant account ACC-CUS-000061-01 reactivated after ~150d with $7,863.81 wire & outflow"
+  },
+  {
+    "scenario_id": "SCN-RING-0003",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000013",
+    "typology": "CIRCULAR_TRANSFER",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "FILE_SAR",
+    "notes": "4-hop circular layering ring across ACC-CUS-000123-01, ACC-CUS-000275-01, ACC-CUS-000082-01, ACC-CUS-000426-01"
+  },
+  {
+    "scenario_id": "SCN-NDEV-0002",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000014",
+    "typology": "NEW_DEVICE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "New untrusted device DEV-000622 linked 2h before $3,317.79 outflow on ACC-CUS-000192-01"
+  },
+  {
+    "scenario_id": "SCN-RING-0002",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000015",
+    "typology": "CIRCULAR_TRANSFER",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "FILE_SAR",
+    "notes": "4-hop circular layering ring across ACC-CUS-000180-01, ACC-CUS-000120-01, ACC-CUS-000447-01, ACC-CUS-000190-01"
+  },
+  {
+    "scenario_id": "SCN-FP-SWEEP-0004",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000016",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Benign own-account sweep between ACC-CUS-000053-01 and ACC-CUS-000053-02 for customer CUS-000053"
+  },
+  {
+    "scenario_id": "SCN-RING-0001",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000017",
+    "typology": "CIRCULAR_TRANSFER",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "FILE_SAR",
+    "notes": "4-hop circular layering ring across ACC-CUS-000183-01, ACC-CUS-000342-01, ACC-CUS-000128-01, ACC-CUS-000329-01"
+  },
+  {
+    "scenario_id": "SCN-DORM-0002",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000018",
+    "typology": "DORMANT_REACTIVATION",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "Dormant account ACC-CUS-000254-01 reactivated after ~150d with $8,106.86 wire & outflow"
+  },
+  {
+    "scenario_id": "SCN-VEL-0003",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000019",
+    "typology": "VELOCITY_SPIKE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "CONFIRM_FRAUD",
+    "notes": "Planted 8-txn 60m velocity burst on ACC-CUS-000482-01"
+  },
+  {
+    "scenario_id": "SCN-MULE-0002",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000020",
+    "typology": "NEW_DEVICE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "FILE_SAR",
+    "notes": "Shared emulator device DEV-000627 across 4 distinct accounts"
+  },
+  {
+    "scenario_id": "SCN-NDEV-0003",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000021",
+    "typology": "NEW_DEVICE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "New untrusted device DEV-000623 linked 2h before $3,969.00 outflow on ACC-CUS-000489-01"
+  },
+  {
+    "scenario_id": "SCN-NDEV-0004",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000022",
+    "typology": "NEW_DEVICE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "New untrusted device DEV-000624 linked 2h before $5,570.27 outflow on ACC-CUS-000010-01"
+  },
+  {
+    "scenario_id": "SCN-FP-TRVL-0004",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000023",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Authorized international travel spend on Enhanced KYC account ACC-CUS-000380-01"
+  },
+  {
+    "scenario_id": "SCN-MULE-0001",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000024",
+    "typology": "NEW_DEVICE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "FILE_SAR",
+    "notes": "Shared emulator device DEV-000626 across 4 distinct accounts"
+  },
+  {
+    "scenario_id": "SCN-VEL-0004",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000025",
+    "typology": "VELOCITY_SPIKE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "CONFIRM_FRAUD",
+    "notes": "Planted 6-txn 60m velocity burst on ACC-CUS-000083-01"
+  },
+  {
+    "scenario_id": "SCN-FP-SWEEP-0003",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000026",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Benign own-account sweep between ACC-CUS-000131-01 and ACC-CUS-000131-02 for customer CUS-000131"
+  },
+  {
+    "scenario_id": "SCN-FP-TRVL-0002",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000027",
+    "typology": "FALSE_POSITIVE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "MARK_FALSE_POSITIVE",
+    "notes": "Authorized international travel spend on Enhanced KYC account ACC-CUS-000260-01"
+  },
+  {
+    "scenario_id": "SCN-DORM-0003",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000028",
+    "typology": "DORMANT_REACTIVATION",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "Dormant account ACC-CUS-000328-01 reactivated after ~150d with $7,869.09 wire & outflow"
+  },
+  {
+    "scenario_id": "SCN-VEL-0002",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000029",
+    "typology": "VELOCITY_SPIKE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "CONFIRM_FRAUD",
+    "notes": "Planted 7-txn 60m velocity burst on ACC-CUS-000133-01"
+  },
+  {
+    "scenario_id": "SCN-NDEV-0005",
+    "entity_type": "CASE",
+    "entity_id": "CASE-2026-000030",
+    "typology": "NEW_DEVICE",
+    "issue_type": "NONE",
+    "is_true_positive_risk": true,
+    "expected_decision": "ESCALATE",
+    "notes": "New untrusted device DEV-000625 linked 2h before $4,783.65 outflow on ACC-CUS-000304-01"
+  },
+  {
+    "scenario_id": "SCN-NORM-0001",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000028-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0002",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000028-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0003",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000169-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0004",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000169-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0005",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000474-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0006",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000112-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0007",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000112-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0008",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000073-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0009",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000073-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0010",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000217-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0011",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000206-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0012",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000175-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0013",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000175-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0014",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000483-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0015",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000306-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0016",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000472-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0017",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000186-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0018",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000186-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0019",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000110-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0020",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000110-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0021",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000313-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0022",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000239-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0023",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000072-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0024",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000072-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0025",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000019-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0026",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000019-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0027",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000198-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0028",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000198-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0029",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000473-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0030",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000384-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0031",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000289-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0032",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000498-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0033",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000286-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0034",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000032-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0035",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000032-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0036",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000391-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0037",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000382-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0038",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000451-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0039",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000092-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0040",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000092-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0041",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000475-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0042",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000385-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0043",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000351-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0044",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000407-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0045",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000459-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0046",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000058-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0047",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000058-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0048",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000138-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0049",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000138-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0050",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000009-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0051",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000009-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0052",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000118-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0053",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000118-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0054",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000392-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0055",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000076-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0056",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000076-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0057",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000252-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0058",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000146-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0059",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000146-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0060",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000046-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0061",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000046-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0062",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000335-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0063",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000143-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0064",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000143-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0065",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000357-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0066",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000227-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0067",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000412-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0068",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000052-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0069",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000052-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0070",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000409-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0071",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000248-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0072",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000007-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0073",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000007-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0074",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000201-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0075",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000080-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0076",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000080-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0077",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000371-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0078",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000144-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0079",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000144-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0080",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000078-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0081",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000078-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0082",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000276-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0083",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000050-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0084",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000050-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0085",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000219-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0086",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000388-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0087",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000430-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0088",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000047-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0089",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000047-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0090",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000291-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0091",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000008-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0092",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000008-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0093",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000331-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0094",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000298-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0095",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000114-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0096",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000114-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0097",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000484-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0098",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000363-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0099",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000095-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0100",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000095-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0101",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000214-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0102",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000378-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0103",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000295-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0104",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000182-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0105",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000182-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0106",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000444-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0107",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000311-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0108",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000029-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0109",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000029-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0110",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000224-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0111",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000402-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0112",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000449-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0113",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000027-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0114",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000027-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0115",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000282-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0116",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000443-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0117",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000413-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0118",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000326-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0119",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000195-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0120",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000195-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0121",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000341-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0122",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000161-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0123",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000161-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0124",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000486-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0125",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000087-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0126",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000087-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0127",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000309-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0128",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000223-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0129",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000303-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0130",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000203-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0131",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000404-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0132",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000301-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0133",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000467-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0134",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000302-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0135",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000265-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0136",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000481-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0137",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000086-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0138",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000086-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0139",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000043-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0140",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000043-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0141",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000079-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0142",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000079-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0143",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000355-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0144",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000461-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0145",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000465-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0146",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000105-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0147",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000105-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0148",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000496-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0149",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000267-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0150",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000386-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0151",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000433-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0152",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000487-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0153",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000429-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0154",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000266-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0155",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000250-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0156",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000452-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0157",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000060-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0158",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000060-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0159",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000059-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0160",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000059-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0161",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000256-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0162",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000278-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0163",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000448-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0164",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000284-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0165",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000016-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0166",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000016-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0167",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000090-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0168",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000090-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0169",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000362-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0170",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000037-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0171",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000037-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0172",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000417-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0173",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000062-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0174",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000062-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0175",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000085-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0176",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000085-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0177",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000422-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0178",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000018-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0179",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000018-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0180",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000230-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0181",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000054-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0182",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000054-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0183",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000231-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0184",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000189-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0185",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000189-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0186",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000208-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0187",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000257-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0188",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000347-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0189",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000006-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0190",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000006-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0191",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000411-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0192",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000130-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0193",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000130-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0194",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000160-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0195",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000160-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0196",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000393-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0197",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000466-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0198",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000149-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0199",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000149-02",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "SCN-NORM-0200",
+    "entity_type": "ACCOUNT",
+    "entity_id": "ACC-CUS-000274-01",
+    "typology": "NORMAL",
+    "issue_type": "NONE",
+    "is_true_positive_risk": false,
+    "expected_decision": "NO_ALERT",
+    "notes": "Normal baseline account activity"
+  },
+  {
+    "scenario_id": "EDGE-CLOSED-01",
+    "entity_type": "TRANSACTION",
+    "entity_id": "TXN-2026-00009997",
+    "typology": "NEGATIVE_EDGE_CASE",
+    "issue_type": "TXN_ON_CLOSED_ACCOUNT",
+    "is_true_positive_risk": false,
+    "expected_decision": "QUARANTINE_EXCEPTION",
+    "notes": "Transaction TXN-2026-00009997 occurred 5+ days after ACC-CUS-000134-01 closed at 2026-09-01T20:00:00Z"
+  },
+  {
+    "scenario_id": "EDGE-NEGOD-01",
+    "entity_type": "TRANSACTION",
+    "entity_id": "TXN-2026-00009998",
+    "typology": "NEGATIVE_EDGE_CASE",
+    "issue_type": "NEGATIVE_BALANCE_NO_OVERDRAFT",
+    "is_true_positive_risk": false,
+    "expected_decision": "QUARANTINE_EXCEPTION",
+    "notes": "Debit on ACC-CUS-000003-01 (overdraft_allowed=0) caused negative balance -1250.0"
+  },
+  {
+    "scenario_id": "EDGE-TRL-01",
+    "entity_type": "TRANSFER_LINK",
+    "entity_id": "TRL-2026-000415",
+    "typology": "NEGATIVE_EDGE_CASE",
+    "issue_type": "UNRECONCILED_TRANSFER_LEG",
+    "is_true_positive_risk": false,
+    "expected_decision": "QUARANTINE_EXCEPTION",
+    "notes": "TransferLink TRL-2026-000415 legs do not reconcile (debit=1400.0, rep=0)"
+  },
+  {
+    "scenario_id": "EDGE-ORPHAN-01",
+    "entity_type": "ALERT",
+    "entity_id": "ALT-2026-000100",
+    "typology": "NEGATIVE_EDGE_CASE",
+    "issue_type": "ORPHAN_ALERT_NO_TRIGGER",
+    "is_true_positive_risk": false,
+    "expected_decision": "QUARANTINE_EXCEPTION",
+    "notes": "Alert ALT-2026-000100 has primary_txn_id=NULL and zero AlertTriggerFact rows"
+  },
+  {
+    "scenario_id": "EDGE-PRECEDE-01",
+    "entity_type": "ANALYST_ACTION",
+    "entity_id": "ACT-2026-000011",
+    "typology": "NEGATIVE_EDGE_CASE",
+    "issue_type": "DISPOSITION_PRECEDES_ALERT",
+    "is_true_positive_risk": false,
+    "expected_decision": "QUARANTINE_EXCEPTION",
+    "notes": "AnalystAction ACT-2026-000011 on CASE-2026-000030 at 2026-10-24T13:00:20Z precedes alert created_at 2026-10-24T19:00:20Z"
+  }
+]

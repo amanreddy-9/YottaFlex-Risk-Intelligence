@@ -1,0 +1,90 @@
+[
+  {
+    "rule_id": "RULE-001",
+    "rule_name": "Rapid Outflow Velocity Spike",
+    "category": "VELOCITY",
+    "severity": "HIGH",
+    "base_weight": 28,
+    "threshold_desc": ">= 5 outbound debit/transfer txns within 60 minutes totaling >= $2,500.00",
+    "is_active": 1,
+    "version": "v1.0",
+    "effective_from": "2026-05-01T00:00:00Z"
+  },
+  {
+    "rule_id": "RULE-002",
+    "rule_name": "New Device High-Value Outflow",
+    "category": "DEVICE",
+    "severity": "HIGH",
+    "base_weight": 26,
+    "threshold_desc": "Outbound txn >= $1,500.00 from a device first linked to account <= 24 hours earlier",
+    "is_active": 1,
+    "version": "v1.0",
+    "effective_from": "2026-05-01T00:00:00Z"
+  },
+  {
+    "rule_id": "RULE-003",
+    "rule_name": "Circular Transfer Ring / Layering",
+    "category": "NETWORK",
+    "severity": "CRITICAL",
+    "base_weight": 36,
+    "threshold_desc": "Account participates in 2..5 hop directed TransferLink cycle returning >= 75% within 48 hours",
+    "is_active": 1,
+    "version": "v1.0",
+    "effective_from": "2026-05-01T00:00:00Z"
+  },
+  {
+    "rule_id": "RULE-004",
+    "rule_name": "Dormant Account Sudden Reactivation",
+    "category": "LIFECYCLE",
+    "severity": "HIGH",
+    "base_weight": 25,
+    "threshold_desc": "Account with prior DORMANT state or >= 90 days inactivity executes txn >= $3,000.00 within 48h of reactivation",
+    "is_active": 1,
+    "version": "v1.0",
+    "effective_from": "2026-05-01T00:00:00Z"
+  },
+  {
+    "rule_id": "RULE-005",
+    "rule_name": "High-Risk Cross-Border Merchant",
+    "category": "GEO_MERCHANT",
+    "severity": "MEDIUM",
+    "base_weight": 18,
+    "threshold_desc": "Merchant purchase >= $1,000.00 at HIGH risk_tier merchant or foreign country != customer.home_country",
+    "is_active": 1,
+    "version": "v1.0",
+    "effective_from": "2026-05-01T00:00:00Z"
+  },
+  {
+    "rule_id": "RULE-006",
+    "rule_name": "Structuring / Split Outflows",
+    "category": "STRUCTURING",
+    "severity": "HIGH",
+    "base_weight": 24,
+    "threshold_desc": ">= 3 outbound txns each between $1,800.00 and $2,999.99 within 24 hours",
+    "is_active": 1,
+    "version": "v1.0",
+    "effective_from": "2026-05-01T00:00:00Z"
+  },
+  {
+    "rule_id": "RULE-007",
+    "rule_name": "Shared Device Across Unrelated Customers",
+    "category": "DEVICE",
+    "severity": "CRITICAL",
+    "base_weight": 30,
+    "threshold_desc": "Single device linked to >= 3 distinct primary customers with outbound transfer activity",
+    "is_active": 1,
+    "version": "v1.0",
+    "effective_from": "2026-05-01T00:00:00Z"
+  },
+  {
+    "rule_id": "RULE-008",
+    "rule_name": "KYC Tier & Declared Income Deviation",
+    "category": "KYC_DEVIATION",
+    "severity": "MEDIUM",
+    "base_weight": 16,
+    "threshold_desc": "Single transaction >= 50% of customer declared monthly income (annual_income / 12) on LOW/STANDARD KYC",
+    "is_active": 1,
+    "version": "v1.0",
+    "effective_from": "2026-05-01T00:00:00Z"
+  }
+]

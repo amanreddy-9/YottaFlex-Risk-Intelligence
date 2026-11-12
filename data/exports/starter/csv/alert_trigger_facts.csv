@@ -1,0 +1,184 @@
+fact_id,alert_id,transaction_id,transfer_id,rule_id,metric_name,observed_value,threshold_value,recorded_at
+ATF-2026-000001,ALT-2026-000001,TXN-2026-00009871,,RULE-002,device_age_hours,"2.00h (amount=$4,406.63)","<= 24.0h and amount >= $1,500.00",2026-09-24T09:00:20Z
+ATF-2026-000002,ALT-2026-000002,TXN-2026-00009871,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=SG, home=IN, amt=$4,406.63","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-09-24T09:00:25Z
+ATF-2026-000003,ALT-2026-000003,TXN-2026-00009872,,RULE-006,structured_band_txn_count_24h,"3 txns ($7,145.39)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-09-29T19:12:45Z
+ATF-2026-000004,ALT-2026-000003,TXN-2026-00009873,,RULE-006,structured_band_txn_count_24h,"3 txns ($7,145.39)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-09-29T19:12:45Z
+ATF-2026-000005,ALT-2026-000003,TXN-2026-00009874,,RULE-006,structured_band_txn_count_24h,"3 txns ($7,145.39)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-09-29T19:12:45Z
+ATF-2026-000006,ALT-2026-000004,TXN-2026-00009872,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,885.01",">= 5 txns / >= $2,500.00 in 60m",2026-09-29T19:24:30Z
+ATF-2026-000007,ALT-2026-000004,TXN-2026-00009873,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,885.01",">= 5 txns / >= $2,500.00 in 60m",2026-09-29T19:24:30Z
+ATF-2026-000008,ALT-2026-000004,TXN-2026-00009874,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,885.01",">= 5 txns / >= $2,500.00 in 60m",2026-09-29T19:24:30Z
+ATF-2026-000009,ALT-2026-000004,TXN-2026-00009875,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,885.01",">= 5 txns / >= $2,500.00 in 60m",2026-09-29T19:24:30Z
+ATF-2026-000010,ALT-2026-000004,TXN-2026-00009876,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,885.01",">= 5 txns / >= $2,500.00 in 60m",2026-09-29T19:24:30Z
+ATF-2026-000011,ALT-2026-000005,TXN-2026-00009877,,RULE-005,merchant_risk_and_country,"tier=MEDIUM, merch=CA, home=US, amt=$1,040.20","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-09-29T19:30:25Z
+ATF-2026-000012,ALT-2026-000006,TXN-2026-00009880,,RULE-008,txn_to_monthly_income_ratio,"0.87x (kyc=STANDARD, amt=$5,228.91)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-05T23:00:35Z
+ATF-2026-000013,ALT-2026-000007,TXN-2026-00009881,,RULE-005,merchant_risk_and_country,"tier=LOW, merch=CA, home=US, amt=$3,606.15","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-06T11:00:25Z
+ATF-2026-000014,ALT-2026-000008,TXN-2026-00009881,,RULE-008,txn_to_monthly_income_ratio,"0.60x (kyc=STANDARD, amt=$3,606.15)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-06T11:00:35Z
+ATF-2026-000015,ALT-2026-000009,TXN-2026-00009882,,RULE-008,txn_to_monthly_income_ratio,"0.87x (kyc=STANDARD, amt=$5,509.20)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-06T23:00:35Z
+ATF-2026-000016,ALT-2026-000010,TXN-2026-00009883,,RULE-008,txn_to_monthly_income_ratio,"0.87x (kyc=STANDARD, amt=$9,631.84)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-06T23:00:35Z
+ATF-2026-000017,ALT-2026-000011,TXN-2026-00009885,,RULE-005,merchant_risk_and_country,"tier=LOW, merch=DE, home=US, amt=$6,642.65","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-07T11:00:25Z
+ATF-2026-000018,ALT-2026-000012,TXN-2026-00009884,,RULE-008,txn_to_monthly_income_ratio,"0.60x (kyc=STANDARD, amt=$3,799.45)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-07T11:00:35Z
+ATF-2026-000019,ALT-2026-000013,TXN-2026-00009885,,RULE-008,txn_to_monthly_income_ratio,"0.60x (kyc=STANDARD, amt=$6,642.65)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-07T11:00:35Z
+ATF-2026-000020,ALT-2026-000014,TXN-2026-00009886,,RULE-005,merchant_risk_and_country,"tier=MEDIUM, merch=CA, home=US, amt=$2,775.39","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-08T14:00:25Z
+ATF-2026-000021,ALT-2026-000015,TXN-2026-00009887,TRL-2026-000383,RULE-006,structured_band_txn_count_24h,"3 txns ($6,768.01)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-09T10:16:45Z
+ATF-2026-000022,ALT-2026-000015,TXN-2026-00009889,TRL-2026-000384,RULE-006,structured_band_txn_count_24h,"3 txns ($6,768.01)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-09T10:16:45Z
+ATF-2026-000023,ALT-2026-000015,TXN-2026-00009891,TRL-2026-000385,RULE-006,structured_band_txn_count_24h,"3 txns ($6,768.01)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-09T10:16:45Z
+ATF-2026-000024,ALT-2026-000016,TXN-2026-00009893,TRL-2026-000386,RULE-008,txn_to_monthly_income_ratio,"0.57x (kyc=STANDARD, amt=$2,568.99)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-09T10:24:35Z
+ATF-2026-000025,ALT-2026-000017,TXN-2026-00009894,,RULE-008,txn_to_monthly_income_ratio,"0.57x (kyc=STANDARD, amt=$2,568.99)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-09T10:25:05Z
+ATF-2026-000026,ALT-2026-000018,TXN-2026-00009887,TRL-2026-000383,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,765.71",">= 5 txns / >= $2,500.00 in 60m",2026-10-09T10:32:30Z
+ATF-2026-000027,ALT-2026-000018,TXN-2026-00009889,TRL-2026-000384,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,765.71",">= 5 txns / >= $2,500.00 in 60m",2026-10-09T10:32:30Z
+ATF-2026-000028,ALT-2026-000018,TXN-2026-00009891,TRL-2026-000385,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,765.71",">= 5 txns / >= $2,500.00 in 60m",2026-10-09T10:32:30Z
+ATF-2026-000029,ALT-2026-000018,TXN-2026-00009893,TRL-2026-000386,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,765.71",">= 5 txns / >= $2,500.00 in 60m",2026-10-09T10:32:30Z
+ATF-2026-000030,ALT-2026-000018,TXN-2026-00009895,TRL-2026-000387,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,765.71",">= 5 txns / >= $2,500.00 in 60m",2026-10-09T10:32:30Z
+ATF-2026-000031,ALT-2026-000019,TXN-2026-00009897,TRL-2026-000388,RULE-006,structured_band_txn_count_24h,"3 txns ($6,810.26)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-10T10:16:45Z
+ATF-2026-000032,ALT-2026-000019,TXN-2026-00009899,TRL-2026-000389,RULE-006,structured_band_txn_count_24h,"3 txns ($6,810.26)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-10T10:16:45Z
+ATF-2026-000033,ALT-2026-000019,TXN-2026-00009901,TRL-2026-000390,RULE-006,structured_band_txn_count_24h,"3 txns ($6,810.26)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-10T10:16:45Z
+ATF-2026-000034,ALT-2026-000020,TXN-2026-00009897,TRL-2026-000388,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,435.20",">= 5 txns / >= $2,500.00 in 60m",2026-10-10T10:32:30Z
+ATF-2026-000035,ALT-2026-000020,TXN-2026-00009899,TRL-2026-000389,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,435.20",">= 5 txns / >= $2,500.00 in 60m",2026-10-10T10:32:30Z
+ATF-2026-000036,ALT-2026-000020,TXN-2026-00009901,TRL-2026-000390,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,435.20",">= 5 txns / >= $2,500.00 in 60m",2026-10-10T10:32:30Z
+ATF-2026-000037,ALT-2026-000020,TXN-2026-00009903,TRL-2026-000391,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,435.20",">= 5 txns / >= $2,500.00 in 60m",2026-10-10T10:32:30Z
+ATF-2026-000038,ALT-2026-000020,TXN-2026-00009905,TRL-2026-000392,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,435.20",">= 5 txns / >= $2,500.00 in 60m",2026-10-10T10:32:30Z
+ATF-2026-000039,ALT-2026-000021,TXN-2026-00009907,,RULE-005,merchant_risk_and_country,"tier=MEDIUM, merch=DE, home=US, amt=$3,189.71","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-12T14:00:25Z
+ATF-2026-000040,ALT-2026-000022,TXN-2026-00009908,,RULE-008,txn_to_monthly_income_ratio,"0.98x (kyc=STANDARD, amt=$5,075.00)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-12T23:00:35Z
+ATF-2026-000041,ALT-2026-000023,TXN-2026-00009909,,RULE-005,merchant_risk_and_country,"tier=LOW, merch=CA, home=US, amt=$3,500.00","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-13T11:00:25Z
+ATF-2026-000042,ALT-2026-000024,TXN-2026-00009909,,RULE-008,txn_to_monthly_income_ratio,"0.68x (kyc=STANDARD, amt=$3,500.00)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-13T11:00:35Z
+ATF-2026-000043,ALT-2026-000025,TXN-2026-00009911,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=US, amt=$10,874.74","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-13T18:00:25Z
+ATF-2026-000044,ALT-2026-000026,TXN-2026-00009910,,RULE-004,dormancy_days_and_reactivation_usd,"152d dormant / $23,668.56 within 48h","prior DORMANT state + >= $3,000.00 within 48h",2026-10-13T18:00:40Z
+ATF-2026-000045,ALT-2026-000026,TXN-2026-00009911,,RULE-004,dormancy_days_and_reactivation_usd,"152d dormant / $23,668.56 within 48h","prior DORMANT state + >= $3,000.00 within 48h",2026-10-13T18:00:40Z
+ATF-2026-000046,ALT-2026-000027,TXN-2026-00009913,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=GB, home=US, amt=$6,684.23","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-14T14:00:25Z
+ATF-2026-000047,ALT-2026-000028,TXN-2026-00009912,,RULE-004,dormancy_days_and_reactivation_usd,"147d dormant / $14,548.04 within 48h","prior DORMANT state + >= $3,000.00 within 48h",2026-10-14T14:00:40Z
+ATF-2026-000048,ALT-2026-000028,TXN-2026-00009913,,RULE-004,dormancy_days_and_reactivation_usd,"147d dormant / $14,548.04 within 48h","prior DORMANT state + >= $3,000.00 within 48h",2026-10-14T14:00:40Z
+ATF-2026-000049,ALT-2026-000029,TXN-2026-00009916,TRL-2026-000394,RULE-008,txn_to_monthly_income_ratio,"1.00x (kyc=LOW, amt=$6,133.41)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-14T14:28:35Z
+ATF-2026-000050,ALT-2026-000030,TXN-2026-00009917,,RULE-008,txn_to_monthly_income_ratio,"0.80x (kyc=LOW, amt=$6,133.41)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-14T14:28:48Z
+ATF-2026-000051,ALT-2026-000031,TXN-2026-00009918,,RULE-002,device_age_hours,"2.00h (amount=$3,317.79)","<= 24.0h and amount >= $1,500.00",2026-10-14T16:00:20Z
+ATF-2026-000052,ALT-2026-000032,TXN-2026-00009918,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=US, amt=$3,317.79","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-14T16:00:25Z
+ATF-2026-000053,ALT-2026-000033,TXN-2026-00009918,,RULE-008,txn_to_monthly_income_ratio,"0.76x (kyc=STANDARD, amt=$3,317.79)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-14T16:00:35Z
+ATF-2026-000054,ALT-2026-000034,TXN-2026-00009914,TRL-2026-000393,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000055,ALT-2026-000034,TXN-2026-00009921,TRL-2026-000396,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000056,ALT-2026-000034,TXN-2026-00009923,TRL-2026-000397,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000057,ALT-2026-000034,TXN-2026-00009927,TRL-2026-000399,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000058,ALT-2026-000035,TXN-2026-00009914,TRL-2026-000393,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000059,ALT-2026-000035,TXN-2026-00009921,TRL-2026-000396,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000060,ALT-2026-000035,TXN-2026-00009923,TRL-2026-000397,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000061,ALT-2026-000035,TXN-2026-00009927,TRL-2026-000399,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000062,ALT-2026-000036,TXN-2026-00009914,TRL-2026-000393,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000063,ALT-2026-000036,TXN-2026-00009921,TRL-2026-000396,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000064,ALT-2026-000036,TXN-2026-00009923,TRL-2026-000397,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000065,ALT-2026-000036,TXN-2026-00009927,TRL-2026-000399,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000066,ALT-2026-000037,TXN-2026-00009914,TRL-2026-000393,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000067,ALT-2026-000037,TXN-2026-00009921,TRL-2026-000396,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000068,ALT-2026-000037,TXN-2026-00009923,TRL-2026-000397,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000069,ALT-2026-000037,TXN-2026-00009927,TRL-2026-000399,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:12:00Z
+ATF-2026-000070,ALT-2026-000038,TXN-2026-00009916,TRL-2026-000394,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000071,ALT-2026-000038,TXN-2026-00009919,TRL-2026-000395,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000072,ALT-2026-000038,TXN-2026-00009925,TRL-2026-000398,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000073,ALT-2026-000038,TXN-2026-00009929,TRL-2026-000400,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000074,ALT-2026-000039,TXN-2026-00009916,TRL-2026-000394,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000075,ALT-2026-000039,TXN-2026-00009919,TRL-2026-000395,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000076,ALT-2026-000039,TXN-2026-00009925,TRL-2026-000398,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000077,ALT-2026-000039,TXN-2026-00009929,TRL-2026-000400,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000078,ALT-2026-000040,TXN-2026-00009916,TRL-2026-000394,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000079,ALT-2026-000040,TXN-2026-00009919,TRL-2026-000395,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000080,ALT-2026-000040,TXN-2026-00009925,TRL-2026-000398,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000081,ALT-2026-000040,TXN-2026-00009929,TRL-2026-000400,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000082,ALT-2026-000041,TXN-2026-00009916,TRL-2026-000394,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000083,ALT-2026-000041,TXN-2026-00009919,TRL-2026-000395,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000084,ALT-2026-000041,TXN-2026-00009925,TRL-2026-000398,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000085,ALT-2026-000041,TXN-2026-00009929,TRL-2026-000400,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-14T23:23:00Z
+ATF-2026-000086,ALT-2026-000042,TXN-2026-00009931,TRL-2026-000401,RULE-006,structured_band_txn_count_24h,"3 txns ($7,012.09)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-15T10:16:45Z
+ATF-2026-000087,ALT-2026-000042,TXN-2026-00009933,TRL-2026-000402,RULE-006,structured_band_txn_count_24h,"3 txns ($7,012.09)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-15T10:16:45Z
+ATF-2026-000088,ALT-2026-000042,TXN-2026-00009935,TRL-2026-000403,RULE-006,structured_band_txn_count_24h,"3 txns ($7,012.09)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-15T10:16:45Z
+ATF-2026-000089,ALT-2026-000043,TXN-2026-00009931,TRL-2026-000401,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,710.60",">= 5 txns / >= $2,500.00 in 60m",2026-10-15T10:32:30Z
+ATF-2026-000090,ALT-2026-000043,TXN-2026-00009933,TRL-2026-000402,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,710.60",">= 5 txns / >= $2,500.00 in 60m",2026-10-15T10:32:30Z
+ATF-2026-000091,ALT-2026-000043,TXN-2026-00009935,TRL-2026-000403,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,710.60",">= 5 txns / >= $2,500.00 in 60m",2026-10-15T10:32:30Z
+ATF-2026-000092,ALT-2026-000043,TXN-2026-00009937,TRL-2026-000404,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,710.60",">= 5 txns / >= $2,500.00 in 60m",2026-10-15T10:32:30Z
+ATF-2026-000093,ALT-2026-000043,TXN-2026-00009939,TRL-2026-000405,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $11,710.60",">= 5 txns / >= $2,500.00 in 60m",2026-10-15T10:32:30Z
+ATF-2026-000094,ALT-2026-000044,TXN-2026-00009942,,RULE-008,txn_to_monthly_income_ratio,"1.43x (kyc=LOW, amt=$8,071.11)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-15T15:21:43Z
+ATF-2026-000095,ALT-2026-000045,TXN-2026-00009944,,RULE-008,txn_to_monthly_income_ratio,"1.22x (kyc=STANDARD, amt=$7,748.26)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-15T18:16:04Z
+ATF-2026-000096,ALT-2026-000046,TXN-2026-00009946,,RULE-008,txn_to_monthly_income_ratio,"1.49x (kyc=LOW, amt=$7,438.32)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-15T21:12:52Z
+ATF-2026-000097,ALT-2026-000047,TXN-2026-00009947,TRL-2026-000409,RULE-008,txn_to_monthly_income_ratio,"1.43x (kyc=LOW, amt=$7,140.78)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-16T00:28:35Z
+ATF-2026-000098,ALT-2026-000048,TXN-2026-00009941,TRL-2026-000406,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000099,ALT-2026-000048,TXN-2026-00009943,TRL-2026-000407,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000100,ALT-2026-000048,TXN-2026-00009945,TRL-2026-000408,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000101,ALT-2026-000048,TXN-2026-00009947,TRL-2026-000409,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000102,ALT-2026-000049,TXN-2026-00009941,TRL-2026-000406,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000103,ALT-2026-000049,TXN-2026-00009943,TRL-2026-000407,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000104,ALT-2026-000049,TXN-2026-00009945,TRL-2026-000408,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000105,ALT-2026-000049,TXN-2026-00009947,TRL-2026-000409,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000106,ALT-2026-000050,TXN-2026-00009941,TRL-2026-000406,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000107,ALT-2026-000050,TXN-2026-00009943,TRL-2026-000407,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000108,ALT-2026-000050,TXN-2026-00009945,TRL-2026-000408,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000109,ALT-2026-000050,TXN-2026-00009947,TRL-2026-000409,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000110,ALT-2026-000051,TXN-2026-00009941,TRL-2026-000406,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000111,ALT-2026-000051,TXN-2026-00009943,TRL-2026-000407,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000112,ALT-2026-000051,TXN-2026-00009945,TRL-2026-000408,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000113,ALT-2026-000051,TXN-2026-00009947,TRL-2026-000409,RULE-003,circular_cycle_hops_and_return_ratio,"4 hops, return=88.47%",2..5 hops returning >= 75% within 48h,2026-10-16T00:29:00Z
+ATF-2026-000114,ALT-2026-000052,TXN-2026-00009949,,RULE-008,txn_to_monthly_income_ratio,"0.56x (kyc=STANDARD, amt=$8,106.86)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-17T09:05:35Z
+ATF-2026-000115,ALT-2026-000053,TXN-2026-00009951,,RULE-005,merchant_risk_and_country,"tier=MEDIUM, merch=GB, home=US, amt=$2,210.48","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-17T10:06:25Z
+ATF-2026-000116,ALT-2026-000054,TXN-2026-00009950,,RULE-006,structured_band_txn_count_24h,"3 txns ($6,823.52)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-17T10:12:45Z
+ATF-2026-000117,ALT-2026-000054,TXN-2026-00009951,,RULE-006,structured_band_txn_count_24h,"3 txns ($6,823.52)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-17T10:12:45Z
+ATF-2026-000118,ALT-2026-000054,TXN-2026-00009952,,RULE-006,structured_band_txn_count_24h,"3 txns ($6,823.52)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-17T10:12:45Z
+ATF-2026-000119,ALT-2026-000055,TXN-2026-00009950,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,635.43",">= 5 txns / >= $2,500.00 in 60m",2026-10-17T10:24:30Z
+ATF-2026-000120,ALT-2026-000055,TXN-2026-00009951,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,635.43",">= 5 txns / >= $2,500.00 in 60m",2026-10-17T10:24:30Z
+ATF-2026-000121,ALT-2026-000055,TXN-2026-00009952,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,635.43",">= 5 txns / >= $2,500.00 in 60m",2026-10-17T10:24:30Z
+ATF-2026-000122,ALT-2026-000055,TXN-2026-00009953,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,635.43",">= 5 txns / >= $2,500.00 in 60m",2026-10-17T10:24:30Z
+ATF-2026-000123,ALT-2026-000055,TXN-2026-00009954,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $9,635.43",">= 5 txns / >= $2,500.00 in 60m",2026-10-17T10:24:30Z
+ATF-2026-000124,ALT-2026-000056,TXN-2026-00009958,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=IN, amt=$6,890.83","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-17T13:00:25Z
+ATF-2026-000125,ALT-2026-000057,TXN-2026-00009949,,RULE-004,dormancy_days_and_reactivation_usd,"151d dormant / $14,997.69 within 48h","prior DORMANT state + >= $3,000.00 within 48h",2026-10-17T13:00:40Z
+ATF-2026-000126,ALT-2026-000057,TXN-2026-00009958,,RULE-004,dormancy_days_and_reactivation_usd,"151d dormant / $14,997.69 within 48h","prior DORMANT state + >= $3,000.00 within 48h",2026-10-17T13:00:40Z
+ATF-2026-000127,ALT-2026-000058,TXN-2026-00009959,,RULE-002,device_age_hours,"0.17h (amount=$3,121.09)","<= 24.0h and amount >= $1,500.00",2026-10-18T12:00:20Z
+ATF-2026-000128,ALT-2026-000059,TXN-2026-00009959,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=GB, amt=$3,121.09","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-18T12:00:25Z
+ATF-2026-000129,ALT-2026-000060,TXN-2026-00009960,,RULE-002,device_age_hours,"0.17h (amount=$2,230.84)","<= 24.0h and amount >= $1,500.00",2026-10-18T14:00:20Z
+ATF-2026-000130,ALT-2026-000061,TXN-2026-00009961,,RULE-002,device_age_hours,"2.00h (amount=$3,969.00)","<= 24.0h and amount >= $1,500.00",2026-10-18T14:00:20Z
+ATF-2026-000131,ALT-2026-000062,TXN-2026-00009960,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=DE, amt=$2,230.84","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-18T14:00:25Z
+ATF-2026-000132,ALT-2026-000063,TXN-2026-00009961,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=MX, amt=$3,969.00","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-18T14:00:25Z
+ATF-2026-000133,ALT-2026-000064,TXN-2026-00009961,,RULE-008,txn_to_monthly_income_ratio,"0.56x (kyc=STANDARD, amt=$3,969.00)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-18T14:00:35Z
+ATF-2026-000134,ALT-2026-000065,TXN-2026-00009962,,RULE-002,device_age_hours,"0.17h (amount=$2,990.85)","<= 24.0h and amount >= $1,500.00",2026-10-18T16:00:20Z
+ATF-2026-000135,ALT-2026-000066,TXN-2026-00009962,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=US, amt=$2,990.85","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-18T16:00:25Z
+ATF-2026-000136,ALT-2026-000067,TXN-2026-00009963,,RULE-002,device_age_hours,"0.17h (amount=$2,212.71)","<= 24.0h and amount >= $1,500.00",2026-10-18T18:00:20Z
+ATF-2026-000137,ALT-2026-000068,TXN-2026-00009963,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=MX, home=US, amt=$2,212.71","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-18T18:00:25Z
+ATF-2026-000138,ALT-2026-000069,TXN-2026-00009959,,RULE-007,distinct_customers_on_device,4 customers sharing DEV-000627,>= 3 unrelated customers on single device,2026-10-18T18:00:50Z
+ATF-2026-000139,ALT-2026-000070,TXN-2026-00009962,,RULE-007,distinct_customers_on_device,4 customers sharing DEV-000627,>= 3 unrelated customers on single device,2026-10-18T18:00:50Z
+ATF-2026-000140,ALT-2026-000071,TXN-2026-00009960,,RULE-007,distinct_customers_on_device,4 customers sharing DEV-000627,>= 3 unrelated customers on single device,2026-10-18T18:00:50Z
+ATF-2026-000141,ALT-2026-000072,TXN-2026-00009963,,RULE-007,distinct_customers_on_device,4 customers sharing DEV-000627,>= 3 unrelated customers on single device,2026-10-18T18:00:50Z
+ATF-2026-000142,ALT-2026-000073,TXN-2026-00009964,,RULE-002,device_age_hours,"2.00h (amount=$5,570.27)","<= 24.0h and amount >= $1,500.00",2026-10-20T08:00:20Z
+ATF-2026-000143,ALT-2026-000074,TXN-2026-00009964,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=GB, home=US, amt=$5,570.27","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-20T08:00:25Z
+ATF-2026-000144,ALT-2026-000075,TXN-2026-00009964,,RULE-008,txn_to_monthly_income_ratio,"1.20x (kyc=LOW, amt=$5,570.27)",>= 0.50x monthly income on LOW/STANDARD KYC,2026-10-20T08:00:35Z
+ATF-2026-000145,ALT-2026-000076,TXN-2026-00009965,,RULE-005,merchant_risk_and_country,"tier=MEDIUM, merch=DE, home=US, amt=$2,439.76","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-20T14:00:25Z
+ATF-2026-000146,ALT-2026-000077,TXN-2026-00009966,,RULE-002,device_age_hours,"0.17h (amount=$3,048.22)","<= 24.0h and amount >= $1,500.00",2026-10-20T15:00:20Z
+ATF-2026-000147,ALT-2026-000078,TXN-2026-00009966,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=GB, home=MX, amt=$3,048.22","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-20T15:00:25Z
+ATF-2026-000148,ALT-2026-000079,TXN-2026-00009967,,RULE-002,device_age_hours,"0.17h (amount=$2,600.42)","<= 24.0h and amount >= $1,500.00",2026-10-20T17:00:20Z
+ATF-2026-000149,ALT-2026-000080,TXN-2026-00009967,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=MX, home=US, amt=$2,600.42","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-20T17:00:25Z
+ATF-2026-000150,ALT-2026-000081,TXN-2026-00009968,,RULE-005,merchant_risk_and_country,"tier=MEDIUM, merch=GB, home=DE, amt=$1,064.12","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-20T18:00:25Z
+ATF-2026-000151,ALT-2026-000082,TXN-2026-00009968,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $5,934.01",">= 5 txns / >= $2,500.00 in 60m",2026-10-20T18:24:30Z
+ATF-2026-000152,ALT-2026-000082,TXN-2026-00009969,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $5,934.01",">= 5 txns / >= $2,500.00 in 60m",2026-10-20T18:24:30Z
+ATF-2026-000153,ALT-2026-000082,TXN-2026-00009970,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $5,934.01",">= 5 txns / >= $2,500.00 in 60m",2026-10-20T18:24:30Z
+ATF-2026-000154,ALT-2026-000082,TXN-2026-00009971,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $5,934.01",">= 5 txns / >= $2,500.00 in 60m",2026-10-20T18:24:30Z
+ATF-2026-000155,ALT-2026-000082,TXN-2026-00009972,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $5,934.01",">= 5 txns / >= $2,500.00 in 60m",2026-10-20T18:24:30Z
+ATF-2026-000156,ALT-2026-000083,TXN-2026-00009974,,RULE-002,device_age_hours,"0.17h (amount=$2,822.60)","<= 24.0h and amount >= $1,500.00",2026-10-20T19:00:20Z
+ATF-2026-000157,ALT-2026-000084,TXN-2026-00009974,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=SG, home=IN, amt=$2,822.60","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-20T19:00:25Z
+ATF-2026-000158,ALT-2026-000085,TXN-2026-00009975,,RULE-002,device_age_hours,"0.17h (amount=$2,090.59)","<= 24.0h and amount >= $1,500.00",2026-10-20T21:00:20Z
+ATF-2026-000159,ALT-2026-000086,TXN-2026-00009975,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=US, amt=$2,090.59","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-20T21:00:25Z
+ATF-2026-000160,ALT-2026-000087,TXN-2026-00009974,,RULE-007,distinct_customers_on_device,4 customers sharing DEV-000626,>= 3 unrelated customers on single device,2026-10-20T21:00:50Z
+ATF-2026-000161,ALT-2026-000088,TXN-2026-00009966,,RULE-007,distinct_customers_on_device,4 customers sharing DEV-000626,>= 3 unrelated customers on single device,2026-10-20T21:00:50Z
+ATF-2026-000162,ALT-2026-000089,TXN-2026-00009967,,RULE-007,distinct_customers_on_device,4 customers sharing DEV-000626,>= 3 unrelated customers on single device,2026-10-20T21:00:50Z
+ATF-2026-000163,ALT-2026-000090,TXN-2026-00009975,,RULE-007,distinct_customers_on_device,4 customers sharing DEV-000626,>= 3 unrelated customers on single device,2026-10-20T21:00:50Z
+ATF-2026-000164,ALT-2026-000091,TXN-2026-00009976,TRL-2026-000410,RULE-006,structured_band_txn_count_24h,"3 txns ($7,344.05)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-21T10:16:45Z
+ATF-2026-000165,ALT-2026-000091,TXN-2026-00009978,TRL-2026-000411,RULE-006,structured_band_txn_count_24h,"3 txns ($7,344.05)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-21T10:16:45Z
+ATF-2026-000166,ALT-2026-000091,TXN-2026-00009980,TRL-2026-000412,RULE-006,structured_band_txn_count_24h,"3 txns ($7,344.05)",">= 3 txns in [$1,800, $2,999.99] within 24h",2026-10-21T10:16:45Z
+ATF-2026-000167,ALT-2026-000092,TXN-2026-00009976,TRL-2026-000410,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $12,169.67",">= 5 txns / >= $2,500.00 in 60m",2026-10-21T10:32:30Z
+ATF-2026-000168,ALT-2026-000092,TXN-2026-00009978,TRL-2026-000411,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $12,169.67",">= 5 txns / >= $2,500.00 in 60m",2026-10-21T10:32:30Z
+ATF-2026-000169,ALT-2026-000092,TXN-2026-00009980,TRL-2026-000412,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $12,169.67",">= 5 txns / >= $2,500.00 in 60m",2026-10-21T10:32:30Z
+ATF-2026-000170,ALT-2026-000092,TXN-2026-00009982,TRL-2026-000413,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $12,169.67",">= 5 txns / >= $2,500.00 in 60m",2026-10-21T10:32:30Z
+ATF-2026-000171,ALT-2026-000092,TXN-2026-00009984,TRL-2026-000414,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $12,169.67",">= 5 txns / >= $2,500.00 in 60m",2026-10-21T10:32:30Z
+ATF-2026-000172,ALT-2026-000093,TXN-2026-00009986,,RULE-005,merchant_risk_and_country,"tier=MEDIUM, merch=DE, home=US, amt=$2,994.28","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-21T14:00:25Z
+ATF-2026-000173,ALT-2026-000094,TXN-2026-00009988,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=SG, home=US, amt=$6,688.72","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-21T22:00:25Z
+ATF-2026-000174,ALT-2026-000095,TXN-2026-00009987,,RULE-004,dormancy_days_and_reactivation_usd,"156d dormant / $14,557.81 within 48h","prior DORMANT state + >= $3,000.00 within 48h",2026-10-21T22:00:40Z
+ATF-2026-000175,ALT-2026-000095,TXN-2026-00009988,,RULE-004,dormancy_days_and_reactivation_usd,"156d dormant / $14,557.81 within 48h","prior DORMANT state + >= $3,000.00 within 48h",2026-10-21T22:00:40Z
+ATF-2026-000176,ALT-2026-000096,TXN-2026-00009990,,RULE-005,merchant_risk_and_country,"tier=LOW, merch=AE, home=US, amt=$1,216.74","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-22T12:06:25Z
+ATF-2026-000177,ALT-2026-000097,TXN-2026-00009989,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $6,422.18",">= 5 txns / >= $2,500.00 in 60m",2026-10-22T12:24:30Z
+ATF-2026-000178,ALT-2026-000097,TXN-2026-00009990,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $6,422.18",">= 5 txns / >= $2,500.00 in 60m",2026-10-22T12:24:30Z
+ATF-2026-000179,ALT-2026-000097,TXN-2026-00009991,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $6,422.18",">= 5 txns / >= $2,500.00 in 60m",2026-10-22T12:24:30Z
+ATF-2026-000180,ALT-2026-000097,TXN-2026-00009992,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $6,422.18",">= 5 txns / >= $2,500.00 in 60m",2026-10-22T12:24:30Z
+ATF-2026-000181,ALT-2026-000097,TXN-2026-00009993,,RULE-001,window_60m_outflow_count_and_usd,"5 txns / $6,422.18",">= 5 txns / >= $2,500.00 in 60m",2026-10-22T12:24:30Z
+ATF-2026-000182,ALT-2026-000098,TXN-2026-00009996,,RULE-002,device_age_hours,"2.00h (amount=$4,783.65)","<= 24.0h and amount >= $1,500.00",2026-10-24T19:00:20Z
+ATF-2026-000183,ALT-2026-000099,TXN-2026-00009996,,RULE-005,merchant_risk_and_country,"tier=HIGH, merch=US, home=US, amt=$4,783.65","tier=HIGH or foreign merchant with amt >= $1,000.00",2026-10-24T19:00:25Z

@@ -1,0 +1,9 @@
+rule_id,rule_name,category,severity,base_weight,threshold_desc,is_active,version,effective_from
+RULE-001,Rapid Outflow Velocity Spike,VELOCITY,HIGH,28,">= 5 outbound debit/transfer txns within 60 minutes totaling >= $2,500.00",1,v1.0,2026-05-01T00:00:00Z
+RULE-002,New Device High-Value Outflow,DEVICE,HIGH,26,"Outbound txn >= $1,500.00 from a device first linked to account <= 24 hours earlier",1,v1.0,2026-05-01T00:00:00Z
+RULE-003,Circular Transfer Ring / Layering,NETWORK,CRITICAL,36,Account participates in 2..5 hop directed TransferLink cycle returning >= 75% within 48 hours,1,v1.0,2026-05-01T00:00:00Z
+RULE-004,Dormant Account Sudden Reactivation,LIFECYCLE,HIGH,25,"Account with prior DORMANT state or >= 90 days inactivity executes txn >= $3,000.00 within 48h of reactivation",1,v1.0,2026-05-01T00:00:00Z
+RULE-005,High-Risk Cross-Border Merchant,GEO_MERCHANT,MEDIUM,18,"Merchant purchase >= $1,000.00 at HIGH risk_tier merchant or foreign country != customer.home_country",1,v1.0,2026-05-01T00:00:00Z
+RULE-006,Structuring / Split Outflows,STRUCTURING,HIGH,24,">= 3 outbound txns each between $1,800.00 and $2,999.99 within 24 hours",1,v1.0,2026-05-01T00:00:00Z
+RULE-007,Shared Device Across Unrelated Customers,DEVICE,CRITICAL,30,Single device linked to >= 3 distinct primary customers with outbound transfer activity,1,v1.0,2026-05-01T00:00:00Z
+RULE-008,KYC Tier & Declared Income Deviation,KYC_DEVIATION,MEDIUM,16,Single transaction >= 50% of customer declared monthly income (annual_income / 12) on LOW/STANDARD KYC,1,v1.0,2026-05-01T00:00:00Z

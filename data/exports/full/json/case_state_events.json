@@ -1,0 +1,2898 @@
+[
+  {
+    "case_event_id": "CSE-2026-000001",
+    "case_id": "CASE-2026-000001",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-18T11:30:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000002",
+    "case_id": "CASE-2026-000002",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-19T13:10:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000003",
+    "case_id": "CASE-2026-000003",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-21T12:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000004",
+    "case_id": "CASE-2026-000004",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-21T17:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000005",
+    "case_id": "CASE-2026-000005",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-22T09:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000006",
+    "case_id": "CASE-2026-000006",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-22T09:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000007",
+    "case_id": "CASE-2026-000007",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-22T10:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000008",
+    "case_id": "CASE-2026-000008",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-22T12:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000009",
+    "case_id": "CASE-2026-000009",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-23T08:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000010",
+    "case_id": "CASE-2026-000010",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-23T16:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000011",
+    "case_id": "CASE-2026-000011",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-23T18:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000012",
+    "case_id": "CASE-2026-000012",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-24T15:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000013",
+    "case_id": "CASE-2026-000013",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-25T09:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000014",
+    "case_id": "CASE-2026-000014",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-25T10:24:48Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000015",
+    "case_id": "CASE-2026-000015",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-25T16:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000016",
+    "case_id": "CASE-2026-000016",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-25T17:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000017",
+    "case_id": "CASE-2026-000017",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-26T11:15:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000018",
+    "case_id": "CASE-2026-000018",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-26T15:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000019",
+    "case_id": "CASE-2026-000019",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-26T19:27:55Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000020",
+    "case_id": "CASE-2026-000020",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-28T10:06:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000021",
+    "case_id": "CASE-2026-000021",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-29T18:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000022",
+    "case_id": "CASE-2026-000022",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-09-30T17:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000023",
+    "case_id": "CASE-2026-000023",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-02T10:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000024",
+    "case_id": "CASE-2026-000024",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-02T16:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000025",
+    "case_id": "CASE-2026-000025",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-03T19:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000026",
+    "case_id": "CASE-2026-000026",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-04T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000027",
+    "case_id": "CASE-2026-000027",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-04T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000028",
+    "case_id": "CASE-2026-000028",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-04T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000029",
+    "case_id": "CASE-2026-000029",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-05T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000030",
+    "case_id": "CASE-2026-000030",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-05T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000031",
+    "case_id": "CASE-2026-000031",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-06T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000032",
+    "case_id": "CASE-2026-000032",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-06T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000033",
+    "case_id": "CASE-2026-000033",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-06T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000034",
+    "case_id": "CASE-2026-000034",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-07T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000035",
+    "case_id": "CASE-2026-000035",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-07T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000036",
+    "case_id": "CASE-2026-000036",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-07T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000037",
+    "case_id": "CASE-2026-000037",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-07T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000038",
+    "case_id": "CASE-2026-000038",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-07T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000039",
+    "case_id": "CASE-2026-000039",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-08T10:16:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000040",
+    "case_id": "CASE-2026-000040",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-08T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000041",
+    "case_id": "CASE-2026-000041",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-08T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000042",
+    "case_id": "CASE-2026-000042",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-08T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000043",
+    "case_id": "CASE-2026-000043",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-08T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000044",
+    "case_id": "CASE-2026-000044",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-08T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000045",
+    "case_id": "CASE-2026-000045",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-08T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000046",
+    "case_id": "CASE-2026-000046",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-08T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000047",
+    "case_id": "CASE-2026-000047",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-09T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000048",
+    "case_id": "CASE-2026-000048",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-09T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000049",
+    "case_id": "CASE-2026-000049",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-09T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000050",
+    "case_id": "CASE-2026-000050",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-09T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000051",
+    "case_id": "CASE-2026-000051",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-09T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000052",
+    "case_id": "CASE-2026-000052",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-09T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000053",
+    "case_id": "CASE-2026-000053",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-09T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000054",
+    "case_id": "CASE-2026-000054",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000055",
+    "case_id": "CASE-2026-000055",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000056",
+    "case_id": "CASE-2026-000056",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T11:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000057",
+    "case_id": "CASE-2026-000057",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T13:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000058",
+    "case_id": "CASE-2026-000058",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000059",
+    "case_id": "CASE-2026-000059",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000060",
+    "case_id": "CASE-2026-000060",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T14:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000061",
+    "case_id": "CASE-2026-000061",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T15:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000062",
+    "case_id": "CASE-2026-000062",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T16:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000063",
+    "case_id": "CASE-2026-000063",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T17:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000064",
+    "case_id": "CASE-2026-000064",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-10T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000065",
+    "case_id": "CASE-2026-000065",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T10:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000066",
+    "case_id": "CASE-2026-000066",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000067",
+    "case_id": "CASE-2026-000067",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000068",
+    "case_id": "CASE-2026-000068",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000069",
+    "case_id": "CASE-2026-000069",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T13:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000070",
+    "case_id": "CASE-2026-000070",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000071",
+    "case_id": "CASE-2026-000071",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000072",
+    "case_id": "CASE-2026-000072",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000073",
+    "case_id": "CASE-2026-000073",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T18:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000074",
+    "case_id": "CASE-2026-000074",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T19:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000075",
+    "case_id": "CASE-2026-000075",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000076",
+    "case_id": "CASE-2026-000076",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-11T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000077",
+    "case_id": "CASE-2026-000077",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T09:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000078",
+    "case_id": "CASE-2026-000078",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T10:12:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000079",
+    "case_id": "CASE-2026-000079",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000080",
+    "case_id": "CASE-2026-000080",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000081",
+    "case_id": "CASE-2026-000081",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T11:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000082",
+    "case_id": "CASE-2026-000082",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T13:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000083",
+    "case_id": "CASE-2026-000083",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000084",
+    "case_id": "CASE-2026-000084",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000085",
+    "case_id": "CASE-2026-000085",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T17:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000086",
+    "case_id": "CASE-2026-000086",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T19:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000087",
+    "case_id": "CASE-2026-000087",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000088",
+    "case_id": "CASE-2026-000088",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-12T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000089",
+    "case_id": "CASE-2026-000089",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000090",
+    "case_id": "CASE-2026-000090",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000091",
+    "case_id": "CASE-2026-000091",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T11:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000092",
+    "case_id": "CASE-2026-000092",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T13:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000093",
+    "case_id": "CASE-2026-000093",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T14:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000094",
+    "case_id": "CASE-2026-000094",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000095",
+    "case_id": "CASE-2026-000095",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000096",
+    "case_id": "CASE-2026-000096",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000097",
+    "case_id": "CASE-2026-000097",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T18:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000098",
+    "case_id": "CASE-2026-000098",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T20:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000099",
+    "case_id": "CASE-2026-000099",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T21:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000100",
+    "case_id": "CASE-2026-000100",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-13T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000101",
+    "case_id": "CASE-2026-000101",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000102",
+    "case_id": "CASE-2026-000102",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000103",
+    "case_id": "CASE-2026-000103",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T11:19:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000104",
+    "case_id": "CASE-2026-000104",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T13:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000105",
+    "case_id": "CASE-2026-000105",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000106",
+    "case_id": "CASE-2026-000106",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000107",
+    "case_id": "CASE-2026-000107",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000108",
+    "case_id": "CASE-2026-000108",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000109",
+    "case_id": "CASE-2026-000109",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T14:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000110",
+    "case_id": "CASE-2026-000110",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T16:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000111",
+    "case_id": "CASE-2026-000111",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T16:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000112",
+    "case_id": "CASE-2026-000112",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T16:20:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000113",
+    "case_id": "CASE-2026-000113",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T20:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000114",
+    "case_id": "CASE-2026-000114",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000115",
+    "case_id": "CASE-2026-000115",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-14T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000116",
+    "case_id": "CASE-2026-000116",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T08:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000117",
+    "case_id": "CASE-2026-000117",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T09:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000118",
+    "case_id": "CASE-2026-000118",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T09:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000119",
+    "case_id": "CASE-2026-000119",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T10:16:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000120",
+    "case_id": "CASE-2026-000120",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000121",
+    "case_id": "CASE-2026-000121",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000122",
+    "case_id": "CASE-2026-000122",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T11:18:59Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000123",
+    "case_id": "CASE-2026-000123",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T12:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000124",
+    "case_id": "CASE-2026-000124",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T12:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000125",
+    "case_id": "CASE-2026-000125",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T14:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000126",
+    "case_id": "CASE-2026-000126",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000127",
+    "case_id": "CASE-2026-000127",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000128",
+    "case_id": "CASE-2026-000128",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T15:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000129",
+    "case_id": "CASE-2026-000129",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T17:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000130",
+    "case_id": "CASE-2026-000130",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T18:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000131",
+    "case_id": "CASE-2026-000131",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T18:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000132",
+    "case_id": "CASE-2026-000132",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T18:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000133",
+    "case_id": "CASE-2026-000133",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T18:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000134",
+    "case_id": "CASE-2026-000134",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T18:18:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000135",
+    "case_id": "CASE-2026-000135",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T19:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000136",
+    "case_id": "CASE-2026-000136",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-15T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000137",
+    "case_id": "CASE-2026-000137",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T09:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000138",
+    "case_id": "CASE-2026-000138",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T10:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000139",
+    "case_id": "CASE-2026-000139",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000140",
+    "case_id": "CASE-2026-000140",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000141",
+    "case_id": "CASE-2026-000141",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000142",
+    "case_id": "CASE-2026-000142",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T11:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000143",
+    "case_id": "CASE-2026-000143",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T12:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000144",
+    "case_id": "CASE-2026-000144",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T13:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000145",
+    "case_id": "CASE-2026-000145",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T13:21:50Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000146",
+    "case_id": "CASE-2026-000146",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000147",
+    "case_id": "CASE-2026-000147",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000148",
+    "case_id": "CASE-2026-000148",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000149",
+    "case_id": "CASE-2026-000149",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000150",
+    "case_id": "CASE-2026-000150",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000151",
+    "case_id": "CASE-2026-000151",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T15:27:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000152",
+    "case_id": "CASE-2026-000152",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T15:28:07Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000153",
+    "case_id": "CASE-2026-000153",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T16:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000154",
+    "case_id": "CASE-2026-000154",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T17:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000155",
+    "case_id": "CASE-2026-000155",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T17:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000156",
+    "case_id": "CASE-2026-000156",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T18:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000157",
+    "case_id": "CASE-2026-000157",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T19:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000158",
+    "case_id": "CASE-2026-000158",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000159",
+    "case_id": "CASE-2026-000159",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000160",
+    "case_id": "CASE-2026-000160",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000161",
+    "case_id": "CASE-2026-000161",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000162",
+    "case_id": "CASE-2026-000162",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-16T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000163",
+    "case_id": "CASE-2026-000163",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T09:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000164",
+    "case_id": "CASE-2026-000164",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T10:08:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000165",
+    "case_id": "CASE-2026-000165",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000166",
+    "case_id": "CASE-2026-000166",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000167",
+    "case_id": "CASE-2026-000167",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T12:06:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000168",
+    "case_id": "CASE-2026-000168",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000169",
+    "case_id": "CASE-2026-000169",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000170",
+    "case_id": "CASE-2026-000170",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000171",
+    "case_id": "CASE-2026-000171",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000172",
+    "case_id": "CASE-2026-000172",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T15:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000173",
+    "case_id": "CASE-2026-000173",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T17:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000174",
+    "case_id": "CASE-2026-000174",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T18:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000175",
+    "case_id": "CASE-2026-000175",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T19:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000176",
+    "case_id": "CASE-2026-000176",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-17T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000177",
+    "case_id": "CASE-2026-000177",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T08:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000178",
+    "case_id": "CASE-2026-000178",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T09:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000179",
+    "case_id": "CASE-2026-000179",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T09:06:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000180",
+    "case_id": "CASE-2026-000180",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T10:14:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000181",
+    "case_id": "CASE-2026-000181",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000182",
+    "case_id": "CASE-2026-000182",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000183",
+    "case_id": "CASE-2026-000183",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000184",
+    "case_id": "CASE-2026-000184",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000185",
+    "case_id": "CASE-2026-000185",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T12:20:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000186",
+    "case_id": "CASE-2026-000186",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T13:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000187",
+    "case_id": "CASE-2026-000187",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000188",
+    "case_id": "CASE-2026-000188",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000189",
+    "case_id": "CASE-2026-000189",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T14:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000190",
+    "case_id": "CASE-2026-000190",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T15:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000191",
+    "case_id": "CASE-2026-000191",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T15:21:58Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000192",
+    "case_id": "CASE-2026-000192",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T16:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000193",
+    "case_id": "CASE-2026-000193",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T16:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000194",
+    "case_id": "CASE-2026-000194",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T17:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000195",
+    "case_id": "CASE-2026-000195",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T17:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000196",
+    "case_id": "CASE-2026-000196",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T18:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000197",
+    "case_id": "CASE-2026-000197",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T18:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000198",
+    "case_id": "CASE-2026-000198",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T18:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000199",
+    "case_id": "CASE-2026-000199",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T18:31:15Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000200",
+    "case_id": "CASE-2026-000200",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T20:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000201",
+    "case_id": "CASE-2026-000201",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T21:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000202",
+    "case_id": "CASE-2026-000202",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T21:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000203",
+    "case_id": "CASE-2026-000203",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T21:27:50Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000204",
+    "case_id": "CASE-2026-000204",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000205",
+    "case_id": "CASE-2026-000205",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000206",
+    "case_id": "CASE-2026-000206",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000207",
+    "case_id": "CASE-2026-000207",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000208",
+    "case_id": "CASE-2026-000208",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-18T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000209",
+    "case_id": "CASE-2026-000209",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T09:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000210",
+    "case_id": "CASE-2026-000210",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000211",
+    "case_id": "CASE-2026-000211",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000212",
+    "case_id": "CASE-2026-000212",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000213",
+    "case_id": "CASE-2026-000213",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000214",
+    "case_id": "CASE-2026-000214",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000215",
+    "case_id": "CASE-2026-000215",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T15:15:41Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000216",
+    "case_id": "CASE-2026-000216",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T16:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000217",
+    "case_id": "CASE-2026-000217",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T17:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000218",
+    "case_id": "CASE-2026-000218",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T18:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000219",
+    "case_id": "CASE-2026-000219",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T19:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000220",
+    "case_id": "CASE-2026-000220",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T21:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000221",
+    "case_id": "CASE-2026-000221",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T21:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000222",
+    "case_id": "CASE-2026-000222",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000223",
+    "case_id": "CASE-2026-000223",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000224",
+    "case_id": "CASE-2026-000224",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-19T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000225",
+    "case_id": "CASE-2026-000225",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T08:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000226",
+    "case_id": "CASE-2026-000226",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T09:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000227",
+    "case_id": "CASE-2026-000227",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000228",
+    "case_id": "CASE-2026-000228",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000229",
+    "case_id": "CASE-2026-000229",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T14:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000230",
+    "case_id": "CASE-2026-000230",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T14:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000231",
+    "case_id": "CASE-2026-000231",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000232",
+    "case_id": "CASE-2026-000232",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000233",
+    "case_id": "CASE-2026-000233",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000234",
+    "case_id": "CASE-2026-000234",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000235",
+    "case_id": "CASE-2026-000235",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T17:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000236",
+    "case_id": "CASE-2026-000236",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T18:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000237",
+    "case_id": "CASE-2026-000237",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T18:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000238",
+    "case_id": "CASE-2026-000238",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T18:31:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000239",
+    "case_id": "CASE-2026-000239",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T19:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000240",
+    "case_id": "CASE-2026-000240",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T19:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000241",
+    "case_id": "CASE-2026-000241",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-20T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000242",
+    "case_id": "CASE-2026-000242",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T07:26:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000243",
+    "case_id": "CASE-2026-000243",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T08:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000244",
+    "case_id": "CASE-2026-000244",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T09:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000245",
+    "case_id": "CASE-2026-000245",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T10:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000246",
+    "case_id": "CASE-2026-000246",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000247",
+    "case_id": "CASE-2026-000247",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T11:25:06Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000248",
+    "case_id": "CASE-2026-000248",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T13:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000249",
+    "case_id": "CASE-2026-000249",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T13:29:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000250",
+    "case_id": "CASE-2026-000250",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T15:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000251",
+    "case_id": "CASE-2026-000251",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T16:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000252",
+    "case_id": "CASE-2026-000252",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T16:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000253",
+    "case_id": "CASE-2026-000253",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T16:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000254",
+    "case_id": "CASE-2026-000254",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T18:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000255",
+    "case_id": "CASE-2026-000255",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T20:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000256",
+    "case_id": "CASE-2026-000256",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T20:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000257",
+    "case_id": "CASE-2026-000257",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T09:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000258",
+    "case_id": "CASE-2026-000258",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T10:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000259",
+    "case_id": "CASE-2026-000259",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000260",
+    "case_id": "CASE-2026-000260",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000261",
+    "case_id": "CASE-2026-000261",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T10:16:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000262",
+    "case_id": "CASE-2026-000262",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T11:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000263",
+    "case_id": "CASE-2026-000263",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T11:05:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000264",
+    "case_id": "CASE-2026-000264",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T12:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000265",
+    "case_id": "CASE-2026-000265",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T14:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000266",
+    "case_id": "CASE-2026-000266",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T14:20:06Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000267",
+    "case_id": "CASE-2026-000267",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T14:24:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000268",
+    "case_id": "CASE-2026-000268",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T15:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000269",
+    "case_id": "CASE-2026-000269",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T15:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000270",
+    "case_id": "CASE-2026-000270",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T16:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000271",
+    "case_id": "CASE-2026-000271",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T17:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000272",
+    "case_id": "CASE-2026-000272",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T18:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000273",
+    "case_id": "CASE-2026-000273",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T20:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000274",
+    "case_id": "CASE-2026-000274",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-22T20:12:45Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000275",
+    "case_id": "CASE-2026-000275",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-23T09:17:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000276",
+    "case_id": "CASE-2026-000276",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-23T10:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000277",
+    "case_id": "CASE-2026-000277",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-23T10:25:04Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000278",
+    "case_id": "CASE-2026-000278",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-23T12:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000279",
+    "case_id": "CASE-2026-000279",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-23T16:24:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000280",
+    "case_id": "CASE-2026-000280",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-23T21:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000281",
+    "case_id": "CASE-2026-000281",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-24T08:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000282",
+    "case_id": "CASE-2026-000282",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-24T09:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000283",
+    "case_id": "CASE-2026-000001",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000001",
+    "effective_at": "2026-09-19T01:20:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000284",
+    "case_id": "CASE-2026-000001",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000002",
+    "effective_at": "2026-09-19T09:20:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000285",
+    "case_id": "CASE-2026-000002",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000003",
+    "effective_at": "2026-09-20T01:27:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000286",
+    "case_id": "CASE-2026-000002",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000004",
+    "effective_at": "2026-09-20T12:27:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000287",
+    "case_id": "CASE-2026-000003",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000005",
+    "effective_at": "2026-09-21T13:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000288",
+    "case_id": "CASE-2026-000003",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000006",
+    "effective_at": "2026-09-21T19:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000289",
+    "case_id": "CASE-2026-000004",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000007",
+    "effective_at": "2026-09-21T20:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000290",
+    "case_id": "CASE-2026-000004",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000008",
+    "effective_at": "2026-09-22T05:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000291",
+    "case_id": "CASE-2026-000005",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000009",
+    "effective_at": "2026-09-22T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000292",
+    "case_id": "CASE-2026-000005",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000010",
+    "effective_at": "2026-09-22T20:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000293",
+    "case_id": "CASE-2026-000006",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000011",
+    "effective_at": "2026-09-22T12:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000294",
+    "case_id": "CASE-2026-000006",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000012",
+    "effective_at": "2026-09-22T16:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000295",
+    "case_id": "CASE-2026-000007",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000013",
+    "effective_at": "2026-09-22T12:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000296",
+    "case_id": "CASE-2026-000007",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000014",
+    "effective_at": "2026-09-22T15:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000297",
+    "case_id": "CASE-2026-000008",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000015",
+    "effective_at": "2026-09-22T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000298",
+    "case_id": "CASE-2026-000008",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000016",
+    "effective_at": "2026-09-23T01:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000299",
+    "case_id": "CASE-2026-000009",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000017",
+    "effective_at": "2026-09-23T12:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000300",
+    "case_id": "CASE-2026-000009",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000018",
+    "effective_at": "2026-09-23T14:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000301",
+    "case_id": "CASE-2026-000010",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000019",
+    "effective_at": "2026-09-23T19:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000302",
+    "case_id": "CASE-2026-000010",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000020",
+    "effective_at": "2026-09-24T00:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000303",
+    "case_id": "CASE-2026-000011",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000021",
+    "effective_at": "2026-09-23T20:30:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000304",
+    "case_id": "CASE-2026-000011",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000022",
+    "effective_at": "2026-09-23T22:30:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000305",
+    "case_id": "CASE-2026-000012",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000023",
+    "effective_at": "2026-09-24T20:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000306",
+    "case_id": "CASE-2026-000012",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000024",
+    "effective_at": "2026-09-24T22:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000307",
+    "case_id": "CASE-2026-000013",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000025",
+    "effective_at": "2026-09-25T10:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000308",
+    "case_id": "CASE-2026-000013",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000026",
+    "effective_at": "2026-09-25T20:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000309",
+    "case_id": "CASE-2026-000014",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000027",
+    "effective_at": "2026-09-25T22:29:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000310",
+    "case_id": "CASE-2026-000014",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000028",
+    "effective_at": "2026-09-26T09:29:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000311",
+    "case_id": "CASE-2026-000015",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000029",
+    "effective_at": "2026-09-25T19:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000312",
+    "case_id": "CASE-2026-000015",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000030",
+    "effective_at": "2026-09-26T00:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000313",
+    "case_id": "CASE-2026-000016",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000031",
+    "effective_at": "2026-09-25T20:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000314",
+    "case_id": "CASE-2026-000016",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000032",
+    "effective_at": "2026-09-26T03:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000315",
+    "case_id": "CASE-2026-000017",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000033",
+    "effective_at": "2026-09-26T22:14:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000316",
+    "case_id": "CASE-2026-000017",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000034",
+    "effective_at": "2026-09-27T08:14:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000317",
+    "case_id": "CASE-2026-000018",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000035",
+    "effective_at": "2026-09-26T18:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000318",
+    "case_id": "CASE-2026-000018",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000036",
+    "effective_at": "2026-09-27T03:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000319",
+    "case_id": "CASE-2026-000019",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000037",
+    "effective_at": "2026-09-27T07:19:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000320",
+    "case_id": "CASE-2026-000019",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000038",
+    "effective_at": "2026-09-27T17:19:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000321",
+    "case_id": "CASE-2026-000020",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000039",
+    "effective_at": "2026-09-28T15:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000322",
+    "case_id": "CASE-2026-000020",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000040",
+    "effective_at": "2026-09-29T03:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000323",
+    "case_id": "CASE-2026-000021",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000041",
+    "effective_at": "2026-09-29T22:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000324",
+    "case_id": "CASE-2026-000021",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000042",
+    "effective_at": "2026-09-30T01:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000325",
+    "case_id": "CASE-2026-000022",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000043",
+    "effective_at": "2026-09-30T19:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000326",
+    "case_id": "CASE-2026-000022",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000044",
+    "effective_at": "2026-10-01T07:24:30Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000327",
+    "case_id": "CASE-2026-000023",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000045",
+    "effective_at": "2026-10-02T14:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000328",
+    "case_id": "CASE-2026-000023",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000046",
+    "effective_at": "2026-10-02T22:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000329",
+    "case_id": "CASE-2026-000024",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000047",
+    "effective_at": "2026-10-02T22:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000330",
+    "case_id": "CASE-2026-000024",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000048",
+    "effective_at": "2026-10-03T00:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000331",
+    "case_id": "CASE-2026-000025",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000049",
+    "effective_at": "2026-10-03T22:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000332",
+    "case_id": "CASE-2026-000025",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_CONFIRMED_FRAUD",
+    "analyst_action_id": "ACT-2026-000050",
+    "effective_at": "2026-10-04T08:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000333",
+    "case_id": "CASE-2026-000026",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000051",
+    "effective_at": "2026-10-05T17:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000334",
+    "case_id": "CASE-2026-000026",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000052",
+    "effective_at": "2026-10-05T21:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000335",
+    "case_id": "CASE-2026-000027",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000053",
+    "effective_at": "2026-10-05T12:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000336",
+    "case_id": "CASE-2026-000027",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000054",
+    "effective_at": "2026-10-05T14:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000337",
+    "case_id": "CASE-2026-000028",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000055",
+    "effective_at": "2026-10-05T13:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000338",
+    "case_id": "CASE-2026-000028",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000056",
+    "effective_at": "2026-10-05T16:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000339",
+    "case_id": "CASE-2026-000029",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000057",
+    "effective_at": "2026-10-06T17:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000340",
+    "case_id": "CASE-2026-000029",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000058",
+    "effective_at": "2026-10-06T19:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000341",
+    "case_id": "CASE-2026-000030",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000059",
+    "effective_at": "2026-10-06T12:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000342",
+    "case_id": "CASE-2026-000030",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000060",
+    "effective_at": "2026-10-06T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000343",
+    "case_id": "CASE-2026-000031",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000061",
+    "effective_at": "2026-10-07T14:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000344",
+    "case_id": "CASE-2026-000031",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000062",
+    "effective_at": "2026-10-08T01:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000345",
+    "case_id": "CASE-2026-000032",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000063",
+    "effective_at": "2026-10-07T12:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000346",
+    "case_id": "CASE-2026-000032",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000064",
+    "effective_at": "2026-10-07T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000347",
+    "case_id": "CASE-2026-000033",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000065",
+    "effective_at": "2026-10-07T13:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000348",
+    "case_id": "CASE-2026-000033",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000066",
+    "effective_at": "2026-10-07T22:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000349",
+    "case_id": "CASE-2026-000034",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000067",
+    "effective_at": "2026-10-07T17:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000350",
+    "case_id": "CASE-2026-000034",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000068",
+    "effective_at": "2026-10-08T02:00:25Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000351",
+    "case_id": "CASE-2026-000035",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000069",
+    "effective_at": "2026-10-08T14:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000352",
+    "case_id": "CASE-2026-000035",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000070",
+    "effective_at": "2026-10-09T01:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000353",
+    "case_id": "CASE-2026-000036",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000071",
+    "effective_at": "2026-10-08T16:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000354",
+    "case_id": "CASE-2026-000036",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000072",
+    "effective_at": "2026-10-08T20:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000355",
+    "case_id": "CASE-2026-000037",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000073",
+    "effective_at": "2026-10-08T17:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000356",
+    "case_id": "CASE-2026-000037",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000074",
+    "effective_at": "2026-10-08T21:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000357",
+    "case_id": "CASE-2026-000038",
+    "prev_status": "OPEN",
+    "new_status": "IN_REVIEW",
+    "analyst_action_id": "ACT-2026-000075",
+    "effective_at": "2026-10-08T15:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000358",
+    "case_id": "CASE-2026-000038",
+    "prev_status": "IN_REVIEW",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000076",
+    "effective_at": "2026-10-08T23:00:35Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000359",
+    "case_id": "CASE-2026-000283",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T16:00:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000360",
+    "case_id": "CASE-2026-000282",
+    "prev_status": "OPEN",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000077",
+    "effective_at": "2026-10-24T03:00:20Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000361",
+    "case_id": "CASE-2026-000284",
+    "prev_status": null,
+    "new_status": "OPEN",
+    "analyst_action_id": null,
+    "effective_at": "2026-10-21T17:00:00Z"
+  },
+  {
+    "case_event_id": "CSE-2026-000362",
+    "case_id": "CASE-2026-000281",
+    "prev_status": "OPEN",
+    "new_status": "CLOSED_FALSE_POSITIVE",
+    "analyst_action_id": "ACT-2026-000078",
+    "effective_at": "2026-10-24T02:00:20Z"
+  }
+]

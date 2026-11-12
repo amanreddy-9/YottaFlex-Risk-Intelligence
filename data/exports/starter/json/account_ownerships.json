@@ -1,0 +1,6833 @@
+[
+  {
+    "ownership_id": "OWN-000001",
+    "account_id": "ACC-CUS-000001-01",
+    "customer_id": "CUS-000001",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-26T09:47:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000002",
+    "account_id": "ACC-CUS-000002-01",
+    "customer_id": "CUS-000002",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-24T23:40:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000003",
+    "account_id": "ACC-CUS-000003-01",
+    "customer_id": "CUS-000003",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-08T06:07:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000004",
+    "account_id": "ACC-CUS-000004-01",
+    "customer_id": "CUS-000004",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-25T21:29:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000005",
+    "account_id": "ACC-CUS-000005-01",
+    "customer_id": "CUS-000005",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-15T16:31:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000006",
+    "account_id": "ACC-CUS-000006-01",
+    "customer_id": "CUS-000006",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-09T04:29:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000007",
+    "account_id": "ACC-CUS-000007-01",
+    "customer_id": "CUS-000007",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T23:47:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000008",
+    "account_id": "ACC-CUS-000008-01",
+    "customer_id": "CUS-000008",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-08T18:29:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000009",
+    "account_id": "ACC-CUS-000009-01",
+    "customer_id": "CUS-000009",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-22T14:27:39Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000010",
+    "account_id": "ACC-CUS-000010-01",
+    "customer_id": "CUS-000010",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-30T02:50:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000011",
+    "account_id": "ACC-CUS-000011-01",
+    "customer_id": "CUS-000011",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-19T12:30:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000012",
+    "account_id": "ACC-CUS-000012-01",
+    "customer_id": "CUS-000012",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-18T10:22:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000013",
+    "account_id": "ACC-CUS-000013-01",
+    "customer_id": "CUS-000013",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-03T07:29:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000014",
+    "account_id": "ACC-CUS-000014-01",
+    "customer_id": "CUS-000014",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000015",
+    "account_id": "ACC-CUS-000015-01",
+    "customer_id": "CUS-000015",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-12T18:45:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000016",
+    "account_id": "ACC-CUS-000016-01",
+    "customer_id": "CUS-000016",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-15T22:00:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000017",
+    "account_id": "ACC-CUS-000017-01",
+    "customer_id": "CUS-000017",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-07T08:07:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000018",
+    "account_id": "ACC-CUS-000018-01",
+    "customer_id": "CUS-000018",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-09T08:21:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000019",
+    "account_id": "ACC-CUS-000019-01",
+    "customer_id": "CUS-000019",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-06T15:12:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000020",
+    "account_id": "ACC-CUS-000020-01",
+    "customer_id": "CUS-000020",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-31T05:35:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000021",
+    "account_id": "ACC-CUS-000021-01",
+    "customer_id": "CUS-000021",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-02T09:08:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000022",
+    "account_id": "ACC-CUS-000022-01",
+    "customer_id": "CUS-000022",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-25T19:27:56Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000023",
+    "account_id": "ACC-CUS-000023-01",
+    "customer_id": "CUS-000023",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000024",
+    "account_id": "ACC-CUS-000024-01",
+    "customer_id": "CUS-000024",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-27T22:07:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000025",
+    "account_id": "ACC-CUS-000025-01",
+    "customer_id": "CUS-000025",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-01T03:21:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000026",
+    "account_id": "ACC-CUS-000026-01",
+    "customer_id": "CUS-000026",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-12T15:07:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000027",
+    "account_id": "ACC-CUS-000027-01",
+    "customer_id": "CUS-000027",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T13:41:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000028",
+    "account_id": "ACC-CUS-000028-01",
+    "customer_id": "CUS-000028",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-07-07T05:23:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000029",
+    "account_id": "ACC-CUS-000029-01",
+    "customer_id": "CUS-000029",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-20T21:15:42Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000030",
+    "account_id": "ACC-CUS-000030-01",
+    "customer_id": "CUS-000030",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-26T20:49:42Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000031",
+    "account_id": "ACC-CUS-000031-01",
+    "customer_id": "CUS-000031",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-13T11:44:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000032",
+    "account_id": "ACC-CUS-000032-01",
+    "customer_id": "CUS-000032",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000033",
+    "account_id": "ACC-CUS-000033-01",
+    "customer_id": "CUS-000033",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-06T02:57:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000034",
+    "account_id": "ACC-CUS-000034-01",
+    "customer_id": "CUS-000034",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-06T09:58:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000035",
+    "account_id": "ACC-CUS-000035-01",
+    "customer_id": "CUS-000035",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-17T12:16:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000036",
+    "account_id": "ACC-CUS-000036-01",
+    "customer_id": "CUS-000036",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-03T01:16:39Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000037",
+    "account_id": "ACC-CUS-000037-01",
+    "customer_id": "CUS-000037",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-20T16:02:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000038",
+    "account_id": "ACC-CUS-000038-01",
+    "customer_id": "CUS-000038",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-08T23:26:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000039",
+    "account_id": "ACC-CUS-000039-01",
+    "customer_id": "CUS-000039",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-10T05:24:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000040",
+    "account_id": "ACC-CUS-000040-01",
+    "customer_id": "CUS-000040",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-08T11:28:54Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000041",
+    "account_id": "ACC-CUS-000041-01",
+    "customer_id": "CUS-000041",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-29T17:46:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000042",
+    "account_id": "ACC-CUS-000042-01",
+    "customer_id": "CUS-000042",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-19T08:54:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000043",
+    "account_id": "ACC-CUS-000043-01",
+    "customer_id": "CUS-000043",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-27T04:10:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000044",
+    "account_id": "ACC-CUS-000044-01",
+    "customer_id": "CUS-000044",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-21T07:51:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000045",
+    "account_id": "ACC-CUS-000045-01",
+    "customer_id": "CUS-000045",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-08T16:34:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000046",
+    "account_id": "ACC-CUS-000046-01",
+    "customer_id": "CUS-000046",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-22T06:41:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000047",
+    "account_id": "ACC-CUS-000047-01",
+    "customer_id": "CUS-000047",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-13T17:39:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000048",
+    "account_id": "ACC-CUS-000048-01",
+    "customer_id": "CUS-000048",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-06T15:49:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000049",
+    "account_id": "ACC-CUS-000049-01",
+    "customer_id": "CUS-000049",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-05T15:05:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000050",
+    "account_id": "ACC-CUS-000050-01",
+    "customer_id": "CUS-000050",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-04T10:44:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000051",
+    "account_id": "ACC-CUS-000051-01",
+    "customer_id": "CUS-000051",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-28T22:20:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000052",
+    "account_id": "ACC-CUS-000052-01",
+    "customer_id": "CUS-000052",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-23T01:47:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000053",
+    "account_id": "ACC-CUS-000053-01",
+    "customer_id": "CUS-000053",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-26T09:16:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000054",
+    "account_id": "ACC-CUS-000054-01",
+    "customer_id": "CUS-000054",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-09T10:03:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000055",
+    "account_id": "ACC-CUS-000055-01",
+    "customer_id": "CUS-000055",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-27T14:56:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000056",
+    "account_id": "ACC-CUS-000056-01",
+    "customer_id": "CUS-000056",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-17T17:13:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000057",
+    "account_id": "ACC-CUS-000057-01",
+    "customer_id": "CUS-000057",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000058",
+    "account_id": "ACC-CUS-000058-01",
+    "customer_id": "CUS-000058",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-18T10:19:48Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000059",
+    "account_id": "ACC-CUS-000059-01",
+    "customer_id": "CUS-000059",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-22T06:59:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000060",
+    "account_id": "ACC-CUS-000060-01",
+    "customer_id": "CUS-000060",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-18T18:08:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000061",
+    "account_id": "ACC-CUS-000061-01",
+    "customer_id": "CUS-000061",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-19T19:05:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000062",
+    "account_id": "ACC-CUS-000062-01",
+    "customer_id": "CUS-000062",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-26T03:24:48Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000063",
+    "account_id": "ACC-CUS-000063-01",
+    "customer_id": "CUS-000063",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-24T10:01:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000064",
+    "account_id": "ACC-CUS-000064-01",
+    "customer_id": "CUS-000064",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-21T08:11:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000065",
+    "account_id": "ACC-CUS-000065-01",
+    "customer_id": "CUS-000065",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-10T02:22:42Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000066",
+    "account_id": "ACC-CUS-000066-01",
+    "customer_id": "CUS-000066",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-23T11:00:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000067",
+    "account_id": "ACC-CUS-000067-01",
+    "customer_id": "CUS-000067",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-13T05:24:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000068",
+    "account_id": "ACC-CUS-000068-01",
+    "customer_id": "CUS-000068",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-03T03:58:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000069",
+    "account_id": "ACC-CUS-000069-01",
+    "customer_id": "CUS-000069",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-30T14:59:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000070",
+    "account_id": "ACC-CUS-000070-01",
+    "customer_id": "CUS-000070",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-04T22:29:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000071",
+    "account_id": "ACC-CUS-000071-01",
+    "customer_id": "CUS-000071",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-10T07:14:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000072",
+    "account_id": "ACC-CUS-000072-01",
+    "customer_id": "CUS-000072",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-19T15:19:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000073",
+    "account_id": "ACC-CUS-000073-01",
+    "customer_id": "CUS-000073",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-24T05:33:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000074",
+    "account_id": "ACC-CUS-000074-01",
+    "customer_id": "CUS-000074",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-14T07:54:06Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000075",
+    "account_id": "ACC-CUS-000075-01",
+    "customer_id": "CUS-000075",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-16T04:10:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000076",
+    "account_id": "ACC-CUS-000076-01",
+    "customer_id": "CUS-000076",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-22T17:36:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000077",
+    "account_id": "ACC-CUS-000077-01",
+    "customer_id": "CUS-000077",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-20T11:10:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000078",
+    "account_id": "ACC-CUS-000078-01",
+    "customer_id": "CUS-000078",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-19T07:19:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000079",
+    "account_id": "ACC-CUS-000079-01",
+    "customer_id": "CUS-000079",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-18T06:13:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000080",
+    "account_id": "ACC-CUS-000080-01",
+    "customer_id": "CUS-000080",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-11T19:31:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000081",
+    "account_id": "ACC-CUS-000081-01",
+    "customer_id": "CUS-000081",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-02T11:32:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000082",
+    "account_id": "ACC-CUS-000082-01",
+    "customer_id": "CUS-000082",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-15T01:28:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000083",
+    "account_id": "ACC-CUS-000083-01",
+    "customer_id": "CUS-000083",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-09T09:19:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000084",
+    "account_id": "ACC-CUS-000084-01",
+    "customer_id": "CUS-000084",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-18T09:00:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000085",
+    "account_id": "ACC-CUS-000085-01",
+    "customer_id": "CUS-000085",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-25T15:32:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000086",
+    "account_id": "ACC-CUS-000086-01",
+    "customer_id": "CUS-000086",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-08T17:09:26Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000087",
+    "account_id": "ACC-CUS-000087-01",
+    "customer_id": "CUS-000087",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-23T19:53:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000088",
+    "account_id": "ACC-CUS-000088-01",
+    "customer_id": "CUS-000088",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-22T15:01:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000089",
+    "account_id": "ACC-CUS-000089-01",
+    "customer_id": "CUS-000089",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000090",
+    "account_id": "ACC-CUS-000090-01",
+    "customer_id": "CUS-000090",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-30T16:50:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000091",
+    "account_id": "ACC-CUS-000091-01",
+    "customer_id": "CUS-000091",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-15T22:09:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000092",
+    "account_id": "ACC-CUS-000092-01",
+    "customer_id": "CUS-000092",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-02T16:43:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000093",
+    "account_id": "ACC-CUS-000093-01",
+    "customer_id": "CUS-000093",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-20T03:39:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000094",
+    "account_id": "ACC-CUS-000094-01",
+    "customer_id": "CUS-000094",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-17T17:24:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000095",
+    "account_id": "ACC-CUS-000095-01",
+    "customer_id": "CUS-000095",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-18T09:01:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000096",
+    "account_id": "ACC-CUS-000096-01",
+    "customer_id": "CUS-000096",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-13T11:03:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000097",
+    "account_id": "ACC-CUS-000097-01",
+    "customer_id": "CUS-000097",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-30T00:46:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000098",
+    "account_id": "ACC-CUS-000098-01",
+    "customer_id": "CUS-000098",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-01T22:58:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000099",
+    "account_id": "ACC-CUS-000099-01",
+    "customer_id": "CUS-000099",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-23T21:01:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000100",
+    "account_id": "ACC-CUS-000100-01",
+    "customer_id": "CUS-000100",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-31T08:23:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000101",
+    "account_id": "ACC-CUS-000101-01",
+    "customer_id": "CUS-000101",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-18T00:36:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000102",
+    "account_id": "ACC-CUS-000102-01",
+    "customer_id": "CUS-000102",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-19T09:28:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000103",
+    "account_id": "ACC-CUS-000103-01",
+    "customer_id": "CUS-000103",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-03T18:10:24Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000104",
+    "account_id": "ACC-CUS-000104-01",
+    "customer_id": "CUS-000104",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-23T10:15:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000105",
+    "account_id": "ACC-CUS-000105-01",
+    "customer_id": "CUS-000105",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-02T04:29:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000106",
+    "account_id": "ACC-CUS-000106-01",
+    "customer_id": "CUS-000106",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-31T18:59:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000107",
+    "account_id": "ACC-CUS-000107-01",
+    "customer_id": "CUS-000107",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-27T19:13:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000108",
+    "account_id": "ACC-CUS-000108-01",
+    "customer_id": "CUS-000108",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-15T07:52:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000109",
+    "account_id": "ACC-CUS-000109-01",
+    "customer_id": "CUS-000109",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-17T08:51:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000110",
+    "account_id": "ACC-CUS-000110-01",
+    "customer_id": "CUS-000110",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-17T11:40:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000111",
+    "account_id": "ACC-CUS-000111-01",
+    "customer_id": "CUS-000111",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-21T17:58:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000112",
+    "account_id": "ACC-CUS-000112-01",
+    "customer_id": "CUS-000112",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-18T08:03:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000113",
+    "account_id": "ACC-CUS-000113-01",
+    "customer_id": "CUS-000113",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-11T18:40:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000114",
+    "account_id": "ACC-CUS-000114-01",
+    "customer_id": "CUS-000114",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-24T16:05:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000115",
+    "account_id": "ACC-CUS-000115-01",
+    "customer_id": "CUS-000115",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-05T09:07:12Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000116",
+    "account_id": "ACC-CUS-000116-01",
+    "customer_id": "CUS-000116",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-28T20:33:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000117",
+    "account_id": "ACC-CUS-000117-01",
+    "customer_id": "CUS-000117",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-24T16:38:50Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000118",
+    "account_id": "ACC-CUS-000118-01",
+    "customer_id": "CUS-000118",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-27T17:18:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000119",
+    "account_id": "ACC-CUS-000119-01",
+    "customer_id": "CUS-000119",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-16T21:03:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000120",
+    "account_id": "ACC-CUS-000120-01",
+    "customer_id": "CUS-000120",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-22T16:02:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000121",
+    "account_id": "ACC-CUS-000121-01",
+    "customer_id": "CUS-000121",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-10T06:40:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000122",
+    "account_id": "ACC-CUS-000122-01",
+    "customer_id": "CUS-000122",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-01T18:00:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000123",
+    "account_id": "ACC-CUS-000123-01",
+    "customer_id": "CUS-000123",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-28T02:29:47Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000124",
+    "account_id": "ACC-CUS-000124-01",
+    "customer_id": "CUS-000124",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T23:42:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000125",
+    "account_id": "ACC-CUS-000125-01",
+    "customer_id": "CUS-000125",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-06T08:39:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000126",
+    "account_id": "ACC-CUS-000126-01",
+    "customer_id": "CUS-000126",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-07T07:18:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000127",
+    "account_id": "ACC-CUS-000127-01",
+    "customer_id": "CUS-000127",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-17T09:15:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000128",
+    "account_id": "ACC-CUS-000128-01",
+    "customer_id": "CUS-000128",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000129",
+    "account_id": "ACC-CUS-000129-01",
+    "customer_id": "CUS-000129",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-10T04:27:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000130",
+    "account_id": "ACC-CUS-000130-01",
+    "customer_id": "CUS-000130",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-20T13:54:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000131",
+    "account_id": "ACC-CUS-000131-01",
+    "customer_id": "CUS-000131",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-21T05:06:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000132",
+    "account_id": "ACC-CUS-000132-01",
+    "customer_id": "CUS-000132",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-30T16:53:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000133",
+    "account_id": "ACC-CUS-000133-01",
+    "customer_id": "CUS-000133",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-18T20:00:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000134",
+    "account_id": "ACC-CUS-000134-01",
+    "customer_id": "CUS-000134",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-29T19:51:50Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000135",
+    "account_id": "ACC-CUS-000135-01",
+    "customer_id": "CUS-000135",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-23T11:48:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000136",
+    "account_id": "ACC-CUS-000136-01",
+    "customer_id": "CUS-000136",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-04-06T09:17:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000137",
+    "account_id": "ACC-CUS-000137-01",
+    "customer_id": "CUS-000137",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-30T01:27:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000138",
+    "account_id": "ACC-CUS-000138-01",
+    "customer_id": "CUS-000138",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-22T22:21:31Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000139",
+    "account_id": "ACC-CUS-000139-01",
+    "customer_id": "CUS-000139",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-15T05:56:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000140",
+    "account_id": "ACC-CUS-000140-01",
+    "customer_id": "CUS-000140",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-29T06:31:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000141",
+    "account_id": "ACC-CUS-000141-01",
+    "customer_id": "CUS-000141",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-26T23:41:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000142",
+    "account_id": "ACC-CUS-000142-01",
+    "customer_id": "CUS-000142",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-21T06:29:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000143",
+    "account_id": "ACC-CUS-000143-01",
+    "customer_id": "CUS-000143",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-27T08:27:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000144",
+    "account_id": "ACC-CUS-000144-01",
+    "customer_id": "CUS-000144",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-15T03:54:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000145",
+    "account_id": "ACC-CUS-000145-01",
+    "customer_id": "CUS-000145",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-24T23:13:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000146",
+    "account_id": "ACC-CUS-000146-01",
+    "customer_id": "CUS-000146",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-20T11:48:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000147",
+    "account_id": "ACC-CUS-000147-01",
+    "customer_id": "CUS-000147",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-27T12:11:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000148",
+    "account_id": "ACC-CUS-000148-01",
+    "customer_id": "CUS-000148",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-09T06:02:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000149",
+    "account_id": "ACC-CUS-000149-01",
+    "customer_id": "CUS-000149",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000150",
+    "account_id": "ACC-CUS-000150-01",
+    "customer_id": "CUS-000150",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-22T01:21:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000151",
+    "account_id": "ACC-CUS-000151-01",
+    "customer_id": "CUS-000151",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000152",
+    "account_id": "ACC-CUS-000152-01",
+    "customer_id": "CUS-000152",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-14T07:36:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000153",
+    "account_id": "ACC-CUS-000153-01",
+    "customer_id": "CUS-000153",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-23T16:59:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000154",
+    "account_id": "ACC-CUS-000154-01",
+    "customer_id": "CUS-000154",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-16T17:55:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000155",
+    "account_id": "ACC-CUS-000155-01",
+    "customer_id": "CUS-000155",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-13T04:59:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000156",
+    "account_id": "ACC-CUS-000156-01",
+    "customer_id": "CUS-000156",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-27T08:53:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000157",
+    "account_id": "ACC-CUS-000157-01",
+    "customer_id": "CUS-000157",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000158",
+    "account_id": "ACC-CUS-000158-01",
+    "customer_id": "CUS-000158",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-29T09:33:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000159",
+    "account_id": "ACC-CUS-000159-01",
+    "customer_id": "CUS-000159",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-25T16:35:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000160",
+    "account_id": "ACC-CUS-000160-01",
+    "customer_id": "CUS-000160",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-26T20:25:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000161",
+    "account_id": "ACC-CUS-000161-01",
+    "customer_id": "CUS-000161",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-04T21:29:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000162",
+    "account_id": "ACC-CUS-000162-01",
+    "customer_id": "CUS-000162",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000163",
+    "account_id": "ACC-CUS-000163-01",
+    "customer_id": "CUS-000163",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000164",
+    "account_id": "ACC-CUS-000164-01",
+    "customer_id": "CUS-000164",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-07T21:00:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000165",
+    "account_id": "ACC-CUS-000165-01",
+    "customer_id": "CUS-000165",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-28T00:00:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000166",
+    "account_id": "ACC-CUS-000166-01",
+    "customer_id": "CUS-000166",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-22T13:30:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000167",
+    "account_id": "ACC-CUS-000167-01",
+    "customer_id": "CUS-000167",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-08T07:06:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000168",
+    "account_id": "ACC-CUS-000168-01",
+    "customer_id": "CUS-000168",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-10T11:22:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000169",
+    "account_id": "ACC-CUS-000169-01",
+    "customer_id": "CUS-000169",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-11T05:32:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000170",
+    "account_id": "ACC-CUS-000170-01",
+    "customer_id": "CUS-000170",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-12T14:16:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000171",
+    "account_id": "ACC-CUS-000171-01",
+    "customer_id": "CUS-000171",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-24T02:44:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000172",
+    "account_id": "ACC-CUS-000172-01",
+    "customer_id": "CUS-000172",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-20T21:16:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000173",
+    "account_id": "ACC-CUS-000173-01",
+    "customer_id": "CUS-000173",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-04T23:38:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000174",
+    "account_id": "ACC-CUS-000174-01",
+    "customer_id": "CUS-000174",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-05T05:29:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000175",
+    "account_id": "ACC-CUS-000175-01",
+    "customer_id": "CUS-000175",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-22T20:22:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000176",
+    "account_id": "ACC-CUS-000176-01",
+    "customer_id": "CUS-000176",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-24T13:43:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000177",
+    "account_id": "ACC-CUS-000177-01",
+    "customer_id": "CUS-000177",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000178",
+    "account_id": "ACC-CUS-000178-01",
+    "customer_id": "CUS-000178",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-18T17:34:48Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000179",
+    "account_id": "ACC-CUS-000179-01",
+    "customer_id": "CUS-000179",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-28T17:16:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000180",
+    "account_id": "ACC-CUS-000180-01",
+    "customer_id": "CUS-000180",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-21T10:40:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000181",
+    "account_id": "ACC-CUS-000181-01",
+    "customer_id": "CUS-000181",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-08T05:19:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000182",
+    "account_id": "ACC-CUS-000182-01",
+    "customer_id": "CUS-000182",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-28T08:20:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000183",
+    "account_id": "ACC-CUS-000183-01",
+    "customer_id": "CUS-000183",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-19T03:41:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000184",
+    "account_id": "ACC-CUS-000184-01",
+    "customer_id": "CUS-000184",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-28T05:11:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000185",
+    "account_id": "ACC-CUS-000185-01",
+    "customer_id": "CUS-000185",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000186",
+    "account_id": "ACC-CUS-000186-01",
+    "customer_id": "CUS-000186",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-11T04:05:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000187",
+    "account_id": "ACC-CUS-000187-01",
+    "customer_id": "CUS-000187",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-01T05:06:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000188",
+    "account_id": "ACC-CUS-000188-01",
+    "customer_id": "CUS-000188",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-12T04:47:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000189",
+    "account_id": "ACC-CUS-000189-01",
+    "customer_id": "CUS-000189",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-02T16:01:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000190",
+    "account_id": "ACC-CUS-000190-01",
+    "customer_id": "CUS-000190",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-15T18:48:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000191",
+    "account_id": "ACC-CUS-000191-01",
+    "customer_id": "CUS-000191",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-28T16:28:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000192",
+    "account_id": "ACC-CUS-000192-01",
+    "customer_id": "CUS-000192",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-03T09:49:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000193",
+    "account_id": "ACC-CUS-000193-01",
+    "customer_id": "CUS-000193",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-25T12:11:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000194",
+    "account_id": "ACC-CUS-000194-01",
+    "customer_id": "CUS-000194",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-03T16:06:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000195",
+    "account_id": "ACC-CUS-000195-01",
+    "customer_id": "CUS-000195",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-03T13:33:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000196",
+    "account_id": "ACC-CUS-000196-01",
+    "customer_id": "CUS-000196",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-19T08:26:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000197",
+    "account_id": "ACC-CUS-000197-01",
+    "customer_id": "CUS-000197",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-05T04:43:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000198",
+    "account_id": "ACC-CUS-000198-01",
+    "customer_id": "CUS-000198",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-31T09:38:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000199",
+    "account_id": "ACC-CUS-000199-01",
+    "customer_id": "CUS-000199",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-17T01:17:11Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000200",
+    "account_id": "ACC-CUS-000200-01",
+    "customer_id": "CUS-000200",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-04T21:11:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000201",
+    "account_id": "ACC-CUS-000201-01",
+    "customer_id": "CUS-000201",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-22T14:32:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000202",
+    "account_id": "ACC-CUS-000202-01",
+    "customer_id": "CUS-000202",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-09T16:31:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000203",
+    "account_id": "ACC-CUS-000203-01",
+    "customer_id": "CUS-000203",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-18T10:43:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000204",
+    "account_id": "ACC-CUS-000204-01",
+    "customer_id": "CUS-000204",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-28T20:58:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000205",
+    "account_id": "ACC-CUS-000205-01",
+    "customer_id": "CUS-000205",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-08T06:13:54Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000206",
+    "account_id": "ACC-CUS-000206-01",
+    "customer_id": "CUS-000206",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-04T18:21:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000207",
+    "account_id": "ACC-CUS-000207-01",
+    "customer_id": "CUS-000207",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000208",
+    "account_id": "ACC-CUS-000208-01",
+    "customer_id": "CUS-000208",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-20T20:40:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000209",
+    "account_id": "ACC-CUS-000209-01",
+    "customer_id": "CUS-000209",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-13T20:57:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000210",
+    "account_id": "ACC-CUS-000210-01",
+    "customer_id": "CUS-000210",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-27T13:51:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000211",
+    "account_id": "ACC-CUS-000211-01",
+    "customer_id": "CUS-000211",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-25T07:56:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000212",
+    "account_id": "ACC-CUS-000212-01",
+    "customer_id": "CUS-000212",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-30T20:13:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000213",
+    "account_id": "ACC-CUS-000213-01",
+    "customer_id": "CUS-000213",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-25T03:44:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000214",
+    "account_id": "ACC-CUS-000214-01",
+    "customer_id": "CUS-000214",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-02-20T01:58:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000215",
+    "account_id": "ACC-CUS-000215-01",
+    "customer_id": "CUS-000215",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-11T12:17:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000216",
+    "account_id": "ACC-CUS-000216-01",
+    "customer_id": "CUS-000216",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-25T15:40:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000217",
+    "account_id": "ACC-CUS-000217-01",
+    "customer_id": "CUS-000217",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-19T14:20:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000218",
+    "account_id": "ACC-CUS-000218-01",
+    "customer_id": "CUS-000218",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-06T00:17:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000219",
+    "account_id": "ACC-CUS-000219-01",
+    "customer_id": "CUS-000219",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000220",
+    "account_id": "ACC-CUS-000220-01",
+    "customer_id": "CUS-000220",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-18T04:18:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000221",
+    "account_id": "ACC-CUS-000221-01",
+    "customer_id": "CUS-000221",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-10T20:50:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000222",
+    "account_id": "ACC-CUS-000222-01",
+    "customer_id": "CUS-000222",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-23T18:43:37Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000223",
+    "account_id": "ACC-CUS-000223-01",
+    "customer_id": "CUS-000223",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-13T21:44:12Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000224",
+    "account_id": "ACC-CUS-000224-01",
+    "customer_id": "CUS-000224",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-05T00:04:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000225",
+    "account_id": "ACC-CUS-000225-01",
+    "customer_id": "CUS-000225",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-02T09:14:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000226",
+    "account_id": "ACC-CUS-000226-01",
+    "customer_id": "CUS-000226",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-13T09:56:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000227",
+    "account_id": "ACC-CUS-000227-01",
+    "customer_id": "CUS-000227",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-08T07:07:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000228",
+    "account_id": "ACC-CUS-000228-01",
+    "customer_id": "CUS-000228",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-11T06:42:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000229",
+    "account_id": "ACC-CUS-000229-01",
+    "customer_id": "CUS-000229",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-01T20:27:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000230",
+    "account_id": "ACC-CUS-000230-01",
+    "customer_id": "CUS-000230",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-31T04:07:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000231",
+    "account_id": "ACC-CUS-000231-01",
+    "customer_id": "CUS-000231",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-11T21:15:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000232",
+    "account_id": "ACC-CUS-000232-01",
+    "customer_id": "CUS-000232",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-04T00:32:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000233",
+    "account_id": "ACC-CUS-000233-01",
+    "customer_id": "CUS-000233",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-25T15:23:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000234",
+    "account_id": "ACC-CUS-000234-01",
+    "customer_id": "CUS-000234",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-16T17:05:39Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000235",
+    "account_id": "ACC-CUS-000235-01",
+    "customer_id": "CUS-000235",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000236",
+    "account_id": "ACC-CUS-000236-01",
+    "customer_id": "CUS-000236",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-07T01:57:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000237",
+    "account_id": "ACC-CUS-000237-01",
+    "customer_id": "CUS-000237",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-09T00:33:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000238",
+    "account_id": "ACC-CUS-000238-01",
+    "customer_id": "CUS-000238",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000239",
+    "account_id": "ACC-CUS-000239-01",
+    "customer_id": "CUS-000239",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-08T20:44:31Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000240",
+    "account_id": "ACC-CUS-000240-01",
+    "customer_id": "CUS-000240",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-02T21:00:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000241",
+    "account_id": "ACC-CUS-000241-01",
+    "customer_id": "CUS-000241",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-21T21:54:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000242",
+    "account_id": "ACC-CUS-000242-01",
+    "customer_id": "CUS-000242",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-04T16:20:48Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000243",
+    "account_id": "ACC-CUS-000243-01",
+    "customer_id": "CUS-000243",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000244",
+    "account_id": "ACC-CUS-000244-01",
+    "customer_id": "CUS-000244",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-10-17T19:58:25Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000245",
+    "account_id": "ACC-CUS-000245-01",
+    "customer_id": "CUS-000245",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T17:13:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000246",
+    "account_id": "ACC-CUS-000246-01",
+    "customer_id": "CUS-000246",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-05T19:36:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000247",
+    "account_id": "ACC-CUS-000247-01",
+    "customer_id": "CUS-000247",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-27T16:58:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000248",
+    "account_id": "ACC-CUS-000248-01",
+    "customer_id": "CUS-000248",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-22T19:10:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000249",
+    "account_id": "ACC-CUS-000249-01",
+    "customer_id": "CUS-000249",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-11T09:06:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000250",
+    "account_id": "ACC-CUS-000250-01",
+    "customer_id": "CUS-000250",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-13T14:14:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000251",
+    "account_id": "ACC-CUS-000251-01",
+    "customer_id": "CUS-000251",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-27T14:48:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000252",
+    "account_id": "ACC-CUS-000252-01",
+    "customer_id": "CUS-000252",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-15T03:20:12Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000253",
+    "account_id": "ACC-CUS-000253-01",
+    "customer_id": "CUS-000253",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-30T22:51:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000254",
+    "account_id": "ACC-CUS-000254-01",
+    "customer_id": "CUS-000254",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-08T05:52:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000255",
+    "account_id": "ACC-CUS-000255-01",
+    "customer_id": "CUS-000255",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-16T11:32:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000256",
+    "account_id": "ACC-CUS-000256-01",
+    "customer_id": "CUS-000256",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-05T15:04:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000257",
+    "account_id": "ACC-CUS-000257-01",
+    "customer_id": "CUS-000257",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-18T07:57:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000258",
+    "account_id": "ACC-CUS-000258-01",
+    "customer_id": "CUS-000258",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-09T22:46:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000259",
+    "account_id": "ACC-CUS-000259-01",
+    "customer_id": "CUS-000259",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-24T01:26:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000260",
+    "account_id": "ACC-CUS-000260-01",
+    "customer_id": "CUS-000260",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-21T13:57:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000261",
+    "account_id": "ACC-CUS-000261-01",
+    "customer_id": "CUS-000261",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-13T11:58:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000262",
+    "account_id": "ACC-CUS-000262-01",
+    "customer_id": "CUS-000262",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-10T03:54:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000263",
+    "account_id": "ACC-CUS-000263-01",
+    "customer_id": "CUS-000263",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-30T09:36:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000264",
+    "account_id": "ACC-CUS-000264-01",
+    "customer_id": "CUS-000264",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-22T03:44:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000265",
+    "account_id": "ACC-CUS-000265-01",
+    "customer_id": "CUS-000265",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-07T13:42:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000266",
+    "account_id": "ACC-CUS-000266-01",
+    "customer_id": "CUS-000266",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-03T19:42:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000267",
+    "account_id": "ACC-CUS-000267-01",
+    "customer_id": "CUS-000267",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-15T19:30:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000268",
+    "account_id": "ACC-CUS-000268-01",
+    "customer_id": "CUS-000268",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-24T16:25:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000269",
+    "account_id": "ACC-CUS-000269-01",
+    "customer_id": "CUS-000269",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-21T07:58:11Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000270",
+    "account_id": "ACC-CUS-000270-01",
+    "customer_id": "CUS-000270",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-05T05:26:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000271",
+    "account_id": "ACC-CUS-000271-01",
+    "customer_id": "CUS-000271",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-14T16:27:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000272",
+    "account_id": "ACC-CUS-000272-01",
+    "customer_id": "CUS-000272",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-16T13:15:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000273",
+    "account_id": "ACC-CUS-000273-01",
+    "customer_id": "CUS-000273",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-04T06:23:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000274",
+    "account_id": "ACC-CUS-000274-01",
+    "customer_id": "CUS-000274",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-24T06:04:54Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000275",
+    "account_id": "ACC-CUS-000275-01",
+    "customer_id": "CUS-000275",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-02T22:57:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000276",
+    "account_id": "ACC-CUS-000276-01",
+    "customer_id": "CUS-000276",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-02T20:45:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000277",
+    "account_id": "ACC-CUS-000277-01",
+    "customer_id": "CUS-000277",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-05T15:57:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000278",
+    "account_id": "ACC-CUS-000278-01",
+    "customer_id": "CUS-000278",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-03T12:15:12Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000279",
+    "account_id": "ACC-CUS-000279-01",
+    "customer_id": "CUS-000279",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-15T16:28:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000280",
+    "account_id": "ACC-CUS-000280-01",
+    "customer_id": "CUS-000280",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-26T22:07:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000281",
+    "account_id": "ACC-CUS-000281-01",
+    "customer_id": "CUS-000281",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-17T03:24:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000282",
+    "account_id": "ACC-CUS-000282-01",
+    "customer_id": "CUS-000282",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-07T20:05:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000283",
+    "account_id": "ACC-CUS-000283-01",
+    "customer_id": "CUS-000283",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-08T00:35:17Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000284",
+    "account_id": "ACC-CUS-000284-01",
+    "customer_id": "CUS-000284",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-18T23:17:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000285",
+    "account_id": "ACC-CUS-000285-01",
+    "customer_id": "CUS-000285",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-24T21:37:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000286",
+    "account_id": "ACC-CUS-000286-01",
+    "customer_id": "CUS-000286",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-05T22:04:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000287",
+    "account_id": "ACC-CUS-000287-01",
+    "customer_id": "CUS-000287",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-07-24T17:47:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000288",
+    "account_id": "ACC-CUS-000288-01",
+    "customer_id": "CUS-000288",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-02T05:52:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000289",
+    "account_id": "ACC-CUS-000289-01",
+    "customer_id": "CUS-000289",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-16T14:43:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000290",
+    "account_id": "ACC-CUS-000290-01",
+    "customer_id": "CUS-000290",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-05T19:24:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000291",
+    "account_id": "ACC-CUS-000291-01",
+    "customer_id": "CUS-000291",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-26T16:23:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000292",
+    "account_id": "ACC-CUS-000292-01",
+    "customer_id": "CUS-000292",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-06T08:17:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000293",
+    "account_id": "ACC-CUS-000293-01",
+    "customer_id": "CUS-000293",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-16T09:57:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000294",
+    "account_id": "ACC-CUS-000294-01",
+    "customer_id": "CUS-000294",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-17T01:32:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000295",
+    "account_id": "ACC-CUS-000295-01",
+    "customer_id": "CUS-000295",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-19T13:58:31Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000296",
+    "account_id": "ACC-CUS-000296-01",
+    "customer_id": "CUS-000296",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-18T03:56:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000297",
+    "account_id": "ACC-CUS-000297-01",
+    "customer_id": "CUS-000297",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-04T21:50:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000298",
+    "account_id": "ACC-CUS-000298-01",
+    "customer_id": "CUS-000298",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-12T11:19:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000299",
+    "account_id": "ACC-CUS-000299-01",
+    "customer_id": "CUS-000299",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-25T17:13:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000300",
+    "account_id": "ACC-CUS-000300-01",
+    "customer_id": "CUS-000300",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-10T18:51:17Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000301",
+    "account_id": "ACC-CUS-000301-01",
+    "customer_id": "CUS-000301",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-01T10:03:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000302",
+    "account_id": "ACC-CUS-000302-01",
+    "customer_id": "CUS-000302",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-04T22:20:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000303",
+    "account_id": "ACC-CUS-000303-01",
+    "customer_id": "CUS-000303",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-04T07:37:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000304",
+    "account_id": "ACC-CUS-000304-01",
+    "customer_id": "CUS-000304",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-18T04:11:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000305",
+    "account_id": "ACC-CUS-000305-01",
+    "customer_id": "CUS-000305",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-10T17:14:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000306",
+    "account_id": "ACC-CUS-000306-01",
+    "customer_id": "CUS-000306",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-14T10:42:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000307",
+    "account_id": "ACC-CUS-000307-01",
+    "customer_id": "CUS-000307",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-21T22:25:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000308",
+    "account_id": "ACC-CUS-000308-01",
+    "customer_id": "CUS-000308",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-04T06:37:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000309",
+    "account_id": "ACC-CUS-000309-01",
+    "customer_id": "CUS-000309",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-10T12:10:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000310",
+    "account_id": "ACC-CUS-000310-01",
+    "customer_id": "CUS-000310",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-12T00:40:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000311",
+    "account_id": "ACC-CUS-000311-01",
+    "customer_id": "CUS-000311",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-08T13:53:54Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000312",
+    "account_id": "ACC-CUS-000312-01",
+    "customer_id": "CUS-000312",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-04T11:35:12Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000313",
+    "account_id": "ACC-CUS-000313-01",
+    "customer_id": "CUS-000313",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-02T10:57:25Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000314",
+    "account_id": "ACC-CUS-000314-01",
+    "customer_id": "CUS-000314",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-16T03:33:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000315",
+    "account_id": "ACC-CUS-000315-01",
+    "customer_id": "CUS-000315",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-23T20:57:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000316",
+    "account_id": "ACC-CUS-000316-01",
+    "customer_id": "CUS-000316",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000317",
+    "account_id": "ACC-CUS-000317-01",
+    "customer_id": "CUS-000317",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-19T04:48:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000318",
+    "account_id": "ACC-CUS-000318-01",
+    "customer_id": "CUS-000318",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-17T09:35:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000319",
+    "account_id": "ACC-CUS-000319-01",
+    "customer_id": "CUS-000319",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-18T01:51:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000320",
+    "account_id": "ACC-CUS-000320-01",
+    "customer_id": "CUS-000320",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-28T11:49:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000321",
+    "account_id": "ACC-CUS-000321-01",
+    "customer_id": "CUS-000321",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-05T21:17:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000322",
+    "account_id": "ACC-CUS-000322-01",
+    "customer_id": "CUS-000322",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000323",
+    "account_id": "ACC-CUS-000323-01",
+    "customer_id": "CUS-000323",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-26T00:35:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000324",
+    "account_id": "ACC-CUS-000324-01",
+    "customer_id": "CUS-000324",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-14T07:46:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000325",
+    "account_id": "ACC-CUS-000325-01",
+    "customer_id": "CUS-000325",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-11T17:18:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000326",
+    "account_id": "ACC-CUS-000326-01",
+    "customer_id": "CUS-000326",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-03T08:41:47Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000327",
+    "account_id": "ACC-CUS-000327-01",
+    "customer_id": "CUS-000327",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-11T13:49:06Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000328",
+    "account_id": "ACC-CUS-000328-01",
+    "customer_id": "CUS-000328",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T01:14:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000329",
+    "account_id": "ACC-CUS-000329-01",
+    "customer_id": "CUS-000329",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-03T23:09:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000330",
+    "account_id": "ACC-CUS-000330-01",
+    "customer_id": "CUS-000330",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-23T17:26:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000331",
+    "account_id": "ACC-CUS-000331-01",
+    "customer_id": "CUS-000331",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-16T17:57:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000332",
+    "account_id": "ACC-CUS-000332-01",
+    "customer_id": "CUS-000332",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-13T05:00:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000333",
+    "account_id": "ACC-CUS-000333-01",
+    "customer_id": "CUS-000333",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-04T10:13:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000334",
+    "account_id": "ACC-CUS-000334-01",
+    "customer_id": "CUS-000334",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-04T08:19:56Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000335",
+    "account_id": "ACC-CUS-000335-01",
+    "customer_id": "CUS-000335",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-13T17:42:06Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000336",
+    "account_id": "ACC-CUS-000336-01",
+    "customer_id": "CUS-000336",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-17T10:27:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000337",
+    "account_id": "ACC-CUS-000337-01",
+    "customer_id": "CUS-000337",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-29T22:15:25Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000338",
+    "account_id": "ACC-CUS-000338-01",
+    "customer_id": "CUS-000338",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-24T11:05:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000339",
+    "account_id": "ACC-CUS-000339-01",
+    "customer_id": "CUS-000339",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-23T17:40:54Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000340",
+    "account_id": "ACC-CUS-000340-01",
+    "customer_id": "CUS-000340",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-06T12:04:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000341",
+    "account_id": "ACC-CUS-000341-01",
+    "customer_id": "CUS-000341",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-12T01:33:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000342",
+    "account_id": "ACC-CUS-000342-01",
+    "customer_id": "CUS-000342",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-12T11:38:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000343",
+    "account_id": "ACC-CUS-000343-01",
+    "customer_id": "CUS-000343",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-11T03:41:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000344",
+    "account_id": "ACC-CUS-000344-01",
+    "customer_id": "CUS-000344",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-08T12:16:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000345",
+    "account_id": "ACC-CUS-000345-01",
+    "customer_id": "CUS-000345",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-31T13:47:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000346",
+    "account_id": "ACC-CUS-000346-01",
+    "customer_id": "CUS-000346",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-09T06:17:47Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000347",
+    "account_id": "ACC-CUS-000347-01",
+    "customer_id": "CUS-000347",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-27T23:46:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000348",
+    "account_id": "ACC-CUS-000348-01",
+    "customer_id": "CUS-000348",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-28T09:28:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000349",
+    "account_id": "ACC-CUS-000349-01",
+    "customer_id": "CUS-000349",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-01T21:12:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000350",
+    "account_id": "ACC-CUS-000350-01",
+    "customer_id": "CUS-000350",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-01T23:30:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000351",
+    "account_id": "ACC-CUS-000351-01",
+    "customer_id": "CUS-000351",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-19T17:14:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000352",
+    "account_id": "ACC-CUS-000352-01",
+    "customer_id": "CUS-000352",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-30T20:43:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000353",
+    "account_id": "ACC-CUS-000353-01",
+    "customer_id": "CUS-000353",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-06T13:14:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000354",
+    "account_id": "ACC-CUS-000354-01",
+    "customer_id": "CUS-000354",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-31T09:48:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000355",
+    "account_id": "ACC-CUS-000355-01",
+    "customer_id": "CUS-000355",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-09T21:01:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000356",
+    "account_id": "ACC-CUS-000356-01",
+    "customer_id": "CUS-000356",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000357",
+    "account_id": "ACC-CUS-000357-01",
+    "customer_id": "CUS-000357",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-25T13:09:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000358",
+    "account_id": "ACC-CUS-000358-01",
+    "customer_id": "CUS-000358",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-29T22:59:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000359",
+    "account_id": "ACC-CUS-000359-01",
+    "customer_id": "CUS-000359",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000360",
+    "account_id": "ACC-CUS-000360-01",
+    "customer_id": "CUS-000360",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-03T14:37:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000361",
+    "account_id": "ACC-CUS-000361-01",
+    "customer_id": "CUS-000361",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-14T09:42:24Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000362",
+    "account_id": "ACC-CUS-000362-01",
+    "customer_id": "CUS-000362",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-14T16:49:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000363",
+    "account_id": "ACC-CUS-000363-01",
+    "customer_id": "CUS-000363",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-23T11:40:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000364",
+    "account_id": "ACC-CUS-000364-01",
+    "customer_id": "CUS-000364",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-26T21:25:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000365",
+    "account_id": "ACC-CUS-000365-01",
+    "customer_id": "CUS-000365",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-02T00:29:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000366",
+    "account_id": "ACC-CUS-000366-01",
+    "customer_id": "CUS-000366",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-09T12:46:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000367",
+    "account_id": "ACC-CUS-000367-01",
+    "customer_id": "CUS-000367",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-31T05:35:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000368",
+    "account_id": "ACC-CUS-000368-01",
+    "customer_id": "CUS-000368",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000369",
+    "account_id": "ACC-CUS-000369-01",
+    "customer_id": "CUS-000369",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-01T19:28:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000370",
+    "account_id": "ACC-CUS-000370-01",
+    "customer_id": "CUS-000370",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-28T00:38:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000371",
+    "account_id": "ACC-CUS-000371-01",
+    "customer_id": "CUS-000371",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-07T18:51:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000372",
+    "account_id": "ACC-CUS-000372-01",
+    "customer_id": "CUS-000372",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-01T19:23:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000373",
+    "account_id": "ACC-CUS-000373-01",
+    "customer_id": "CUS-000373",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-10T12:10:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000374",
+    "account_id": "ACC-CUS-000374-01",
+    "customer_id": "CUS-000374",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-06T10:37:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000375",
+    "account_id": "ACC-CUS-000375-01",
+    "customer_id": "CUS-000375",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-14T11:30:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000376",
+    "account_id": "ACC-CUS-000376-01",
+    "customer_id": "CUS-000376",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-26T23:50:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000377",
+    "account_id": "ACC-CUS-000377-01",
+    "customer_id": "CUS-000377",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-04T02:18:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000378",
+    "account_id": "ACC-CUS-000378-01",
+    "customer_id": "CUS-000378",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-05T22:13:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000379",
+    "account_id": "ACC-CUS-000379-01",
+    "customer_id": "CUS-000379",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-27T08:26:26Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000380",
+    "account_id": "ACC-CUS-000380-01",
+    "customer_id": "CUS-000380",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-12T00:18:24Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000381",
+    "account_id": "ACC-CUS-000381-01",
+    "customer_id": "CUS-000381",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-23T21:39:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000382",
+    "account_id": "ACC-CUS-000382-01",
+    "customer_id": "CUS-000382",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-17T06:30:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000383",
+    "account_id": "ACC-CUS-000383-01",
+    "customer_id": "CUS-000383",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-03T09:12:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000384",
+    "account_id": "ACC-CUS-000384-01",
+    "customer_id": "CUS-000384",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-18T18:46:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000385",
+    "account_id": "ACC-CUS-000385-01",
+    "customer_id": "CUS-000385",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-31T13:19:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000386",
+    "account_id": "ACC-CUS-000386-01",
+    "customer_id": "CUS-000386",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-20T12:35:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000387",
+    "account_id": "ACC-CUS-000387-01",
+    "customer_id": "CUS-000387",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-08T08:08:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000388",
+    "account_id": "ACC-CUS-000388-01",
+    "customer_id": "CUS-000388",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-27T19:25:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000389",
+    "account_id": "ACC-CUS-000389-01",
+    "customer_id": "CUS-000389",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-31T17:58:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000390",
+    "account_id": "ACC-CUS-000390-01",
+    "customer_id": "CUS-000390",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-21T10:32:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000391",
+    "account_id": "ACC-CUS-000391-01",
+    "customer_id": "CUS-000391",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-14T04:07:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000392",
+    "account_id": "ACC-CUS-000392-01",
+    "customer_id": "CUS-000392",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-27T10:50:47Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000393",
+    "account_id": "ACC-CUS-000393-01",
+    "customer_id": "CUS-000393",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-14T02:05:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000394",
+    "account_id": "ACC-CUS-000394-01",
+    "customer_id": "CUS-000394",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-27T02:45:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000395",
+    "account_id": "ACC-CUS-000395-01",
+    "customer_id": "CUS-000395",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-01T03:55:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000396",
+    "account_id": "ACC-CUS-000396-01",
+    "customer_id": "CUS-000396",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-16T16:03:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000397",
+    "account_id": "ACC-CUS-000397-01",
+    "customer_id": "CUS-000397",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-08T01:13:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000398",
+    "account_id": "ACC-CUS-000398-01",
+    "customer_id": "CUS-000398",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-07T23:37:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000399",
+    "account_id": "ACC-CUS-000399-01",
+    "customer_id": "CUS-000399",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-09T21:03:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000400",
+    "account_id": "ACC-CUS-000400-01",
+    "customer_id": "CUS-000400",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-27T06:04:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000401",
+    "account_id": "ACC-CUS-000401-01",
+    "customer_id": "CUS-000401",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-09T06:33:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000402",
+    "account_id": "ACC-CUS-000402-01",
+    "customer_id": "CUS-000402",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-12T14:32:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000403",
+    "account_id": "ACC-CUS-000403-01",
+    "customer_id": "CUS-000403",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-12T09:31:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000404",
+    "account_id": "ACC-CUS-000404-01",
+    "customer_id": "CUS-000404",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-03T07:08:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000405",
+    "account_id": "ACC-CUS-000405-01",
+    "customer_id": "CUS-000405",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000406",
+    "account_id": "ACC-CUS-000406-01",
+    "customer_id": "CUS-000406",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-18T12:39:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000407",
+    "account_id": "ACC-CUS-000407-01",
+    "customer_id": "CUS-000407",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-29T08:14:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000408",
+    "account_id": "ACC-CUS-000408-01",
+    "customer_id": "CUS-000408",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-25T08:00:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000409",
+    "account_id": "ACC-CUS-000409-01",
+    "customer_id": "CUS-000409",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-18T06:18:42Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000410",
+    "account_id": "ACC-CUS-000410-01",
+    "customer_id": "CUS-000410",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-06T16:20:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000411",
+    "account_id": "ACC-CUS-000411-01",
+    "customer_id": "CUS-000411",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-29T02:22:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000412",
+    "account_id": "ACC-CUS-000412-01",
+    "customer_id": "CUS-000412",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-28T08:34:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000413",
+    "account_id": "ACC-CUS-000413-01",
+    "customer_id": "CUS-000413",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-23T11:39:11Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000414",
+    "account_id": "ACC-CUS-000414-01",
+    "customer_id": "CUS-000414",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-10T07:15:06Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000415",
+    "account_id": "ACC-CUS-000415-01",
+    "customer_id": "CUS-000415",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-04T02:40:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000416",
+    "account_id": "ACC-CUS-000416-01",
+    "customer_id": "CUS-000416",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-26T17:03:54Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000417",
+    "account_id": "ACC-CUS-000417-01",
+    "customer_id": "CUS-000417",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-21T21:22:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000418",
+    "account_id": "ACC-CUS-000418-01",
+    "customer_id": "CUS-000418",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-14T11:37:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000419",
+    "account_id": "ACC-CUS-000419-01",
+    "customer_id": "CUS-000419",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-16T20:39:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000420",
+    "account_id": "ACC-CUS-000420-01",
+    "customer_id": "CUS-000420",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-14T22:28:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000421",
+    "account_id": "ACC-CUS-000421-01",
+    "customer_id": "CUS-000421",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-17T04:42:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000422",
+    "account_id": "ACC-CUS-000422-01",
+    "customer_id": "CUS-000422",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000423",
+    "account_id": "ACC-CUS-000423-01",
+    "customer_id": "CUS-000423",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-21T16:57:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000424",
+    "account_id": "ACC-CUS-000424-01",
+    "customer_id": "CUS-000424",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-23T13:36:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000425",
+    "account_id": "ACC-CUS-000425-01",
+    "customer_id": "CUS-000425",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-02T05:10:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000426",
+    "account_id": "ACC-CUS-000426-01",
+    "customer_id": "CUS-000426",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-21T04:09:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000427",
+    "account_id": "ACC-CUS-000427-01",
+    "customer_id": "CUS-000427",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-14T13:57:31Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000428",
+    "account_id": "ACC-CUS-000428-01",
+    "customer_id": "CUS-000428",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-22T22:11:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000429",
+    "account_id": "ACC-CUS-000429-01",
+    "customer_id": "CUS-000429",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-22T20:43:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000430",
+    "account_id": "ACC-CUS-000430-01",
+    "customer_id": "CUS-000430",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-06T14:00:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000431",
+    "account_id": "ACC-CUS-000431-01",
+    "customer_id": "CUS-000431",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-12T02:59:06Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000432",
+    "account_id": "ACC-CUS-000432-01",
+    "customer_id": "CUS-000432",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-08T22:34:56Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000433",
+    "account_id": "ACC-CUS-000433-01",
+    "customer_id": "CUS-000433",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-30T07:53:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000434",
+    "account_id": "ACC-CUS-000434-01",
+    "customer_id": "CUS-000434",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T02:26:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000435",
+    "account_id": "ACC-CUS-000435-01",
+    "customer_id": "CUS-000435",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-02T19:17:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000436",
+    "account_id": "ACC-CUS-000436-01",
+    "customer_id": "CUS-000436",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-19T16:42:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000437",
+    "account_id": "ACC-CUS-000437-01",
+    "customer_id": "CUS-000437",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-21T11:49:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000438",
+    "account_id": "ACC-CUS-000438-01",
+    "customer_id": "CUS-000438",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-23T18:18:25Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000439",
+    "account_id": "ACC-CUS-000439-01",
+    "customer_id": "CUS-000439",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-03T01:45:24Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000440",
+    "account_id": "ACC-CUS-000440-01",
+    "customer_id": "CUS-000440",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-09T01:10:50Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000441",
+    "account_id": "ACC-CUS-000441-01",
+    "customer_id": "CUS-000441",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-18T23:38:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000442",
+    "account_id": "ACC-CUS-000442-01",
+    "customer_id": "CUS-000442",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-04T23:51:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000443",
+    "account_id": "ACC-CUS-000443-01",
+    "customer_id": "CUS-000443",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000444",
+    "account_id": "ACC-CUS-000444-01",
+    "customer_id": "CUS-000444",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-11T05:00:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000445",
+    "account_id": "ACC-CUS-000445-01",
+    "customer_id": "CUS-000445",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-15T12:20:26Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000446",
+    "account_id": "ACC-CUS-000446-01",
+    "customer_id": "CUS-000446",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-01T18:55:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000447",
+    "account_id": "ACC-CUS-000447-01",
+    "customer_id": "CUS-000447",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-02T00:36:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000448",
+    "account_id": "ACC-CUS-000448-01",
+    "customer_id": "CUS-000448",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-21T05:05:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000449",
+    "account_id": "ACC-CUS-000449-01",
+    "customer_id": "CUS-000449",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000450",
+    "account_id": "ACC-CUS-000450-01",
+    "customer_id": "CUS-000450",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-15T17:57:42Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000451",
+    "account_id": "ACC-CUS-000451-01",
+    "customer_id": "CUS-000451",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-21T17:24:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000452",
+    "account_id": "ACC-CUS-000452-01",
+    "customer_id": "CUS-000452",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-08T11:40:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000453",
+    "account_id": "ACC-CUS-000453-01",
+    "customer_id": "CUS-000453",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-05T14:03:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000454",
+    "account_id": "ACC-CUS-000454-01",
+    "customer_id": "CUS-000454",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-05T18:35:26Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000455",
+    "account_id": "ACC-CUS-000455-01",
+    "customer_id": "CUS-000455",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-13T06:07:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000456",
+    "account_id": "ACC-CUS-000456-01",
+    "customer_id": "CUS-000456",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-02-23T18:37:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000457",
+    "account_id": "ACC-CUS-000457-01",
+    "customer_id": "CUS-000457",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-14T11:03:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000458",
+    "account_id": "ACC-CUS-000458-01",
+    "customer_id": "CUS-000458",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-29T03:50:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000459",
+    "account_id": "ACC-CUS-000459-01",
+    "customer_id": "CUS-000459",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-17T13:55:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000460",
+    "account_id": "ACC-CUS-000460-01",
+    "customer_id": "CUS-000460",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-16T21:10:06Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000461",
+    "account_id": "ACC-CUS-000461-01",
+    "customer_id": "CUS-000461",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-10T04:06:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000462",
+    "account_id": "ACC-CUS-000462-01",
+    "customer_id": "CUS-000462",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-06T16:46:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000463",
+    "account_id": "ACC-CUS-000463-01",
+    "customer_id": "CUS-000463",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-30T21:09:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000464",
+    "account_id": "ACC-CUS-000464-01",
+    "customer_id": "CUS-000464",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-13T17:49:37Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000465",
+    "account_id": "ACC-CUS-000465-01",
+    "customer_id": "CUS-000465",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-28T04:20:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000466",
+    "account_id": "ACC-CUS-000466-01",
+    "customer_id": "CUS-000466",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T20:05:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000467",
+    "account_id": "ACC-CUS-000467-01",
+    "customer_id": "CUS-000467",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-22T19:43:11Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000468",
+    "account_id": "ACC-CUS-000468-01",
+    "customer_id": "CUS-000468",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-16T14:45:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000469",
+    "account_id": "ACC-CUS-000469-01",
+    "customer_id": "CUS-000469",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-25T20:28:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000470",
+    "account_id": "ACC-CUS-000470-01",
+    "customer_id": "CUS-000470",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000471",
+    "account_id": "ACC-CUS-000471-01",
+    "customer_id": "CUS-000471",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-04T17:14:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000472",
+    "account_id": "ACC-CUS-000472-01",
+    "customer_id": "CUS-000472",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000473",
+    "account_id": "ACC-CUS-000473-01",
+    "customer_id": "CUS-000473",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-10T07:45:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000474",
+    "account_id": "ACC-CUS-000474-01",
+    "customer_id": "CUS-000474",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-13T06:12:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000475",
+    "account_id": "ACC-CUS-000475-01",
+    "customer_id": "CUS-000475",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-01T08:22:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000476",
+    "account_id": "ACC-CUS-000476-01",
+    "customer_id": "CUS-000476",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-05T12:33:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000477",
+    "account_id": "ACC-CUS-000477-01",
+    "customer_id": "CUS-000477",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-30T01:28:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000478",
+    "account_id": "ACC-CUS-000478-01",
+    "customer_id": "CUS-000478",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-06T04:14:12Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000479",
+    "account_id": "ACC-CUS-000479-01",
+    "customer_id": "CUS-000479",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-10T05:19:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000480",
+    "account_id": "ACC-CUS-000480-01",
+    "customer_id": "CUS-000480",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-27T23:48:24Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000481",
+    "account_id": "ACC-CUS-000481-01",
+    "customer_id": "CUS-000481",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-17T19:34:39Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000482",
+    "account_id": "ACC-CUS-000482-01",
+    "customer_id": "CUS-000482",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-06T05:00:37Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000483",
+    "account_id": "ACC-CUS-000483-01",
+    "customer_id": "CUS-000483",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-15T09:05:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000484",
+    "account_id": "ACC-CUS-000484-01",
+    "customer_id": "CUS-000484",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-28T23:11:54Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000485",
+    "account_id": "ACC-CUS-000485-01",
+    "customer_id": "CUS-000485",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-08T13:25:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000486",
+    "account_id": "ACC-CUS-000486-01",
+    "customer_id": "CUS-000486",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-27T22:14:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000487",
+    "account_id": "ACC-CUS-000487-01",
+    "customer_id": "CUS-000487",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-03T21:59:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000488",
+    "account_id": "ACC-CUS-000488-01",
+    "customer_id": "CUS-000488",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-27T13:07:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000489",
+    "account_id": "ACC-CUS-000489-01",
+    "customer_id": "CUS-000489",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-06T07:38:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000490",
+    "account_id": "ACC-CUS-000490-01",
+    "customer_id": "CUS-000490",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-31T19:04:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000491",
+    "account_id": "ACC-CUS-000491-01",
+    "customer_id": "CUS-000491",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-05T15:04:50Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000492",
+    "account_id": "ACC-CUS-000492-01",
+    "customer_id": "CUS-000492",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T04:20:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000493",
+    "account_id": "ACC-CUS-000493-01",
+    "customer_id": "CUS-000493",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-21T22:49:47Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000494",
+    "account_id": "ACC-CUS-000494-01",
+    "customer_id": "CUS-000494",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-27T06:30:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000495",
+    "account_id": "ACC-CUS-000495-01",
+    "customer_id": "CUS-000495",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-26T03:39:11Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000496",
+    "account_id": "ACC-CUS-000496-01",
+    "customer_id": "CUS-000496",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-09T22:30:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000497",
+    "account_id": "ACC-CUS-000497-01",
+    "customer_id": "CUS-000497",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-08T22:54:12Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000498",
+    "account_id": "ACC-CUS-000498-01",
+    "customer_id": "CUS-000498",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-27T01:52:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000499",
+    "account_id": "ACC-CUS-000499-01",
+    "customer_id": "CUS-000499",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-03T08:17:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000500",
+    "account_id": "ACC-CUS-000500-01",
+    "customer_id": "CUS-000500",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-25T10:40:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000501",
+    "account_id": "ACC-CUS-000001-02",
+    "customer_id": "CUS-000001",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-02-26T09:47:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000502",
+    "account_id": "ACC-CUS-000002-02",
+    "customer_id": "CUS-000002",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-24T23:40:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000503",
+    "account_id": "ACC-CUS-000003-02",
+    "customer_id": "CUS-000003",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-08T06:07:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000504",
+    "account_id": "ACC-CUS-000004-02",
+    "customer_id": "CUS-000004",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-25T21:29:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000505",
+    "account_id": "ACC-CUS-000005-02",
+    "customer_id": "CUS-000005",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-15T16:31:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000506",
+    "account_id": "ACC-CUS-000006-02",
+    "customer_id": "CUS-000006",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-09T04:29:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000507",
+    "account_id": "ACC-CUS-000007-02",
+    "customer_id": "CUS-000007",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T23:47:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000508",
+    "account_id": "ACC-CUS-000008-02",
+    "customer_id": "CUS-000008",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-08T18:29:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000509",
+    "account_id": "ACC-CUS-000009-02",
+    "customer_id": "CUS-000009",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-22T14:27:39Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000510",
+    "account_id": "ACC-CUS-000010-02",
+    "customer_id": "CUS-000010",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-30T02:50:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000511",
+    "account_id": "ACC-CUS-000011-02",
+    "customer_id": "CUS-000011",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-19T12:30:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000512",
+    "account_id": "ACC-CUS-000012-02",
+    "customer_id": "CUS-000012",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-18T10:22:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000513",
+    "account_id": "ACC-CUS-000013-02",
+    "customer_id": "CUS-000013",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-03T07:29:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000514",
+    "account_id": "ACC-CUS-000014-02",
+    "customer_id": "CUS-000014",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000515",
+    "account_id": "ACC-CUS-000015-02",
+    "customer_id": "CUS-000015",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-02-12T18:45:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000516",
+    "account_id": "ACC-CUS-000016-02",
+    "customer_id": "CUS-000016",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-15T22:00:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000517",
+    "account_id": "ACC-CUS-000017-02",
+    "customer_id": "CUS-000017",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-07T08:07:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000518",
+    "account_id": "ACC-CUS-000018-02",
+    "customer_id": "CUS-000018",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-09T08:21:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000519",
+    "account_id": "ACC-CUS-000019-02",
+    "customer_id": "CUS-000019",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-06T15:12:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000520",
+    "account_id": "ACC-CUS-000020-02",
+    "customer_id": "CUS-000020",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-31T05:35:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000521",
+    "account_id": "ACC-CUS-000021-02",
+    "customer_id": "CUS-000021",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-02T09:08:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000522",
+    "account_id": "ACC-CUS-000022-02",
+    "customer_id": "CUS-000022",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-25T19:27:56Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000523",
+    "account_id": "ACC-CUS-000023-02",
+    "customer_id": "CUS-000023",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000524",
+    "account_id": "ACC-CUS-000024-02",
+    "customer_id": "CUS-000024",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-27T22:07:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000525",
+    "account_id": "ACC-CUS-000025-02",
+    "customer_id": "CUS-000025",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-01T03:21:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000526",
+    "account_id": "ACC-CUS-000026-02",
+    "customer_id": "CUS-000026",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-12T15:07:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000527",
+    "account_id": "ACC-CUS-000027-02",
+    "customer_id": "CUS-000027",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T13:41:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000528",
+    "account_id": "ACC-CUS-000028-02",
+    "customer_id": "CUS-000028",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-07T05:23:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000529",
+    "account_id": "ACC-CUS-000029-02",
+    "customer_id": "CUS-000029",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-20T21:15:42Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000530",
+    "account_id": "ACC-CUS-000030-02",
+    "customer_id": "CUS-000030",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-26T20:49:42Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000531",
+    "account_id": "ACC-CUS-000031-02",
+    "customer_id": "CUS-000031",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-13T11:44:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000532",
+    "account_id": "ACC-CUS-000032-02",
+    "customer_id": "CUS-000032",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000533",
+    "account_id": "ACC-CUS-000033-02",
+    "customer_id": "CUS-000033",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-06T02:57:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000534",
+    "account_id": "ACC-CUS-000034-02",
+    "customer_id": "CUS-000034",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-06T09:58:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000535",
+    "account_id": "ACC-CUS-000035-02",
+    "customer_id": "CUS-000035",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-17T12:16:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000536",
+    "account_id": "ACC-CUS-000036-02",
+    "customer_id": "CUS-000036",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-03T01:16:39Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000537",
+    "account_id": "ACC-CUS-000037-02",
+    "customer_id": "CUS-000037",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-20T16:02:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000538",
+    "account_id": "ACC-CUS-000038-02",
+    "customer_id": "CUS-000038",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-08T23:26:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000539",
+    "account_id": "ACC-CUS-000039-02",
+    "customer_id": "CUS-000039",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-10T05:24:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000540",
+    "account_id": "ACC-CUS-000040-02",
+    "customer_id": "CUS-000040",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-08T11:28:54Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000541",
+    "account_id": "ACC-CUS-000041-02",
+    "customer_id": "CUS-000041",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-29T17:46:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000542",
+    "account_id": "ACC-CUS-000042-02",
+    "customer_id": "CUS-000042",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-19T08:54:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000543",
+    "account_id": "ACC-CUS-000043-02",
+    "customer_id": "CUS-000043",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-27T04:10:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000544",
+    "account_id": "ACC-CUS-000044-02",
+    "customer_id": "CUS-000044",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-21T07:51:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000545",
+    "account_id": "ACC-CUS-000045-02",
+    "customer_id": "CUS-000045",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-08T16:34:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000546",
+    "account_id": "ACC-CUS-000046-02",
+    "customer_id": "CUS-000046",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-22T06:41:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000547",
+    "account_id": "ACC-CUS-000047-02",
+    "customer_id": "CUS-000047",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-13T17:39:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000548",
+    "account_id": "ACC-CUS-000048-02",
+    "customer_id": "CUS-000048",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-06T15:49:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000549",
+    "account_id": "ACC-CUS-000049-02",
+    "customer_id": "CUS-000049",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-05T15:05:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000550",
+    "account_id": "ACC-CUS-000050-02",
+    "customer_id": "CUS-000050",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-04T10:44:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000551",
+    "account_id": "ACC-CUS-000051-02",
+    "customer_id": "CUS-000051",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-28T22:20:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000552",
+    "account_id": "ACC-CUS-000052-02",
+    "customer_id": "CUS-000052",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-23T01:47:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000553",
+    "account_id": "ACC-CUS-000053-02",
+    "customer_id": "CUS-000053",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-26T09:16:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000554",
+    "account_id": "ACC-CUS-000054-02",
+    "customer_id": "CUS-000054",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-09T10:03:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000555",
+    "account_id": "ACC-CUS-000055-02",
+    "customer_id": "CUS-000055",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-27T14:56:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000556",
+    "account_id": "ACC-CUS-000056-02",
+    "customer_id": "CUS-000056",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-17T17:13:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000557",
+    "account_id": "ACC-CUS-000057-02",
+    "customer_id": "CUS-000057",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000558",
+    "account_id": "ACC-CUS-000058-02",
+    "customer_id": "CUS-000058",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-18T10:19:48Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000559",
+    "account_id": "ACC-CUS-000059-02",
+    "customer_id": "CUS-000059",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-22T06:59:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000560",
+    "account_id": "ACC-CUS-000060-02",
+    "customer_id": "CUS-000060",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-18T18:08:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000561",
+    "account_id": "ACC-CUS-000061-02",
+    "customer_id": "CUS-000061",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-19T19:05:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000562",
+    "account_id": "ACC-CUS-000062-02",
+    "customer_id": "CUS-000062",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-26T03:24:48Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000563",
+    "account_id": "ACC-CUS-000063-02",
+    "customer_id": "CUS-000063",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-24T10:01:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000564",
+    "account_id": "ACC-CUS-000064-02",
+    "customer_id": "CUS-000064",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-21T08:11:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000565",
+    "account_id": "ACC-CUS-000065-02",
+    "customer_id": "CUS-000065",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-10T02:22:42Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000566",
+    "account_id": "ACC-CUS-000066-02",
+    "customer_id": "CUS-000066",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-23T11:00:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000567",
+    "account_id": "ACC-CUS-000067-02",
+    "customer_id": "CUS-000067",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-13T05:24:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000568",
+    "account_id": "ACC-CUS-000068-02",
+    "customer_id": "CUS-000068",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-03T03:58:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000569",
+    "account_id": "ACC-CUS-000069-02",
+    "customer_id": "CUS-000069",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-30T14:59:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000570",
+    "account_id": "ACC-CUS-000070-02",
+    "customer_id": "CUS-000070",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-05-04T22:29:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000571",
+    "account_id": "ACC-CUS-000071-02",
+    "customer_id": "CUS-000071",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-10T07:14:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000572",
+    "account_id": "ACC-CUS-000072-02",
+    "customer_id": "CUS-000072",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-19T15:19:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000573",
+    "account_id": "ACC-CUS-000073-02",
+    "customer_id": "CUS-000073",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-24T05:33:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000574",
+    "account_id": "ACC-CUS-000074-02",
+    "customer_id": "CUS-000074",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-14T07:54:06Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000575",
+    "account_id": "ACC-CUS-000075-02",
+    "customer_id": "CUS-000075",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-16T04:10:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000576",
+    "account_id": "ACC-CUS-000076-02",
+    "customer_id": "CUS-000076",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-22T17:36:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000577",
+    "account_id": "ACC-CUS-000077-02",
+    "customer_id": "CUS-000077",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-20T11:10:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000578",
+    "account_id": "ACC-CUS-000078-02",
+    "customer_id": "CUS-000078",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-19T07:19:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000579",
+    "account_id": "ACC-CUS-000079-02",
+    "customer_id": "CUS-000079",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-18T06:13:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000580",
+    "account_id": "ACC-CUS-000080-02",
+    "customer_id": "CUS-000080",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-11T19:31:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000581",
+    "account_id": "ACC-CUS-000081-02",
+    "customer_id": "CUS-000081",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-02T11:32:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000582",
+    "account_id": "ACC-CUS-000082-02",
+    "customer_id": "CUS-000082",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-15T01:28:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000583",
+    "account_id": "ACC-CUS-000083-02",
+    "customer_id": "CUS-000083",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-09T09:19:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000584",
+    "account_id": "ACC-CUS-000084-02",
+    "customer_id": "CUS-000084",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-18T09:00:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000585",
+    "account_id": "ACC-CUS-000085-02",
+    "customer_id": "CUS-000085",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-25T15:32:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000586",
+    "account_id": "ACC-CUS-000086-02",
+    "customer_id": "CUS-000086",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-08T17:09:26Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000587",
+    "account_id": "ACC-CUS-000087-02",
+    "customer_id": "CUS-000087",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-23T19:53:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000588",
+    "account_id": "ACC-CUS-000088-02",
+    "customer_id": "CUS-000088",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-22T15:01:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000589",
+    "account_id": "ACC-CUS-000089-02",
+    "customer_id": "CUS-000089",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000590",
+    "account_id": "ACC-CUS-000090-02",
+    "customer_id": "CUS-000090",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-30T16:50:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000591",
+    "account_id": "ACC-CUS-000091-02",
+    "customer_id": "CUS-000091",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-15T22:09:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000592",
+    "account_id": "ACC-CUS-000092-02",
+    "customer_id": "CUS-000092",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-02T16:43:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000593",
+    "account_id": "ACC-CUS-000093-02",
+    "customer_id": "CUS-000093",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-20T03:39:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000594",
+    "account_id": "ACC-CUS-000094-02",
+    "customer_id": "CUS-000094",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-17T17:24:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000595",
+    "account_id": "ACC-CUS-000095-02",
+    "customer_id": "CUS-000095",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-18T09:01:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000596",
+    "account_id": "ACC-CUS-000096-02",
+    "customer_id": "CUS-000096",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-13T11:03:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000597",
+    "account_id": "ACC-CUS-000097-02",
+    "customer_id": "CUS-000097",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-30T00:46:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000598",
+    "account_id": "ACC-CUS-000098-02",
+    "customer_id": "CUS-000098",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-01T22:58:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000599",
+    "account_id": "ACC-CUS-000099-02",
+    "customer_id": "CUS-000099",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-23T21:01:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000600",
+    "account_id": "ACC-CUS-000100-02",
+    "customer_id": "CUS-000100",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-31T08:23:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000601",
+    "account_id": "ACC-CUS-000101-02",
+    "customer_id": "CUS-000101",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-18T00:36:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000602",
+    "account_id": "ACC-CUS-000102-02",
+    "customer_id": "CUS-000102",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-19T09:28:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000603",
+    "account_id": "ACC-CUS-000103-02",
+    "customer_id": "CUS-000103",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-03T18:10:24Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000604",
+    "account_id": "ACC-CUS-000104-02",
+    "customer_id": "CUS-000104",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-23T10:15:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000605",
+    "account_id": "ACC-CUS-000105-02",
+    "customer_id": "CUS-000105",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-02T04:29:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000606",
+    "account_id": "ACC-CUS-000106-02",
+    "customer_id": "CUS-000106",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-31T18:59:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000607",
+    "account_id": "ACC-CUS-000107-02",
+    "customer_id": "CUS-000107",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-27T19:13:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000608",
+    "account_id": "ACC-CUS-000108-02",
+    "customer_id": "CUS-000108",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-15T07:52:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000609",
+    "account_id": "ACC-CUS-000109-02",
+    "customer_id": "CUS-000109",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-17T08:51:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000610",
+    "account_id": "ACC-CUS-000110-02",
+    "customer_id": "CUS-000110",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-17T11:40:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000611",
+    "account_id": "ACC-CUS-000111-02",
+    "customer_id": "CUS-000111",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-21T17:58:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000612",
+    "account_id": "ACC-CUS-000112-02",
+    "customer_id": "CUS-000112",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-18T08:03:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000613",
+    "account_id": "ACC-CUS-000113-02",
+    "customer_id": "CUS-000113",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-11T18:40:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000614",
+    "account_id": "ACC-CUS-000114-02",
+    "customer_id": "CUS-000114",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-24T16:05:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000615",
+    "account_id": "ACC-CUS-000115-02",
+    "customer_id": "CUS-000115",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-05T09:07:12Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000616",
+    "account_id": "ACC-CUS-000116-02",
+    "customer_id": "CUS-000116",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-28T20:33:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000617",
+    "account_id": "ACC-CUS-000117-02",
+    "customer_id": "CUS-000117",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-24T16:38:50Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000618",
+    "account_id": "ACC-CUS-000118-02",
+    "customer_id": "CUS-000118",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-27T17:18:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000619",
+    "account_id": "ACC-CUS-000119-02",
+    "customer_id": "CUS-000119",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-16T21:03:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000620",
+    "account_id": "ACC-CUS-000120-02",
+    "customer_id": "CUS-000120",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-22T16:02:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000621",
+    "account_id": "ACC-CUS-000121-02",
+    "customer_id": "CUS-000121",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-10T06:40:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000622",
+    "account_id": "ACC-CUS-000122-02",
+    "customer_id": "CUS-000122",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-01T18:00:23Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000623",
+    "account_id": "ACC-CUS-000123-02",
+    "customer_id": "CUS-000123",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-28T02:29:47Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000624",
+    "account_id": "ACC-CUS-000124-02",
+    "customer_id": "CUS-000124",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-03T23:42:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000625",
+    "account_id": "ACC-CUS-000125-02",
+    "customer_id": "CUS-000125",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-06T08:39:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000626",
+    "account_id": "ACC-CUS-000126-02",
+    "customer_id": "CUS-000126",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-07T07:18:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000627",
+    "account_id": "ACC-CUS-000127-02",
+    "customer_id": "CUS-000127",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-17T09:15:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000628",
+    "account_id": "ACC-CUS-000128-02",
+    "customer_id": "CUS-000128",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000629",
+    "account_id": "ACC-CUS-000129-02",
+    "customer_id": "CUS-000129",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-10T04:27:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000630",
+    "account_id": "ACC-CUS-000130-02",
+    "customer_id": "CUS-000130",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-20T13:54:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000631",
+    "account_id": "ACC-CUS-000131-02",
+    "customer_id": "CUS-000131",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-21T05:06:40Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000632",
+    "account_id": "ACC-CUS-000132-02",
+    "customer_id": "CUS-000132",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-30T16:53:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000633",
+    "account_id": "ACC-CUS-000133-02",
+    "customer_id": "CUS-000133",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-18T20:00:10Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000634",
+    "account_id": "ACC-CUS-000134-02",
+    "customer_id": "CUS-000134",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-29T19:51:50Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000635",
+    "account_id": "ACC-CUS-000135-02",
+    "customer_id": "CUS-000135",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-23T11:48:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000636",
+    "account_id": "ACC-CUS-000136-02",
+    "customer_id": "CUS-000136",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-06T09:17:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000637",
+    "account_id": "ACC-CUS-000137-02",
+    "customer_id": "CUS-000137",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-30T01:27:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000638",
+    "account_id": "ACC-CUS-000138-02",
+    "customer_id": "CUS-000138",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-22T22:21:31Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000639",
+    "account_id": "ACC-CUS-000139-02",
+    "customer_id": "CUS-000139",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-15T05:56:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000640",
+    "account_id": "ACC-CUS-000140-02",
+    "customer_id": "CUS-000140",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-29T06:31:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000641",
+    "account_id": "ACC-CUS-000141-02",
+    "customer_id": "CUS-000141",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-26T23:41:22Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000642",
+    "account_id": "ACC-CUS-000142-02",
+    "customer_id": "CUS-000142",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-21T06:29:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000643",
+    "account_id": "ACC-CUS-000143-02",
+    "customer_id": "CUS-000143",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-27T08:27:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000644",
+    "account_id": "ACC-CUS-000144-02",
+    "customer_id": "CUS-000144",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-15T03:54:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000645",
+    "account_id": "ACC-CUS-000145-02",
+    "customer_id": "CUS-000145",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-24T23:13:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000646",
+    "account_id": "ACC-CUS-000146-02",
+    "customer_id": "CUS-000146",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-20T11:48:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000647",
+    "account_id": "ACC-CUS-000147-02",
+    "customer_id": "CUS-000147",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-27T12:11:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000648",
+    "account_id": "ACC-CUS-000148-02",
+    "customer_id": "CUS-000148",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-09T06:02:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000649",
+    "account_id": "ACC-CUS-000149-02",
+    "customer_id": "CUS-000149",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000650",
+    "account_id": "ACC-CUS-000150-02",
+    "customer_id": "CUS-000150",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-02-22T01:21:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000651",
+    "account_id": "ACC-CUS-000151-02",
+    "customer_id": "CUS-000151",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000652",
+    "account_id": "ACC-CUS-000152-02",
+    "customer_id": "CUS-000152",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-14T07:36:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000653",
+    "account_id": "ACC-CUS-000153-02",
+    "customer_id": "CUS-000153",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-23T16:59:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000654",
+    "account_id": "ACC-CUS-000154-02",
+    "customer_id": "CUS-000154",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-16T17:55:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000655",
+    "account_id": "ACC-CUS-000155-02",
+    "customer_id": "CUS-000155",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-13T04:59:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000656",
+    "account_id": "ACC-CUS-000156-02",
+    "customer_id": "CUS-000156",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-27T08:53:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000657",
+    "account_id": "ACC-CUS-000157-02",
+    "customer_id": "CUS-000157",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000658",
+    "account_id": "ACC-CUS-000158-02",
+    "customer_id": "CUS-000158",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-29T09:33:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000659",
+    "account_id": "ACC-CUS-000159-02",
+    "customer_id": "CUS-000159",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-25T16:35:32Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000660",
+    "account_id": "ACC-CUS-000160-02",
+    "customer_id": "CUS-000160",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-26T20:25:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000661",
+    "account_id": "ACC-CUS-000161-02",
+    "customer_id": "CUS-000161",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-04T21:29:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000662",
+    "account_id": "ACC-CUS-000162-02",
+    "customer_id": "CUS-000162",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000663",
+    "account_id": "ACC-CUS-000163-02",
+    "customer_id": "CUS-000163",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000664",
+    "account_id": "ACC-CUS-000164-02",
+    "customer_id": "CUS-000164",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-07T21:00:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000665",
+    "account_id": "ACC-CUS-000165-02",
+    "customer_id": "CUS-000165",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-28T00:00:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000666",
+    "account_id": "ACC-CUS-000166-02",
+    "customer_id": "CUS-000166",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-22T13:30:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000667",
+    "account_id": "ACC-CUS-000167-02",
+    "customer_id": "CUS-000167",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-08T07:06:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000668",
+    "account_id": "ACC-CUS-000168-02",
+    "customer_id": "CUS-000168",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-10T11:22:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000669",
+    "account_id": "ACC-CUS-000169-02",
+    "customer_id": "CUS-000169",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-11T05:32:28Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000670",
+    "account_id": "ACC-CUS-000170-02",
+    "customer_id": "CUS-000170",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-12T14:16:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000671",
+    "account_id": "ACC-CUS-000171-02",
+    "customer_id": "CUS-000171",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-24T02:44:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000672",
+    "account_id": "ACC-CUS-000172-02",
+    "customer_id": "CUS-000172",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-20T21:16:52Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000673",
+    "account_id": "ACC-CUS-000173-02",
+    "customer_id": "CUS-000173",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-04T23:38:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000674",
+    "account_id": "ACC-CUS-000174-02",
+    "customer_id": "CUS-000174",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-05T05:29:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000675",
+    "account_id": "ACC-CUS-000175-02",
+    "customer_id": "CUS-000175",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-22T20:22:15Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000676",
+    "account_id": "ACC-CUS-000176-02",
+    "customer_id": "CUS-000176",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-09-24T13:43:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000677",
+    "account_id": "ACC-CUS-000177-02",
+    "customer_id": "CUS-000177",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000678",
+    "account_id": "ACC-CUS-000178-02",
+    "customer_id": "CUS-000178",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-18T17:34:48Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000679",
+    "account_id": "ACC-CUS-000179-02",
+    "customer_id": "CUS-000179",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-28T17:16:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000680",
+    "account_id": "ACC-CUS-000180-02",
+    "customer_id": "CUS-000180",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-21T10:40:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000681",
+    "account_id": "ACC-CUS-000181-02",
+    "customer_id": "CUS-000181",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-08T05:19:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000682",
+    "account_id": "ACC-CUS-000182-02",
+    "customer_id": "CUS-000182",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-12-28T08:20:55Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000683",
+    "account_id": "ACC-CUS-000183-02",
+    "customer_id": "CUS-000183",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-11-19T03:41:08Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000684",
+    "account_id": "ACC-CUS-000184-02",
+    "customer_id": "CUS-000184",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-28T05:11:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000685",
+    "account_id": "ACC-CUS-000185-02",
+    "customer_id": "CUS-000185",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000686",
+    "account_id": "ACC-CUS-000186-02",
+    "customer_id": "CUS-000186",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-04-11T04:05:36Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000687",
+    "account_id": "ACC-CUS-000187-02",
+    "customer_id": "CUS-000187",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-01T05:06:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000688",
+    "account_id": "ACC-CUS-000188-02",
+    "customer_id": "CUS-000188",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-12T04:47:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000689",
+    "account_id": "ACC-CUS-000189-02",
+    "customer_id": "CUS-000189",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-02T16:01:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000690",
+    "account_id": "ACC-CUS-000190-02",
+    "customer_id": "CUS-000190",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-15T18:48:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000691",
+    "account_id": "ACC-CUS-000191-02",
+    "customer_id": "CUS-000191",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-28T16:28:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000692",
+    "account_id": "ACC-CUS-000192-02",
+    "customer_id": "CUS-000192",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-05-03T09:49:05Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000693",
+    "account_id": "ACC-CUS-000193-02",
+    "customer_id": "CUS-000193",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-25T12:11:02Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000694",
+    "account_id": "ACC-CUS-000194-02",
+    "customer_id": "CUS-000194",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-03-03T16:06:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000695",
+    "account_id": "ACC-CUS-000195-02",
+    "customer_id": "CUS-000195",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-08-03T13:33:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000696",
+    "account_id": "ACC-CUS-000196-02",
+    "customer_id": "CUS-000196",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-03-19T08:26:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000697",
+    "account_id": "ACC-CUS-000197-02",
+    "customer_id": "CUS-000197",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-06-05T04:43:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000698",
+    "account_id": "ACC-CUS-000198-02",
+    "customer_id": "CUS-000198",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-10-31T09:38:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000699",
+    "account_id": "ACC-CUS-000199-02",
+    "customer_id": "CUS-000199",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2025-07-17T01:17:11Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000700",
+    "account_id": "ACC-CUS-000200-02",
+    "customer_id": "CUS-000200",
+    "ownership_role": "PRIMARY",
+    "ownership_pct": 100.0,
+    "effective_from": "2026-01-04T21:11:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000701",
+    "account_id": "ACC-CUS-000028-01",
+    "customer_id": "CUS-000112",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-07-07T05:23:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000702",
+    "account_id": "ACC-CUS-000206-01",
+    "customer_id": "CUS-000313",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-04T18:21:29Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000703",
+    "account_id": "ACC-CUS-000313-01",
+    "customer_id": "CUS-000032",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-02T10:57:25Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000704",
+    "account_id": "ACC-CUS-000289-01",
+    "customer_id": "CUS-000058",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-16T14:43:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000705",
+    "account_id": "ACC-CUS-000475-01",
+    "customer_id": "CUS-000143",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-01T08:22:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000706",
+    "account_id": "ACC-CUS-000009-02",
+    "customer_id": "CUS-000371",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-22T14:27:39Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000707",
+    "account_id": "ACC-CUS-000046-02",
+    "customer_id": "CUS-000008",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-22T06:41:41Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000708",
+    "account_id": "ACC-CUS-000248-01",
+    "customer_id": "CUS-000182",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-22T19:10:18Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000709",
+    "account_id": "ACC-CUS-000078-02",
+    "customer_id": "CUS-000413",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-19T07:19:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000710",
+    "account_id": "ACC-CUS-000008-01",
+    "customer_id": "CUS-000203",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-08T18:29:09Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000711",
+    "account_id": "ACC-CUS-000214-01",
+    "customer_id": "CUS-000355",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-02-20T01:58:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000712",
+    "account_id": "ACC-CUS-000402-01",
+    "customer_id": "CUS-000266",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-12T14:32:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000713",
+    "account_id": "ACC-CUS-000341-01",
+    "customer_id": "CUS-000090",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-12T01:33:38Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000714",
+    "account_id": "ACC-CUS-000404-01",
+    "customer_id": "CUS-000231",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-03T07:08:33Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000715",
+    "account_id": "ACC-CUS-000079-01",
+    "customer_id": "CUS-000466",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-18T06:13:45Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000716",
+    "account_id": "ACC-CUS-000433-01",
+    "customer_id": "CUS-000012",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-30T07:53:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000717",
+    "account_id": "ACC-CUS-000256-01",
+    "customer_id": "CUS-000125",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-05T15:04:27Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000718",
+    "account_id": "ACC-CUS-000037-02",
+    "customer_id": "CUS-000299",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-20T16:02:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000719",
+    "account_id": "ACC-CUS-000054-01",
+    "customer_id": "CUS-000117",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-09T10:03:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000720",
+    "account_id": "ACC-CUS-000411-01",
+    "customer_id": "CUS-000163",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-29T02:22:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000721",
+    "account_id": "ACC-CUS-000002-01",
+    "customer_id": "CUS-000414",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-24T23:40:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000722",
+    "account_id": "ACC-CUS-000158-02",
+    "customer_id": "CUS-000071",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-29T09:33:59Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000723",
+    "account_id": "ACC-CUS-000287-01",
+    "customer_id": "CUS-000337",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-07-24T17:47:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000724",
+    "account_id": "ACC-CUS-000259-01",
+    "customer_id": "CUS-000215",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-24T01:26:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000725",
+    "account_id": "ACC-CUS-000299-01",
+    "customer_id": "CUS-000109",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-25T17:13:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000726",
+    "account_id": "ACC-CUS-000397-01",
+    "customer_id": "CUS-000360",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-08T01:13:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000727",
+    "account_id": "ACC-CUS-000136-01",
+    "customer_id": "CUS-000103",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-04-06T09:17:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000728",
+    "account_id": "ACC-CUS-000401-01",
+    "customer_id": "CUS-000269",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-09T06:33:04Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000729",
+    "account_id": "ACC-CUS-000244-01",
+    "customer_id": "CUS-000279",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-10-17T19:58:25Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000730",
+    "account_id": "ACC-CUS-000196-01",
+    "customer_id": "CUS-000450",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-19T08:26:43Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000731",
+    "account_id": "ACC-CUS-000346-01",
+    "customer_id": "CUS-000150",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-09T06:17:47Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000732",
+    "account_id": "ACC-CUS-000285-01",
+    "customer_id": "CUS-000116",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-24T21:37:58Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000733",
+    "account_id": "ACC-CUS-000477-01",
+    "customer_id": "CUS-000340",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-30T01:28:14Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000734",
+    "account_id": "ACC-CUS-000440-01",
+    "customer_id": "CUS-000038",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-09T01:10:50Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000735",
+    "account_id": "ACC-CUS-000147-02",
+    "customer_id": "CUS-000151",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-27T12:11:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000736",
+    "account_id": "ACC-CUS-000066-02",
+    "customer_id": "CUS-000320",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-23T11:00:01Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000737",
+    "account_id": "ACC-CUS-000015-02",
+    "customer_id": "CUS-000177",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-02-12T18:45:13Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000738",
+    "account_id": "ACC-CUS-000129-01",
+    "customer_id": "CUS-000119",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-10T04:27:03Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000739",
+    "account_id": "ACC-CUS-000024-01",
+    "customer_id": "CUS-000194",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-27T22:07:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000740",
+    "account_id": "ACC-CUS-000456-01",
+    "customer_id": "CUS-000115",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-02-23T18:37:57Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000741",
+    "account_id": "ACC-CUS-000001-02",
+    "customer_id": "CUS-000005",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-02-26T09:47:44Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000742",
+    "account_id": "ACC-CUS-000216-01",
+    "customer_id": "CUS-000242",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-25T15:40:07Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000743",
+    "account_id": "ACC-CUS-000222-01",
+    "customer_id": "CUS-000073",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-08-23T18:43:37Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000744",
+    "account_id": "ACC-CUS-000238-01",
+    "customer_id": "CUS-000239",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000745",
+    "account_id": "ACC-CUS-000145-02",
+    "customer_id": "CUS-000391",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-24T23:13:51Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000746",
+    "account_id": "ACC-CUS-000089-02",
+    "customer_id": "CUS-000138",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000747",
+    "account_id": "ACC-CUS-000038-01",
+    "customer_id": "CUS-000357",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-08T23:26:16Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000748",
+    "account_id": "ACC-CUS-000262-01",
+    "customer_id": "CUS-000144",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-10T03:54:49Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000749",
+    "account_id": "ACC-CUS-000167-01",
+    "customer_id": "CUS-000331",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-01-08T07:06:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000750",
+    "account_id": "ACC-CUS-000126-02",
+    "customer_id": "CUS-000444",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-03-07T07:18:30Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000751",
+    "account_id": "ACC-CUS-000177-01",
+    "customer_id": "CUS-000326",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-02-01T00:00:00Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000752",
+    "account_id": "ACC-CUS-000229-01",
+    "customer_id": "CUS-000404",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-01T20:27:19Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000753",
+    "account_id": "ACC-CUS-000197-01",
+    "customer_id": "CUS-000461",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-06-05T04:43:21Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000754",
+    "account_id": "ACC-CUS-000194-01",
+    "customer_id": "CUS-000250",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-03T16:06:20Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000755",
+    "account_id": "ACC-CUS-000418-01",
+    "customer_id": "CUS-000362",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-12-14T11:37:35Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000756",
+    "account_id": "ACC-CUS-000220-01",
+    "customer_id": "CUS-000189",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2026-03-18T04:18:34Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000757",
+    "account_id": "ACC-CUS-000097-01",
+    "customer_id": "CUS-000149",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-11-30T00:46:53Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000758",
+    "account_id": "ACC-CUS-000070-02",
+    "customer_id": "CUS-000300",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-05-04T22:29:46Z",
+    "effective_to": null
+  },
+  {
+    "ownership_id": "OWN-000759",
+    "account_id": "ACC-CUS-000181-02",
+    "customer_id": "CUS-000478",
+    "ownership_role": "JOINT",
+    "ownership_pct": 50.0,
+    "effective_from": "2025-09-08T05:19:18Z",
+    "effective_to": null
+  }
+]

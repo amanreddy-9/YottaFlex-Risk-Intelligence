@@ -1,0 +1,79 @@
+{
+  "export_dir": "/Users/amanreddyj/Downloads/YottaFlexproject/data/exports/full",
+  "total_checks": 9,
+  "checks_passed_clean": 4,
+  "checks_with_quarantined_violations": 5,
+  "total_quarantined_exceptions": 10,
+  "exceptions_by_issue_type": {
+    "DISPOSITION_PRECEDES_ALERT": 2,
+    "NEGATIVE_BALANCE_NO_OVERDRAFT": 2,
+    "TXN_ON_CLOSED_ACCOUNT": 2,
+    "UNRECONCILED_TRANSFER_LEG": 2,
+    "ORPHAN_ALERT_NO_TRIGGER": 2
+  },
+  "checks": [
+    {
+      "check_id": 1,
+      "name": "PK Uniqueness & ID Nomenclature Regex",
+      "records_checked": 149723,
+      "violations": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": 2,
+      "name": "Foreign-Key Referential Integrity",
+      "records_checked": 293050,
+      "violations": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": 3,
+      "name": "Allowed Enums & Numeric Domain Bounds",
+      "records_checked": 556672,
+      "violations": 0,
+      "status": "PASS"
+    },
+    {
+      "check_id": 4,
+      "name": "Temporal & Disposition-After-Alert Ordering",
+      "records_checked": 12078,
+      "violations": 2,
+      "status": "FAIL"
+    },
+    {
+      "check_id": 5,
+      "name": "Running Balance & Overdraft Reconciliation",
+      "records_checked": 107000,
+      "violations": 2,
+      "status": "FAIL"
+    },
+    {
+      "check_id": 6,
+      "name": "Closed-Account Posting Enforcement",
+      "records_checked": 100000,
+      "violations": 2,
+      "status": "FAIL"
+    },
+    {
+      "check_id": 7,
+      "name": "Transfer-Leg Double-Entry Reconciliation",
+      "records_checked": 4640,
+      "violations": 2,
+      "status": "FAIL"
+    },
+    {
+      "check_id": 8,
+      "name": "Alert Trigger Fact Traceability",
+      "records_checked": 923,
+      "violations": 2,
+      "status": "FAIL"
+    },
+    {
+      "check_id": 9,
+      "name": "Lifecycle Transitions & Bridge Uniqueness",
+      "records_checked": 13365,
+      "violations": 0,
+      "status": "PASS"
+    }
+  ]
+}

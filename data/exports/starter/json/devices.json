@@ -1,0 +1,5645 @@
+[
+  {
+    "device_id": "DEV-000001",
+    "device_fingerprint": "795fbf77677ce4e4670e160d85fcf0db",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-25T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000002",
+    "device_fingerprint": "d9f722fde8c3392613e02b275cd1b3e2",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000003",
+    "device_fingerprint": "dae2e0fb1544fc24d6330938f1a4d6b7",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000004",
+    "device_fingerprint": "9a000cfb183a8dfbc80ee61cb5d99e52",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000005",
+    "device_fingerprint": "a996a559ddebae3eefb1454f2913d111",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000006",
+    "device_fingerprint": "854bf7b7c3d35694302ed532e8c465a4",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000007",
+    "device_fingerprint": "a5d87408f1956eecf23df2d4752250ff",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000008",
+    "device_fingerprint": "e454f573128cfcae137b04f2441b577d",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000009",
+    "device_fingerprint": "b22cf0dfbacacb2e6306808001212c09",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000010",
+    "device_fingerprint": "e965c9c9783e1cea33ffb91e26617129",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000011",
+    "device_fingerprint": "71997e788ea349db5c3800d9fd4a185d",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000012",
+    "device_fingerprint": "f9961931611a4313c7a1daade1f28d41",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000013",
+    "device_fingerprint": "76b90c22d59276bc76ac0fdf4adfeb56",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000014",
+    "device_fingerprint": "a9720be26b6fb2b326f4f19a502d7215",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000015",
+    "device_fingerprint": "de53c4fb4f75ab6505bb741902db25f9",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000016",
+    "device_fingerprint": "b3c0f183613f663ee60d54d63a7e538c",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000017",
+    "device_fingerprint": "c1e2a9f33910470428f2c75b4c88f2bb",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000018",
+    "device_fingerprint": "5e7506e270dadc0f56afe7194fca56c0",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000019",
+    "device_fingerprint": "3be9cf693e7d5ddfda136d9a74de0fea",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000020",
+    "device_fingerprint": "29375f7d9d376932b77bb6df829f8598",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000021",
+    "device_fingerprint": "f1e7c919321a94b163d525c4fdaf9fd6",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000022",
+    "device_fingerprint": "ccb3eaf045fa589127820ca371f77cf6",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000023",
+    "device_fingerprint": "39fbc13358a47a612cd22eab621056b1",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000024",
+    "device_fingerprint": "708c535bf630d6eb04d4aba746770630",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000025",
+    "device_fingerprint": "e851aad7579749a26fcfc4a84b932a30",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000026",
+    "device_fingerprint": "2a55e2107175fc6be7eb6828a7f9c4cc",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000027",
+    "device_fingerprint": "0047ba6d65f745532892a8dd93c7adf4",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000028",
+    "device_fingerprint": "b6453d0d268abbdc49a651b156983018",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000029",
+    "device_fingerprint": "f291f3d223aeb88c099c6a48509fb556",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000030",
+    "device_fingerprint": "a14669b49e69f12d0470211de51e8034",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000031",
+    "device_fingerprint": "074fd47cff65277fe9088782e168e158",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000032",
+    "device_fingerprint": "5e2390b3e3740b36deb9d0da32569413",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000033",
+    "device_fingerprint": "a222a88d7c9ff9fe58f5d69fa2a8d04e",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000034",
+    "device_fingerprint": "76262ba08d0fc157a37d3fda45138f1b",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-25T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000035",
+    "device_fingerprint": "e11f41d654be182253f0d0314f3abcbe",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000036",
+    "device_fingerprint": "6d787f081766e1373193c34369b4b5a8",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000037",
+    "device_fingerprint": "6074adc228ff625c3bea8d91a0e5a0a5",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000038",
+    "device_fingerprint": "f85673a162ac29034333e7050c2fd6d6",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000039",
+    "device_fingerprint": "2547b08466cbaf9696b4b67bbf2c2ac3",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000040",
+    "device_fingerprint": "c3ce31f8ab3a1df931cdf15284398cef",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000041",
+    "device_fingerprint": "71c6623ffc5bc07b793fea51d932af84",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000042",
+    "device_fingerprint": "7dbf33fa7660c77c52f83f4a2a164f3b",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000043",
+    "device_fingerprint": "6637915bc39d573a32f51ade03776cec",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000044",
+    "device_fingerprint": "f32cc92662dcb85ee81e5ab1668eb991",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000045",
+    "device_fingerprint": "e0cc4ecbb9b62b85970849052706c60e",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000046",
+    "device_fingerprint": "10e21e9178edf356aabfb19dc02238d3",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000047",
+    "device_fingerprint": "6f6765a14fe54f79ed8dac3e2acee651",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000048",
+    "device_fingerprint": "702916e41040a8f08ba3b19517ac8099",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000049",
+    "device_fingerprint": "bfec4076ef8ad0a114601bc057e7fde4",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000050",
+    "device_fingerprint": "0ed666e2d64e3e5b2211c7c31437b4f6",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000051",
+    "device_fingerprint": "f23049acb568c75b4f6d21cebcaff542",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000052",
+    "device_fingerprint": "d41fc97c6927ee864c3515bcd6b27231",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000053",
+    "device_fingerprint": "8488927368c1bcfb2d3492d4e21f77c1",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000054",
+    "device_fingerprint": "0b00dae92931051d5e853c379146ac64",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000055",
+    "device_fingerprint": "21a8bc71fc8c1357522292ea2d7121f3",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000056",
+    "device_fingerprint": "4412f177bc63fb9b6655dcac393f5579",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000057",
+    "device_fingerprint": "746afec86618218e3412bfaf6422bf09",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000058",
+    "device_fingerprint": "dd8f2430843d3c7182686fce4eabce2a",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-25T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000059",
+    "device_fingerprint": "11ace16f433cf8b601d6a55fa4797155",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000060",
+    "device_fingerprint": "7fd878eab528cf1b49a5cee49d260941",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000061",
+    "device_fingerprint": "93d4275c363ca7f5c0f6a99298586126",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000062",
+    "device_fingerprint": "d2bf33adc07fb668d4278919295c8135",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000063",
+    "device_fingerprint": "7cdaa65754ab60d9c44e60f5d8488285",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000064",
+    "device_fingerprint": "4ac09887891db5e957c8c63dda042332",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000065",
+    "device_fingerprint": "af4516ee7fba84a2180adf3fc9bab796",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000066",
+    "device_fingerprint": "c2f507f51aca3bfed5c121dff632ad21",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000067",
+    "device_fingerprint": "4d11473b229328ca8c36f7a30cc83c33",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000068",
+    "device_fingerprint": "f9bca7ec7ba0a3fa7a0b8ac321e7c960",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000069",
+    "device_fingerprint": "e662c822e731a0c4a0b3f939c4d796d9",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000070",
+    "device_fingerprint": "77470644cc557c2c7c55ee6886762e59",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000071",
+    "device_fingerprint": "86cae08c7e5e625eb825bd804bc87942",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000072",
+    "device_fingerprint": "ab63b7e97d503c1026c54b97249381f2",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000073",
+    "device_fingerprint": "d6cb546166385d129f74e167a9ef8ada",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000074",
+    "device_fingerprint": "6f8609acff52b0cbd2355d56778f769c",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000075",
+    "device_fingerprint": "ce6667f29f87bbed7faec5c80d06b20b",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000076",
+    "device_fingerprint": "aea5b6ea9b782326c4699a36599a6f9b",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000077",
+    "device_fingerprint": "f079225b2c567aceb738217dd70adc20",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000078",
+    "device_fingerprint": "d0399f1f1922959375d1aeb466a0ed09",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000079",
+    "device_fingerprint": "bfdba03c495f9d6392de4bd3eb8263b6",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000080",
+    "device_fingerprint": "acca09d34a692f3ed0a4c1451ce38591",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000081",
+    "device_fingerprint": "9ee7dd1cac593eead5da9c0d224147dc",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000082",
+    "device_fingerprint": "18f07bff18c2734a6b89abb95db19b44",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000083",
+    "device_fingerprint": "3f91e41ddf47ae25ce914331aea588b8",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000084",
+    "device_fingerprint": "ac026501a32476e673d97f87b771db86",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000085",
+    "device_fingerprint": "5e3fe2c368428698725e0978de99145f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000086",
+    "device_fingerprint": "b00c561f85c73d98c21199764213f0f2",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000087",
+    "device_fingerprint": "1d4e2b6df2d9b967e2b2a6d016fcc269",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000088",
+    "device_fingerprint": "34cb4a163455e3acb4d0cc53628230bd",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000089",
+    "device_fingerprint": "dea01b93aed9b831344d5650f788dafd",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000090",
+    "device_fingerprint": "152b565d681c410f38e4fae78d6d5051",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000091",
+    "device_fingerprint": "58500fc7b7f3a69f9f956e0739c8126e",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000092",
+    "device_fingerprint": "12a414b077b9f425ae63d26bc7bb91b6",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000093",
+    "device_fingerprint": "6899e438ef6f5a48abc92916dba4b527",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000094",
+    "device_fingerprint": "d7415c2e5afaf76b6561d54f0ad9c652",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000095",
+    "device_fingerprint": "dd5d0e5f7b7615528fdcce26d52d3959",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000096",
+    "device_fingerprint": "813e30c158e09a74080d4c2a307d07a2",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000097",
+    "device_fingerprint": "e82b90c5a2b41ebee08fd9127a9c1259",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000098",
+    "device_fingerprint": "030a3b6365ef0942625bb4057b4e6716",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000099",
+    "device_fingerprint": "49af8fded996397672c45c5cb0d1368a",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000100",
+    "device_fingerprint": "2d99303a2e71855b1b9cddf6e583b44a",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000101",
+    "device_fingerprint": "fc1a38fb7ba812b9dc2a5f9f05da889a",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000102",
+    "device_fingerprint": "e97596eb6b3457d8e4ea543df628704f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000103",
+    "device_fingerprint": "6e02bf1c3f8adb5178725486cf0de1f4",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000104",
+    "device_fingerprint": "88b1f41fe4ad96f12875509627c9ebeb",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000105",
+    "device_fingerprint": "64943552ed193b1b152d9d0428ffe681",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000106",
+    "device_fingerprint": "28dd8bcb95cd2d0372047373b453b5a3",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000107",
+    "device_fingerprint": "ec53dc4ecc8dd4c7f24d4308618e136f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000108",
+    "device_fingerprint": "4136d6a4bbdd634e34572bf64efbc053",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000109",
+    "device_fingerprint": "3346e0231f4c18c3602cabd8e180b55c",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000110",
+    "device_fingerprint": "446c08172c11a7e15d671cedcff11da9",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000111",
+    "device_fingerprint": "d5bdb75ceee691d5f9649cbe62dca5fc",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000112",
+    "device_fingerprint": "8cd51eb5555c0aa1b595f87931a5aa3f",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000113",
+    "device_fingerprint": "671fd760af429b220854aa1f18bf3213",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000114",
+    "device_fingerprint": "97e664de81047d75b64c95b112451ba4",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000115",
+    "device_fingerprint": "a6f381deaab389961962f034b07bac17",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000116",
+    "device_fingerprint": "a558290cc2d21f99b0651768ad79a5b4",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000117",
+    "device_fingerprint": "449eed4a31dd7096c799d4db39d64643",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000118",
+    "device_fingerprint": "0b8175bfde0093b3e9c69a494ea2c83f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-31T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000119",
+    "device_fingerprint": "71976c4464da9285892b798f2be61c0b",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000120",
+    "device_fingerprint": "5e5f62693640d24590102bb3fe7d5803",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000121",
+    "device_fingerprint": "4925c55d1d33b07c816c9963ab34dd8e",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000122",
+    "device_fingerprint": "e14b8e1d1b42dbfd7f05966c0e569a55",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000123",
+    "device_fingerprint": "0dfaa38a6aa224101ac49b4500c0deec",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000124",
+    "device_fingerprint": "d6c650f8c1db76357e66d5a61662887f",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000125",
+    "device_fingerprint": "87661ed947fcb1d5564c35729dfa36e6",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000126",
+    "device_fingerprint": "c946f5784a9be58656de897d74bd5152",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000127",
+    "device_fingerprint": "b23e56d5cc374d8fb66d0c7969bb7dec",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000128",
+    "device_fingerprint": "405aaac03a7c40580b324cc07b3ea46e",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000129",
+    "device_fingerprint": "d9341610be38dd783c829a710a743853",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000130",
+    "device_fingerprint": "a06a77fbd5e80d7ca91d64ef9daf8554",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000131",
+    "device_fingerprint": "b13b2217e94504973a924bb3400b8653",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000132",
+    "device_fingerprint": "f596efd6e9e52ad869e3655df6fb6753",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000133",
+    "device_fingerprint": "3864b35cf7f6a78d276eb5c8818388de",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000134",
+    "device_fingerprint": "c00a222b46f980d205fd70554032a536",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000135",
+    "device_fingerprint": "5783b02d92e3d11ded997335a6f288e8",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000136",
+    "device_fingerprint": "db73ccfe20c00e8e69882d3f888d11c9",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000137",
+    "device_fingerprint": "0bcb68d5f34e57b891f46eefe4808286",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000138",
+    "device_fingerprint": "b0a4030550d7ba04af59835363550077",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000139",
+    "device_fingerprint": "9c3b9113bb1fb5d73a8c14edd416e3c5",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000140",
+    "device_fingerprint": "d4e9f87cfcc3e231bf8f041e25fcc7c7",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000141",
+    "device_fingerprint": "184ea7263c6a2fd1ca33af1d3753aa4f",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000142",
+    "device_fingerprint": "5c920227e383071b38ff11911cd98296",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000143",
+    "device_fingerprint": "973e8ecc15cf3044f5ccb319cce50cd9",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000144",
+    "device_fingerprint": "eb4a9dfab079d9779e1a141ac992e586",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000145",
+    "device_fingerprint": "d8db272a3cfd66df5d1579e3a22c94ad",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000146",
+    "device_fingerprint": "5c538a97ec67c15dd98fe8f18484b41d",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000147",
+    "device_fingerprint": "328ac4c6a6fcf1f2a411e1b6c007954f",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000148",
+    "device_fingerprint": "cbcea47eaf5bc10a7e724946dbfeaeb2",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000149",
+    "device_fingerprint": "db271232fcfe4ac876dfb0c7e734ad10",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "AE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000150",
+    "device_fingerprint": "938a6f3b46aa89bfb38286ff0246ede9",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000151",
+    "device_fingerprint": "c1cc5c35834a7fa30589859ce0ad5d6a",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000152",
+    "device_fingerprint": "a6da125125c532bd4f2bedf3ac4a6924",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000153",
+    "device_fingerprint": "282acfa890abb99175d028b325d7ed7e",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-31T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000154",
+    "device_fingerprint": "4e65e2b9edff425dd1dcbb45ceaf4599",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000155",
+    "device_fingerprint": "ba7aa0c26c8108c0f8efd3f3884398cf",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000156",
+    "device_fingerprint": "d56e2835275d6feb115858b0d398ca56",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000157",
+    "device_fingerprint": "05669abd36a599b71f1e8f190b29d9df",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000158",
+    "device_fingerprint": "5ef670b2205c28071f044690b7e6e7cd",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000159",
+    "device_fingerprint": "eda9314ab3bd54ad0ae49166f7b83585",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000160",
+    "device_fingerprint": "dd5f34accf5b7746a3a98d2fb41d8dee",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000161",
+    "device_fingerprint": "20c033b77778cae24815f29e9f3d0165",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000162",
+    "device_fingerprint": "a9a58ac344741e1774ebd06d8a01dd39",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000163",
+    "device_fingerprint": "b83c6d77cb33d09c86882a43b8854d45",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000164",
+    "device_fingerprint": "8fbb5755c5076b5f77bcae8b7938dd6a",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000165",
+    "device_fingerprint": "447f1eb3bc7d3d093168dba21918b9a3",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000166",
+    "device_fingerprint": "bd5ceac751b766e21df6c9f0963070fb",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000167",
+    "device_fingerprint": "6d6061d74d1e35065ebee4c3d242673f",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000168",
+    "device_fingerprint": "a49fc14ce855e8c3c44d86d79fed3326",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000169",
+    "device_fingerprint": "d92da6ded24e7ccc1cf2a26c9e63b214",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000170",
+    "device_fingerprint": "4efdc652bc4236ec7d7b938f0f451333",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000171",
+    "device_fingerprint": "d9eebb6bddc9e14fc87999b43b1e1860",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000172",
+    "device_fingerprint": "35d32439dec40c8a1f8dfdf0a66bf7e4",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000173",
+    "device_fingerprint": "bfd9135e6bdb4095ff900c3ecc038e2a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000174",
+    "device_fingerprint": "522f5e9637c54c078ef59cb67755c113",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000175",
+    "device_fingerprint": "62615294e90c2d1be1ce59d04860f3e0",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000176",
+    "device_fingerprint": "169d3b9bef4007aaa7093fc173d0741a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "AE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000177",
+    "device_fingerprint": "65559ac67c334490ff8d117374ac66f7",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000178",
+    "device_fingerprint": "9338a99e457c26113a0ff7322a4b4b7e",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000179",
+    "device_fingerprint": "58970fc8dc9adab34979fce976b397b1",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000180",
+    "device_fingerprint": "633e3dc6e26029f9b8e5edc87f667231",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000181",
+    "device_fingerprint": "cfde41f29b3f870be486512bacd443a9",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000182",
+    "device_fingerprint": "55e9e20a1b4698bd316370b4356c4fe5",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000183",
+    "device_fingerprint": "7e0c707de5dfc34d11b7bfc521a27ae0",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000184",
+    "device_fingerprint": "52a1939bfa10cb10d3fe92ab2f53ab3b",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-31T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000185",
+    "device_fingerprint": "b455d67a6b51d99b51795d5182d305aa",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000186",
+    "device_fingerprint": "93a5b09a41be1f3be28280cc5c4b42f2",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000187",
+    "device_fingerprint": "4fb0694558ed4dadf5245c426736072b",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000188",
+    "device_fingerprint": "019b5323fc45c1897087bacfcce6535d",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000189",
+    "device_fingerprint": "6b05e94efaef472b7071e66a6b62cd10",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000190",
+    "device_fingerprint": "51b128d5fd31a6c844012d8b667155dd",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000191",
+    "device_fingerprint": "0253622fd848f16630a0690be090dd25",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000192",
+    "device_fingerprint": "35d47be361aa6d404d599d3d6aa2dc22",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000193",
+    "device_fingerprint": "c2deed70fe83e0f4559013d989e70c89",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000194",
+    "device_fingerprint": "9a5ab6edfb92c629b7e0b4cc49355a6c",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000195",
+    "device_fingerprint": "ba9fab3a616466851d18edd0d2a85449",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000196",
+    "device_fingerprint": "c314e552c5adcf5c3a9905eaf64befc1",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000197",
+    "device_fingerprint": "bd20cadd9db15bbfc7a77a3b4708b0bb",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000198",
+    "device_fingerprint": "9e8af1ec395ec83a5ba004be5c6fdf58",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000199",
+    "device_fingerprint": "45d6c666ebbcf844423ed5b9b5a07100",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000200",
+    "device_fingerprint": "27d258ca5ad86542e42e97b67c8e3028",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000201",
+    "device_fingerprint": "babfa4ce7a1e02177f6c55a0331d2875",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000202",
+    "device_fingerprint": "a85e6a70448f3da053859a3ccf6a6ff2",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000203",
+    "device_fingerprint": "76d48edcae7858807b1a3f27ce251457",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000204",
+    "device_fingerprint": "6b9026b60ef23f913e97171f4a6edbbe",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000205",
+    "device_fingerprint": "05848c52cb6cc77cffce14367afd4242",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000206",
+    "device_fingerprint": "94524a6fd5df88a957619a09d058fc2b",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000207",
+    "device_fingerprint": "03492105af5d847619613d354828e901",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000208",
+    "device_fingerprint": "970d28e84295677efe278757970a62aa",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000209",
+    "device_fingerprint": "506955baaf05bf4891bf1ebf9140dc91",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000210",
+    "device_fingerprint": "a783eda79e49f4474cc8d56247f429b5",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-25T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000211",
+    "device_fingerprint": "5feca7c63080138427a5ba682434f18b",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000212",
+    "device_fingerprint": "3afffda98ff8dd64e9b7164ccc6e4b4c",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000213",
+    "device_fingerprint": "745a4173ecfb39ad08330d63d077e317",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000214",
+    "device_fingerprint": "9683a8c92402c351886496736c95a811",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000215",
+    "device_fingerprint": "a4f845caf326af40f65b2db29545ba88",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000216",
+    "device_fingerprint": "d08ccf2e0b7a0a23096fbc953ad96893",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000217",
+    "device_fingerprint": "6d484de542b04c308058883be9fd0573",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000218",
+    "device_fingerprint": "bfa60f73f1d79a3e4b70c14be6536150",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000219",
+    "device_fingerprint": "2a9717f45048f4e3052bf2e9c9166ae0",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000220",
+    "device_fingerprint": "8a838ed38e4e50ac2c2574ccecfa6a4b",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000221",
+    "device_fingerprint": "3c93f09858a7bb6afcb5456b0758f594",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000222",
+    "device_fingerprint": "87ea592c09668556644c8777cebcfa45",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000223",
+    "device_fingerprint": "dca3527338de6bf5e974d009e66f7a31",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-25T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000224",
+    "device_fingerprint": "c9a70507956166990fa5e54e73d3ef74",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000225",
+    "device_fingerprint": "1f5e6e709259848cd90271c134ca399b",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000226",
+    "device_fingerprint": "b0edf16292b3e5a3769b4020209612ea",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000227",
+    "device_fingerprint": "6423209773156c35f6b2235fdd220b7f",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000228",
+    "device_fingerprint": "8fb7ccd9eaa51047ca212c192e06383d",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000229",
+    "device_fingerprint": "82343dc2d381d7c958c8b80d0f0702c2",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000230",
+    "device_fingerprint": "64d9798be316fadab448a51e2d93a624",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000231",
+    "device_fingerprint": "6bc9c8f24864a44d0b53d07972c3c390",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000232",
+    "device_fingerprint": "a18b6b53b506b91b1c5bf06635bc90f7",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000233",
+    "device_fingerprint": "0168cd8f8319e60815b5dba5c6087dbf",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000234",
+    "device_fingerprint": "3176e4dfdb72ea34fec93690fe569343",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000235",
+    "device_fingerprint": "cdf2332435b7f04a5ddd3cf3b481c22a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000236",
+    "device_fingerprint": "52b29068499f1a9dfbbebc3dc186c499",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000237",
+    "device_fingerprint": "8611185fd6c43ea4a458fccbdd584125",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000238",
+    "device_fingerprint": "b274bea24b57e2527ec809f8c35d40ff",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000239",
+    "device_fingerprint": "14bcccea714df8fa7b700631b73a25fe",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000240",
+    "device_fingerprint": "aa9db30925999cd7c535be1f0568eef4",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000241",
+    "device_fingerprint": "f0683ab2cd73fd39a6c781e08fc6fc68",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000242",
+    "device_fingerprint": "95b79590b725d7e82c75b8be86666a26",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000243",
+    "device_fingerprint": "4245d58bb178e7ca0eb215c15268afbe",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000244",
+    "device_fingerprint": "26e38022d70c2a05f50a35f195cc9c4f",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000245",
+    "device_fingerprint": "f8567ba5b4ad1b787327d401c9a47471",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000246",
+    "device_fingerprint": "4752c51aa1ab47feffa75d3b15578445",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000247",
+    "device_fingerprint": "cdfa064a79c9dc8db7c153b74258aea9",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000248",
+    "device_fingerprint": "e762053f41645516bad9402b09cc1ac8",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000249",
+    "device_fingerprint": "7579be9ae15df91f15151e88be58229a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000250",
+    "device_fingerprint": "be54b6ef0db7cf52d5581133ceb1b681",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000251",
+    "device_fingerprint": "f557418e5ac482be3b7982542b5ff266",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000252",
+    "device_fingerprint": "d4791957fc3caf997aa95e4e869fd235",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000253",
+    "device_fingerprint": "e8fd4b2247c32383a04f1b2b8f6083ef",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000254",
+    "device_fingerprint": "537edd712419617a6a1714f6b5bd9ece",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000255",
+    "device_fingerprint": "1e2ae9f97f19dbd112d184a41ee57e0a",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000256",
+    "device_fingerprint": "a35b12d8c9389b8fc7b8a680b7025dcd",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000257",
+    "device_fingerprint": "945a078a3fb86fff9ee2f2036e4ff7f0",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000258",
+    "device_fingerprint": "a4b54da0d3bb239024bb5f7af68a0960",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000259",
+    "device_fingerprint": "18e11fa66c45f572645f8348dd53180d",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000260",
+    "device_fingerprint": "70153a24bfcf005f32d0487165fb74cd",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000261",
+    "device_fingerprint": "01277d486d76ca98eb47a63b510e6289",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000262",
+    "device_fingerprint": "7de6f297e7452322338a5b64bfd5bbf3",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000263",
+    "device_fingerprint": "ff670ac12274176adac6a77615b647c1",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000264",
+    "device_fingerprint": "e8d9720dfe0025b5a1c3da020310f42a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000265",
+    "device_fingerprint": "abafe090cc0b9143c59ff6b112d78ecc",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000266",
+    "device_fingerprint": "cea14bf5487b10a1f586b2649759b744",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000267",
+    "device_fingerprint": "11b7d517ccff88b59752c4db659a5593",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000268",
+    "device_fingerprint": "4dbec7040d04bf7f5f58839d7f91bd7e",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "AE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000269",
+    "device_fingerprint": "15568b420cdb68e2b175d6f0b42ead46",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000270",
+    "device_fingerprint": "e20ee9d831f8a88a50b5904cc229207f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000271",
+    "device_fingerprint": "b2f19d093e9a341f93514ec23f4ddbb2",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000272",
+    "device_fingerprint": "eb8ed0c7fc0fb72070175fa64635da17",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000273",
+    "device_fingerprint": "1fa9b218517c7da002b9ebf790c182ae",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000274",
+    "device_fingerprint": "e78e927caa5e1b21b59c1dcc086bd425",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000275",
+    "device_fingerprint": "be561e18c5e0e51763d1a7955c69e429",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000276",
+    "device_fingerprint": "362ae59a2a197a3965114cdbec8a589a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000277",
+    "device_fingerprint": "9c71b6f9699842c0e9b596012f3a0537",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000278",
+    "device_fingerprint": "6b6dd0c608c8894f2c1dfe3731951604",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000279",
+    "device_fingerprint": "dd526ef9ac0aedc279abeb62c8f7ee94",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000280",
+    "device_fingerprint": "e2b09b4aad17255f413957602eb75015",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000281",
+    "device_fingerprint": "c8836ccde59ea0a1bd1e72ce1d75a3d2",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000282",
+    "device_fingerprint": "166d41c12948375966864a927a819f54",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000283",
+    "device_fingerprint": "971f7e0ef6a13ba2e46f9e4bb1dfad91",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000284",
+    "device_fingerprint": "aa9e0dabfddfe49d984ad4026187f2d8",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000285",
+    "device_fingerprint": "c063a690b274800cea04e160ab1e8383",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000286",
+    "device_fingerprint": "966cac17e7dea58398d340a1e7327847",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000287",
+    "device_fingerprint": "40f80a5acbe8193e6d1e37d7a487224c",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000288",
+    "device_fingerprint": "639bea60eac521510460514440094d9d",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000289",
+    "device_fingerprint": "ace06ea8e1936f73703c437dc4055ce6",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000290",
+    "device_fingerprint": "6be55291f25c9f2aa1c37532395176cc",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000291",
+    "device_fingerprint": "ea078efa27bbb33cfe1b57e9c8343a75",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000292",
+    "device_fingerprint": "98f4224879c351697eeb0d52d16dde04",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000293",
+    "device_fingerprint": "8d21ee276e947df27366f3be1595e1d5",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000294",
+    "device_fingerprint": "84d10101947be9c4586411cacd35bc5a",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000295",
+    "device_fingerprint": "adb12970545dad314b40c0bd226b135d",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000296",
+    "device_fingerprint": "7ee99d21c5645ba2584d73f25f79bf4c",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000297",
+    "device_fingerprint": "81e620fa87ee38d980d0cf9fdd83d7f3",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000298",
+    "device_fingerprint": "60639df1ee764e11e9c72fdd44725b45",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000299",
+    "device_fingerprint": "2b7462e90f6ab9cc36f23ac3a1ef6bab",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000300",
+    "device_fingerprint": "72ec22c6e07c460d0bcf94b252662c24",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000301",
+    "device_fingerprint": "6d564ee9138ea8ca5c10db878dbb6a07",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000302",
+    "device_fingerprint": "b0ce5bc94dafc2630ffc190dee4e682b",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000303",
+    "device_fingerprint": "85b548b1165ff3c2701b5f9360caa15a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000304",
+    "device_fingerprint": "204a85e725ecfc5f8c260271871d69c7",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000305",
+    "device_fingerprint": "919ff0e481865feedd6f90acb3ba20e8",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000306",
+    "device_fingerprint": "840d4a2f40eff31bd86b575f23d8541a",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000307",
+    "device_fingerprint": "a0ce3ebded8119f29d0bc1854f7336cc",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000308",
+    "device_fingerprint": "56ef3ddb3013cb78ef48279441136175",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000309",
+    "device_fingerprint": "785aee73efbbeada7402b9b515783de8",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000310",
+    "device_fingerprint": "0729d37b92a79ac80c6d4fd3332925d1",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000311",
+    "device_fingerprint": "b921a8ac7f269a2be5af4239c9f102e7",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000312",
+    "device_fingerprint": "31913c56371af45d7d1b49e92b6a8a14",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000313",
+    "device_fingerprint": "df7a79f7476c5a6a4c8ec7590919341c",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000314",
+    "device_fingerprint": "810fd3b9a5e02606f21fd4c58aa5baa7",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000315",
+    "device_fingerprint": "c16f113dd40fb6d20701da29b46165ba",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000316",
+    "device_fingerprint": "4a3037024a612485664b482666a3c70e",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000317",
+    "device_fingerprint": "5d14a7159737a5f6cb7cb82408dc4537",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000318",
+    "device_fingerprint": "54251241e400e61698f92cf258a06d6c",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000319",
+    "device_fingerprint": "014ba8e34e190f816d76f7a2c85e94e5",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000320",
+    "device_fingerprint": "8597c9ee3e8c6e4d0f437313fd371946",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000321",
+    "device_fingerprint": "bf5d086b5dfc5f30e1fa2bc9d483eea4",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-25T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000322",
+    "device_fingerprint": "2fa1f3129d2ccac988485cdd137f53a0",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000323",
+    "device_fingerprint": "4cf6a86adf477f31d98a30d24dac8714",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000324",
+    "device_fingerprint": "b83c5c50ec17ac4f4b532af5f844f771",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000325",
+    "device_fingerprint": "f14b7aa19c31a4017b6e6b5abbbfa4a3",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000326",
+    "device_fingerprint": "7b2c596537528364c0af10b97cd0f622",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000327",
+    "device_fingerprint": "91ab8976acf6dd16551e0f6ad1aa7d3c",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000328",
+    "device_fingerprint": "82ee7e72de80ea09f1e6931078ef5662",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000329",
+    "device_fingerprint": "7413ec8eb5a087ecdf9fb78007cc5524",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000330",
+    "device_fingerprint": "048c451e99ca6395c50ae3adb3bd50de",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "AE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000331",
+    "device_fingerprint": "0e3492e5c5c4ea169336f96dac2f48ef",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000332",
+    "device_fingerprint": "6d345000c2214ea5a8b8b73e7bcaf461",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000333",
+    "device_fingerprint": "b59efb8950311e6cb9138d6b93f9c9d2",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000334",
+    "device_fingerprint": "83311c6d6dd23c82b4e877c9fa3317ef",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000335",
+    "device_fingerprint": "335014b32dd3cb3800a593305c5ffb2c",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000336",
+    "device_fingerprint": "c1b2bcf0b83c2976a737dafeccee286a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000337",
+    "device_fingerprint": "956b9e016ef895b5c16173156da49d1b",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-31T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000338",
+    "device_fingerprint": "e7188619b0b179d33d2f328470605c3a",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000339",
+    "device_fingerprint": "87a8c3ea8482eef19a96017b534fcb49",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000340",
+    "device_fingerprint": "b995648018717215065479ad9c8c106e",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000341",
+    "device_fingerprint": "0eadb3a8349e00c9e98854c502688731",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000342",
+    "device_fingerprint": "951d5b7e457953c356530c2a5e5e2661",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000343",
+    "device_fingerprint": "6bf134a832455d4ca800eb9281e20e86",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000344",
+    "device_fingerprint": "5ae6eb3378d3ea67e692f39206d0be1e",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000345",
+    "device_fingerprint": "d8c744a35ba2e6c77974a07128c77c52",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000346",
+    "device_fingerprint": "9e52b103bdf73edf9300299eb0aed997",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000347",
+    "device_fingerprint": "9ab952d543cfdb14a9c9c3ac4b599745",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000348",
+    "device_fingerprint": "0e8de331a234c920cad358bdc1cf2fef",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000349",
+    "device_fingerprint": "b6f4b8d3a951331e5e38875e1ed8bcce",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000350",
+    "device_fingerprint": "405c2d3e116144a985bae37f8c9b2335",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000351",
+    "device_fingerprint": "7b431d7be5bc90fe4a00d3787012cbb0",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000352",
+    "device_fingerprint": "ab7ab7dc22d7d9f8308971040c801f8c",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000353",
+    "device_fingerprint": "70e0f53079c1c172a7032a774b1a78ef",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000354",
+    "device_fingerprint": "4ee6ec61f7ef82063af6edca9a155f0a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000355",
+    "device_fingerprint": "c49b5ee909c0d89b69c81083b70ea479",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000356",
+    "device_fingerprint": "47d2c8b35d782791d81c0b41ec25bb76",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000357",
+    "device_fingerprint": "e3dfab467c4292d7436492a254bcf84d",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000358",
+    "device_fingerprint": "12eb575f5ab82df2641f8d1c13f9b783",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000359",
+    "device_fingerprint": "56f05c8b479f82e570bdbe33f6e31088",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000360",
+    "device_fingerprint": "ead178fafb6e676d7cc69d72892fe4ed",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000361",
+    "device_fingerprint": "341ad887bed8de9b6f0742adee4db0f6",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000362",
+    "device_fingerprint": "f0e6bd0c8bfc0c71519cb95bde1dc534",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000363",
+    "device_fingerprint": "48ee81a16461a72f9b08b7b23fec2545",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000364",
+    "device_fingerprint": "a7321cd46f6054909545c3018ce6b269",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000365",
+    "device_fingerprint": "8a64c3d573d532b12a8fc2c4734aaa21",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000366",
+    "device_fingerprint": "46743fb3bfca1ac9a880440f9b607456",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000367",
+    "device_fingerprint": "1304908fcf19613a1404a063740eea8a",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000368",
+    "device_fingerprint": "4d00d004130862a01970dd4f5b0a43cc",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000369",
+    "device_fingerprint": "8fdfbe942fef6a38618bc62632fafb47",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000370",
+    "device_fingerprint": "e34d7a9b584cbd2669ee386d5e5c703c",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000371",
+    "device_fingerprint": "8039a8c0abf9730ac6d26adc41eac03c",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000372",
+    "device_fingerprint": "ec1a37fb5940c716ceba467eb5477507",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000373",
+    "device_fingerprint": "0a77729cda155de4a3aa9a0b401880ec",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000374",
+    "device_fingerprint": "cedea83264fe02fe6b77502f2aea7e10",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000375",
+    "device_fingerprint": "308f5c437065fc0c77e3f7bee8c1307e",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000376",
+    "device_fingerprint": "34f20f6422cf80726885a82573a853f4",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000377",
+    "device_fingerprint": "9aab73a1c662f0b7094acf5be292eb6b",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000378",
+    "device_fingerprint": "17e3756dca60f426f6440a6038c159f1",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-31T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000379",
+    "device_fingerprint": "3325fbb691ecf8dd839580ccfaf34c70",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000380",
+    "device_fingerprint": "f4400ceb898f8e4adc9f4f2ce7e750fe",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000381",
+    "device_fingerprint": "64d6273b96bda1d5b559cabb34fc3c49",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000382",
+    "device_fingerprint": "680daebcfd2caaa2c97ce177f32124bb",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000383",
+    "device_fingerprint": "7dea195cc868c26b984c9e09e992df8c",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000384",
+    "device_fingerprint": "a75c2b9d0614c1e8519a59ffbd6cb006",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000385",
+    "device_fingerprint": "5de928a5b07636a0d84f763ef37bc33c",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000386",
+    "device_fingerprint": "e029a7010765bec6253672574b13ab8f",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000387",
+    "device_fingerprint": "366324acd8f6ce3c0b40c3868fdf65de",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000388",
+    "device_fingerprint": "3fd9a08468fff05e07f64ca76b3b71ac",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000389",
+    "device_fingerprint": "cad83662b2d683f197c9ac7a284ee0c9",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000390",
+    "device_fingerprint": "f2f89bc47a8b84389df8ae3c19f77bdb",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000391",
+    "device_fingerprint": "c53a336197fd653856aec29931564346",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000392",
+    "device_fingerprint": "166e73598dfd0988b363e9149781d210",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000393",
+    "device_fingerprint": "8cd8321bd6640b17314d54b2120acbd2",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000394",
+    "device_fingerprint": "4bed1f0c26baa47f45c28e01dc583636",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000395",
+    "device_fingerprint": "5cab45019fcc78bfcf7fd84370a2201a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-31T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000396",
+    "device_fingerprint": "0b16630da23218023af21d1ca8f5edf9",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000397",
+    "device_fingerprint": "52d024c6e9af8a0c7e7e789e9426cb01",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000398",
+    "device_fingerprint": "9928ef036fd57ff12350df4b276e8c64",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000399",
+    "device_fingerprint": "5f7474cc5b04a14f718d4127f8ecb58b",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000400",
+    "device_fingerprint": "cee2c423525ff5303e829fc8d2dcd73d",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000401",
+    "device_fingerprint": "14003464b19563e4eb2bf02113f1662b",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000402",
+    "device_fingerprint": "202c638f4758441fe28870660782ada3",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000403",
+    "device_fingerprint": "f5aadf8a1a8e9568df7217a7ffd2c528",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000404",
+    "device_fingerprint": "287e7079a16e04af4bc905ec4bb7d39b",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000405",
+    "device_fingerprint": "a76e8091e4d492e031dee9c9b9fb8cf6",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000406",
+    "device_fingerprint": "6a7485443c09f137d6b6db0941f42fbc",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000407",
+    "device_fingerprint": "15e14d32c907a18a4182ceb4d0cc6a36",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000408",
+    "device_fingerprint": "448334c8f1d947a5e306725cbf8684df",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000409",
+    "device_fingerprint": "4c2bacdcbdacb0be34eae0c8281acc5b",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000410",
+    "device_fingerprint": "81c1df8c1cc3a493d74b11e4d5e2e672",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000411",
+    "device_fingerprint": "264fe287c41ef78f4fb17d2e7b80ae8a",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000412",
+    "device_fingerprint": "642a9e961a780b152f6ba15f11055b0f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000413",
+    "device_fingerprint": "40984fc8d075ffaed9d9e8ed7f56ba0c",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000414",
+    "device_fingerprint": "96c669e6ab39e4199b2e29571292fc73",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000415",
+    "device_fingerprint": "247e91e2d33d5dde28365be50d42233e",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000416",
+    "device_fingerprint": "d8031942e8cf3a3f6e8a5de7e7a852e2",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000417",
+    "device_fingerprint": "0c113609017e8a0a851c0c66407583c2",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000418",
+    "device_fingerprint": "2ce50c2c5ca626a51b096d6e428ef87f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000419",
+    "device_fingerprint": "bfa2971b262943e5e4541b96b05c3e48",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000420",
+    "device_fingerprint": "bf934de798c38247ad93ab7bba95425d",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000421",
+    "device_fingerprint": "f96ddf777411f8353f32f88398bbc26c",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000422",
+    "device_fingerprint": "ef68e9d4c59b25ae6f3cc4f8d3a5a2c6",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000423",
+    "device_fingerprint": "2c19a16f13461cadb4834e941a412cc8",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000424",
+    "device_fingerprint": "eba13399dbc3a4d545d0ce38901b660c",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000425",
+    "device_fingerprint": "2320a593117966591d629e4611369da4",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000426",
+    "device_fingerprint": "7bc7f2f83c586ae8e72ffbbf1c950d33",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000427",
+    "device_fingerprint": "b10c37bd44daae3253a5c43288db1875",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000428",
+    "device_fingerprint": "f977ee8c469a3d16386831b04b30d9fb",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000429",
+    "device_fingerprint": "7d8667a3dd840d769ed3edbda0a63014",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000430",
+    "device_fingerprint": "01da2dbe42b4bd0b201f6bc8cd26b62a",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000431",
+    "device_fingerprint": "8cf88f9a2b97f23149359853e0e4e999",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000432",
+    "device_fingerprint": "66f8357ab8f3a65efcc2d537fa2b9caf",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000433",
+    "device_fingerprint": "a6e499a9d2b5fb542394e33d9ce97910",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000434",
+    "device_fingerprint": "9e62061f02f0b8bbaad8338da399bb22",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000435",
+    "device_fingerprint": "d47d3608817d8047068874acca2ca79c",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000436",
+    "device_fingerprint": "3b7defe7e3ff5f585e876dffeb96d340",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000437",
+    "device_fingerprint": "3ae65830e73ca86877bfdf58a4087d0c",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000438",
+    "device_fingerprint": "96d9fbba76da9c0be90b32497d76ec1a",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000439",
+    "device_fingerprint": "730dc2aa52c4898bd166436a782cee1a",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000440",
+    "device_fingerprint": "8fe9373d0b81c9d610b73f2b5e1acb43",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000441",
+    "device_fingerprint": "959cf4833813f273bb8ee69e63247e1b",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000442",
+    "device_fingerprint": "5d8bd18cd856448a201c1c26cf3566e7",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-31T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000443",
+    "device_fingerprint": "fb88b127d7815f499408700941326541",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000444",
+    "device_fingerprint": "130ab9dce55e9da0bbc97b9c59377998",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000445",
+    "device_fingerprint": "0e27381dfed7a980fcf931300844bf17",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000446",
+    "device_fingerprint": "588866648da38cfd5c87d54ae8f3bc25",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000447",
+    "device_fingerprint": "e979761536380a9c55123d75affde6fd",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000448",
+    "device_fingerprint": "3faffb201b0f625601a75838b1071e0c",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000449",
+    "device_fingerprint": "c221fe7f04e4d4f76ac0548d1c9002ae",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000450",
+    "device_fingerprint": "b87c585e6e68d5fb38d93ca4b638751f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000451",
+    "device_fingerprint": "e2c5546b4db2d9f650c7f81e41ee8a7e",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000452",
+    "device_fingerprint": "00a164dd879ee96078073107c4a273e0",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000453",
+    "device_fingerprint": "9ac241524473ff00b09a6041af94699f",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000454",
+    "device_fingerprint": "65be8d57ea432b0f736945e3b1b9904b",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000455",
+    "device_fingerprint": "40d58059ccad3a08630dc82ed065ae2c",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000456",
+    "device_fingerprint": "386acab6af091c2288231465494d1264",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000457",
+    "device_fingerprint": "06801a607199aee3e5e3ce8846366b54",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000458",
+    "device_fingerprint": "4a501544db3791154f8a55ea2d03e675",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000459",
+    "device_fingerprint": "c72a7dff037d53576a386cdc14e8baeb",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000460",
+    "device_fingerprint": "37470fdad4140d28b6f539d6ba05cf69",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000461",
+    "device_fingerprint": "6fe89ae1587e54ff2418926b9fb33035",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000462",
+    "device_fingerprint": "c8974bf674463680e23e925c8c8ba42d",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000463",
+    "device_fingerprint": "ce0a3632fa0a0a26d1c05365b15d83e0",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000464",
+    "device_fingerprint": "2030573cb763e045aef97b36feb46f96",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "AE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000465",
+    "device_fingerprint": "55842c18637f5b60628afb269215a943",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000466",
+    "device_fingerprint": "b8406d3bc95aed16224cff015c89ea8b",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000467",
+    "device_fingerprint": "010828c31444b89780bcf4f657439a10",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000468",
+    "device_fingerprint": "da1c24399bc4497ccde22dea25c67cf4",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000469",
+    "device_fingerprint": "aebf3af51adde548c793ce3825bdbed2",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000470",
+    "device_fingerprint": "eb4eb87dda9f9d7d40bd429bc461600f",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000471",
+    "device_fingerprint": "0e5c626145632723ff82dbb251e3c195",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000472",
+    "device_fingerprint": "7ab973809e385a8da74a827b8a6e5b23",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000473",
+    "device_fingerprint": "78e5b8053a8b4c6745dc14cbaa2aa44f",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000474",
+    "device_fingerprint": "03cfcd3f10a5e0dd75438ce68e4487a7",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000475",
+    "device_fingerprint": "ff0997583ac3790e20d3cca627f4a904",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000476",
+    "device_fingerprint": "17ec3e02eaacf100896d272823497f3c",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000477",
+    "device_fingerprint": "b80b1de1d0e261556459e4452ad7379a",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000478",
+    "device_fingerprint": "1952348fab002cf23b825f93cc5f3deb",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000479",
+    "device_fingerprint": "37671e850c42f05cd497ae4ca9dc736a",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000480",
+    "device_fingerprint": "c392681499b48c4e325205b6beb38793",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000481",
+    "device_fingerprint": "cf395e939dd5942828a7dfd534214a73",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000482",
+    "device_fingerprint": "2580878a11f58ae31c1dae9213c00a09",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000483",
+    "device_fingerprint": "5dbb8664230b3be841f524377522a311",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000484",
+    "device_fingerprint": "9f048c1de66edae23b6a40668096d608",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000485",
+    "device_fingerprint": "8d1f53402d9bd1b7638e8a2729a2aa97",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000486",
+    "device_fingerprint": "7314ed34fe07e121ce6adda93fb37166",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000487",
+    "device_fingerprint": "983a39cbb66d6659ed65d03a198f321a",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000488",
+    "device_fingerprint": "5e9f04f8ebe4c36f650ffdcb0e56e063",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000489",
+    "device_fingerprint": "8a039633c2d23cbbfdf07db6ee2e7bc2",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000490",
+    "device_fingerprint": "2efb1982403da51ccbc2a37d795ac3f1",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000491",
+    "device_fingerprint": "8b4a3c30310842754d5eb37f11045624",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000492",
+    "device_fingerprint": "35c301d49d6ec7256572551e6a3029d1",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000493",
+    "device_fingerprint": "4e8b6dc63f2865169fde4c51c15ace51",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000494",
+    "device_fingerprint": "b032267759dadd4dd26a06013ba85cf3",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000495",
+    "device_fingerprint": "f87527ebf8b10ac958e5dbabd585383e",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000496",
+    "device_fingerprint": "80eb579ec8ebf70ae8b30fdc65c2194e",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000497",
+    "device_fingerprint": "15bf0b7bb28178b94ef08b85bbbe290d",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000498",
+    "device_fingerprint": "b15a48f006709e54635b968cca010e18",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000499",
+    "device_fingerprint": "3771c8f9abbcc19b6a03b38f9f887075",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000500",
+    "device_fingerprint": "27d30ca838713a25b78fc503de0a2719",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000501",
+    "device_fingerprint": "01a89089c38664d08c32c5b904782224",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000502",
+    "device_fingerprint": "3734219306d3b9d6dd90d241ab0e2d9e",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000503",
+    "device_fingerprint": "907fdbd185b2bd395c13192869bd108f",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000504",
+    "device_fingerprint": "e815ceaaeeb285367daf879d11c5034d",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000505",
+    "device_fingerprint": "3b083574bbd872ac93260d328628f20f",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000506",
+    "device_fingerprint": "6b4807961ec972d7b737e24372f218bf",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000507",
+    "device_fingerprint": "6d1b59e7303ac47ad604821e2c7bc73e",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-25T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000508",
+    "device_fingerprint": "1b5550ec6fd25a0fff8d22cd18344e82",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000509",
+    "device_fingerprint": "4dfb494cdd7e499cbcfb660fb9679a84",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000510",
+    "device_fingerprint": "8dd9d42949114ce51a979b33fc7c315f",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000511",
+    "device_fingerprint": "056c0293415f4a3cf427bc5b14e949cf",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000512",
+    "device_fingerprint": "7ae514c3fc2d03834e1b849e48e2c7cf",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000513",
+    "device_fingerprint": "3b5ca949fd039f1d21b603a3aafff97d",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000514",
+    "device_fingerprint": "10155cf06baaedbf69920cd14c9d8fbf",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000515",
+    "device_fingerprint": "41bc07c4390b92af5588841dfab5b98a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000516",
+    "device_fingerprint": "4c9ec6e77971250516948d4fdf9c4592",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000517",
+    "device_fingerprint": "f908bcbc691a37b7e449f08a4726154b",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000518",
+    "device_fingerprint": "a81c9da60eff8866378398fecf32337a",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000519",
+    "device_fingerprint": "eb6bc6849b748fc5218a6041519e5943",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000520",
+    "device_fingerprint": "d5ef15810635bd71cb487d20c3cc0184",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-07T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000521",
+    "device_fingerprint": "4fbbf1760818117c3d98a1fe7048b3a3",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000522",
+    "device_fingerprint": "36a7050b25b4e328efc893cf949e9502",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000523",
+    "device_fingerprint": "0b69cca1897289b425b4653aefc735b9",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000524",
+    "device_fingerprint": "7f6558cba6baa71f9fbf7cfca3f6829b",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000525",
+    "device_fingerprint": "65ace3978032cba24086976aa14469d9",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000526",
+    "device_fingerprint": "bfdbf52e68772046719a119a48b47a05",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000527",
+    "device_fingerprint": "77a9624eb5f5f51c67c0a20402ac1bdd",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000528",
+    "device_fingerprint": "bbca5e0da554cdab0d1ba75c1310d878",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000529",
+    "device_fingerprint": "9cb226fe7ac764cee4e21760d28212f5",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000530",
+    "device_fingerprint": "5ab2b84396ce04083cc1dcccf9b53fd7",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000531",
+    "device_fingerprint": "4666c9265a4f6590960384f24db5ff69",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000532",
+    "device_fingerprint": "acc1c3dc5f6991ccbeb7fe74a636b3b8",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000533",
+    "device_fingerprint": "388fb92ee29e3691ff594146c87bba4a",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000534",
+    "device_fingerprint": "79345d85c458e529a7f0e971893c31e1",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000535",
+    "device_fingerprint": "5e055d5a963d0ead953a325f3a507b09",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000536",
+    "device_fingerprint": "c17ae032c981bbf94687be20ce3f17c0",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000537",
+    "device_fingerprint": "92a81e32344c6a7468f993f40994ea50",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000538",
+    "device_fingerprint": "2f5042503c3b118449144a4eeff5a03d",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000539",
+    "device_fingerprint": "745d37f9a5b6dac22842f1119f7c2773",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000540",
+    "device_fingerprint": "fbabe16e269614b6841330907c3c76ad",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "AE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000541",
+    "device_fingerprint": "83cb1251486bafda4461c417cb045cea",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000542",
+    "device_fingerprint": "5aeaa9b8bd66aeec67dcce41293ef6b4",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000543",
+    "device_fingerprint": "78ed8053b77c5347b3b657a7ddffad27",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000544",
+    "device_fingerprint": "77f62b2b21f2c3c5aea19ba3223fc352",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000545",
+    "device_fingerprint": "052ec1d2473757d724696f8179afe05c",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000546",
+    "device_fingerprint": "d084e3e5b45e52cd5dda77c2103df8e7",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000547",
+    "device_fingerprint": "469f55cc49b5106dcbf807d9bc8d6e40",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000548",
+    "device_fingerprint": "b01831598c16827d8f731f89a92a425d",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000549",
+    "device_fingerprint": "1b239c4154f2c1bc7177c79436fd4af9",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000550",
+    "device_fingerprint": "fbe0c2c0286137973e58d67ba9144bd2",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000551",
+    "device_fingerprint": "46c8c32d51a756ec7cc5c13e9a6efa4c",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000552",
+    "device_fingerprint": "4a87ec74890388521327aa38a5ddcff4",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000553",
+    "device_fingerprint": "927ebe485dfd5af469ebeec0d1d46134",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000554",
+    "device_fingerprint": "f841cbcc70714e477208828da5ff1ea1",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000555",
+    "device_fingerprint": "ddc6072107e090f5d7570235cda49fbe",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000556",
+    "device_fingerprint": "dd97ccb52d1b59164569e34d90a6dc85",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000557",
+    "device_fingerprint": "071860de9ae1674d33644ce6c0fdf483",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-20T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000558",
+    "device_fingerprint": "b1021948ac413ab15094d8f6df692f8a",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000559",
+    "device_fingerprint": "477860298411097c8a0158c26de15eb6",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000560",
+    "device_fingerprint": "910798b42337462c22101fccad800af5",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000561",
+    "device_fingerprint": "8dda8b0ca3497d3445f79f3217da785f",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000562",
+    "device_fingerprint": "6653124bb469ff7353e4c7dbb779b577",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "IN",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000563",
+    "device_fingerprint": "3dd2fcda5a99efd0dbbf2bccb743c124",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000564",
+    "device_fingerprint": "ca2dd7f4babcce8e02d8234799090c5f",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000565",
+    "device_fingerprint": "ef0d1595216185fe2aa3acc85d592fb2",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000566",
+    "device_fingerprint": "7c5cef3daeba5fa81b5e1c6539f8ffba",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000567",
+    "device_fingerprint": "5ced894b372af215b8f7ad1cef42d255",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-01T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000568",
+    "device_fingerprint": "a32be2f4938ec3112da03fd2cc5acd29",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-04T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000569",
+    "device_fingerprint": "25b9881d1ee8421e5054672c60431348",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-04-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000570",
+    "device_fingerprint": "995363b1e70cef6ec21ea6a9cda124a8",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000571",
+    "device_fingerprint": "77f801685e66780523153ef79f7d9e4c",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000572",
+    "device_fingerprint": "1911e1d2149e32a4022689725e26aa91",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-26T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000573",
+    "device_fingerprint": "e55ca116b186fd7b22ba8d024a73b9c7",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-18T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000574",
+    "device_fingerprint": "70cba7d768a09b062d708608e83ccbcf",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000575",
+    "device_fingerprint": "c6d5ac924cdfbc2f54497f17afb29b48",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000576",
+    "device_fingerprint": "804a6026e50d299eff61ab777b2be118",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000577",
+    "device_fingerprint": "7127822365fb0b6878bccd8e00974806",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000578",
+    "device_fingerprint": "7e699180206e9f172d021b75f1849e5a",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-02T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000579",
+    "device_fingerprint": "ac8cedd6a32af8a84e92a449c9af1284",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-27T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000580",
+    "device_fingerprint": "6cbe7d4ca1ed03953072c26ec2fe116f",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000581",
+    "device_fingerprint": "b58db011f26045f4de63284347fa7729",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000582",
+    "device_fingerprint": "7eaa6eabc0e908c4dd6cdfb270a293bf",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000583",
+    "device_fingerprint": "09ba6ed47f3c83dcc238ae64bc24d4de",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000584",
+    "device_fingerprint": "e992cbbfb96c139428349ac74b0e3fa5",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "SG",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-09T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000585",
+    "device_fingerprint": "74a3c0e2f1069ee0292554a487352538",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000586",
+    "device_fingerprint": "2b668b9bcfc75278369037299f97efcb",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000587",
+    "device_fingerprint": "cd0fff1ecbbad06823892c3a143fbd9d",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-13T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000588",
+    "device_fingerprint": "bc851b663079f36fc70da9558fdcbc52",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-03-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000589",
+    "device_fingerprint": "12cd4a2bed6f1c129c688ba22408f7bb",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-12T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000590",
+    "device_fingerprint": "de2483d524146e790c6bee2156c71cd1",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000591",
+    "device_fingerprint": "d0706d2c1dad74a4b4e329aca4b09d91",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-19T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000592",
+    "device_fingerprint": "b9c6623a1a05febca3f2982badbb4650",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000593",
+    "device_fingerprint": "5994ba57f1004d9baf003e3f5f712521",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000594",
+    "device_fingerprint": "fbde31f6803fd9c8001904eb47e585fd",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-01-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000595",
+    "device_fingerprint": "c956b07287a4d22782b292b5e20e45fe",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "MX",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-02-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000596",
+    "device_fingerprint": "39b357c2bbefccd236e9c87d707f5380",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-24T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000597",
+    "device_fingerprint": "1ee4c980688e0b6c8e3e1315f96391cc",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000598",
+    "device_fingerprint": "95f0abc89a893de09ae435d34a7103e3",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-11T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000599",
+    "device_fingerprint": "1566e6534eee3263abe11ad9efbef159",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-10-06T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000600",
+    "device_fingerprint": "522fd6127e1a660ea46a7b560606ebf3",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000601",
+    "device_fingerprint": "b30154baeb8291ea06b5ad59e0beccb6",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "GB",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000602",
+    "device_fingerprint": "bf11b7fe39ede8165175398f58210097",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000603",
+    "device_fingerprint": "66cbb9cc345e4311cf375730a3b3e9fd",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-10T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000604",
+    "device_fingerprint": "65289478fe2b1439f6a7f7ddc9a140f3",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000605",
+    "device_fingerprint": "8b47aa07eba9cdb1791eceaaaa3a2f6c",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-03-05T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000606",
+    "device_fingerprint": "2ab8aaff99bf9fe7b56c4ba31ee5ed15",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-17T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000607",
+    "device_fingerprint": "f4c8c38ff8ed09b8f734ec9c7da34f0b",
+    "os_family": "Windows",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2026-01-16T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000608",
+    "device_fingerprint": "da0a3f20c71a9aed67dd1d7950655771",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-08-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000609",
+    "device_fingerprint": "0920377718454ab45606ffb72b0b32e1",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-02-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000610",
+    "device_fingerprint": "ea8868f56fc881ee3363f809a8ae8701",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-04-15T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000611",
+    "device_fingerprint": "10d23f07b9baf1bfcf3875a16bdfaba7",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-29T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000612",
+    "device_fingerprint": "d694c8073e82dec24382d0b55418905f",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-09-30T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000613",
+    "device_fingerprint": "3fe0d9c6b91f7f7141d2fc59e3a76c43",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-28T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000614",
+    "device_fingerprint": "54758072fdb22eaeeb295562cb3458db",
+    "os_family": "Linux",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-07-08T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000615",
+    "device_fingerprint": "7ecbd8bdc615d4a35d9af9a004f4051c",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-23T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000616",
+    "device_fingerprint": "ff5146634c3b18fcf61b88101341bba8",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000617",
+    "device_fingerprint": "d7e32cc86f8beaa03130bf57f779557f",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-11-22T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000618",
+    "device_fingerprint": "cfc83c3869c9892216194b79bf4f1215",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-12-21T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000619",
+    "device_fingerprint": "8fcf0a20ee52058c042ac09da62943ae",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "US",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-05-03T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000620",
+    "device_fingerprint": "16254ac9b295ef06ac8a2935e9b359f8",
+    "os_family": "Android",
+    "is_emulator": 0,
+    "ip_country": "DE",
+    "risk_tier": "LOW",
+    "first_observed_at": "2025-06-14T00:00:00Z"
+  },
+  {
+    "device_id": "DEV-000621",
+    "device_fingerprint": "84dacb64987e5667f207dcd4127f315b",
+    "os_family": "Android",
+    "is_emulator": 1,
+    "ip_country": "AE",
+    "risk_tier": "HIGH",
+    "first_observed_at": "2026-09-24T06:00:00Z"
+  },
+  {
+    "device_id": "DEV-000622",
+    "device_fingerprint": "3f9299031368b9256a92184d0cb3bab8",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "AE",
+    "risk_tier": "HIGH",
+    "first_observed_at": "2026-10-14T13:00:00Z"
+  },
+  {
+    "device_id": "DEV-000623",
+    "device_fingerprint": "93af56e2722700b1b39c6acad3da0764",
+    "os_family": "macOS",
+    "is_emulator": 0,
+    "ip_country": "AE",
+    "risk_tier": "HIGH",
+    "first_observed_at": "2026-10-18T11:00:00Z"
+  },
+  {
+    "device_id": "DEV-000624",
+    "device_fingerprint": "b90f5787161c6b118fbcaf7c1bed5dd5",
+    "os_family": "Android",
+    "is_emulator": 1,
+    "ip_country": "AE",
+    "risk_tier": "HIGH",
+    "first_observed_at": "2026-10-20T05:00:00Z"
+  },
+  {
+    "device_id": "DEV-000625",
+    "device_fingerprint": "7c7ecbed64b0e4f6d0f46eadc761de4c",
+    "os_family": "iOS",
+    "is_emulator": 0,
+    "ip_country": "CA",
+    "risk_tier": "HIGH",
+    "first_observed_at": "2026-10-24T16:00:00Z"
+  },
+  {
+    "device_id": "DEV-000626",
+    "device_fingerprint": "e14100d053bcf3edf7d307189579449e",
+    "os_family": "Android",
+    "is_emulator": 1,
+    "ip_country": "US",
+    "risk_tier": "HIGH",
+    "first_observed_at": "2026-10-20T11:00:00Z"
+  },
+  {
+    "device_id": "DEV-000627",
+    "device_fingerprint": "667012a98daa66749d454ffa4fb50e89",
+    "os_family": "Android",
+    "is_emulator": 1,
+    "ip_country": "US",
+    "risk_tier": "HIGH",
+    "first_observed_at": "2026-10-18T08:00:00Z"
+  }
+]

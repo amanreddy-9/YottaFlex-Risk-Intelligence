@@ -1,0 +1,802 @@
+[
+  {
+    "merchant_id": "MER-000001",
+    "merchant_name": "UrbanGrocer #2",
+    "mcc": "5411",
+    "category": "GROCERY",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-02-20T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000002",
+    "merchant_name": "ClearGrid #3",
+    "mcc": "4900",
+    "category": "UTILITIES",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-07-03T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000003",
+    "merchant_name": "HarborOutlet #4",
+    "mcc": "5311",
+    "category": "RETAIL",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-05-28T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000004",
+    "merchant_name": "CarePlus Clinic #5",
+    "mcc": "8099",
+    "category": "HEALTHCARE",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-12-25T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000005",
+    "merchant_name": "TechInstitute #6",
+    "mcc": "8220",
+    "category": "EDUCATION",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-01-22T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000006",
+    "merchant_name": "EuroRail Pass #7",
+    "mcc": "4511",
+    "category": "TRAVEL",
+    "country": "DE",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-10-19T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000007",
+    "merchant_name": "NanoTech Store #8",
+    "mcc": "5732",
+    "category": "ELECTRONICS",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-03-12T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000008",
+    "merchant_name": "Velvet Atelier #9",
+    "mcc": "5944",
+    "category": "LUXURY",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-06-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000009",
+    "merchant_name": "ApexBet Gaming #10",
+    "mcc": "7995",
+    "category": "GAMING",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-11-18T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000010",
+    "merchant_name": "BitVault Desk #11",
+    "mcc": "6051",
+    "category": "CRYPTO_EXCHANGE",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-09-11T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000011",
+    "merchant_name": "MetroMarket #12",
+    "mcc": "5411",
+    "category": "GROCERY",
+    "country": "CA",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-12-10T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000012",
+    "merchant_name": "ClearGrid #13",
+    "mcc": "4900",
+    "category": "UTILITIES",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-03-17T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000013",
+    "merchant_name": "PrimeDepot #14",
+    "mcc": "5311",
+    "category": "RETAIL",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-03-12T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000014",
+    "merchant_name": "MedCore Lab #15",
+    "mcc": "8099",
+    "category": "HEALTHCARE",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-04-24T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000015",
+    "merchant_name": "Global Academy #16",
+    "mcc": "8220",
+    "category": "EDUCATION",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-09-26T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000016",
+    "merchant_name": "Pacific Resorts #17",
+    "mcc": "4511",
+    "category": "TRAVEL",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-12-11T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000017",
+    "merchant_name": "QuantumGear #18",
+    "mcc": "5732",
+    "category": "ELECTRONICS",
+    "country": "GB",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-01-17T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000018",
+    "merchant_name": "Crown Jewelers #19",
+    "mcc": "5944",
+    "category": "LUXURY",
+    "country": "DE",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-01-26T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000019",
+    "merchant_name": "VortexPlay #20",
+    "mcc": "7995",
+    "category": "GAMING",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-06-05T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000020",
+    "merchant_name": "NovaSwap #21",
+    "mcc": "6051",
+    "category": "CRYPTO_EXCHANGE",
+    "country": "SG",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-12-29T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000021",
+    "merchant_name": "GreenBasket #22",
+    "mcc": "5411",
+    "category": "GROCERY",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-10-02T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000022",
+    "merchant_name": "ClearGrid #23",
+    "mcc": "4900",
+    "category": "UTILITIES",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-04-08T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000023",
+    "merchant_name": "NorthStar Goods #24",
+    "mcc": "5311",
+    "category": "RETAIL",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-09-15T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000024",
+    "merchant_name": "BeaconHealth #25",
+    "mcc": "8099",
+    "category": "HEALTHCARE",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-04-04T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000025",
+    "merchant_name": "Global Academy #26",
+    "mcc": "8220",
+    "category": "EDUCATION",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-09-09T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000026",
+    "merchant_name": "SkyBridge Air #27",
+    "mcc": "4511",
+    "category": "TRAVEL",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-06-22T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000027",
+    "merchant_name": "CircuitHub #28",
+    "mcc": "5732",
+    "category": "ELECTRONICS",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-07-27T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000028",
+    "merchant_name": "Aurelia Watches #29",
+    "mcc": "5944",
+    "category": "LUXURY",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-10-02T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000029",
+    "merchant_name": "VortexPlay #30",
+    "mcc": "7995",
+    "category": "GAMING",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-12-14T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000030",
+    "merchant_name": "CoinBridge Exchange #31",
+    "mcc": "6051",
+    "category": "CRYPTO_EXCHANGE",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-08-16T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000031",
+    "merchant_name": "UrbanGrocer #32",
+    "mcc": "5411",
+    "category": "GROCERY",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-07-18T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000032",
+    "merchant_name": "SummitEnergy #33",
+    "mcc": "4900",
+    "category": "UTILITIES",
+    "country": "SG",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-08-10T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000033",
+    "merchant_name": "HarborOutlet #34",
+    "mcc": "5311",
+    "category": "RETAIL",
+    "country": "GB",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-08-09T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000034",
+    "merchant_name": "CarePlus Clinic #35",
+    "mcc": "8099",
+    "category": "HEALTHCARE",
+    "country": "GB",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-01-18T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000035",
+    "merchant_name": "Westfield College #36",
+    "mcc": "8220",
+    "category": "EDUCATION",
+    "country": "MX",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-09-28T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000036",
+    "merchant_name": "Pacific Resorts #37",
+    "mcc": "4511",
+    "category": "TRAVEL",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-04-22T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000037",
+    "merchant_name": "QuantumGear #38",
+    "mcc": "5732",
+    "category": "ELECTRONICS",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-02-05T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000038",
+    "merchant_name": "Crown Jewelers #39",
+    "mcc": "5944",
+    "category": "LUXURY",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-06-12T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000039",
+    "merchant_name": "ApexBet Gaming #40",
+    "mcc": "7995",
+    "category": "GAMING",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-09-25T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000040",
+    "merchant_name": "CoinBridge Exchange #41",
+    "mcc": "6051",
+    "category": "CRYPTO_EXCHANGE",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-02-02T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000041",
+    "merchant_name": "ValleyFoods #42",
+    "mcc": "5411",
+    "category": "GROCERY",
+    "country": "DE",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-08-11T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000042",
+    "merchant_name": "MetroWater #43",
+    "mcc": "4900",
+    "category": "UTILITIES",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-07-27T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000043",
+    "merchant_name": "PrimeDepot #44",
+    "mcc": "5311",
+    "category": "RETAIL",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-03-17T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000044",
+    "merchant_name": "CarePlus Clinic #45",
+    "mcc": "8099",
+    "category": "HEALTHCARE",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-04-13T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000045",
+    "merchant_name": "Global Academy #46",
+    "mcc": "8220",
+    "category": "EDUCATION",
+    "country": "DE",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-07-26T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000046",
+    "merchant_name": "Horizon Hotels #47",
+    "mcc": "4511",
+    "category": "TRAVEL",
+    "country": "CA",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-08-01T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000047",
+    "merchant_name": "ByteWorks #48",
+    "mcc": "5732",
+    "category": "ELECTRONICS",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-10-20T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000048",
+    "merchant_name": "Maison Royale #49",
+    "mcc": "5944",
+    "category": "LUXURY",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-04-24T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000049",
+    "merchant_name": "ApexBet Gaming #50",
+    "mcc": "7995",
+    "category": "GAMING",
+    "country": "MX",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-05-07T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000050",
+    "merchant_name": "CoinBridge Exchange #51",
+    "mcc": "6051",
+    "category": "CRYPTO_EXCHANGE",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-09-12T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000051",
+    "merchant_name": "UrbanGrocer #52",
+    "mcc": "5411",
+    "category": "GROCERY",
+    "country": "SG",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-10-14T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000052",
+    "merchant_name": "MetroWater #53",
+    "mcc": "4900",
+    "category": "UTILITIES",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-09-02T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000053",
+    "merchant_name": "NorthStar Goods #54",
+    "mcc": "5311",
+    "category": "RETAIL",
+    "country": "AE",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-12-06T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000054",
+    "merchant_name": "CarePlus Clinic #55",
+    "mcc": "8099",
+    "category": "HEALTHCARE",
+    "country": "AE",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-05-02T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000055",
+    "merchant_name": "TechInstitute #56",
+    "mcc": "8220",
+    "category": "EDUCATION",
+    "country": "CA",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-07-03T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000056",
+    "merchant_name": "SkyBridge Air #57",
+    "mcc": "4511",
+    "category": "TRAVEL",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-07-31T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000057",
+    "merchant_name": "ByteWorks #58",
+    "mcc": "5732",
+    "category": "ELECTRONICS",
+    "country": "CA",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-11-06T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000058",
+    "merchant_name": "Crown Jewelers #59",
+    "mcc": "5944",
+    "category": "LUXURY",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-03-14T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000059",
+    "merchant_name": "ApexBet Gaming #60",
+    "mcc": "7995",
+    "category": "GAMING",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-06-30T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000060",
+    "merchant_name": "CoinBridge Exchange #61",
+    "mcc": "6051",
+    "category": "CRYPTO_EXCHANGE",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-06-12T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000061",
+    "merchant_name": "MetroMarket #62",
+    "mcc": "5411",
+    "category": "GROCERY",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-08-28T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000062",
+    "merchant_name": "CityPower #63",
+    "mcc": "4900",
+    "category": "UTILITIES",
+    "country": "CA",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-10-07T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000063",
+    "merchant_name": "ApexRetail #64",
+    "mcc": "5311",
+    "category": "RETAIL",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-03-25T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000064",
+    "merchant_name": "BeaconHealth #65",
+    "mcc": "8099",
+    "category": "HEALTHCARE",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-06-28T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000065",
+    "merchant_name": "State University #66",
+    "mcc": "8220",
+    "category": "EDUCATION",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-02-04T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000066",
+    "merchant_name": "Pacific Resorts #67",
+    "mcc": "4511",
+    "category": "TRAVEL",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-02-06T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000067",
+    "merchant_name": "QuantumGear #68",
+    "mcc": "5732",
+    "category": "ELECTRONICS",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-02-21T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000068",
+    "merchant_name": "Velvet Atelier #69",
+    "mcc": "5944",
+    "category": "LUXURY",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-06-13T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000069",
+    "merchant_name": "RoyalOdds #70",
+    "mcc": "7995",
+    "category": "GAMING",
+    "country": "GB",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-11-20T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000070",
+    "merchant_name": "LedgerDirect #71",
+    "mcc": "6051",
+    "category": "CRYPTO_EXCHANGE",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-07-19T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000071",
+    "merchant_name": "ValleyFoods #72",
+    "mcc": "5411",
+    "category": "GROCERY",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-09-20T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000072",
+    "merchant_name": "CityPower #73",
+    "mcc": "4900",
+    "category": "UTILITIES",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-03-30T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000073",
+    "merchant_name": "HarborOutlet #74",
+    "mcc": "5311",
+    "category": "RETAIL",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-09-27T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000074",
+    "merchant_name": "MedCore Lab #75",
+    "mcc": "8099",
+    "category": "HEALTHCARE",
+    "country": "US",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-10-07T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000075",
+    "merchant_name": "Westfield College #76",
+    "mcc": "8220",
+    "category": "EDUCATION",
+    "country": "AE",
+    "risk_tier": "LOW",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2024-08-30T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000076",
+    "merchant_name": "Horizon Hotels #77",
+    "mcc": "4511",
+    "category": "TRAVEL",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-01-08T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000077",
+    "merchant_name": "NanoTech Store #78",
+    "mcc": "5732",
+    "category": "ELECTRONICS",
+    "country": "US",
+    "risk_tier": "MEDIUM",
+    "is_high_risk_mcc": 0,
+    "registered_at": "2025-07-30T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000078",
+    "merchant_name": "Velvet Atelier #79",
+    "mcc": "5944",
+    "category": "LUXURY",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-11-25T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000079",
+    "merchant_name": "ApexBet Gaming #80",
+    "mcc": "7995",
+    "category": "GAMING",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2025-07-31T00:00:00Z"
+  },
+  {
+    "merchant_id": "MER-000080",
+    "merchant_name": "NovaSwap #81",
+    "mcc": "6051",
+    "category": "CRYPTO_EXCHANGE",
+    "country": "US",
+    "risk_tier": "HIGH",
+    "is_high_risk_mcc": 1,
+    "registered_at": "2024-09-25T00:00:00Z"
+  }
+]

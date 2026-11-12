@@ -1,0 +1,79 @@
+action_id,case_id,analyst_id,analyst_role,action_type,rationale,acted_at
+ACT-2026-000001,CASE-2026-000001,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-19T01:20:00Z
+ACT-2026-000002,CASE-2026-000001,ANL-001,OPS_ANALYST,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-19T09:20:00Z
+ACT-2026-000003,CASE-2026-000002,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-20T01:27:00Z
+ACT-2026-000004,CASE-2026-000002,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-20T12:27:00Z
+ACT-2026-000005,CASE-2026-000003,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-21T13:24:30Z
+ACT-2026-000006,CASE-2026-000003,ANL-003,RISK_REVIEWER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-21T19:24:30Z
+ACT-2026-000007,CASE-2026-000004,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-21T20:24:30Z
+ACT-2026-000008,CASE-2026-000004,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-22T05:24:30Z
+ACT-2026-000009,CASE-2026-000005,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-22T14:00:25Z
+ACT-2026-000010,CASE-2026-000005,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-22T20:00:25Z
+ACT-2026-000011,CASE-2026-000006,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-22T12:24:30Z
+ACT-2026-000012,CASE-2026-000006,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-22T16:24:30Z
+ACT-2026-000013,CASE-2026-000007,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-22T12:00:35Z
+ACT-2026-000014,CASE-2026-000007,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-22T15:00:35Z
+ACT-2026-000015,CASE-2026-000008,ANL-002,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-22T14:00:25Z
+ACT-2026-000016,CASE-2026-000008,ANL-002,OPS_ANALYST,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-23T01:00:25Z
+ACT-2026-000017,CASE-2026-000009,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-23T12:00:35Z
+ACT-2026-000018,CASE-2026-000009,ANL-001,OPS_ANALYST,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-23T14:00:35Z
+ACT-2026-000019,CASE-2026-000010,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-23T19:00:25Z
+ACT-2026-000020,CASE-2026-000010,ANL-001,OPS_ANALYST,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-24T00:00:25Z
+ACT-2026-000021,CASE-2026-000011,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-23T20:30:25Z
+ACT-2026-000022,CASE-2026-000011,ANL-003,RISK_REVIEWER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-23T22:30:25Z
+ACT-2026-000023,CASE-2026-000012,ANL-002,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-24T20:00:25Z
+ACT-2026-000024,CASE-2026-000012,ANL-002,OPS_ANALYST,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-24T22:00:25Z
+ACT-2026-000025,CASE-2026-000013,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-25T10:24:30Z
+ACT-2026-000026,CASE-2026-000013,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-25T20:24:30Z
+ACT-2026-000027,CASE-2026-000014,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-25T22:29:00Z
+ACT-2026-000028,CASE-2026-000014,ANL-003,RISK_REVIEWER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-26T09:29:00Z
+ACT-2026-000029,CASE-2026-000015,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-25T19:00:25Z
+ACT-2026-000030,CASE-2026-000015,ANL-003,RISK_REVIEWER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-26T00:00:25Z
+ACT-2026-000031,CASE-2026-000016,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-25T20:24:30Z
+ACT-2026-000032,CASE-2026-000016,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-26T03:24:30Z
+ACT-2026-000033,CASE-2026-000017,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-26T22:14:00Z
+ACT-2026-000034,CASE-2026-000017,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-27T08:14:00Z
+ACT-2026-000035,CASE-2026-000018,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-26T18:24:30Z
+ACT-2026-000036,CASE-2026-000018,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-27T03:24:30Z
+ACT-2026-000037,CASE-2026-000019,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-27T07:19:00Z
+ACT-2026-000038,CASE-2026-000019,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-27T17:19:00Z
+ACT-2026-000039,CASE-2026-000020,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-28T15:24:30Z
+ACT-2026-000040,CASE-2026-000020,ANL-004,COMPLIANCE_OFFICER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-29T03:24:30Z
+ACT-2026-000041,CASE-2026-000021,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-29T22:00:25Z
+ACT-2026-000042,CASE-2026-000021,ANL-003,RISK_REVIEWER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-09-30T01:00:25Z
+ACT-2026-000043,CASE-2026-000022,ANL-002,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-09-30T19:24:30Z
+ACT-2026-000044,CASE-2026-000022,ANL-002,OPS_ANALYST,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-10-01T07:24:30Z
+ACT-2026-000045,CASE-2026-000023,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-02T14:00:25Z
+ACT-2026-000046,CASE-2026-000023,ANL-003,RISK_REVIEWER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-10-02T22:00:25Z
+ACT-2026-000047,CASE-2026-000024,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-02T22:00:35Z
+ACT-2026-000048,CASE-2026-000024,ANL-001,OPS_ANALYST,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-10-03T00:00:35Z
+ACT-2026-000049,CASE-2026-000025,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-03T22:00:35Z
+ACT-2026-000050,CASE-2026-000025,ANL-003,RISK_REVIEWER,CONFIRM_FRAUD,Confirmed anomalous pattern corroborated by transaction facts and entity linkage.,2026-10-04T08:00:35Z
+ACT-2026-000051,CASE-2026-000026,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-05T17:00:35Z
+ACT-2026-000052,CASE-2026-000026,ANL-001,OPS_ANALYST,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-05T21:00:35Z
+ACT-2026-000053,CASE-2026-000027,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-05T12:00:35Z
+ACT-2026-000054,CASE-2026-000027,ANL-004,COMPLIANCE_OFFICER,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-05T14:00:35Z
+ACT-2026-000055,CASE-2026-000028,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-05T13:00:35Z
+ACT-2026-000056,CASE-2026-000028,ANL-001,OPS_ANALYST,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-05T16:00:35Z
+ACT-2026-000057,CASE-2026-000029,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-06T17:00:35Z
+ACT-2026-000058,CASE-2026-000029,ANL-003,RISK_REVIEWER,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-06T19:00:35Z
+ACT-2026-000059,CASE-2026-000030,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-06T12:00:35Z
+ACT-2026-000060,CASE-2026-000030,ANL-001,OPS_ANALYST,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-06T23:00:35Z
+ACT-2026-000061,CASE-2026-000031,ANL-002,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-07T14:00:35Z
+ACT-2026-000062,CASE-2026-000031,ANL-002,OPS_ANALYST,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-08T01:00:35Z
+ACT-2026-000063,CASE-2026-000032,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-07T12:00:35Z
+ACT-2026-000064,CASE-2026-000032,ANL-003,RISK_REVIEWER,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-07T23:00:35Z
+ACT-2026-000065,CASE-2026-000033,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-07T13:00:35Z
+ACT-2026-000066,CASE-2026-000033,ANL-003,RISK_REVIEWER,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-07T22:00:35Z
+ACT-2026-000067,CASE-2026-000034,ANL-003,RISK_REVIEWER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-07T17:00:25Z
+ACT-2026-000068,CASE-2026-000034,ANL-003,RISK_REVIEWER,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-08T02:00:25Z
+ACT-2026-000069,CASE-2026-000035,ANL-001,OPS_ANALYST,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-08T14:00:35Z
+ACT-2026-000070,CASE-2026-000035,ANL-001,OPS_ANALYST,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-09T01:00:35Z
+ACT-2026-000071,CASE-2026-000036,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-08T16:00:35Z
+ACT-2026-000072,CASE-2026-000036,ANL-004,COMPLIANCE_OFFICER,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-08T20:00:35Z
+ACT-2026-000073,CASE-2026-000037,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-08T17:00:35Z
+ACT-2026-000074,CASE-2026-000037,ANL-004,COMPLIANCE_OFFICER,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-08T21:00:35Z
+ACT-2026-000075,CASE-2026-000038,ANL-004,COMPLIANCE_OFFICER,CLAIM_REVIEW,Claimed case from prioritized compliance queue for initial evidence review.,2026-10-08T15:00:35Z
+ACT-2026-000076,CASE-2026-000038,ANL-004,COMPLIANCE_OFFICER,MARK_FALSE_POSITIVE,Verified benign activity supported by payroll/own-account/KYC context.,2026-10-08T23:00:35Z
+ACT-2026-000077,CASE-2026-000282,ANL-002,OPS_ANALYST,MARK_FALSE_POSITIVE,Injected invalid premature disposition preceding alert creation.,2026-10-24T03:00:20Z
+ACT-2026-000078,CASE-2026-000281,ANL-002,OPS_ANALYST,MARK_FALSE_POSITIVE,Injected invalid premature disposition preceding alert creation.,2026-10-24T02:00:20Z

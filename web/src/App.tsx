@@ -644,6 +644,61 @@ export const App: React.FC = () => {
     </button>
   );
 
+  const getGreetingKicker = () => {
+    const hour = new Date().getHours();
+    if (hour >= 5 && hour < 12) return { text: "GOOD MORNING", icon: <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" /> };
+    if (hour >= 12 && hour < 17) return { text: "GOOD AFTERNOON", icon: <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" /> };
+    if (hour >= 17 && hour < 21) return { text: "GOOD EVENING", icon: <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" /> };
+    return { text: "GOOD NIGHT", icon: <Moon className="w-3.5 h-3.5 text-sky-400 dark:text-sky-300 shrink-0" /> };
+  };
+
+  const renderProfileBtn = (extraClass = "") => (
+    <button
+      type="button"
+      onClick={() => setShowProfile(true)}
+      title={`Profile: ${user.full_name || "Analyst"}`}
+      aria-label="User Profile"
+      className={`glass-pill w-8 h-8 rounded-full flex items-center justify-center text-azure-600 dark:text-sky-300 hover:bg-white/45 dark:hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all shadow-[0_4px_16px_rgba(0,0,0,0.12)] shrink-0 ${extraClass}`}
+    >
+      <UserCircle2 className="w-4 h-4" />
+    </button>
+  );
+
+  const renderThemeToggle = (extraClass = "") => (
+    <button
+      type="button"
+      onClick={() => setDarkMode((d) => !d)}
+      title={darkMode ? "Switch to Sky-Azure Light Theme" : "Switch to Pure-Black Dark Theme"}
+      aria-label="Toggle Light / Dark Theme"
+      className={`glass-pill w-8 h-8 rounded-full flex items-center justify-center relative overflow-hidden text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all shadow-[0_4px_16px_rgba(0,0,0,0.12)] shrink-0 group ${extraClass}`}
+    >
+      {/* Ambient glowing atmosphere behind icons */}
+      <span
+        className={`absolute inset-0 rounded-full transition-opacity duration-500 pointer-events-none ${
+          darkMode ? "bg-sky-400/10 opacity-100" : "bg-amber-400/15 opacity-100"
+        }`}
+      />
+      <div className="relative w-4 h-4 flex items-center justify-center pointer-events-none">
+        {/* Sun (smooth rotation & contraction) */}
+        <Sun
+          className={`w-4 h-4 text-amber-500 absolute transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+            darkMode
+              ? "rotate-90 scale-0 opacity-0 blur-[1px]"
+              : "rotate-0 scale-100 opacity-100 blur-0"
+          }`}
+        />
+        {/* Moon (smooth lunar emergence & spring bounce) */}
+        <Moon
+          className={`w-4 h-4 text-sky-400 dark:text-sky-300 absolute transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+            darkMode
+              ? "rotate-0 scale-100 opacity-100 blur-0"
+              : "-rotate-90 scale-0 opacity-0 blur-[1px]"
+          }`}
+        />
+      </div>
+    </button>
+  );
+
   const currentTabMeta = {
     overview: {
       title: "Executive Overview",
@@ -741,26 +796,30 @@ export const App: React.FC = () => {
           {/* Top Unified Executive Utility Header (Active Section Breadcrumb + Utilities, NO long nav bar) */}
           <header className="sticky top-3 z-30 w-full">
             {tab === "overview" ? (
-              <div className="px-2 sm:px-3 py-2 flex flex-col md:flex-row md:items-center justify-between gap-4">
-                {/* Left: iOS Glass Font Welcome Note */}
+              <div className="px-2 sm:px-3 py-1 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                {/* Left: iOS Glass Font Welcome Note matching Image */}
                 <div className="min-w-0">
-                  <h1 className="text-2xl sm:text-3xl lg:text-[32px] font-extrabold tracking-tight text-slate-950 dark:text-white leading-tight flex flex-wrap items-baseline gap-2.5">
-                    <span>Welcome back,</span>
-                    <span className="text-azure-600 dark:text-sky-300 font-black">
-                      {user.full_name || "Analyst"}
-                    </span>
-                  </h1>
-                  <div className="text-sm sm:text-base font-semibold text-slate-700 dark:text-zinc-200 mt-1.5 flex flex-wrap items-center gap-2 tracking-normal">
-                    <span className="font-bold text-slate-950 dark:text-white">YottaFlex RiskOS</span>
-                    <span className="text-slate-400 dark:text-zinc-500">•</span>
-                    <span className="text-azure-600 dark:text-sky-300 font-bold">Watch</span>
-                    <span className="text-slate-400 dark:text-zinc-500">•</span>
-                    <span className="text-azure-600 dark:text-sky-300 font-bold">Inspect</span>
-                    <span className="text-slate-400 dark:text-zinc-500">•</span>
-                    <span className="text-azure-600 dark:text-sky-300 font-bold">Act</span>
-                    <span className="hidden xl:inline text-slate-400 dark:text-zinc-500">•</span>
-                    <span className="hidden xl:inline text-slate-600 dark:text-zinc-300 font-medium text-xs sm:text-sm">Continuous Ledger Intelligence &amp; Autonomous Triage</span>
+                  {/* Kicker: GOOD AFTERNOON ☼ */}
+                  <div className="flex items-center gap-1.5 text-[11px] font-bold tracking-[0.16em] uppercase text-slate-500 dark:text-zinc-400 mb-1">
+                    <span>{getGreetingKicker().text}</span>
+                    {getGreetingKicker().icon}
                   </div>
+
+                  {/* Heading: Vertical blue line + Welcome back, Aman Reddy */}
+                  <div className="flex items-center gap-2.5">
+                    <span className="w-1 h-6 sm:h-7 rounded-full bg-gradient-to-b from-sky-400 to-azure-600 shadow-[0_0_10px_rgba(56,189,248,0.7)] shrink-0" />
+                    <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-950 dark:text-white leading-tight">
+                      <span>Welcome back, </span>
+                      <span className="text-azure-600 dark:text-sky-400 font-bold">
+                        {user.full_name || "Analyst"}
+                      </span>
+                    </h1>
+                  </div>
+
+                  {/* Subtitle matching image */}
+                  <p className="text-xs sm:text-sm text-slate-500 dark:text-zinc-400 font-normal mt-1 pl-3.5">
+                    Here's what's happening across your risk operations today.
+                  </p>
                 </div>
 
                 {/* Right Controls: Independent floating glass pills (NO enclosing long panel) */}
@@ -769,7 +828,7 @@ export const App: React.FC = () => {
                     type="button"
                     onClick={() => setShowSpotlight(true)}
                     title="Global Spotlight Search (Cmd/Ctrl + K)"
-                    className="glass-pill inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
+                    className="glass-pill inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
                   >
                     <Search className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
                     <span className="hidden md:inline font-mono ios-num text-[10px] text-slate-600 dark:text-zinc-300">⌘K</span>
@@ -778,34 +837,12 @@ export const App: React.FC = () => {
                   {renderNotifBell("dock")}
 
                   {renderShortcutsBtn(
-                    "glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
+                    "glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
                   )}
 
-                  <button
-                    type="button"
-                    onClick={() => setShowProfile(true)}
-                    className="glass-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
-                  >
-                    <UserCircle2 className="w-4 h-4 text-azure-600 dark:text-white" />
-                    <span className="hidden xl:inline">{user.full_name}</span>
-                    <span className="badge-glass badge-glass-blue font-mono ios-num text-[9.5px] leading-[1.25] px-1.5 py-[1px] rounded-full">
-                      {user.role === "OPS_ANALYST" ? "ANALYST" : user.role === "RISK_REVIEWER" ? "REVIEWER" : "ADMIN"}
-                    </span>
-                  </button>
+                  {renderProfileBtn()}
 
-                  <button
-                    type="button"
-                    onClick={() => setDarkMode((d) => !d)}
-                    title="Toggle Light / Pure-Black Dark Theme"
-                    className="glass-pill inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
-                  >
-                    {darkMode ? (
-                      <Sun className="w-3.5 h-3.5 text-amber-400" />
-                    ) : (
-                      <Moon className="w-3.5 h-3.5 text-azure-600" />
-                    )}
-                    <span className="hidden sm:inline">{darkMode ? "Light" : "Dark"}</span>
-                  </button>
+                  {renderThemeToggle()}
                 </div>
               </div>
             ) : (
@@ -832,7 +869,7 @@ export const App: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Right Controls: Spotlight Search + Notifications + Shortcuts + User Profile Pill + Theme Toggle */}
+                {/* Right Controls: Spotlight Search + Notifications + Shortcuts + Neat User Profile Icon + Animated Theme Toggle */}
                 <div className="flex items-center gap-2 pr-0.5 shrink-0">
                   <button
                     type="button"
@@ -850,31 +887,9 @@ export const App: React.FC = () => {
                     "glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
                   )}
 
-                  <button
-                    type="button"
-                    onClick={() => setShowProfile(true)}
-                    className="glass-pill inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
-                  >
-                    <UserCircle2 className="w-4 h-4 text-azure-600 dark:text-white" />
-                    <span className="hidden xl:inline">{user.full_name}</span>
-                    <span className="badge-glass badge-glass-blue font-mono ios-num text-[9.5px] leading-[1.25] px-1.5 py-[1px] rounded-full">
-                      {user.role === "OPS_ANALYST" ? "ANALYST" : user.role === "RISK_REVIEWER" ? "REVIEWER" : "ADMIN"}
-                    </span>
-                  </button>
+                  {renderProfileBtn()}
 
-                  <button
-                    type="button"
-                    onClick={() => setDarkMode((d) => !d)}
-                    title="Toggle Light / Pure-Black Dark Theme"
-                    className="glass-pill inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
-                  >
-                    {darkMode ? (
-                      <Sun className="w-3.5 h-3.5 text-amber-400" />
-                    ) : (
-                      <Moon className="w-3.5 h-3.5 text-azure-600" />
-                    )}
-                    <span className="hidden sm:inline">{darkMode ? "Light" : "Dark"}</span>
-                  </button>
+                  {renderThemeToggle()}
                 </div>
               </div>
             )}

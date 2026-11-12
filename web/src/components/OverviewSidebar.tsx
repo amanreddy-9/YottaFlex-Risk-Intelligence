@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ChevronDown, HelpCircle, Settings } from "lucide-react";
 import type { NavItem } from "./LiquidGlassNav";
 import type { AuthUser } from "../types/workbench";
@@ -41,6 +41,7 @@ export function OverviewSidebar<T extends string>({
   const navRef = useRef<HTMLElement | null>(null);
   const btnRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const [hoverId, setHoverId] = useState<T | null>(null);
+  const [isSidebarHovered, setIsSidebarHovered] = useState(false);
   const [slider, setSlider] = useState<{
     top: number;
     left: number;
@@ -66,7 +67,7 @@ export function OverviewSidebar<T extends string>({
   useLayoutEffect(() => {
     measureSlider();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [targetId, isCollapsed, items.map((i) => `${i.id}:${i.label}:${i.badge ?? ""}`).join("|")]);
+  }, [targetId, isCollapsed, isSidebarHovered, items.map((i) => `${i.id}:${i.label}:${i.badge ?? ""}`).join("|")]);
 
   useEffect(() => {
     if (!navRef.current) return;
@@ -74,14 +75,21 @@ export function OverviewSidebar<T extends string>({
     ro.observe(navRef.current);
     return () => ro.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [targetId, isCollapsed]);
+  }, [targetId, isCollapsed, isSidebarHovered]);
 
   return (
     <aside
       aria-label="Overview Workbench Navigation"
-      className={`overview-glass-sidebar rounded-[30px] shrink-0 lg:sticky lg:top-4 lg:min-h-[calc(100vh-2rem)] flex flex-col justify-between select-none overflow-hidden transition-[width,padding] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+      onMouseEnter={() => setIsSidebarHovered(true)}
+      onMouseLeave={() => {
+        setIsSidebarHovered(false);
+        setHoverId(null);
+      }}
+      className={`overview-glass-sidebar rounded-[30px] shrink-0 lg:sticky lg:top-4 lg:min-h-[calc(100vh-2rem)] flex flex-col justify-between select-none overflow-hidden transition-[width,padding,gap,box-shadow] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
         isCollapsed
-          ? "w-full lg:w-[84px] px-2 py-3.5 gap-3"
+          ? isSidebarHovered
+            ? "w-full lg:w-[126px] px-2.5 py-4 gap-3.5 shadow-[0_24px_64px_rgba(10,56,130,0.22)] dark:shadow-[0_28px_70px_rgba(0,0,0,0.85)]"
+            : "w-full lg:w-[102px] px-2 py-3.5 gap-3"
           : "w-full lg:w-[248px] p-4 gap-4"
       }`}
     >
@@ -110,8 +118,12 @@ export function OverviewSidebar<T extends string>({
           <img
             src="/yottaflex-logo.webp"
             alt="YottaFlex Logo"
-            className={`object-contain dark:brightness-0 dark:invert drop-shadow-[0_6px_16px_rgba(14,72,165,0.20)] dark:drop-shadow-[0_8px_18px_rgba(56,189,248,0.28)] transition-all duration-500 group-hover:-translate-y-0.5 group-hover:scale-105 ${
-              isCollapsed ? "w-[38px] h-[38px]" : "w-[68px] h-[68px]"
+            className={`object-contain dark:brightness-0 dark:invert drop-shadow-[0_6px_16px_rgba(14,72,165,0.20)] dark:drop-shadow-[0_8px_18px_rgba(56,189,248,0.28)] transition-all duration-500 group-hover:-translate-y-0.5 ${
+              isCollapsed
+                ? isSidebarHovered
+                  ? "w-[50px] h-[50px] scale-105"
+                  : "w-[44px] h-[44px]"
+                : "w-[68px] h-[68px] group-hover:scale-105"
             }`}
           />
           <div
@@ -149,7 +161,7 @@ export function OverviewSidebar<T extends string>({
                 width: `${slider.width}px`,
                 height: `${slider.height}px`,
                 transform: `translate3d(${slider.left}px, ${slider.top}px, 0)`,
-                borderRadius: isCollapsed ? "16px" : "9999px",
+                borderRadius: isCollapsed ? "18px" : "9999px",
               }}
             />
           )}
@@ -170,7 +182,9 @@ export function OverviewSidebar<T extends string>({
                 onClick={() => onChange(item.id)}
                 className={`relative z-10 w-full transition-all duration-300 ${
                   isCollapsed
-                    ? "flex flex-col items-center justify-center gap-1 px-1 py-2 rounded-2xl text-center"
+                    ? isSidebarHovered
+                      ? "flex flex-col items-center justify-center gap-1.5 px-2 py-2.5 rounded-2xl text-center"
+                      : "flex flex-col items-center justify-center gap-1 px-1.5 py-2.5 rounded-2xl text-center"
                     : "flex items-center justify-between gap-2 px-3.5 py-2.5 rounded-full text-[13px]"
                 } ${
                   isHighlighted
@@ -183,18 +197,38 @@ export function OverviewSidebar<T extends string>({
                     <div className="relative flex items-center justify-center">
                       <span
                         className={`shrink-0 transition-transform duration-200 ${
-                          isHighlighted ? "text-azure-600 dark:text-white scale-110" : "text-slate-600 dark:text-sky-100/75"
+                          isHighlighted
+                            ? "text-azure-600 dark:text-white scale-120"
+                            : isSidebarHovered
+                            ? "text-slate-900 dark:text-white scale-115"
+                            : "text-slate-700 dark:text-sky-100/85 scale-105"
                         }`}
                       >
-                        {item.icon}
+                        {React.isValidElement(item.icon)
+                          ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, {
+                              className: isSidebarHovered ? "w-5 h-5" : "w-[18px] h-[18px]",
+                            })
+                          : item.icon}
                       </span>
                       {item.badge !== undefined && item.badge > 0 && (
-                        <span className="absolute -top-1.5 -right-3 px-1.5 py-[0.5px] rounded-full text-[9px] ios-num font-bold leading-none bg-rose-500 text-white shadow-[0_0_8px_rgba(244,63,94,0.65)]">
+                        <span
+                          className={`absolute -top-2 -right-3.5 px-1.5 py-[0.5px] rounded-full text-[9.5px] ios-num font-bold leading-none bg-rose-500 text-white shadow-[0_0_10px_rgba(244,63,94,0.70)] transition-transform duration-200 ${
+                            isSidebarHovered ? "scale-105" : ""
+                          }`}
+                        >
                           {item.badge > 999 ? "999+" : item.badge}
                         </span>
                       )}
                     </div>
-                    <span className="text-[10px] font-semibold tracking-tight text-center leading-tight truncate max-w-[68px]">
+                    <span
+                      className={`font-semibold tracking-tight text-center leading-tight transition-all duration-200 ${
+                        isSidebarHovered
+                          ? "text-[12px] max-w-[110px] text-slate-950 dark:text-white font-bold"
+                          : "text-[11px] max-w-[92px] text-slate-850 dark:text-zinc-100"
+                      } ${
+                        isHighlighted ? "text-slate-950 dark:text-white font-bold" : ""
+                      }`}
+                    >
                       {item.label}
                     </span>
                   </>
@@ -231,30 +265,36 @@ export function OverviewSidebar<T extends string>({
       </div>
 
       {/* Bottom Settings, Help & Support, and User Profile Card */}
-      <div className="relative z-10 pt-3 border-t border-white/45 dark:border-white/18 space-y-1.5">
+      <div className="relative z-10 pt-3 border-t border-white/45 dark:border-white/18 space-y-2">
         {isCollapsed ? (
           <div className="flex flex-col items-center gap-2">
             <button
               type="button"
               title="Settings"
               onClick={onOpenProfile}
-              className="w-10 h-10 rounded-full flex items-center justify-center text-slate-700 dark:text-zinc-200 hover:bg-white/40 dark:hover:bg-white/[0.12] transition hover:scale-105"
+              className={`rounded-full flex items-center justify-center text-slate-700 dark:text-zinc-200 hover:bg-white/45 dark:hover:bg-white/[0.14] transition-all duration-300 hover:scale-110 ${
+                isSidebarHovered ? "w-11 h-11" : "w-10 h-10"
+              }`}
             >
-              <Settings className="w-4 h-4 text-slate-600 dark:text-sky-100/75" />
+              <Settings className={isSidebarHovered ? "w-5 h-5 text-slate-700 dark:text-white" : "w-[18px] h-[18px] text-slate-600 dark:text-sky-100/75"} />
             </button>
             <button
               type="button"
               title="Help & Support"
               onClick={onOpenSupport}
-              className="w-10 h-10 rounded-full flex items-center justify-center text-slate-700 dark:text-zinc-200 hover:bg-white/40 dark:hover:bg-white/[0.12] transition hover:scale-105"
+              className={`rounded-full flex items-center justify-center text-slate-700 dark:text-zinc-200 hover:bg-white/45 dark:hover:bg-white/[0.14] transition-all duration-300 hover:scale-110 ${
+                isSidebarHovered ? "w-11 h-11" : "w-10 h-10"
+              }`}
             >
-              <HelpCircle className="w-4 h-4 text-slate-600 dark:text-sky-100/75" />
+              <HelpCircle className={isSidebarHovered ? "w-5 h-5 text-slate-700 dark:text-white" : "w-[18px] h-[18px] text-slate-600 dark:text-sky-100/75"} />
             </button>
             <button
               type="button"
               title={`${user.full_name} (${roleLabel})`}
               onClick={onOpenProfile}
-              className="mt-1 w-10 h-10 rounded-full bg-gradient-to-br from-sky-400/90 to-azure-600/95 dark:from-sky-400/70 dark:to-azure-600/75 border border-white/85 dark:border-white/45 shadow-[0_4px_14px_rgba(56,189,248,0.35)] flex items-center justify-center text-xs font-bold text-white transition hover:scale-110"
+              className={`mt-1 rounded-full bg-gradient-to-br from-sky-400/90 to-azure-600/95 dark:from-sky-400/70 dark:to-azure-600/75 border border-white/85 dark:border-white/45 shadow-[0_4px_14px_rgba(56,189,248,0.35)] flex items-center justify-center font-bold text-white transition-all duration-300 hover:scale-115 ${
+                isSidebarHovered ? "w-11 h-11 text-sm shadow-[0_6px_20px_rgba(56,189,248,0.50)]" : "w-10 h-10 text-xs"
+              }`}
             >
               {initials}
             </button>

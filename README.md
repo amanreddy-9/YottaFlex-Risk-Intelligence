@@ -8,6 +8,12 @@
 [![Verification Suite](https://img.shields.io/badge/Tests-46%20Passing-brightgreen.svg)](tests/)
 [![Design: Liquid Glassmorphism](https://img.shields.io/badge/UI%2FUX-Liquid%20Glassmorphism-cyan.svg)](UI_UX_DESIGN_SPECIFICATION.md)
 
+
+
+An institutional financial crime, transaction monitoring, and linked-account prioritization platform built on a **deterministic double-entry reconciled synthetic ledger**, an **AST-guarded zero-leakage prioritization engine**, a **9-check exception quarantine queue**, an **interactive Financial Network Intelligence graph**, and an **iOS-inspired 3D Liquid Glassmorphic analyst workbench**.
+
+---
+
   ██╗   ██╗ ██████╗ ████████╗████████╗ █████╗ ███████╗██╗     ███████╗██╗  ██╗
   ╚██╗ ██╔╝██╔═══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔════╝██║     ██╔════╝╚██╗██╔╝
    ╚████╔╝ ██║   ██║   ██║      ██║   ███████║█████╗  ██║     █████╗   ╚███╔╝ 
@@ -15,10 +21,6 @@
      ██║   ╚██████╔╝   ██║      ██║   ██║  ██║██║     ███████╗███████╗██╔╝ ██╗
      ╚═╝    ╚═════╝    ╚═╝      ╚═╝   ╚═╝  ╚═╝╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝
                     R I S K   I N T E L L I G E N C E   O S
-
-An institutional financial crime, transaction monitoring, and linked-account prioritization platform built on a **deterministic double-entry reconciled synthetic ledger**, an **AST-guarded zero-leakage prioritization engine**, a **9-check exception quarantine queue**, an **interactive Financial Network Intelligence graph**, and an **iOS-inspired 3D Liquid Glassmorphic analyst workbench**.
-
----
 
 ## 📚 Complete Documentation & Reviewer Hub
 

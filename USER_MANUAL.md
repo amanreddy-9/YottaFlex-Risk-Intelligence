@@ -1,18 +1,18 @@
-# YottaFlex RiskOS — Comprehensive System & Vehicle Owner's Manual
+# RiskOS — Comprehensive System & Operational Reference Manual
 
-```
-  ██╗   ██╗ ██████╗ ████████╗████████╗ █████╗ ███████╗██╗     ███████╗██╗  ██╗
-  ╚██╗ ██╔╝██╔═══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔════╝██║     ██╔════╝╚██╗██╔╝
-   ╚████╔╝ ██║   ██║   ██║      ██║   ███████║█████╗  ██║     █████╗   ╚███╔╝ 
-    ╚██╔╝  ██║   ██║   ██║      ██║   ██╔══██║██╔══╝  ██║     ██╔══╝   ██╔██╗ 
-     ██║   ╚██████╔╝   ██║      ██║   ██║  ██║██║     ███████╗███████╗██╔╝ ██╗
-     ╚═╝    ╚═════╝    ╚═╝      ╚═╝   ╚═╝  ╚═╝╚═╝     ╚══════╝╚══════╝╚═╝  ╚═╝
-                    R I S K   I N T E L L I G E N C E   O S
+```text
+  ██████╗ ██╗███████╗██╗  ██╗     ██████╗ ███████╗
+  ██╔══██╗██║██╔════╝██║ ██╔╝    ██╔═══██╗██╔════╝
+  ██████╔╝██║███████╗█████╔╝     ██║   ██║███████╗
+  ██╔══██╗██║╚════██║██╔═██╗     ██║   ██║╚════██║
+  ██║  ██║██║███████║██║  ██╗    ╚██████╔╝███████║
+  ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝
+       AI-Powered Risk & Ledger Intelligence
 ```
 
-> **Document Classification:** Official System & Vehicle Owner's Operational Manual  
-> **Model Year:** 2026 Enterprise Edition  
-> **Applicable System:** YottaFlex Risk Intelligence Platform (YottaFlex RiskOS v1.0.0)  
+> **Document Classification:** Official System & Operational Reference Manual  
+> **Release:** Enterprise Edition v1.0.0  
+> **Applicable System:** RiskOS Financial Crime & Ledger Intelligence Platform  
 > **Author & Chief Architect:** Aman Reddy J (`amanreddy-9`, `amanreddyjukonti@gmail.com`)  
 > **Reference Repository:** `https://github.com/amanreddy-9/YottaFlex-Risk-Intelligence`  
 > **Default Engine Calibration Seed:** `20261022`  
@@ -21,112 +21,112 @@
 
 ## Safety Warnings, Regulatory Disclaimers & Operational Conventions
 
-Before operating YottaFlex RiskOS, all operators (Financial Crime Analysts, Compliance Officers, Risk Examiners, and System Administrators) must review the following operational conventions:
+Before operating RiskOS, all operators (Financial Crime Analysts, Compliance Officers, Risk Examiners, and System Administrators) must review the following operational conventions:
 
 > [!IMPORTANT]
-> **Regulatory Admissibility Notice:** All investigative actions taken within YottaFlex RiskOS—including alert dispositioning, case closures, SAR escalations, and GoAML XML exports—are cryptographically logged with immutable SHA-256 digital seals. Operator actions are subject to regulatory examination under FinCEN (31 CFR Chapter X), FATF Recommendations 10 & 20, FCA MLRs, and BaFin AML regulations.
+> **Regulatory Admissibility Notice:** All investigative actions taken within RiskOS—including alert dispositioning, case closures, SAR escalations, and GoAML XML exports—are cryptographically logged with immutable SHA-256 digital seals. Operator actions are subject to regulatory examination under FinCEN (31 CFR Chapter X), FATF Recommendations 10 & 20, FCA MLRs, and BaFin AML regulations.
 
 > [!WARNING]
 > **Four-Eyes Verification Mandate:** Cases involving high-value funds ($> \$25,000.00$) or cross-border sanctions screening alerts require two-party authorization (Maker-Checker protocol). An Analyst cannot independently seal or file a SAR dossier without Senior Reviewer sign-off.
 
 > [!NOTE]
-> **Vehicle Owner's Manual Structure:** This manual is formatted like an institutional automobile owner's handbook. Sections progress from quick ignition to cockpit instrumentation, flight controls, powertrain engine specifications, diagnostic telemetry, and roadside assistance.
+> **Operational Manual Structure:** This manual is formatted as an institutional financial engineering and compliance operations guide. Chapters progress sequentially from system initialization to workspace navigation, triage operations, behavioral rule engines, network forensics, model evaluation, and disaster recovery.
 
 ---
 
 ## Master Table of Contents
 
-- [Chapter 1: Vehicle & System Overview](#chapter-1-vehicle--system-overview)
-- [Chapter 2: Delivery, Unpacking & Fast-Track Ignition (Quick Start)](#chapter-2-delivery-unpacking--fast-track-ignition)
-- [Chapter 3: Cockpit Instrumentation & Operator Personas (RBAC)](#chapter-3-cockpit-instrumentation--operator-personas)
-- [Chapter 4: Instrument Cluster — Executive Overview & Ledger Telemetry](#chapter-4-instrument-cluster--executive-overview)
-- [Chapter 5: Primary Flight Controls — Priority Case Queue & Triage](#chapter-5-primary-flight-controls--priority-case-queue)
-- [Chapter 6: Entity Registry — Customer Directory & 360° Profile](#chapter-6-entity-registry--customer-directory)
-- [Chapter 7: Vault Management — Account Directory & Burst Profiling](#chapter-7-vault-management--account-directory)
-- [Chapter 8: Powerplant & Fuel Lines — Transaction Monitoring & Live Rule Engine](#chapter-8-powerplant--fuel-lines)
-- [Chapter 9: Radar & Sonar — Financial Network Intelligence & Money Flow Graph](#chapter-9-radar--sonar)
-- [Chapter 10: Warning Indicators — Alerts Management & Co-Occurrence Matrix](#chapter-10-warning-indicators--alerts-management)
-- [Chapter 11: Flight Data Recorder — Case Dossier, GoAML XML & Cryptographic Seals](#chapter-11-flight-data-recorder)
-- [Chapter 12: Emissions & Containment — Quarantine Queue & 9-Check Ledger Validator](#chapter-12-emissions--containment)
-- [Chapter 13: Diagnostics & Performance Tuning — Evaluation Harness & PSI Drift](#chapter-13-diagnostics--performance-tuning)
-- [Chapter 14: Inspection & Compliance — Governance, QA Grading & Exam Readiness](#chapter-14-inspection--compliance)
-- [Chapter 15: Autopilot & Voice Command — Yotta Bot Assistant & Command Palette](#chapter-15-autopilot--voice-command)
-- [Chapter 16: Proving Grounds — Synthetic Banking Universe & Seeding Engine](#chapter-16-proving-grounds)
-- [Chapter 17: Black Box & Maintenance Log — Audit Trail & Chain of Custody](#chapter-17-black-box--maintenance-log)
-- [Chapter 18: Roadside Assistance — Troubleshooting, Error Codes & Administration](#chapter-18-roadside-assistance)
+- [Chapter 1: System Overview & Architectural Specifications](#chapter-1-system-overview--architectural-specifications)
+- [Chapter 2: Quick Start & Environment Initialization](#chapter-2-quick-start--environment-initialization)
+- [Chapter 3: Workspace Navigation & User Personas (RBAC)](#chapter-3-workspace-navigation--user-personas-rbac)
+- [Chapter 4: Executive Overview & Financial Ledger Telemetry](#chapter-4-executive-overview--financial-ledger-telemetry)
+- [Chapter 5: Priority Case Queue & Risk Triage Operations](#chapter-5-priority-case-queue--risk-triage-operations)
+- [Chapter 6: Entity Registry — Customer Directory & 360° Profile](#chapter-6-entity-registry--customer-directory--360-profile)
+- [Chapter 7: Account Management & Burst Activity Profiling](#chapter-7-account-management--burst-activity-profiling)
+- [Chapter 8: Transaction Monitoring & Live Rule Evaluation Engine](#chapter-8-transaction-monitoring--live-rule-evaluation-engine)
+- [Chapter 9: Financial Network Intelligence & Money Flow Graph](#chapter-9-financial-network-intelligence--money-flow-graph)
+- [Chapter 10: Behavioral Alerts Management & Co-Occurrence Matrix](#chapter-10-behavioral-alerts-management--co-occurrence-matrix)
+- [Chapter 11: Case Dossiers, GoAML XML & Cryptographic Evidence Sealing](#chapter-11-case-dossiers-goaml-xml--cryptographic-evidence-sealing)
+- [Chapter 12: 9-Check Ledger Validator & Exception Quarantine Queue](#chapter-12-9-check-ledger-validator--exception-quarantine-queue)
+- [Chapter 13: Model Evaluation Harness, Lift Curves & Population Stability Index](#chapter-13-model-evaluation-harness-lift-curves--population-stability-index)
+- [Chapter 14: Compliance Governance, QA Grading & Regulatory Exam Readiness](#chapter-14-compliance-governance-qa-grading--regulatory-exam-readiness)
+- [Chapter 15: Yotta Bot Conversational AI Assistant & Command Palette](#chapter-15-yotta-bot-conversational-ai-assistant--command-palette)
+- [Chapter 16: Synthetic Banking Universe & Deterministic Seeding Engine](#chapter-16-synthetic-banking-universe--deterministic-seeding-engine)
+- [Chapter 17: Immutable Audit Trail & Cryptographic Chain of Custody](#chapter-17-immutable-audit-trail--cryptographic-chain-of-custody)
+- [Chapter 18: System Diagnostics, Troubleshooting & Administration](#chapter-18-system-diagnostics-troubleshooting--administration)
 
 ---
 
-## Chapter 1: Vehicle & System Overview
+## Chapter 1: System Overview & Architectural Specifications
 
-### 1.1 What is YottaFlex RiskOS?
-**YottaFlex RiskOS** is an institutional-grade, full-stack Financial Crime & Ledger Risk Intelligence operating system. It was engineered from the ground up to eliminate the twin failures of modern transaction monitoring: **alert fatigue** (where 95% of rule hits are benign noise) and **black-box opacity** (where opaque ML models produce unexplainable scores rejected by banking examiners).
+### 1.1 What is RiskOS?
+**RiskOS** is an institutional-grade, full-stack Financial Crime & Ledger Risk Intelligence operating system. It was engineered from the ground up to eliminate the twin failures of modern transaction monitoring: **alert fatigue** (where 95% of rule hits are benign noise) and **black-box opacity** (where opaque ML models produce unexplainable scores rejected by banking examiners).
 
-### 1.2 Powertrain & Chassis Specifications
+### 1.2 System Architecture & Processing Pipeline
 
 ```
   ┌─────────────────────────────────────────────────────────────────────────────┐
-  │                         COCKPIT & USER INTERFACE                            │
+  │                         ANALYST WORKBENCH & UI                              │
   │  React 18 + TypeScript + Vite 5 + Tailwind CSS 3                           │
   │  Liquid Glassmorphism: Optical Caustics, Specular Rims, Responsive Canvas   │
   └──────────────────────────────────────┬──────────────────────────────────────┘
                                          │ JSON over HTTP/1.1 (Sub-15ms Latency)
                                          ▼
   ┌─────────────────────────────────────────────────────────────────────────────┐
-  │                      POWERTRAIN & ENGINE CONTROLLER                         │
+  │                      RISK ENGINE & API CONTROLLER                           │
   │  Python 3.10+ Standard Library Only (Zero Pip Wheels, Zero Dependency Drift)│
   │  Multi-Threaded REST API Server, BFS Entity Clustering, 8-Rule Risk Scorer  │
   └──────────────────────────────────────┬──────────────────────────────────────┘
                                          │ Embedded High-Speed Foreign-Key Bus
                                          ▼
   ┌─────────────────────────────────────────────────────────────────────────────┐
-  │                      STORAGE VAULT & TRANSMISSION                           │
+  │                      TRANSACTION LEDGER & STORAGE                           │
   │  SQLite 3.35+ in WAL Mode (Write-Ahead Logging)                             │
   │  Double-Entry Reconciled Ledger ($124,426,844.83 / 100,000 Transactions)    │
   └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-| Engine Specification | Value / Capability |
+| Technical Specification | Engineering Value & Capability |
 | :--- | :--- |
-| **Engine Displacement / Capacity** | 100,000 Reconciled Ledger Transactions; 5,000 Customers; 7,000 Accounts |
-| **Fuel Economy (Memory Footprint)** | `< 45 MB` Idle RAM; `< 120 MB` under heavy 100k query load |
-| **Transmission Type** | SQLite 3 in WAL Mode with sub-millisecond query optimization |
-| **0 to 60 Acceleration (Startup)** | `< 600 ms` cold boot from CLI to operational web server |
-| **Suspension & Styling** | iOS-inspired 3D Liquid Glassmorphism with dual-mode lighting (Light & Dark) |
-| **Braking System (Fail-Safe)** | 9-Check Ledger Validator isolating corrupt records into Quarantine |
+| **Ledger Processing Capacity** | 100,000 Reconciled Ledger Transactions; 5,000 Customers; 7,000 Accounts |
+| **Memory Footprint (RAM)** | `< 45 MB` Idle RAM; `< 120 MB` under heavy 100k query load |
+| **Storage & Database Engine** | SQLite 3 in WAL Mode with sub-millisecond query optimization |
+| **Cold Boot Startup Latency** | `< 600 ms` cold boot from CLI to operational web server |
+| **UI Design & Visual Styling** | iOS-inspired 3D Liquid Glassmorphism with dual-mode lighting (Light & Dark) |
+| **Ledger Invariant & Failsafe Guard** | 9-Check Ledger Validator isolating corrupt records into Quarantine |
 
 ---
 
-## Chapter 2: Delivery, Unpacking & Fast-Track Ignition
+## Chapter 2: Quick Start & Environment Initialization
 
-### 2.1 Pre-Ignition Checklist
-Verify that your machine has the following tools installed:
+### 2.1 System Prerequisites
+Verify that your machine has the following runtimes installed:
 - Python `>= 3.10` (`python3 --version`)
 - Node.js `>= 18` (`node --version`)
 - npm `>= 9` (`npm --version`)
 - Git (`git --version`)
 
-### 2.2 Ignition in 3 Steps
+### 2.2 Initialization in 3 Steps
 ```bash
-# Step 1: Clone the chassis repository
+# Step 1: Clone the repository
 git clone https://github.com/amanreddy-9/YottaFlex-Risk-Intelligence.git
 cd YottaFlex-Risk-Intelligence
 
-# Step 2: Turn the ignition key (Automated Setup)
+# Step 2: Run automated environment setup
 chmod +x setup.sh
 ./setup.sh
 
-# Step 3: Shift into drive (Launch Unified Server)
+# Step 3: Launch Unified Server (API + Web Bundle)
 make serve
 ```
 
-The system will initialize on **`http://localhost:8080`**. Open your web browser to view the cockpit.
+The system will initialize on **`http://localhost:8080`**. Open your web browser to access the workbench.
 
 ---
 
-## Chapter 3: Cockpit Instrumentation & Operator Personas
+## Chapter 3: Workspace Navigation & User Personas (RBAC)
 
-### 3.1 The Cockpit Layout
+### 3.1 Workspace Navigation & Interface Zones
 When you enter the dashboard, the viewport is divided into three primary zones:
 1. **Collapsible Glass Navigation Chassis (Left):** Houses direct links to all 10 analytical workspaces, with dynamic notification badges showing open cases and quarantine count.
 2. **Global Telemetry Bar (Top):** Displays active operator greeting, current system time, global date-range filters (`7D`, `30D`, `90D`, `ALL`), export shortcuts, theme toggle, and operator authentication pill.
@@ -151,7 +151,7 @@ When you enter the dashboard, the viewport is divided into three primary zones:
                      └──────────────────────────────────────┘
 ```
 
-Three pre-calibrated keycards are provided for evaluation:
+Three pre-calibrated operator accounts are provided for evaluation:
 
 #### Persona 1: Risk Operations Analyst (`OPS_ANALYST`)
 - **Keycard Credentials:** `demo_analyst@yottaflex.ai` / `DemoAnalyst2026!`
@@ -167,11 +167,11 @@ Three pre-calibrated keycards are provided for evaluation:
 
 ---
 
-## Chapter 4: Instrument Cluster — Executive Overview
+## Chapter 4: Executive Overview & Financial Ledger Telemetry
 
-The **Overview Workspace** acts as the primary vehicle speedometer, displaying live ledger vitals:
+The **Overview Workspace** acts as the primary executive monitoring console, displaying live ledger vitals:
 
-### 4.1 Ledger KPI Gauges
+### 4.1 Ledger KPI Metrics
 - **Filtered Ledger Volume:** Total capital moving across the ledger (`$124,426,844.83` across 100,000 transactions).
 - **Transaction Risk Breakdown:**
   - `HIGH-RISK`: **92 transactions** ($0.09\%$ of ledger volume, composite score $\ge 60.0$).
@@ -180,7 +180,7 @@ The **Overview Workspace** acts as the primary vehicle speedometer, displaying l
 - **Queue Load Indicator:** **244 Open Cases** currently awaiting operator disposition.
 - **Quarantine Containment:** **10 isolated anomalies** preventing ledger corruption.
 
-### 4.2 Interactive Temporal Gauges
+### 4.2 Interactive Temporal Trends & Charts
 - **Transaction Volume & Anomaly Over-Time Area Chart:** Displays daily USD throughput (blue shaded curve) overlaid with high-risk anomaly spikes (rose peak line). Hovering reveals exact daily dollar volume and triggered rule counts.
 - **Top Merchant Counterparties:** Bar chart illustrating merchant volume, high-risk merchant categories (crypto exchanges, shell entities, foreign gaming), and high-risk flags.
 
@@ -190,12 +190,12 @@ The **Overview Workspace** acts as the primary vehicle speedometer, displaying l
 
 ---
 
-## Chapter 5: Primary Flight Controls — Priority Case Queue
+## Chapter 5: Priority Case Queue & Risk Triage Operations
 
 The **Case Queue Workspace** is the core operational engine where analysts triage suspicious activity.
 
 ### 5.1 Case Clustering Mathematics (3.25x Workload Compression)
-Rather than forcing analysts to inspect 923 disconnected alerts, YottaFlex RiskOS executes **Bipartite BFS Connected-Component Clustering**:
+Rather than forcing analysts to inspect 923 disconnected alerts, RiskOS executes **Bipartite BFS Connected-Component Clustering**:
 - All alerts sharing an Account, Counterparty Transfer Link, or Hardware Device ID are consolidated into a single **Case Dossier**.
 - **Result:** 923 fragmented alerts compress into **284 holistic multi-alert cases**, saving an estimated $69\%$ in analyst triage hours.
 
@@ -233,7 +233,7 @@ Clicking any customer opens a comprehensive slide-over drawer:
 
 ---
 
-## Chapter 7: Vault Management — Account Directory & Burst Profiling
+## Chapter 7: Account Management & Burst Activity Profiling
 
 ### 7.1 Account Registry
 The Account Directory catalogs all 7,000 checking, savings, and business accounts:
@@ -248,7 +248,7 @@ For any selected account, the system computes **Burst Activity Metrics**:
 
 ---
 
-## Chapter 8: Powerplant & Fuel Lines — Transaction Monitoring & Live Rule Engine
+## Chapter 8: Transaction Monitoring & Live Rule Evaluation Engine
 
 ### 8.1 The 8 Behavioral Risk Rules
 The transaction engine evaluates every ledger entry against 8 deterministic, observable rules:
@@ -271,7 +271,7 @@ The workbench allows operators to simulate and test transactions in real time:
 
 ---
 
-## Chapter 9: Radar & Sonar — Financial Network Intelligence & Money Flow Graph
+## Chapter 9: Financial Network Intelligence & Money Flow Graph
 
 The **Network Intelligence Workspace** provides interactive graph-based visual forensic exploration:
 
@@ -302,7 +302,7 @@ The **Network Intelligence Workspace** provides interactive graph-based visual f
 
 ---
 
-## Chapter 10: Warning Indicators — Alerts Management & Co-Occurrence Matrix
+## Chapter 10: Behavioral Alerts Management & Co-Occurrence Matrix
 
 ### 10.1 Alerts Management
 The Alerts Workspace lists all 923 individual behavioral alerts:
@@ -315,7 +315,7 @@ Visual heat map displaying how frequently rules trigger simultaneously on the sa
 
 ---
 
-## Chapter 11: Flight Data Recorder — Case Dossier, GoAML XML & Cryptographic Seals
+## Chapter 11: Case Dossiers, GoAML XML & Cryptographic Evidence Sealing
 
 ### 11.1 The Investigation Dossier
 Every case consolidates complete forensic evidence into a unified dossier:
@@ -335,7 +335,7 @@ To ensure chain-of-custody admissibility in criminal court:
 
 ---
 
-## Chapter 12: Emissions & Containment — Quarantine Queue & 9-Check Ledger Validator
+## Chapter 12: 9-Check Ledger Validator & Exception Quarantine Queue
 
 ### 12.1 The 9-Check Ledger Integrity Engine
 Before financial data enters the analytical stream, the **9-Check Validator** scans for fundamental corruption:
@@ -356,7 +356,7 @@ Before financial data enters the analytical stream, the **9-Check Validator** sc
 
 ---
 
-## Chapter 13: Diagnostics & Performance Tuning — Evaluation Harness & PSI Drift
+## Chapter 13: Model Evaluation Harness, Lift Curves & Population Stability Index
 
 ### 13.1 Benchmarking Metrics & Lift Curves
 The Evaluation Workspace measures the objective performance of the prioritization engine:
@@ -373,7 +373,7 @@ Monitors data distribution drift across quarters to detect model degradation:
 
 ---
 
-## Chapter 14: Inspection & Compliance — Governance, QA Grading & Exam Readiness
+## Chapter 14: Compliance Governance, QA Grading & Regulatory Exam Readiness
 
 ### 14.1 Four-Eyes Maker-Checker Controls
 For critical case actions (e.g. SAR filing, account freezing):
@@ -390,7 +390,7 @@ Automated self-audit scoring module that validates whether the institution meets
 
 ---
 
-## Chapter 15: Autopilot & Voice Command — Yotta Bot Assistant & Command Palette
+## Chapter 15: Yotta Bot Conversational AI Assistant & Command Palette
 
 ### 15.1 Yotta Bot Conversational AI Assistant
 Floating in the bottom-right corner of every screen is **Yotta Bot**, an embedded conversational AI assistant:
@@ -410,7 +410,7 @@ Press **`Cmd + K`** (macOS) or **`Ctrl + K`** (Windows/Linux) from anywhere in t
 
 ---
 
-## Chapter 16: Proving Grounds — Synthetic Banking Universe & Seeding Engine
+## Chapter 16: Synthetic Banking Universe & Deterministic Seeding Engine
 
 ### 16.1 Deterministic Seed `20261022`
 The entire banking universe is generated from a single integer seed (`20261022`):
@@ -424,7 +424,7 @@ The entire banking universe is generated from a single integer seed (`20261022`)
 
 ---
 
-## Chapter 17: Black Box & Maintenance Log — Audit Trail & Chain of Custody
+## Chapter 17: Immutable Audit Trail & Cryptographic Chain of Custody
 
 ### 17.1 Tamper-Evident SHA-256 Audit Chain
 Every database mutation (case status update, note attachment, rule re-weighting) is written to an append-only audit ledger:
@@ -434,11 +434,11 @@ Every database mutation (case status update, note attachment, rule re-weighting)
 
 ---
 
-## Chapter 18: Roadside Assistance — Troubleshooting & System Administration
+## Chapter 18: System Diagnostics, Troubleshooting & Administration
 
-### 18.1 Troubleshooting Diagnostic Matrix
+### 18.1 System Diagnostic Matrix
 
-| Symptom / Trouble Code | Root Cause | Roadside Remedy |
+| Symptom / Diagnostic Code | Root Cause | Resolution / Remedy |
 | :--- | :--- | :--- |
 | **Port 8080 Busy (`Errno 48`)** | Another process is holding port 8080. | Launch server with `--port 8090` or terminate the occupying process with `lsof -ti :8080 \| xargs kill -9`. |
 | **Database Locked Error** | Abnormal shutdown left stale SQLite WAL lock. | Run `rm -f yottaflex.db-wal yottaflex.db-shm` and restart the server. |
@@ -463,4 +463,4 @@ PYTHONPATH=src python3 -m unittest discover -s tests -v
 
 ---
 
-*End of Official Vehicle Owner's Manual — YottaFlex RiskOS 2026 Enterprise Edition.*
+*End of RiskOS System & Operational Reference Manual — Enterprise Edition v1.0.0.*

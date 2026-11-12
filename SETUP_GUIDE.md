@@ -224,7 +224,7 @@ YottaFlex-Risk-Intelligence/
 ├── DEPENDENCIES.md                # Exhaustive software & library inventory
 ├── TESTING_AND_VALIDATION_REPORT.md # Verification metrics, AST guards & test suite results
 ├── UI_UX_DESIGN_SPECIFICATION.md  # Liquid glassmorphism design system & prompting methodology
-├── USER_MANUAL.md                 # Vehicle owner's manual style complete operational guide
+├── USER_MANUAL.md                 # Complete 18-chapter operational & system reference manual
 ├── ARCHITECTURE_AND_PROVENANCE.md # Architectural decisions, tradeoffs & technical rationale
 ├── docs/
 │   ├── AI_DEVELOPMENT_AND_PROMPT_HISTORY.md # AI acceleration narrative & full prompt history

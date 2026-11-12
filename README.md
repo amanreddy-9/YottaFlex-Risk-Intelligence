@@ -1,14 +1,22 @@
-# YottaFlex Risk Intelligence — AI-Powered Risk & Ledger Intelligence
+```text
+  ██████╗ ██╗███████╗██╗  ██╗     ██████╗ ███████╗
+  ██╔══██╗██║██╔════╝██║ ██╔╝    ██╔═══██╗██╔════╝
+  ██████╔╝██║███████╗█████╔╝     ██║   ██║███████╗
+  ██╔══██╗██║╚════██║██╔═██╗     ██║   ██║╚════██║
+  ██║  ██║██║███████║██║  ██╗    ╚██████╔╝███████║
+  ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚══════╝
+       AI-Powered Risk & Ledger Intelligence
+```
+
+# RiskOS: AI-Powered Ledger Risk Intelligence
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![React 18](https://img.shields.io/badge/react-18-61dafb.svg)](https://react.dev/)
 [![TypeScript 5](https://img.shields.io/badge/typescript-5.x-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Zero Leakage Verified](https://img.shields.io/badge/Zero--Leakage-AST%20Guarded-emerald.svg)](tests/test_zero_leakage_ast_guard.py)
+[![Zero Leakage Verified](https://img.shields.io/badge/Zero--Leakage-AST%20Guarded-emerald.svg)](tests/test_part3_validation_eval.py)
 [![Verification Suite](https://img.shields.io/badge/Tests-46%20Passing-brightgreen.svg)](tests/)
 [![Design: Liquid Glassmorphism](https://img.shields.io/badge/UI%2FUX-Liquid%20Glassmorphism-cyan.svg)](UI_UX_DESIGN_SPECIFICATION.md)
-
-
 
 An institutional financial crime, transaction monitoring, and linked-account prioritization platform built on a **deterministic double-entry reconciled synthetic ledger**, an **AST-guarded zero-leakage prioritization engine**, a **9-check exception quarantine queue**, an **interactive Financial Network Intelligence graph**, and an **iOS-inspired 3D Liquid Glassmorphic analyst workbench**.
 
@@ -25,7 +33,7 @@ For seamless review and evaluation, comprehensive manuals and architectural spec
 | **[`DEPENDENCIES.md`](DEPENDENCIES.md)** | **Software & Package Inventory:** Exhaustive manifest of all runtime components, zero-pip backend verification (0 CVEs), npm packages, and single-line install commands. |
 | **[`TESTING_AND_VALIDATION_REPORT.md`](TESTING_AND_VALIDATION_REPORT.md)** | **Testing & Results Report:** Detailed documentation of all 46 test cases across 16 test suites, Network Intelligence Scenarios A–H, 9-check quarantine results, and AST guards. |
 | **[`UI_UX_DESIGN_SPECIFICATION.md`](UI_UX_DESIGN_SPECIFICATION.md)** | **Design & Prompting Methodology:** Vitreous Liquid Glassmorphism design tokens, optical caustics, and an explanation of how the architect conveyed technical visions to AI via structured, ordered prompts. |
-| **[`USER_MANUAL.md`](USER_MANUAL.md)** | ** 18 Parts* Extensive institutional handbook detailing every feature, knob, dial, algorithm, formula, and operational procedure from scratch. |
+| **[`USER_MANUAL.md`](USER_MANUAL.md)** | **Comprehensive Operational Manual (18 Chapters):** Extensive institutional handbook detailing every feature, knob, dial, algorithm, formula, and operational procedure from scratch. |
 | **[`ARCHITECTURE_AND_PROVENANCE.md`](ARCHITECTURE_AND_PROVENANCE.md)** | **Architectural Decisions & Provenance:** In-depth technical justifications for zero-dependency Python backend, SQLite WAL mode, BFS case clustering, and zero-leakage design. |
 | **[`docs/AI_DEVELOPMENT_AND_PROMPT_HISTORY.md`](docs/AI_DEVELOPMENT_AND_PROMPT_HISTORY.md)** | **AI Transparency & Prompt History:** Complete chronological log of Prompts 01–65, Antigravity acceleration narrative, and the 277 master functional requirements catalog. |
 | **[`docs/data_dictionary.md`](docs/data_dictionary.md)** | **Data Dictionary:** Column-by-column schema documentation for all tables, types, foreign keys, and indexes. |
@@ -66,7 +74,7 @@ make serve
 ```bash
 source .venv/bin/activate
 PYTHONPATH=src python3 -m unittest discover -s tests -v
-# Output: Ran 46 tests in ~10.5s, OK (100% passing)
+# Output: Ran 46 tests in ~10.4s, OK (100% passing)
 ```
 
 ---
@@ -152,7 +160,7 @@ Recorded on standard Apple Silicon (M-Series / 16 GB RAM):
 | **Account Burst Profile Query** | **`0.42 ms`** | $< 50 \text{ ms}$ | **$119\times$ faster than target** |
 | **Full Graph Fan-In/Fan-Out Search** | **`15.4 ms`** | $< 250 \text{ ms}$ | **$16\times$ faster than target** |
 | **Overview KPI API (`/api/overview`)** | **`12.1 ms`** | $< 200 \text{ ms}$ | **$16\times$ faster than target** |
-| **Automated Test Suite (46 tests)** | **`10.50 s`** | $< 60 \text{ s}$ | **$5.7\times$ faster than target** |
+| **Automated Test Suite (46 tests)** | **`10.40 s`** | $< 60 \text{ s}$ | **$5.7\times$ faster than target** |
 
 ---
 
@@ -169,7 +177,7 @@ Recorded on standard Apple Silicon (M-Series / 16 GB RAM):
 
 ### 03 · USE LLMs TRANSPARENTLY
 - Comprehensive AI transparency report in [`docs/AI_DEVELOPMENT_AND_PROMPT_HISTORY.md`](docs/AI_DEVELOPMENT_AND_PROMPT_HISTORY.md).
-
+- Full audit of all 65 prompts, detailing where Google Antigravity accelerated delivery and where human architecture directed implementation.
 
 ### 04 · MAKE YOUR REASONING VISIBLE (`EXPLAIN THE WHY`)
 - Exhaustive architectural analysis and provenance in [`ARCHITECTURE_AND_PROVENANCE.md`](ARCHITECTURE_AND_PROVENANCE.md).
@@ -180,5 +188,5 @@ Recorded on standard Apple Silicon (M-Series / 16 GB RAM):
 ## 6. License & Author
 
 - **Primary Author:** Aman Reddy J (`amanreddy-9`, `amanreddyjukonti@gmail.com`)
-- **System:** YottaFlex Risk Intelligence — YottaFlex RiskOS
+- **System:** RiskOS: AI-Powered Ledger Risk Intelligence
 - **License:** Licensed under the [MIT License](LICENSE).

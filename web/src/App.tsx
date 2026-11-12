@@ -5,6 +5,7 @@ import {
   Bell,
   CreditCard,
   FolderSearch,
+  GitFork,
   Keyboard,
   Layers,
   LayoutDashboard,
@@ -28,6 +29,7 @@ import { EvaluationView } from "./components/EvaluationView";
 import { Footer } from "./components/Footer";
 import { GlobalSearchModal } from "./components/GlobalSearchModal";
 import { GovernanceView } from "./components/GovernanceView";
+import { NetworkIntelligenceView } from "./components/NetworkIntelligenceView";
 import type { NavItem } from "./components/LiquidGlassNav";
 import { NotificationBellButton, NotificationWindowPanel, type AnchorRect } from "./components/NotificationWidget";
 import { OverviewSidebar } from "./components/OverviewSidebar";
@@ -64,6 +66,7 @@ type Tab =
   | "customers"
   | "accounts"
   | "transactions"
+  | "network"
   | "alerts"
   | "dossier"
   | "quarantine"
@@ -586,6 +589,7 @@ export const App: React.FC = () => {
     { id: "customers", label: "Customers", icon: <Users className="w-4 h-4" /> },
     { id: "accounts", label: "Accounts", icon: <CreditCard className="w-4 h-4" /> },
     { id: "transactions", label: "Txns", icon: <ArrowLeftRight className="w-4 h-4" /> },
+    { id: "network", label: "Flow Graph", icon: <GitFork className="w-4 h-4" /> },
     { id: "alerts", label: "Alerts", icon: <Bell className="w-4 h-4" /> },
     {
       id: "dossier",
@@ -755,6 +759,12 @@ export const App: React.FC = () => {
       subtitle: "Reconciled Debit/Credit Movements & Behavioral Forensics",
       icon: <ArrowLeftRight className="w-4 h-4" />,
       badge: totalTransactions ? `${totalTransactions.toLocaleString()} Txns` : undefined,
+    },
+    network: {
+      title: "Transaction & Money Flow Graph",
+      subtitle: "Investigate financial relationships, trace fund movements and identify suspicious transaction networks",
+      icon: <GitFork className="w-4 h-4" />,
+      badge: "Graph Intelligence Active",
     },
     alerts: {
       title: "Rule-Triggered Alerts",
@@ -1093,6 +1103,16 @@ export const App: React.FC = () => {
             onCloseDetail={() => setSelectedTransaction(null)}
             onOpenAccount={handleSelectAccount}
             onOpenCustomer={handleSelectCustomer}
+          />
+        )}
+
+        {tab === "network" && (
+          <NetworkIntelligenceView
+            darkMode={darkMode}
+            onSelectCase={handleSelectCase}
+            onSelectAccount={handleSelectAccount}
+            onSelectCustomer={handleSelectCustomer}
+            onSelectTransaction={handleSelectTransaction}
           />
         )}
 

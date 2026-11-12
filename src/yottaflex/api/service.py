@@ -121,6 +121,16 @@ from yottaflex.workflow.network_ops import (
     list_sar_registry,
     transition_sar_status,
 )
+from yottaflex.workflow.network_intelligence import (
+    compute_network_risk_analysis,
+    detect_circular_transfers,
+    detect_suspicious_patterns,
+    get_financial_network_graph,
+    get_network_overview as get_financial_network_overview,
+    resolve_entities,
+    search_entities as search_network_entities,
+    trace_money_flow_path,
+)
 from yottaflex.workflow.triage_extensions import ensure_triage_extensions_schema
 from yottaflex.workflow.enterprise_ops import (
     add_case_handoff,
@@ -1171,6 +1181,62 @@ class WorkbenchService:
         conn = self._conn()
         try:
             return detect_collusion_rings(conn, min_accounts=min_accounts, limit=limit)
+        finally:
+            conn.close()
+
+    def get_financial_network_overview(self) -> dict[str, Any]:
+        conn = self._conn()
+        try:
+            return get_financial_network_overview(conn)
+        finally:
+            conn.close()
+
+    def search_network_entities(self, query: str, *, entity_type: str = "ALL", limit: int = 15) -> list[dict[str, Any]]:
+        conn = self._conn()
+        try:
+            return search_network_entities(conn, query, entity_type=entity_type, limit=limit)
+        finally:
+            conn.close()
+
+    def get_financial_network_graph(self, *, seed_id: str | None = None, depth: int = 2, max_nodes: int = 75) -> dict[str, Any]:
+        conn = self._conn()
+        try:
+            return get_financial_network_graph(conn, seed_id=seed_id, depth=depth, max_nodes=max_nodes)
+        finally:
+            conn.close()
+
+    def trace_money_flow_path(self, source_account_id: str, dest_account_id: str, *, max_depth: int = 4) -> dict[str, Any]:
+        conn = self._conn()
+        try:
+            return trace_money_flow_path(conn, source_account_id, dest_account_id, max_depth=max_depth)
+        finally:
+            conn.close()
+
+    def detect_circular_transfers(self, *, limit: int = 15) -> list[dict[str, Any]]:
+        conn = self._conn()
+        try:
+            return detect_circular_transfers(conn, limit=limit)
+        finally:
+            conn.close()
+
+    def detect_suspicious_patterns(self) -> dict[str, Any]:
+        conn = self._conn()
+        try:
+            return detect_suspicious_patterns(conn)
+        finally:
+            conn.close()
+
+    def resolve_entities(self, *, limit: int = 30) -> list[dict[str, Any]]:
+        conn = self._conn()
+        try:
+            return resolve_entities(conn, limit=limit)
+        finally:
+            conn.close()
+
+    def compute_network_risk_analysis(self, *, seed_id: str | None = None) -> dict[str, Any]:
+        conn = self._conn()
+        try:
+            return compute_network_risk_analysis(conn, seed_id=seed_id)
         finally:
             conn.close()
 

@@ -578,6 +578,34 @@ def make_handler(
                             limit=int(qs.get("limit", ["20"])[0]),
                         )
                     )
+                elif path == "/api/network/overview":
+                    self._send_json(service.get_financial_network_overview())
+                elif path == "/api/network/graph":
+                    seed = qs.get("seed_id", [None])[0]
+                    depth = int(qs.get("depth", ["2"])[0])
+                    limit = int(qs.get("limit", ["75"])[0])
+                    self._send_json(service.get_financial_network_graph(seed_id=seed, depth=depth, max_nodes=limit))
+                elif path == "/api/network/entities/search":
+                    q = qs.get("q", [""])[0]
+                    etype = qs.get("type", ["ALL"])[0]
+                    limit = int(qs.get("limit", ["15"])[0])
+                    self._send_json({"items": service.search_network_entities(q, entity_type=etype, limit=limit)})
+                elif path == "/api/network/paths":
+                    src = qs.get("source", [""])[0]
+                    dst = qs.get("dest", [""])[0]
+                    depth = int(qs.get("depth", ["4"])[0])
+                    self._send_json(service.trace_money_flow_path(src, dst, max_depth=depth))
+                elif path == "/api/network/cycles":
+                    limit = int(qs.get("limit", ["15"])[0])
+                    self._send_json({"cycles": service.detect_circular_transfers(limit=limit)})
+                elif path == "/api/network/patterns":
+                    self._send_json(service.detect_suspicious_patterns())
+                elif path == "/api/network/entity-resolution":
+                    limit = int(qs.get("limit", ["30"])[0])
+                    self._send_json({"items": service.resolve_entities(limit=limit)})
+                elif path == "/api/network/risk-analysis":
+                    seed = qs.get("seed_id", [None])[0]
+                    self._send_json(service.compute_network_risk_analysis(seed_id=seed))
                 elif len(path.strip("/").split("/")) == 4 and path.startswith("/api/network/entity/"):
                     ent_id = path.strip("/").split("/")[3]
                     net = service.get_entity_network(ent_id)

@@ -50,7 +50,7 @@ export function LiquidGlassSegmented<T extends string>({
   value,
   onChange,
 }: {
-  options: Array<{ value: T; label: string }>;
+  options: Array<{ value: T; label: React.ReactNode }>;
   value: T;
   onChange: (val: T) => void;
 }) {

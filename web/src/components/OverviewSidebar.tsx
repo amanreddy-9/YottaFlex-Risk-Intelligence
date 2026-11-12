@@ -42,6 +42,7 @@ export function OverviewSidebar<T extends string>({
   const btnRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const [hoverId, setHoverId] = useState<T | null>(null);
   const [isSidebarHovered, setIsSidebarHovered] = useState(false);
+  const [isMenuExpanded, setIsMenuExpanded] = useState<boolean>(() => activeId === ("network" as T));
   const [slider, setSlider] = useState<{
     top: number;
     left: number;
@@ -51,6 +52,14 @@ export function OverviewSidebar<T extends string>({
   }>({ top: 0, left: 0, width: 0, height: 0, ready: false });
 
   const targetId = hoverId ?? activeId;
+  const mainItems = items.filter((i) => i.id !== ("network" as T));
+  const flowItem = items.find((i) => i.id === ("network" as T));
+
+  useEffect(() => {
+    if (activeId === ("network" as T)) {
+      setIsMenuExpanded(true);
+    }
+  }, [activeId]);
 
   const measureSlider = () => {
     const btn = btnRefs.current[targetId];
@@ -67,7 +76,7 @@ export function OverviewSidebar<T extends string>({
   useLayoutEffect(() => {
     measureSlider();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [targetId, isCollapsed, isSidebarHovered, items.map((i) => `${i.id}:${i.label}:${i.badge ?? ""}`).join("|")]);
+  }, [targetId, isCollapsed, isSidebarHovered, isMenuExpanded, items.map((i) => `${i.id}:${i.label}:${i.badge ?? ""}`).join("|")]);
 
   useEffect(() => {
     if (!navRef.current) return;
@@ -75,7 +84,7 @@ export function OverviewSidebar<T extends string>({
     ro.observe(navRef.current);
     return () => ro.disconnect();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [targetId, isCollapsed, isSidebarHovered]);
+  }, [targetId, isCollapsed, isSidebarHovered, isMenuExpanded]);
 
   return (
     <aside
@@ -166,7 +175,7 @@ export function OverviewSidebar<T extends string>({
             />
           )}
 
-          {items.map((item, idx) => {
+          {mainItems.map((item, idx) => {
             const isHighlighted = item.id === targetId;
             const hoveredIndex = hoverId ? items.findIndex((i) => i.id === hoverId) : -1;
             const isHovered = isCollapsed && item.id === hoverId;
@@ -278,7 +287,148 @@ export function OverviewSidebar<T extends string>({
               </button>
             );
           })}
+
+          {/* Elongated Drawer: displays Flow Graph tab when expanded */}
+          {flowItem && isMenuExpanded && (
+            (() => {
+              const item = flowItem;
+              const idx = mainItems.length;
+              const isHighlighted = item.id === targetId;
+              const hoveredIndex = hoverId ? items.findIndex((i) => i.id === hoverId) : -1;
+              const isHovered = isCollapsed && item.id === hoverId;
+              const isAdjacent = isCollapsed && hoveredIndex !== -1 && Math.abs(idx - hoveredIndex) === 1;
+              const isActiveAlone = isCollapsed && hoverId === null && item.id === activeId;
+
+              const magnifyScaleClass = isHovered
+                ? "scale-[1.24] z-20"
+                : isAdjacent
+                ? "scale-[1.08] z-10"
+                : isActiveAlone
+                ? "scale-[1.10] z-10"
+                : "scale-100 z-0";
+
+              return (
+                <button
+                  key={item.id}
+                  ref={(el) => {
+                    btnRefs.current[item.id] = el;
+                  }}
+                  type="button"
+                  title={isCollapsed ? `${item.label}${item.badge !== undefined && item.badge > 0 ? ` (${item.badge})` : ""}` : undefined}
+                  onMouseEnter={() => setHoverId(item.id)}
+                  onFocus={() => setHoverId(item.id)}
+                  onBlur={() => setHoverId(null)}
+                  onClick={() => onChange(item.id)}
+                  className={`relative z-10 w-full select-none focus:outline-none transition-all duration-300 ${
+                    isCollapsed
+                      ? isSidebarHovered
+                        ? "flex flex-col items-center justify-center px-1.5 py-2.5 rounded-2xl text-center"
+                        : "flex flex-col items-center justify-center px-1 py-2 rounded-2xl text-center"
+                      : "flex items-center justify-between gap-2 px-3.5 py-2.5 rounded-full text-[13px]"
+                  } ${
+                    !isCollapsed && isHighlighted ? "scale-[1.02]" : ""
+                  }`}
+                >
+                  {isCollapsed ? (
+                    <div
+                      className={`flex flex-col items-center justify-center gap-1.5 w-full transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${magnifyScaleClass}`}
+                      style={{ transformOrigin: "center center" }}
+                    >
+                      <div className="relative flex items-center justify-center">
+                        <span
+                          className={`shrink-0 transition-colors duration-200 ${
+                            isHighlighted
+                              ? "text-azure-700 dark:text-white"
+                              : isSidebarHovered
+                              ? "text-slate-800 dark:text-zinc-100"
+                              : "text-slate-600 dark:text-zinc-300"
+                          }`}
+                        >
+                          {React.isValidElement(item.icon)
+                            ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, {
+                                className: isSidebarHovered ? "w-5 h-5" : "w-[18px] h-[18px]",
+                              })
+                            : item.icon}
+                        </span>
+                        {item.badge !== undefined && item.badge > 0 && (
+                          <span
+                            className="absolute -top-1.5 -right-3 px-1.5 py-[0.5px] rounded-full text-[9px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider"
+                          >
+                            {item.badge > 999 ? "999+" : item.badge}
+                          </span>
+                        )}
+                      </div>
+                      <span
+                        className={`font-bold tracking-tight text-center leading-tight transition-colors duration-200 select-none ${
+                          isHighlighted
+                            ? "text-slate-950 dark:text-white"
+                            : "text-slate-700 dark:text-zinc-300"
+                        } ${
+                          isSidebarHovered
+                            ? "text-[12px] max-w-[110px]"
+                            : "text-[11px] max-w-[92px]"
+                        }`}
+                        style={{ textShadow: "none", filter: "none" }}
+                      >
+                        {item.label}
+                      </span>
+                    </div>
+                  ) : (
+                    <>
+                      <span className="flex items-center gap-2.5 min-w-0">
+                        <span
+                          className={`shrink-0 transition-colors duration-200 ${
+                            isHighlighted ? "text-azure-700 dark:text-white" : "text-slate-600 dark:text-zinc-300"
+                          }`}
+                        >
+                          {item.icon}
+                        </span>
+                        <span
+                          className={`truncate select-none ${
+                            isHighlighted ? "text-slate-950 dark:text-white font-bold" : "text-slate-700 dark:text-zinc-200 font-medium"
+                          }`}
+                          style={{ textShadow: "none", filter: "none" }}
+                        >
+                          {item.label}
+                        </span>
+                      </span>
+
+                      {item.badge !== undefined && item.badge > 0 && (
+                        <span className="shrink-0 px-2 py-0.5 rounded-full text-[10px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider">
+                          {item.badge}
+                        </span>
+                      )}
+                    </>
+                  )}
+                </button>
+              );
+            })()
+          )}
         </nav>
+
+        {/* Small Glass Arrow at the bottom to reduce length / elongate menu */}
+        {flowItem && (
+          <div className="flex justify-center pt-0.5">
+            <button
+              type="button"
+              onClick={() => setIsMenuExpanded((prev) => !prev)}
+              title={isMenuExpanded ? "Collapse menu (hide Flow Graph)" : "Elongate menu (display Flow Graph)"}
+              aria-label={isMenuExpanded ? "Collapse menu (hide Flow Graph)" : "Elongate menu (display Flow Graph)"}
+              aria-expanded={isMenuExpanded}
+              className={`w-6 h-6 rounded-full flex items-center justify-center transition-all duration-300 ${
+                isMenuExpanded
+                  ? "bg-white/45 dark:bg-white/[0.14] text-azure-700 dark:text-sky-300 shadow-sm"
+                  : "bg-white/20 dark:bg-white/[0.05] text-slate-500 dark:text-zinc-400 hover:bg-white/40 dark:hover:bg-white/[0.12] hover:text-slate-900 dark:hover:text-white"
+              } border border-white/50 dark:border-white/18 hover:scale-110 active:scale-95`}
+            >
+              <ChevronDown
+                className={`w-3.5 h-3.5 transition-transform duration-300 ${
+                  isMenuExpanded ? "rotate-180" : "rotate-0"
+                }`}
+              />
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Bottom Settings, Help & Support, and User Profile Card */}

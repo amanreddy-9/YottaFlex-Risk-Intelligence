@@ -366,6 +366,24 @@ export const api = {
     request<{ total_rings: number; rings: CollusionRingItem[] }>(`/api/network/rings?min_accounts=${minAccounts}`),
   entityNetwork: (entityId: string) =>
     request<EntityNetworkResponse>(`/api/network/entity/${encodeURIComponent(entityId)}`),
+  getNetworkOverview: () =>
+    request<import("../types/workbench").NetworkOverviewMetrics>("/api/network/overview"),
+  getNetworkGraph: (seedId?: string, depth = 2, limit = 75) =>
+    request<import("../types/workbench").NetworkGraphData>(`/api/network/graph?${buildQS({ seed_id: seedId, depth, limit })}`),
+  searchNetworkEntities: (query: string, type = "ALL", limit = 15) =>
+    request<{ items: Array<{ id: string; label: string; type: string; risk_score: number; risk_classification: string; subtitle: string }> }>(
+      `/api/network/entities/search?${buildQS({ q: query, type, limit })}`
+    ),
+  traceMoneyFlowPath: (source: string, dest: string, depth = 4) =>
+    request<import("../types/workbench").NetworkPathResult>(`/api/network/paths?${buildQS({ source, dest, depth })}`),
+  getNetworkCycles: (limit = 15) =>
+    request<{ cycles: import("../types/workbench").NetworkCycle[] }>(`/api/network/cycles?${buildQS({ limit })}`),
+  getNetworkPatterns: () =>
+    request<import("../types/workbench").NetworkPatternsResult>("/api/network/patterns"),
+  getEntityResolution: (limit = 30) =>
+    request<{ items: import("../types/workbench").EntityResolutionItem[] }>(`/api/network/entity-resolution?${buildQS({ limit })}`),
+  getNetworkRiskAnalysis: (seedId?: string) =>
+    request<import("../types/workbench").NetworkRiskAnalysis>(`/api/network/risk-analysis?${buildQS({ seed_id: seedId })}`),
   sarRegistry: (status = "ALL") =>
     request<{ total: number; counts_by_status: Record<string, number>; items: SarRegistryItem[] }>(
       `/api/sar/registry?status=${encodeURIComponent(status)}`

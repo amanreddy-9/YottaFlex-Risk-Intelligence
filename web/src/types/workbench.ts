@@ -1601,3 +1601,162 @@ export interface WorkspacePinItem {
   label: string;
   pinned_at: string;
 }
+
+
+export interface NetworkOverviewMetrics {
+  total_customers: number;
+  total_accounts: number;
+  total_merchants: number;
+  total_devices: number;
+  total_transfers: number;
+  total_transfer_volume: number;
+  detected_cycles: number;
+  collusion_clusters: number;
+}
+
+export interface NetworkNode {
+  id: string;
+  label: string;
+  type: "CUSTOMER" | "ACCOUNT" | "MERCHANT" | "DEVICE" | "TRANSACTION";
+  risk_score: number;
+  risk_classification: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW";
+  metadata: Record<string, any>;
+  in_degree: number;
+  out_degree: number;
+  x?: number;
+  y?: number;
+  vx?: number;
+  vy?: number;
+}
+
+export interface NetworkEdge {
+  id: string;
+  source: string;
+  target: string;
+  relationship: "OWNS" | "USES_DEVICE" | "MERCHANT_PAYMENT" | "TRANSFER" | "DEBIT" | "CREDIT";
+  direction: "DIRECTED" | "UNDIRECTED";
+  amount?: number;
+  timestamp?: string;
+  transaction_id?: string;
+  risk_indicator?: string;
+}
+
+export interface NetworkGraphData {
+  nodes: NetworkNode[];
+  edges: NetworkEdge[];
+  seed_id?: string | null;
+  depth?: number;
+  total_nodes?: number;
+  total_edges?: number;
+  isolated_entities_excluded?: number;
+}
+
+export interface NetworkPathHop {
+  hop: number;
+  from_account: string;
+  to_account: string;
+  transfer_id: string;
+  amount: number;
+  initiated_at: string;
+  debit_txn_id?: string;
+  credit_txn_id?: string;
+}
+
+export interface NetworkPathResult {
+  source_account_id: string;
+  dest_account_id: string;
+  paths_found: number;
+  shortest_path_hops: number;
+  total_transaction_volume: number;
+  estimated_unique_flow: number;
+  flow_confidence: "CONFIRMED" | "POSSIBLE_FLOW";
+  paths: NetworkPathHop[][];
+}
+
+export interface NetworkCycleHop {
+  hop: number;
+  from_account: string;
+  to_account: string;
+  transfer_id: string;
+  amount: number;
+  initiated_at: string;
+}
+
+export interface NetworkCycle {
+  cycle_id: string;
+  length: number;
+  nodes: string[];
+  total_cycle_volume: number;
+  first_seen: string;
+  last_seen: string;
+  hops: NetworkCycleHop[];
+  confidence: "CONFIRMED_CYCLE" | "SUSPECTED_CYCLE";
+}
+
+export interface NetworkPatternsResult {
+  fan_in_concentration: Array<{
+    destination_account: string;
+    customer_id: string;
+    customer_name: string;
+    inflow_sources: number;
+    total_inflow_amount: number;
+    pattern: string;
+  }>;
+  rapid_dispersion: Array<{
+    origin_account: string;
+    customer_id: string;
+    customer_name: string;
+    outflow_targets: number;
+    total_outflow_amount: number;
+    pattern: string;
+  }>;
+  shared_device_clusters: Array<{
+    device_id: string;
+    fingerprint: string;
+    device_type: string;
+    os: string;
+    is_emulator: boolean;
+    is_rooted: boolean;
+    shared_customers_count: number;
+    customers: Array<{
+      customer_id: string;
+      full_name: string;
+      email: string;
+      risk_rating: string;
+    }>;
+  }>;
+}
+
+export interface EntityResolutionItem {
+  cluster_id: string;
+  match_confidence: number;
+  resolution_status: "CONFIRMED_MATCH" | "POTENTIAL_MATCH";
+  primary_customer_id: string;
+  primary_name: string;
+  matched_customer_id: string;
+  matched_name: string;
+  shared_identifiers: string[];
+  evidence_summary: string;
+  recommended_action: string;
+}
+
+export interface NetworkRiskFactor {
+  factor: string;
+  score: number;
+  weight: number;
+  detail: string;
+}
+
+export interface NetworkRiskAnalysis {
+  seed_id: string | null;
+  overall_network_risk_score: number;
+  risk_tier: "CRITICAL" | "HIGH" | "MEDIUM" | "LOW";
+  explanation: string;
+  factors: NetworkRiskFactor[];
+  subgraph_metrics: {
+    total_nodes: number;
+    total_edges: number;
+    total_volume: number;
+    avg_node_degree: number;
+  };
+}

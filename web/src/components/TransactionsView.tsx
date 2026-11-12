@@ -25,7 +25,7 @@ import type {
 } from "../types/workbench";
 import { GlassPagination } from "./GlassPagination";
 import { Badge, IosAmount, tierVariant } from "./Badge";
-import { LiquidGlassCard, useRowGlassMagnifier } from "./LiquidGlassSurface";
+import { LiquidGlassCard, LiquidGlassSegmented, useRowGlassMagnifier } from "./LiquidGlassSurface";
 
 export interface TransactionFiltersState {
   search: string;
@@ -243,7 +243,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
             <button
               type="button"
               onClick={onCloseDetail}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/60 dark:bg-zinc-900 border border-white/85 dark:border-white/15 text-xs font-semibold text-slate-800 dark:text-zinc-200 hover:bg-white transition"
+              className="glass-pill inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-zinc-200 hover:bg-white/50 dark:hover:bg-white/[0.14] transition"
             >
               <ArrowLeft className="w-3.5 h-3.5" /> Back to Ledger
             </button>
@@ -261,7 +261,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
               {selectedDetail.validation_exceptions.map((ex) => (
                 <div
                   key={ex.exception_id}
-                  className="rounded-xl p-3 bg-white/45 dark:bg-black/45 border border-rose-300/60 dark:border-rose-500/30 text-xs"
+                  className="liquid-glass rounded-xl p-3.5 border border-rose-300/60 dark:border-rose-500/30 text-xs backdrop-blur-md"
                 >
                   <div className="flex items-center justify-between gap-2">
                     <span className="font-mono font-bold text-rose-700 dark:text-rose-300">{ex.issue_type}</span>
@@ -576,7 +576,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs">
               <thead>
-                <tr className="border-b border-white/50 dark:border-white/10 bg-white/25 dark:bg-black/35 text-[11px] font-semibold uppercase text-slate-700 dark:text-zinc-400">
+                <tr className="border-b border-white/50 dark:border-white/15 bg-white/20 dark:bg-white/[0.05] text-[11px] font-semibold uppercase text-slate-700 dark:text-zinc-400 backdrop-blur-md">
                   <th className="py-2.5 px-4">Rule</th>
                   <th className="py-2.5 px-3">Verdict</th>
                   <th className="py-2.5 px-3">Configured Threshold</th>
@@ -621,7 +621,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
             {relMag.lensElement}
             <table className="w-full text-left border-collapse text-xs">
               <thead>
-                <tr className="border-b border-white/50 dark:border-white/10 bg-white/25 dark:bg-black/35 text-[11px] font-semibold uppercase text-slate-700 dark:text-zinc-400">
+                <tr className="border-b border-white/50 dark:border-white/15 bg-white/20 dark:bg-white/[0.05] text-[11px] font-semibold uppercase text-slate-700 dark:text-zinc-400 backdrop-blur-md">
                   <th className="py-2.5 px-4">Transaction ID</th>
                   <th className="py-2.5 px-3">Timestamp</th>
                   <th className="py-2.5 px-3">Account</th>
@@ -669,31 +669,25 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
     <div className="space-y-5">
       {/* Mode Switcher */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <div className="inline-flex items-center gap-1.5 p-1 rounded-full liquid-glass">
-          <button
-            type="button"
-            onClick={() => setSubMode("EXPLORER")}
-            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition ${
-              subMode === "EXPLORER"
-                ? "bg-azure-600 text-white shadow-sm"
-                : "text-slate-700 dark:text-zinc-300 hover:bg-white/40 dark:hover:bg-white/10"
-            }`}
-          >
-            Transaction Monitoring &amp; Pattern Detection
-          </button>
-          <button
-            type="button"
-            onClick={() => setSubMode("SCORING")}
-            className={`inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold transition ${
-              subMode === "SCORING"
-                ? "bg-azure-600 text-white shadow-sm"
-                : "text-slate-700 dark:text-zinc-300 hover:bg-white/40 dark:hover:bg-white/10"
-            }`}
-          >
-            <Activity className="w-3.5 h-3.5" />
-            Automated Risk Scoring &amp; Rule Engine
-          </button>
-        </div>
+        <LiquidGlassSegmented<"EXPLORER" | "SCORING">
+          value={subMode}
+          onChange={setSubMode}
+          options={[
+            {
+              value: "EXPLORER",
+              label: "Transaction Monitoring & Pattern Detection",
+            },
+            {
+              value: "SCORING",
+              label: (
+                <span className="inline-flex items-center gap-1.5">
+                  <Activity className="w-3.5 h-3.5" />
+                  Automated Risk Scoring &amp; Rule Engine
+                </span>
+              ),
+            },
+          ]}
+        />
 
         {subMode === "EXPLORER" && (
           <div className="flex items-center gap-2">
@@ -727,7 +721,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                   </div>
                   <div className="mt-2 grid grid-cols-3 gap-2 text-center">
                     {(["HIGH", "MEDIUM", "LOW"] as const).map((lvl) => (
-                      <div key={lvl} className="rounded-xl bg-white/15 p-2">
+                      <div key={lvl} className="rounded-xl bg-white/20 p-2.5 backdrop-blur-md border border-white/30 shadow-[inset_0_1px_1px_rgba(255,255,255,0.35)]">
                         <div className="text-[10px] font-bold">{lvl}</div>
                         <div className="text-lg font-bold ios-num">
                           {riskScoring.transaction_risk_distribution[lvl].count.toLocaleString("en-US")}
@@ -746,7 +740,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                   </div>
                   <div className="mt-2 grid grid-cols-3 gap-2 text-center">
                     {(["HIGH", "MEDIUM", "LOW"] as const).map((lvl) => (
-                      <div key={lvl} className="rounded-xl bg-white/45 dark:bg-white/[0.06] p-2">
+                      <div key={lvl} className="rounded-xl bg-white/45 dark:bg-white/[0.08] p-2.5 backdrop-blur-md border border-white/60 dark:border-white/18 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)]">
                         <div className="text-[10px] font-bold text-slate-600 dark:text-zinc-400">{lvl}</div>
                         <div className="text-lg font-bold ios-num text-slate-950 dark:text-white">
                           {(riskScoring.account_risk_distribution[lvl] || 0).toLocaleString("en-US")}
@@ -762,7 +756,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                   </div>
                   <div className="mt-2 grid grid-cols-3 gap-2 text-center">
                     {(["HIGH", "MEDIUM", "LOW"] as const).map((lvl) => (
-                      <div key={lvl} className="rounded-xl bg-white/45 dark:bg-white/[0.06] p-2">
+                      <div key={lvl} className="rounded-xl bg-white/45 dark:bg-white/[0.08] p-2.5 backdrop-blur-md border border-white/60 dark:border-white/18 shadow-[inset_0_1px_1px_rgba(255,255,255,0.25)]">
                         <div className="text-[10px] font-bold text-slate-600 dark:text-zinc-400">{lvl}</div>
                         <div className="text-lg font-bold ios-num text-slate-950 dark:text-white">
                           {(riskScoring.customer_risk_distribution[lvl] || 0).toLocaleString("en-US")}
@@ -788,7 +782,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                  <div className="rounded-xl p-4 bg-white/35 dark:bg-white/[0.03] border border-white/60 dark:border-white/10 space-y-3">
+                  <div className="liquid-glass rounded-2xl p-4.5 border border-white/60 dark:border-white/20 backdrop-blur-xl shadow-xs space-y-3.5">
                     <div className="text-xs font-semibold text-slate-900 dark:text-white">
                       Option A: Simulate / Evaluate Incoming Transaction Against All 8 Rules
                     </div>
@@ -798,45 +792,45 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                         value={simAccount}
                         onChange={(e) => setSimAccount(e.target.value)}
                         placeholder="Account ID"
-                        className="bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-lg px-2.5 py-1.5 font-mono text-xs"
+                        className="glass-pill rounded-xl px-3 py-1.5 font-mono text-xs bg-white/50 dark:bg-white/[0.06] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 focus:bg-white/70 dark:focus:bg-white/[0.12] outline-none transition"
                       />
                       <input
                         type="number"
                         value={simAmount}
                         onChange={(e) => setSimAmount(e.target.value)}
                         placeholder="Amount ($)"
-                        className="bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-lg px-2.5 py-1.5 ios-num text-xs"
+                        className="glass-pill rounded-xl px-3 py-1.5 ios-num text-xs bg-white/50 dark:bg-white/[0.06] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 focus:bg-white/70 dark:focus:bg-white/[0.12] outline-none transition"
                       />
                       <select
                         value={simType}
                         onChange={(e) => setSimType(e.target.value)}
-                        className="bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-lg px-2.5 py-1.5 text-xs"
+                        className="glass-pill rounded-xl px-3 py-1.5 text-xs bg-white/50 dark:bg-white/[0.06] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 focus:bg-white/70 dark:focus:bg-white/[0.12] outline-none transition"
                       >
-                        <option value="WIRE_OUT">WIRE_OUT</option>
-                        <option value="P2P_TRANSFER_OUT">P2P_TRANSFER_OUT</option>
-                        <option value="MERCHANT_PURCHASE">MERCHANT_PURCHASE</option>
-                        <option value="ATM_WITHDRAWAL">ATM_WITHDRAWAL</option>
+                        <option value="WIRE_OUT" className="bg-white dark:bg-zinc-900">WIRE_OUT</option>
+                        <option value="P2P_TRANSFER_OUT" className="bg-white dark:bg-zinc-900">P2P_TRANSFER_OUT</option>
+                        <option value="MERCHANT_PURCHASE" className="bg-white dark:bg-zinc-900">MERCHANT_PURCHASE</option>
+                        <option value="ATM_WITHDRAWAL" className="bg-white dark:bg-zinc-900">ATM_WITHDRAWAL</option>
                       </select>
                       <input
                         type="text"
                         value={simCountry}
                         onChange={(e) => setSimCountry(e.target.value)}
                         placeholder="Country (e.g. CY)"
-                        className="bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-lg px-2.5 py-1.5 font-mono text-xs"
+                        className="glass-pill rounded-xl px-3 py-1.5 font-mono text-xs bg-white/50 dark:bg-white/[0.06] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 focus:bg-white/70 dark:focus:bg-white/[0.12] outline-none transition"
                       />
                       <input
                         type="text"
                         value={simDevice}
                         onChange={(e) => setSimDevice(e.target.value)}
                         placeholder="Device ID (opt)"
-                        className="bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-lg px-2.5 py-1.5 font-mono text-xs"
+                        className="glass-pill rounded-xl px-3 py-1.5 font-mono text-xs bg-white/50 dark:bg-white/[0.06] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 focus:bg-white/70 dark:focus:bg-white/[0.12] outline-none transition"
                       />
                       <input
                         type="text"
                         value={simMerchant}
                         onChange={(e) => setSimMerchant(e.target.value)}
                         placeholder="Merchant ID (opt)"
-                        className="bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-lg px-2.5 py-1.5 font-mono text-xs"
+                        className="glass-pill rounded-xl px-3 py-1.5 font-mono text-xs bg-white/50 dark:bg-white/[0.06] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 focus:bg-white/70 dark:focus:bg-white/[0.12] outline-none transition"
                       />
                     </div>
                     <button
@@ -855,13 +849,13 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                           },
                         })
                       }
-                      className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-azure-500 to-azure-600 text-white text-xs font-semibold shadow-sm"
+                      className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-gradient-to-r from-azure-500 to-azure-600 hover:from-azure-400 hover:to-azure-500 text-white text-xs font-semibold shadow-[0_4px_12px_rgba(37,99,235,0.35)] transition-all hover:scale-105 active:scale-95"
                     >
                       <Play className="w-3.5 h-3.5" /> Evaluate Rules &amp; Compute Scores
                     </button>
                   </div>
 
-                  <div className="rounded-xl p-4 bg-white/35 dark:bg-white/[0.03] border border-white/60 dark:border-white/10 space-y-3">
+                  <div className="liquid-glass rounded-2xl p-4.5 border border-white/60 dark:border-white/20 backdrop-blur-xl shadow-xs space-y-3.5">
                     <div className="text-xs font-semibold text-slate-900 dark:text-white">
                       Option B: Evaluate Stored Transaction by ID
                     </div>
@@ -871,20 +865,20 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                         value={simTxnId}
                         onChange={(e) => setSimTxnId(e.target.value)}
                         placeholder="e.g. TXN-2026-00009996"
-                        className="flex-1 bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-lg px-3 py-1.5 font-mono text-xs"
+                        className="flex-1 glass-pill rounded-xl px-3.5 py-1.5 font-mono text-xs bg-white/50 dark:bg-white/[0.06] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 focus:bg-white/70 dark:focus:bg-white/[0.12] outline-none transition"
                       />
                       <button
                         type="button"
                         disabled={evalLoading || !simTxnId.trim()}
                         onClick={() => runLiveEvaluation({ transaction_id: simTxnId.trim() })}
-                        className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-azure-600 text-white text-xs font-semibold disabled:opacity-40"
+                        className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-azure-500 to-azure-600 hover:from-azure-400 hover:to-azure-500 text-white text-xs font-semibold shadow-[0_4px_12px_rgba(37,99,235,0.35)] disabled:opacity-40 transition-all hover:scale-105 active:scale-95"
                       >
                         Evaluate TXN
                       </button>
                     </div>
                     {evalError && <div className="text-xs text-rose-600 dark:text-rose-400">{evalError}</div>}
                     {liveEval && (
-                      <div className="rounded-xl p-3 bg-white/50 dark:bg-black/40 border border-white/70 dark:border-white/10 text-xs space-y-1.5">
+                      <div className="liquid-glass rounded-xl p-3.5 border border-white/60 dark:border-white/20 backdrop-blur-md shadow-xs text-xs space-y-1.5">
                         <div className="flex flex-wrap items-center gap-2">
                           <Badge variant={tierVariant(liveEval.transaction_risk_level)}>
                             TXN: {liveEval.transaction_risk_score.toFixed(1)} ({liveEval.transaction_risk_level})
@@ -913,7 +907,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
               {/* Top Scored Accounts & Customers */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <div className="liquid-glass rounded-2xl overflow-hidden">
-                  <div className="px-5 py-3 border-b border-white/50 dark:border-white/10 text-sm font-semibold text-slate-950 dark:text-white">
+                  <div className="px-5 py-3 border-b border-white/50 dark:border-white/15 bg-white/20 dark:bg-white/[0.05] text-sm font-semibold text-slate-950 dark:text-white backdrop-blur-md">
                     Top Account-Level Risk Scores
                   </div>
                   <div ref={topAcctMag.containerRef} onMouseLeave={topAcctMag.onContainerLeave} className="relative overflow-x-auto">
@@ -945,7 +939,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                 </div>
 
                 <div className="liquid-glass rounded-2xl overflow-hidden">
-                  <div className="px-5 py-3 border-b border-white/50 dark:border-white/10 text-sm font-semibold text-slate-950 dark:text-white">
+                  <div className="px-5 py-3 border-b border-white/50 dark:border-white/15 bg-white/20 dark:bg-white/[0.05] text-sm font-semibold text-slate-950 dark:text-white backdrop-blur-md">
                     Top Customer-Level Risk Scores
                   </div>
                   <div ref={topCustMag.containerRef} onMouseLeave={topCustMag.onContainerLeave} className="relative overflow-x-auto">
@@ -979,7 +973,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
 
               {/* Functions 79-84: Behavioral & Network Anomaly Scanners */}
               {riskScoring.anomaly_detectors && (
-                <div className="liquid-glass rounded-2xl p-5 space-y-3">
+                <div className="liquid-glass rounded-2xl p-5 space-y-3.5">
                   <h3 className="text-sm font-semibold text-slate-950 dark:text-white">
                     Behavioral &amp; Network Anomaly Scanners (Functions 79–84)
                   </h3>
@@ -992,23 +986,25 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                           onFiltersChange({ ...filters, pattern: det.key });
                           setSubMode("EXPLORER");
                         }}
-                        className="text-left rounded-2xl p-3.5 bg-white/45 dark:bg-white/[0.04] border border-white/75 dark:border-white/10 hover:bg-white/70 dark:hover:bg-white/10 transition"
+                        className="text-left liquid-glass rounded-2xl p-4 border border-white/60 dark:border-white/20 backdrop-blur-xl hover:bg-white/55 dark:hover:bg-white/[0.12] transition shadow-xs group"
                       >
                         <div className="flex items-center justify-between gap-2">
-                          <span className="text-xs font-bold text-slate-950 dark:text-white">{det.name}</span>
+                          <span className="text-xs font-bold text-slate-950 dark:text-white group-hover:text-azure-700 dark:group-hover:text-sky-300 transition-colors">
+                            {det.name}
+                          </span>
                           <Badge variant={det.alert_count > 0 ? "HIGH" : "NEUTRAL"}>
                             {det.alert_count} alert(s)
                           </Badge>
                         </div>
                         <div className="text-[11px] text-slate-600 dark:text-zinc-400 mt-1">{det.description}</div>
-                        <div className="mt-1.5 flex flex-wrap items-center gap-1">
+                        <div className="mt-2 flex flex-wrap items-center gap-1.5">
                           {det.rules.map((r) => (
-                            <Badge key={r} variant="BLUE">
+                            <span key={r} className="font-mono text-[11px] font-semibold text-azure-700 dark:text-sky-300 mr-1.5">
                               {r}
-                            </Badge>
+                            </span>
                           ))}
                           {det.extra_metric && (
-                            <span className="text-[10.5px] font-mono text-azure-700 dark:text-sky-300">
+                            <span className="text-[10.5px] font-mono text-slate-600 dark:text-zinc-400">
                               {det.extra_metric}
                             </span>
                           )}
@@ -1021,7 +1017,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
 
               {/* Functions 85-88: Ledger & Reference Integrity Detectors */}
               {riskScoring.integrity_detectors && (
-                <div className="liquid-glass rounded-2xl p-5 space-y-3">
+                <div className="liquid-glass rounded-2xl p-5 space-y-3.5">
                   <h3 className="text-sm font-semibold text-slate-950 dark:text-white">
                     Transaction &amp; Ledger Integrity Detectors (Functions 85–88)
                   </h3>
@@ -1054,7 +1050,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                     ].map((card) => (
                       <div
                         key={card.label}
-                        className="rounded-2xl p-3.5 bg-white/45 dark:bg-white/[0.04] border border-white/75 dark:border-white/10 space-y-2"
+                        className="liquid-glass rounded-2xl p-4 border border-white/60 dark:border-white/20 backdrop-blur-xl shadow-xs space-y-2.5"
                       >
                         <div className="flex items-center justify-between gap-1">
                           <span className="font-semibold text-slate-900 dark:text-white">{card.label}</span>
@@ -1091,7 +1087,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
 
               {/* Functions 76, 89: Configured Rules & Live Re-Evaluation */}
               <div className="liquid-glass rounded-2xl overflow-hidden">
-                <div className="px-5 py-3.5 border-b border-white/50 dark:border-white/10 flex flex-wrap items-center justify-between gap-2">
+                <div className="px-5 py-3.5 border-b border-white/50 dark:border-white/15 bg-white/20 dark:bg-white/[0.05] backdrop-blur-md flex flex-wrap items-center justify-between gap-2">
                   <div>
                     <h3 className="text-sm font-semibold text-slate-950 dark:text-white">
                       Risk Rules Configuration &amp; Re-Evaluation (Functions 76, 89)
@@ -1104,7 +1100,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                     type="button"
                     disabled={reevalBusy}
                     onClick={() => runFullReeval("ALL")}
-                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-azure-500 to-azure-600 text-white text-xs font-semibold shadow-sm"
+                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-azure-500 to-azure-600 hover:from-azure-400 hover:to-azure-500 text-white text-xs font-semibold shadow-[0_4px_12px_rgba(37,99,235,0.35)] transition-all hover:scale-105 active:scale-95"
                   >
                     <RefreshCw className={`w-3.5 h-3.5 ${reevalBusy ? "animate-spin" : ""}`} />
                     {reevalBusy ? "Re-Evaluating..." : "Re-Evaluate All Rules"}
@@ -1121,14 +1117,14 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                   </div>
                 )}
                 {userRole && userRole !== "SYSTEM_ADMIN" && (
-                  <div className="px-5 py-2 bg-amber-500/10 border-b border-white/40 text-[11px] text-amber-800 dark:text-amber-300">
+                  <div className="px-5 py-2 bg-amber-500/10 border-b border-white/30 dark:border-white/10 text-[11px] text-amber-800 dark:text-amber-300 backdrop-blur-sm">
                     Signed in as {userRole}: full re-evaluation is enabled; editing rule weights requires SYSTEM_ADMIN role.
                   </div>
                 )}
                 <div className="overflow-x-auto">
                   <table className="w-full text-left border-collapse text-xs">
                     <thead>
-                      <tr className="border-b border-white/50 dark:border-white/10 bg-white/25 dark:bg-black/35 text-[11px] font-semibold uppercase text-slate-700 dark:text-zinc-400">
+                      <tr className="border-b border-white/50 dark:border-white/15 bg-white/20 dark:bg-white/[0.05] text-[11px] font-semibold uppercase text-slate-700 dark:text-zinc-400 backdrop-blur-md">
                         <th className="py-2.5 px-4">Rule</th>
                         <th className="py-2.5 px-3">Condition</th>
                         <th className="py-2.5 px-3 text-right">Hits / Avg</th>
@@ -1161,7 +1157,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                                     [r.rule_id]: Number(e.target.value) || r.base_weight,
                                   }))
                                 }
-                                className="w-16 text-right bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-lg px-2 py-1 ios-num text-xs"
+                                className="glass-pill w-16 text-right bg-white/50 dark:bg-white/[0.08] backdrop-blur-md border border-white/70 dark:border-white/20 rounded-xl px-2.5 py-1 ios-num text-xs font-semibold text-slate-900 dark:text-white shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 outline-none transition"
                               />
                             </td>
                             <td className="py-2.5 px-4 text-right space-x-1.5 whitespace-nowrap">
@@ -1169,7 +1165,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                                 type="button"
                                 disabled={reevalBusy}
                                 onClick={() => applyRuleUpdate(r.rule_id, weightVal, Boolean(r.is_active))}
-                                className="px-2.5 py-1 rounded-full bg-azure-600 text-white text-[11px] font-semibold disabled:opacity-40"
+                                className="px-3 py-1 rounded-full bg-azure-600 hover:bg-azure-500 text-white text-[11px] font-semibold shadow-xs disabled:opacity-40 transition"
                               >
                                 Apply &amp; Re-Eval
                               </button>
@@ -1177,7 +1173,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                                 type="button"
                                 disabled={reevalBusy}
                                 onClick={() => applyRuleUpdate(r.rule_id, weightVal, !r.is_active)}
-                                className="glass-pill px-2.5 py-1 rounded-full text-[11px] font-semibold hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+                                className="glass-pill px-3 py-1 rounded-full text-[11px] font-semibold text-slate-800 dark:text-zinc-200 hover:bg-white/50 dark:hover:bg-white/[0.14] transition"
                               >
                                 {r.is_active ? "Disable" : "Enable"}
                               </button>
@@ -1200,11 +1196,13 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                     {(riskScoring.execution_runs || []).map((run) => (
                       <div
                         key={run.run_id}
-                        className="rounded-xl p-3 bg-white/40 dark:bg-black/40 border border-white/60 dark:border-white/10"
+                        className="liquid-glass rounded-xl p-3.5 border border-white/60 dark:border-white/20 backdrop-blur-md shadow-xs space-y-1"
                       >
                         <div className="flex items-center justify-between gap-2">
                           <span className="font-mono font-bold text-slate-950 dark:text-white">{run.run_id}</span>
-                          <Badge variant="BLUE">{run.trigger_source}</Badge>
+                          <span className="glass-pill px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold text-azure-700 dark:text-sky-300 bg-white/40 dark:bg-white/[0.08] border border-white/50 dark:border-white/20">
+                            {run.trigger_source}
+                          </span>
                         </div>
                         <div className="text-slate-700 dark:text-zinc-300 mt-1">{run.summary}</div>
                         <div className="ios-num text-[10.5px] text-slate-500 mt-1">
@@ -1223,7 +1221,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                     {(riskScoring.score_history || []).map((h) => (
                       <div
                         key={h.history_id}
-                        className="rounded-xl p-3 bg-white/40 dark:bg-black/40 border border-white/60 dark:border-white/10"
+                        className="liquid-glass rounded-xl p-3.5 border border-white/60 dark:border-white/20 backdrop-blur-md shadow-xs space-y-1"
                       >
                         <div className="flex items-center justify-between gap-2">
                           <span className="font-mono font-bold text-slate-950 dark:text-white">
@@ -1253,7 +1251,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                   </div>
                   <div className="space-y-2 max-h-60 overflow-y-auto">
                     {proposals.map((p) => (
-                      <div key={p.proposal_id} className="p-3 rounded-xl bg-white/25 dark:bg-white/[0.05] border border-white/50 dark:border-white/10 space-y-1.5">
+                      <div key={p.proposal_id} className="liquid-glass rounded-xl p-3.5 border border-white/60 dark:border-white/20 backdrop-blur-md shadow-xs space-y-1.5">
                         <div className="flex items-center justify-between gap-2">
                           <span className="font-mono font-bold text-slate-950 dark:text-white">{p.proposal_id} — {p.title}</span>
                           <Badge variant={p.status === "APPROVED" ? "LOW" : p.status === "REJECTED" ? "CRITICAL" : "HIGH"}>{p.status}</Badge>
@@ -1315,16 +1313,37 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                     }}
                     className="flex flex-wrap gap-2"
                   >
-                    <input type="number" value={sbMinAmt} onChange={(e) => setSbMinAmt(e.target.value)} placeholder="Min $" className="w-24 px-3 py-1.5 rounded-full bg-white/30 dark:bg-white/[0.06] border border-white/60 dark:border-white/15 ios-num" />
-                    <select value={sbChannel} onChange={(e) => setSbChannel(e.target.value)} className="px-3 py-1.5 rounded-full bg-white/30 dark:bg-white/[0.06] border border-white/60 dark:border-white/15">
+                    <input
+                      type="number"
+                      value={sbMinAmt}
+                      onChange={(e) => setSbMinAmt(e.target.value)}
+                      placeholder="Min $"
+                      className="glass-pill w-24 px-3.5 py-1.5 rounded-full bg-white/50 dark:bg-white/[0.08] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 outline-none ios-num text-xs transition"
+                    />
+                    <select
+                      value={sbChannel}
+                      onChange={(e) => setSbChannel(e.target.value)}
+                      className="glass-pill px-3.5 py-1.5 rounded-full bg-white/50 dark:bg-white/[0.08] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white text-xs outline-none transition"
+                    >
                       <option value="ALL" className="bg-white dark:bg-zinc-900">All Channels</option>
                       <option value="ONLINE" className="bg-white dark:bg-zinc-900">ONLINE</option>
                       <option value="WIRE" className="bg-white dark:bg-zinc-900">WIRE</option>
                       <option value="ATM" className="bg-white dark:bg-zinc-900">ATM</option>
                       <option value="POS" className="bg-white dark:bg-zinc-900">POS</option>
                     </select>
-                    <input type="text" value={sbCountry} onChange={(e) => setSbCountry(e.target.value)} placeholder="Country (ALL/CY)" className="w-28 px-3 py-1.5 rounded-full bg-white/30 dark:bg-white/[0.06] border border-white/60 dark:border-white/15" />
-                    <button type="submit" className="px-3.5 py-1.5 rounded-full bg-azure-600 text-white font-semibold hover:bg-azure-500 transition">Test Pattern</button>
+                    <input
+                      type="text"
+                      value={sbCountry}
+                      onChange={(e) => setSbCountry(e.target.value)}
+                      placeholder="Country (ALL/CY)"
+                      className="glass-pill w-28 px-3.5 py-1.5 rounded-full bg-white/50 dark:bg-white/[0.08] backdrop-blur-md border border-white/70 dark:border-white/20 text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 outline-none text-xs transition"
+                    />
+                    <button
+                      type="submit"
+                      className="glass-pill px-4 py-1.5 rounded-full bg-gradient-to-r from-azure-500 to-azure-600 hover:from-azure-400 hover:to-azure-500 text-white font-semibold text-xs shadow-[0_4px_12px_rgba(37,99,235,0.35)] transition-all hover:scale-105 active:scale-95"
+                    >
+                      Test Pattern
+                    </button>
                   </form>
                   {sbResult && (
                     <div className="space-y-2">
@@ -1333,7 +1352,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                       </div>
                       <div className="space-y-1 max-h-40 overflow-y-auto">
                         {sbResult.items.slice(0, 8).map((it) => (
-                          <div key={String(it.transaction_id)} className="flex justify-between px-2.5 py-1 rounded-lg bg-white/20 dark:bg-white/[0.04]">
+                          <div key={String(it.transaction_id)} className="flex justify-between px-3 py-1.5 rounded-xl bg-white/40 dark:bg-white/[0.06] border border-white/50 dark:border-white/15 backdrop-blur-sm">
                             <span className="font-mono">{String(it.transaction_id)} ({String(it.channel)})</span>
                             <span className="ios-num font-bold">${Number(it.amount).toLocaleString()}</span>
                           </div>
@@ -1372,7 +1391,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
           </div>
 
           {/* Search, Filters & Sort Controls (Functions 49-51) */}
-          <div className="px-5 py-3 border-b border-white/50 dark:border-white/10 bg-white/25 dark:bg-black/30 flex flex-wrap items-center justify-between gap-3">
+          <div className="px-5 py-3 border-b border-white/50 dark:border-white/15 bg-white/20 dark:bg-white/[0.05] backdrop-blur-md flex flex-wrap items-center justify-between gap-3">
             <div className="flex flex-wrap items-center gap-2 text-xs">
               <div className="relative">
                 <Search className="w-3.5 h-3.5 text-slate-500 dark:text-zinc-400 absolute left-3 top-1/2 -translate-y-1/2" />
@@ -1381,7 +1400,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                   value={filters.search}
                   onChange={(e) => onFiltersChange({ ...filters, search: e.target.value })}
                   placeholder="Txn ID, Account ID, Customer ID, Merchant ID..."
-                  className="pl-8 pr-3 py-1.5 w-72 bg-white/60 dark:bg-zinc-900 border border-white/80 dark:border-white/15 rounded-full text-xs text-slate-900 dark:text-white placeholder:text-slate-500 focus:outline-none"
+                  className="glass-pill pl-8 pr-3 py-1.5 w-72 bg-white/50 dark:bg-white/[0.08] backdrop-blur-md border border-white/70 dark:border-white/20 rounded-full text-xs text-slate-900 dark:text-white placeholder:text-slate-500/70 dark:placeholder:text-zinc-500 shadow-[inset_0_1px_2px_rgba(0,0,0,0.15)] focus:border-azure-400 focus:outline-none transition"
                 />
               </div>
 
@@ -1498,7 +1517,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
             {rowMag.lensElement}
             <table className="w-full text-left border-collapse text-xs">
               <thead>
-                <tr className="border-b border-white/50 dark:border-white/10 bg-white/30 dark:bg-black/45 text-[11px] font-semibold uppercase tracking-wider text-slate-700 dark:text-zinc-400">
+                <tr className="border-b border-white/50 dark:border-white/15 bg-white/20 dark:bg-white/[0.05] text-[11px] font-semibold uppercase tracking-wider text-slate-700 dark:text-zinc-400 backdrop-blur-md">
                   <th className="py-3 px-4">Transaction ID</th>
                   <th
                     onClick={() => toggleSort("occurred_at")}
@@ -1595,9 +1614,9 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                           {tx.risk_level} {tx.risk_score > 0 ? `(${tx.risk_score.toFixed(0)})` : ""}
                         </Badge>
                         {(tx.triggered_rules || []).map((rid) => (
-                          <Badge key={rid} variant="BLUE">
+                          <span key={rid} className="font-mono text-[11px] font-semibold text-azure-700 dark:text-sky-300 ml-1">
                             {rid}
-                          </Badge>
+                          </span>
                         ))}
                       </div>
                     </td>

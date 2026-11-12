@@ -202,7 +202,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
           <div>
             <div className="flex flex-wrap items-center gap-2.5">
               <h2 className="font-mono text-lg font-bold text-slate-950 dark:text-white">{t.transaction_id}</h2>
-              <Badge variant="BLUE">{t.txn_type}</Badge>
+              <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{t.txn_type}</span>
               <Badge variant={tierVariant(t.risk_level)}>
                 {t.risk_level} RISK ({t.risk_score.toFixed(1)})
               </Badge>
@@ -644,7 +644,7 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                     <td className="py-2 px-3 ios-num text-slate-600 dark:text-zinc-400">{rt.occurred_at}</td>
                     <td className="py-2 px-3 font-mono text-slate-700 dark:text-zinc-300">{rt.account_id}</td>
                     <td className="py-2 px-3">
-                      <Badge variant="NEUTRAL">{rt.txn_type}</Badge>
+                      <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{rt.txn_type}</span>
                     </td>
                     <td className="py-2 px-3 text-right font-semibold">
                       <IosAmount value={rt.direction === "CREDIT" ? rt.amount : -rt.amount} showPlus={rt.direction === "CREDIT"} />
@@ -1552,8 +1552,8 @@ export const TransactionsView: React.FC<TransactionsViewProps> = ({
                       </div>
                     </td>
                     <td className="py-2.5 px-3">
-                      <div className="flex flex-wrap items-center gap-1">
-                        <Badge variant="NEUTRAL">{tx.txn_type}</Badge>
+                      <div className="flex flex-wrap items-center gap-1.5">
+                        <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{tx.txn_type}</span>
                         {(tx.pattern_flags || []).map((pf) => (
                           <Badge key={pf} variant={pf === "VALIDATION_EXCEPTION" ? "CRITICAL" : "HIGH"}>
                             {PATTERN_BADGE_LABEL[pf] || pf}

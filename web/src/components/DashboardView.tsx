@@ -415,7 +415,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                       <div className="font-mono text-[11px] text-slate-600 dark:text-zinc-400">{tx.account_id}</div>
                     </td>
                     <td className="py-2.5 px-3">
-                      <Badge variant="BLUE">{tx.rule_id || "MERCHANT_RISK"}</Badge>
+                      <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{tx.rule_id || "MERCHANT_RISK"}</span>
                     </td>
                     <td className="py-2.5 px-3 text-right font-semibold text-slate-950 dark:text-white">
                       <IosAmount value={tx.amount} />

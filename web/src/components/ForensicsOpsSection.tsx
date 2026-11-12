@@ -702,7 +702,7 @@ export const ForensicsOpsSection: React.FC<ForensicsOpsSectionProps> = ({
             {suppressions.map((s) => (
               <div key={s.suppression_id} className="flex items-center justify-between px-3 py-1.5 rounded-xl bg-white/25 dark:bg-white/[0.05] border border-white/50 dark:border-white/10">
                 <div>
-                  <span className="font-mono font-bold">{s.account_id}</span> • <Badge variant="BLUE">{s.rule_id}</Badge> &le; ${s.max_amount.toLocaleString()}
+                  <span className="font-mono font-bold">{s.account_id}</span> • <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{s.rule_id}</span> &le; ${s.max_amount.toLocaleString()}
                 </div>
                 <button
                   type="button"

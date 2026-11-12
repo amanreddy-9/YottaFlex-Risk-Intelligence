@@ -565,7 +565,7 @@ export const CustomersView: React.FC<CustomersViewProps> = ({
                     <td className="py-2.5 px-3 ios-num text-slate-600 dark:text-zinc-400">{tx.occurred_at}</td>
                     <td className="py-2.5 px-3 font-mono text-azure-700 dark:text-zinc-200">{tx.account_id}</td>
                     <td className="py-2.5 px-3">
-                      <Badge variant="NEUTRAL">{tx.txn_type}</Badge>
+                      <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{tx.txn_type}</span>
                     </td>
                     <td
                       className={`py-2.5 px-3 text-right font-semibold ${

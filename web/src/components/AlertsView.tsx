@@ -151,7 +151,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
               <Badge variant={al.risk_score >= 60 ? "CRITICAL" : "HIGH"}>
                 RISK SCORE: {al.risk_score.toFixed(1)}
               </Badge>
-              <Badge variant="BLUE">{al.rule_id}</Badge>
+              <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{al.rule_id}</span>
               <Badge variant="NEUTRAL">{al.status}</Badge>
               {al.sla_breached && <Badge variant="CRITICAL">SLA BREACHED ({al.age_hours ?? 0}h)</Badge>}
               {selectedDetail.triage_meta?.owner_analyst_id && (
@@ -258,7 +258,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
                   >
                     {pTxn.transaction_id} →
                   </button>
-                  <Badge variant="NEUTRAL">{pTxn.txn_type}</Badge>
+                  <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{pTxn.txn_type}</span>
                 </div>
                 <div className="text-lg font-bold">
                   <IosAmount value={pTxn.amount} />
@@ -343,7 +343,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
                       </td>
                       <td className="py-2 px-3 ios-num text-slate-600 dark:text-zinc-400">{stx.occurred_at}</td>
                       <td className="py-2 px-3">
-                        <Badge variant="NEUTRAL">{stx.txn_type}</Badge>
+                        <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{stx.txn_type}</span>
                       </td>
                       <td className="py-2 px-4 text-right font-semibold">
                         <IosAmount
@@ -386,7 +386,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
                           {sa.alert_id}
                         </td>
                         <td className="py-2.5 px-3">
-                          <Badge variant="BLUE">{sa.rule_id}</Badge>
+                          <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{sa.rule_id}</span>
                           <div className="text-[11px] text-slate-600 dark:text-zinc-400 mt-0.5">{sa.rule_name}</div>
                         </td>
                         <td className="py-2.5 px-3 font-mono text-[11px]">{sa.account_id}</td>
@@ -988,7 +988,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
                   </td>
                   <td className="py-2.5 px-3">
                     <div className="flex items-center gap-1.5">
-                      <Badge variant="BLUE">{al.rule_id}</Badge>
+                      <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{al.rule_id}</span>
                       <span className="font-semibold text-slate-900 dark:text-zinc-100">{al.rule_name}</span>
                     </div>
                     <div className="text-[11px] text-slate-500 dark:text-zinc-400 truncate max-w-xs mt-0.5">

@@ -197,7 +197,7 @@ export const DossierView: React.FC<DossierViewProps> = ({
               {c.effective_priority_tier ?? c.priority_tier} ({(c.effective_priority_score ?? c.priority_score).toFixed(2)})
             </Badge>
             <Badge variant={statusVariant(c.status)}>{c.status}</Badge>
-            <Badge variant="BLUE">{c.linkage_summary}</Badge>
+            <span className="text-xs font-semibold text-slate-800 dark:text-zinc-200">{c.linkage_summary}</span>
             {c.assigned_analyst_id && <Badge variant="BLUE">Owner: {c.assigned_analyst_id}</Badge>}
             {c.sla_breached && <Badge variant="CRITICAL">SLA BREACHED ({c.age_hours ?? 0}h)</Badge>}
             {c.requires_reviewer_signoff && <Badge variant="HIGH">Reviewer Sign-Off &ge;$25k</Badge>}
@@ -700,7 +700,7 @@ export const DossierView: React.FC<DossierViewProps> = ({
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-1.5">
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="font-mono font-bold text-xs text-slate-950 dark:text-white">{a.alert_id}</span>
-                      <Badge variant="BLUE">{a.rule_id}</Badge>
+                      <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{a.rule_id}</span>
                       <span className="text-xs font-semibold text-slate-800 dark:text-zinc-200">{a.rule_name}</span>
                     </div>
                     <div className="flex items-center gap-2">
@@ -814,7 +814,7 @@ export const DossierView: React.FC<DossierViewProps> = ({
                     <td className="py-2.5 px-3 ios-num text-slate-600 dark:text-zinc-400">{tx.occurred_at}</td>
                     <td className="py-2.5 px-3 font-mono text-slate-700 dark:text-zinc-300">{tx.account_id}</td>
                     <td className="py-2.5 px-3">
-                      <Badge variant="NEUTRAL">{tx.txn_type}</Badge>
+                      <span className="font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">{tx.txn_type}</span>
                     </td>
                     <td className="py-2.5 px-3 text-slate-700 dark:text-zinc-300">
                       <span className="text-slate-500 dark:text-zinc-500">{tx.channel}</span> •{" "}

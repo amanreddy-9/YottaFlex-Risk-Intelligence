@@ -515,14 +515,14 @@ export const QueueView: React.FC<QueueViewProps> = ({
                     </div>
                   </td>
                   <td className="py-3 px-3">
-                    <Badge variant="BLUE">{item.linkage_summary}</Badge>
+                    <span className="text-xs font-semibold text-slate-800 dark:text-zinc-200">{item.linkage_summary}</span>
                   </td>
                   <td className="py-3 px-3">
-                    <div className="flex flex-wrap gap-1">
-                      {item.rules_triggered.map((r) => (
-                        <Badge key={r} variant="NEUTRAL">
-                          {r}
-                        </Badge>
+                    <div className="flex flex-wrap items-center gap-1.5 font-mono text-xs font-semibold text-slate-800 dark:text-zinc-200">
+                      {item.rules_triggered.map((r, idx) => (
+                        <span key={r}>
+                          {r}{idx < item.rules_triggered.length - 1 ? "," : ""}
+                        </span>
                       ))}
                     </div>
                   </td>

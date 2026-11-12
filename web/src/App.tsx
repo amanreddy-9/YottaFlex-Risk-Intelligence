@@ -646,10 +646,19 @@ export const App: React.FC = () => {
 
   const getGreetingKicker = () => {
     const hour = new Date().getHours();
-    if (hour >= 5 && hour < 12) return { text: "GOOD MORNING", icon: <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" /> };
-    if (hour >= 12 && hour < 17) return { text: "GOOD AFTERNOON", icon: <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" /> };
-    if (hour >= 17 && hour < 21) return { text: "GOOD EVENING", icon: <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" /> };
-    return { text: "GOOD NIGHT", icon: <Moon className="w-3.5 h-3.5 text-sky-400 dark:text-sky-300 shrink-0" /> };
+    if (hour >= 5 && hour < 12) {
+      return { text: "GOOD MORNING", icon: <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" /> };
+    }
+    if (hour >= 12 && hour < 15) {
+      return { text: "GOOD AFTERNOON", icon: <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" /> };
+    }
+    // After 3:00 PM (15:00 to 04:59) -> always GOOD EVENING (never good night)
+    return {
+      text: "GOOD EVENING",
+      icon: hour >= 15 && hour < 19
+        ? <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" />
+        : <Moon className="w-3.5 h-3.5 text-sky-400 dark:text-sky-300 shrink-0" />,
+    };
   };
 
   const renderProfileBtn = (extraClass = "") => (

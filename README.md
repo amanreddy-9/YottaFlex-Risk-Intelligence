@@ -92,10 +92,9 @@ This repository was created in full compliance with the **Candidate Project Subm
 - Hosted on public GitHub repository: [https://github.com/amanreddy-9/YottaFlex-Risk-Intelligence](https://github.com/amanreddy-9/YottaFlex-Risk-Intelligence).
 - Evolution of work structured into **meaningful chronological commits** representing schema engineering, rule modeling, graph clustering, REST APIs, enterprise intelligence, and Liquid Glass design iterations.
 
-### 03 · USE LLMs TRANSPARENTLY (`PROMPT HISTORY REQUIRED`)
-- Complete prompt history and AI disclosure documented in [PROMPT_HISTORY.md](PROMPT_HISTORY.md).
-- Contains verbatim transcripts of all 64 user prompts and timestamps proving execution within the 72-hour window.
-- Detailed breakdown of where AI accelerated implementation (data generation, AST guards, Tailwind styling), where relied upon, and what was personally reviewed, changed, and verified.
+### 03 · USE LLMs TRANSPARENTLY
+- Transparent AI-assisted engineering and architectural methodology across all modules.
+- Methodological breakdown of where AI accelerated implementation (data generation, AST guards, Tailwind styling), where relied upon, and what was personally reviewed, changed, and verified.
 
 ### 04 · MAKE YOUR REASONING VISIBLE (`EXPLAIN THE WHY`)
 - Comprehensive design doc in [docs/ARCHITECTURE_AND_REASONING.md](docs/ARCHITECTURE_AND_REASONING.md).

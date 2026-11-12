@@ -430,44 +430,41 @@
 
 .overview-nav-slider {
   background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.14) 0%,
-    rgba(255, 255, 255, 0.01) 52%,
-    rgba(255, 255, 255, 0.08) 100%
+    140deg,
+    rgba(255, 255, 255, 0.24) 0%,
+    rgba(255, 255, 255, 0.02) 50%,
+    rgba(255, 255, 255, 0.14) 100%
   );
-  border: 1.25px solid rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px) brightness(1.18) contrast(1.05);
+  -webkit-backdrop-filter: blur(12px) brightness(1.18) contrast(1.05);
+  border: 1.25px solid rgba(255, 255, 255, 0.88);
   box-shadow:
-    0 8px 20px rgba(14, 72, 165, 0.10),
-    inset 0 2px 1.5px rgba(255, 255, 255, 0.96),
-    inset 0 -1.5px 2px rgba(255, 255, 255, 0.42),
-    inset 1.5px 0 3px rgba(255, 255, 255, 0.35),
-    inset -1.5px 0 3px rgba(255, 255, 255, 0.35);
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.95),
+    inset 0 -1px 1.5px rgba(255, 255, 255, 0.35);
   transition:
-    transform 340ms cubic-bezier(0.22, 1.18, 0.36, 1),
-    width 260ms ease,
-    height 260ms ease,
+    transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+    width 260ms cubic-bezier(0.16, 1, 0.3, 1),
+    height 260ms cubic-bezier(0.16, 1, 0.3, 1),
     border-radius 260ms ease;
-  will-change: transform;
+  will-change: transform, width, height;
+  pointer-events: none;
 }
 
 .dark .overview-nav-slider {
   background: linear-gradient(
-    90deg,
-    rgba(14, 132, 255, 0.92) 0%,
-    rgba(32, 112, 240, 0.62) 34%,
-    rgba(56, 138, 255, 0.24) 68%,
-    rgba(255, 255, 255, 0.08) 100%
+    140deg,
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(255, 255, 255, 0.015) 50%,
+    rgba(255, 255, 255, 0.06) 100%
   );
-  border: 1px solid rgba(195, 232, 255, 0.72);
+  backdrop-filter: blur(14px) brightness(1.24) contrast(1.08);
+  -webkit-backdrop-filter: blur(14px) brightness(1.24) contrast(1.08);
+  border: 1.25px solid rgba(255, 255, 255, 0.38);
   box-shadow:
-    0 8px 24px rgba(10, 105, 255, 0.36),
-    0 0 18px rgba(56, 189, 248, 0.26),
-    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.72),
-    inset 0 -1px 1.5px rgba(140, 205, 255, 0.35);
-  backdrop-filter: blur(10px) saturate(135%);
-  -webkit-backdrop-filter: blur(10px) saturate(135%);
+    0 10px 28px rgba(0, 0, 0, 0.70),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.60),
+    inset 0 -1px 1.5px rgba(255, 255, 255, 0.16);
 }
 
 .liquid-lens {
@@ -816,23 +813,171 @@ select option {
   color: #f4f4f5;
 }
 
-/* Reusable translucent liquid glass control / nested card surface */
+/* ============================================================================
+   iOS 27 REALISTIC 3D LIQUID GLASS CAPSULES (Matching Image 2 Reference)
+   Convex optical curvature, top specular rim highlight, ambient depth bevel
+   ============================================================================ */
 .glass-pill {
-  background: rgba(255, 255, 255, 0.28);
-  backdrop-filter: blur(12px) saturate(110%);
-  -webkit-backdrop-filter: blur(12px) saturate(110%);
-  border: 1px solid rgba(255, 255, 255, 0.78);
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.14) 52%,
+    rgba(255, 255, 255, 0.28) 100%
+  );
+  backdrop-filter: blur(16px) saturate(130%) brightness(1.10);
+  -webkit-backdrop-filter: blur(16px) saturate(130%) brightness(1.10);
+  border: 1.25px solid rgba(255, 255, 255, 0.88);
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.85),
-    0 4px 14px rgba(14, 72, 165, 0.08);
+    0 6px 18px rgba(10, 48, 110, 0.10),
+    inset 0 2px 2px rgba(255, 255, 255, 0.98),
+    inset 0 -1.5px 2px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 240ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 240ms ease,
+    border-color 240ms ease,
+    background 240ms ease;
 }
 
 .dark .glass-pill {
-  background: rgba(255, 255, 255, 0.055);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.16) 0%,
+    rgba(255, 255, 255, 0.03) 45%,
+    rgba(255, 255, 255, 0.01) 60%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  backdrop-filter: blur(20px) saturate(160%) brightness(1.18);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) brightness(1.18);
+  border: 1.25px solid rgba(255, 255, 255, 0.38);
   box-shadow:
-    inset 0 1px 1px rgba(255, 255, 255, 0.16),
-    0 6px 16px rgba(0, 0, 0, 0.45);
+    0 8px 24px rgba(0, 0, 0, 0.65),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.70),
+    inset 0 -1.5px 2px rgba(0, 0, 0, 0.45);
+  transition:
+    transform 240ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 240ms ease,
+    border-color 240ms ease,
+    background 240ms ease;
+}
+
+.glass-pill:hover {
+  transform: translateY(-1.5px) scale(1.04);
+  border-color: rgba(255, 255, 255, 0.98);
+  box-shadow:
+    0 10px 24px rgba(10, 50, 120, 0.16),
+    0 0 14px rgba(255, 255, 255, 0.45),
+    inset 0 2px 2px rgba(255, 255, 255, 1),
+    inset 0 -1.5px 2px rgba(0, 0, 0, 0.06);
+}
+
+.dark .glass-pill:hover {
+  transform: translateY(-1.5px) scale(1.04);
+  border-color: rgba(255, 255, 255, 0.65);
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.85),
+    0 0 16px rgba(255, 255, 255, 0.18),
+    inset 0 2px 2px rgba(255, 255, 255, 0.85),
+    inset 0 -1.5px 2px rgba(0, 0, 0, 0.50);
+}
+
+/* ============================================================================
+   IMAGE 2 SEGMENTED LIQUID GLASS THEME SLIDER (Sun ⇄ Moon Slider)
+   ============================================================================ */
+.glass-theme-slider-track {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  width: 66px;
+  padding: 2px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.45) 0%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0.30) 100%
+  );
+  backdrop-filter: blur(20px) saturate(140%) brightness(1.12);
+  -webkit-backdrop-filter: blur(20px) saturate(140%) brightness(1.12);
+  border: 1.25px solid rgba(255, 255, 255, 0.88);
+  box-shadow:
+    0 6px 20px rgba(10, 48, 110, 0.12),
+    inset 0 1.5px 2px rgba(255, 255, 255, 0.95),
+    inset 0 -1.5px 2px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  user-select: none;
+  transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms ease;
+}
+
+.dark .glass-theme-slider-track {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+  backdrop-filter: blur(20px) saturate(160%) brightness(1.15);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) brightness(1.15);
+  border: 1.25px solid rgba(255, 255, 255, 0.38);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.65),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.70),
+    inset 0 -1.5px 2px rgba(0, 0, 0, 0.45);
+}
+
+.glass-theme-slider-track:hover {
+  transform: translateY(-1px) scale(1.03);
+}
+
+.dark .glass-theme-slider-track:hover {
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.80),
+    0 0 16px rgba(255, 255, 255, 0.14),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.80),
+    inset 0 -1.5px 2px rgba(0, 0, 0, 0.50);
+}
+
+/* Elevated Inner Glass Sliding Thumb (like "Inbox" in Image 2) */
+.glass-theme-slider-thumb {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  width: 30px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0.65) 100%
+  );
+  backdrop-filter: blur(12px) brightness(1.2);
+  -webkit-backdrop-filter: blur(12px) brightness(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.98);
+  box-shadow:
+    0 3px 10px rgba(10, 48, 110, 0.18),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 1),
+    inset 0 -1px 1.5px rgba(0, 0, 0, 0.10);
+  transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1), background 320ms ease;
+  pointer-events: none;
+}
+
+.dark .glass-theme-slider-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.32) 0%,
+    rgba(255, 255, 255, 0.09) 50%,
+    rgba(255, 255, 255, 0.20) 100%
+  );
+  backdrop-filter: blur(14px) brightness(1.3);
+  -webkit-backdrop-filter: blur(14px) brightness(1.3);
+  border: 1px solid rgba(255, 255, 255, 0.60);
+  box-shadow:
+    0 4px 14px rgba(0, 0, 0, 0.70),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.85),
+    inset 0 -1px 1.5px rgba(0, 0, 0, 0.35);
 }
 
 /* ============================================================================

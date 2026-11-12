@@ -49,7 +49,7 @@ export const NotificationBellButton: React.FC<NotificationBellButtonProps> = ({
   const baseClass =
     variant === "overview"
       ? "liquid-dock inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white cursor-pointer"
-      : "glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] cursor-pointer";
+      : "glass-pill h-8 min-w-[32px] px-2.5 rounded-full inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-slate-800 dark:text-white shrink-0 cursor-pointer";
 
   return (
     <button
@@ -59,10 +59,10 @@ export const NotificationBellButton: React.FC<NotificationBellButtonProps> = ({
       aria-hidden={open}
       title="Notifications & SLA Alerts"
       className={`ybot-launcher ${baseClass} ${
-        open ? "scale-125 opacity-0 pointer-events-none blur-sm" : "scale-100 opacity-100 hover:scale-[1.02]"
+        open ? "scale-125 opacity-0 pointer-events-none blur-sm" : "scale-100 opacity-100"
       }`}
     >
-      <Bell className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
+      <Bell className="w-3.5 h-3.5 text-slate-700 dark:text-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
       {unreadCount > 0 && (
         <span className="badge-glass badge-glass-critical ios-num font-mono text-[10px] px-1.5 py-0.2 rounded-full font-bold leading-tight">
           {unreadCount}

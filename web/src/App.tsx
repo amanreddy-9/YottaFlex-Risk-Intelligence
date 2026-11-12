@@ -632,15 +632,16 @@ export const App: React.FC = () => {
     />
   );
 
-  const renderShortcutsBtn = (btnClass: string) => (
+  const renderShortcutsBtn = (extraClass = "") => (
     <button
       type="button"
       onClick={() => setShowShortcuts(true)}
       title="Keyboard Shortcuts (?)"
-      className={btnClass}
+      aria-label="Keyboard Shortcuts"
+      className={`glass-pill h-8 inline-flex items-center gap-1.5 px-2.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0 ${extraClass}`}
     >
-      <Keyboard className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
-      <span className="hidden xl:inline font-mono text-[10px] text-slate-600 dark:text-zinc-300">?</span>
+      <Keyboard className="w-3.5 h-3.5 text-slate-700 dark:text-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
+      <span className="hidden xl:inline font-mono text-[10px] text-slate-700 dark:text-zinc-200">?</span>
     </button>
   );
 
@@ -657,7 +658,7 @@ export const App: React.FC = () => {
       text: "GOOD EVENING",
       icon: hour >= 15 && hour < 19
         ? <Sun className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400 shrink-0" />
-        : <Moon className="w-3.5 h-3.5 text-sky-400 dark:text-sky-300 shrink-0" />,
+        : <Moon className="w-3.5 h-3.5 text-slate-400 dark:text-white/80 shrink-0" />,
     };
   };
 
@@ -667,45 +668,57 @@ export const App: React.FC = () => {
       onClick={() => setShowProfile(true)}
       title={`Profile: ${user.full_name || "Analyst"}`}
       aria-label="User Profile"
-      className={`glass-pill w-8 h-8 rounded-full flex items-center justify-center text-azure-600 dark:text-sky-300 hover:bg-white/45 dark:hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all shadow-[0_4px_16px_rgba(0,0,0,0.12)] shrink-0 ${extraClass}`}
+      className={`glass-pill w-8 h-8 rounded-full flex items-center justify-center text-slate-700 dark:text-white/90 shrink-0 ${extraClass}`}
     >
-      <UserCircle2 className="w-4 h-4" />
+      <UserCircle2 className="w-4 h-4 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
     </button>
   );
 
-  const renderThemeToggle = (extraClass = "") => (
-    <button
-      type="button"
-      onClick={() => setDarkMode((d) => !d)}
-      title={darkMode ? "Switch to Sky-Azure Light Theme" : "Switch to Pure-Black Dark Theme"}
-      aria-label="Toggle Light / Dark Theme"
-      className={`glass-pill w-8 h-8 rounded-full flex items-center justify-center relative overflow-hidden text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all shadow-[0_4px_16px_rgba(0,0,0,0.12)] shrink-0 group ${extraClass}`}
+  const renderThemeSlider = (extraClass = "") => (
+    <div
+      role="group"
+      aria-label="Theme switcher"
+      title={darkMode ? "Theme: Dark Mode (Click to switch to Light)" : "Theme: Light Mode (Click to switch to Dark)"}
+      className={`glass-theme-slider-track shrink-0 ${extraClass}`}
     >
-      {/* Ambient glowing atmosphere behind icons */}
-      <span
-        className={`absolute inset-0 rounded-full transition-opacity duration-500 pointer-events-none ${
-          darkMode ? "bg-sky-400/10 opacity-100" : "bg-amber-400/15 opacity-100"
-        }`}
+      {/* Elevated 3D Liquid Glass Sliding Thumb */}
+      <div
+        className="glass-theme-slider-thumb"
+        style={{
+          transform: darkMode ? "translate3d(32px, 0, 0)" : "translate3d(0, 0, 0)",
+        }}
       />
-      <div className="relative w-4 h-4 flex items-center justify-center pointer-events-none">
-        {/* Sun (smooth rotation & contraction) */}
-        <Sun
-          className={`w-4 h-4 text-amber-500 absolute transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
-            darkMode
-              ? "rotate-90 scale-0 opacity-0 blur-[1px]"
-              : "rotate-0 scale-100 opacity-100 blur-0"
-          }`}
-        />
-        {/* Moon (smooth lunar emergence & spring bounce) */}
-        <Moon
-          className={`w-4 h-4 text-sky-400 dark:text-sky-300 absolute transition-all duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
-            darkMode
-              ? "rotate-0 scale-100 opacity-100 blur-0"
-              : "-rotate-90 scale-0 opacity-0 blur-[1px]"
-          }`}
-        />
-      </div>
-    </button>
+
+      {/* Sun Option (Light Mode) */}
+      <button
+        type="button"
+        onClick={() => setDarkMode(false)}
+        aria-label="Activate Light Mode"
+        title="Light Mode"
+        className={`w-[30px] h-7 rounded-full flex items-center justify-center relative z-10 transition-all duration-300 ${
+          !darkMode
+            ? "text-slate-900 dark:text-white scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+            : "text-slate-400 dark:text-white/40 opacity-40 hover:opacity-75 scale-95"
+        }`}
+      >
+        <Sun className="w-3.5 h-3.5" />
+      </button>
+
+      {/* Moon Option (Dark Mode) */}
+      <button
+        type="button"
+        onClick={() => setDarkMode(true)}
+        aria-label="Activate Dark Mode"
+        title="Dark Mode"
+        className={`w-[30px] h-7 rounded-full flex items-center justify-center relative z-10 transition-all duration-300 ${
+          darkMode
+            ? "text-white scale-105 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] drop-shadow-[0_0_6px_rgba(255,255,255,0.4)]"
+            : "text-slate-400 dark:text-white/40 opacity-40 hover:opacity-75 scale-95"
+        }`}
+      >
+        <Moon className="w-3.5 h-3.5" />
+      </button>
+    </div>
   );
 
   const currentTabMeta = {
@@ -837,28 +850,26 @@ export const App: React.FC = () => {
                     type="button"
                     onClick={() => setShowSpotlight(true)}
                     title="Global Spotlight Search (Cmd/Ctrl + K)"
-                    className="glass-pill inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
+                    className="glass-pill h-8 inline-flex items-center gap-1.5 px-3 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0"
                   >
-                    <Search className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
-                    <span className="hidden md:inline font-mono ios-num text-[10px] text-slate-600 dark:text-zinc-300">⌘K</span>
+                    <Search className="w-3.5 h-3.5 text-slate-700 dark:text-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
+                    <span className="hidden md:inline font-mono ios-num text-[10px] text-slate-700 dark:text-zinc-200">⌘K</span>
                   </button>
 
                   {renderNotifBell("dock")}
 
-                  {renderShortcutsBtn(
-                    "glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] hover:scale-105 active:scale-95 transition-all shadow-[0_4px_16px_rgba(0,0,0,0.12)]"
-                  )}
+                  {renderShortcutsBtn()}
 
                   {renderProfileBtn()}
 
-                  {renderThemeToggle()}
+                  {renderThemeSlider()}
                 </div>
               </div>
             ) : (
               <div className="liquid-glass rounded-full px-4 sm:px-5 py-2.5 flex items-center justify-between gap-3 shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
                 {/* Left: Active Section Indicator / Breadcrumb */}
                 <div className="flex items-center gap-2.5 min-w-0">
-                  <span className="w-8 h-8 rounded-full glass-pill flex items-center justify-center shrink-0 text-azure-600 dark:text-sky-300">
+                  <span className="w-8 h-8 rounded-full glass-pill flex items-center justify-center shrink-0 text-slate-700 dark:text-white/90">
                     {currentTabMeta.icon}
                   </span>
                   <div className="min-w-0">
@@ -878,27 +889,25 @@ export const App: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Right Controls: Spotlight Search + Notifications + Shortcuts + Neat User Profile Icon + Animated Theme Toggle */}
+                {/* Right Controls: Spotlight Search + Notifications + Shortcuts + Neat User Profile Icon + Realistic Glass Theme Slider */}
                 <div className="flex items-center gap-2 pr-0.5 shrink-0">
                   <button
                     type="button"
                     onClick={() => setShowSpotlight(true)}
                     title="Global Spotlight Search (Cmd/Ctrl + K)"
-                    className="glass-pill inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+                    className="glass-pill h-8 inline-flex items-center gap-1.5 px-3 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0"
                   >
-                    <Search className="w-3.5 h-3.5 text-azure-600 dark:text-sky-300" />
-                    <span className="hidden md:inline font-mono ios-num text-[10px] text-slate-600 dark:text-zinc-300">⌘K</span>
+                    <Search className="w-3.5 h-3.5 text-slate-700 dark:text-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
+                    <span className="hidden md:inline font-mono ios-num text-[10px] text-slate-700 dark:text-zinc-200">⌘K</span>
                   </button>
 
                   {renderNotifBell("dock")}
 
-                  {renderShortcutsBtn(
-                    "glass-pill inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
-                  )}
+                  {renderShortcutsBtn()}
 
                   {renderProfileBtn()}
 
-                  {renderThemeToggle()}
+                  {renderThemeSlider()}
                 </div>
               </div>
             )}

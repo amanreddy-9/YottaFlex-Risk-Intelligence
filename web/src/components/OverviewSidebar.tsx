@@ -166,8 +166,22 @@ export function OverviewSidebar<T extends string>({
             />
           )}
 
-          {items.map((item) => {
+          {items.map((item, idx) => {
             const isHighlighted = item.id === targetId;
+            const hoveredIndex = hoverId ? items.findIndex((i) => i.id === hoverId) : -1;
+            const isHovered = isCollapsed && item.id === hoverId;
+            const isAdjacent = isCollapsed && hoveredIndex !== -1 && Math.abs(idx - hoveredIndex) === 1;
+            const isActiveAlone = isCollapsed && hoverId === null && item.id === activeId;
+
+            // Optical magnifying glass lens gradual enlargement (iOS 27 glassmorphic lens curve)
+            const magnifyScaleClass = isHovered
+              ? "scale-[1.24] z-20"
+              : isAdjacent
+              ? "scale-[1.08] z-10"
+              : isActiveAlone
+              ? "scale-[1.10] z-10"
+              : "scale-100 z-0";
+
             return (
               <button
                 key={item.id}
@@ -180,28 +194,29 @@ export function OverviewSidebar<T extends string>({
                 onFocus={() => setHoverId(item.id)}
                 onBlur={() => setHoverId(null)}
                 onClick={() => onChange(item.id)}
-                className={`relative z-10 w-full transition-all duration-300 ${
+                className={`relative z-10 w-full select-none focus:outline-none transition-all duration-300 ${
                   isCollapsed
                     ? isSidebarHovered
-                      ? "flex flex-col items-center justify-center gap-1.5 px-2 py-2.5 rounded-2xl text-center"
-                      : "flex flex-col items-center justify-center gap-1 px-1.5 py-2.5 rounded-2xl text-center"
+                      ? "flex flex-col items-center justify-center px-1.5 py-2.5 rounded-2xl text-center"
+                      : "flex flex-col items-center justify-center px-1 py-2 rounded-2xl text-center"
                     : "flex items-center justify-between gap-2 px-3.5 py-2.5 rounded-full text-[13px]"
                 } ${
-                  isHighlighted
-                    ? "text-slate-950 dark:text-white font-semibold"
-                    : "text-slate-800 dark:text-zinc-200/90 hover:text-slate-950 dark:hover:text-white font-medium"
+                  !isCollapsed && isHighlighted ? "scale-[1.02]" : ""
                 }`}
               >
                 {isCollapsed ? (
-                  <>
+                  <div
+                    className={`flex flex-col items-center justify-center gap-1.5 w-full transition-transform duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${magnifyScaleClass}`}
+                    style={{ transformOrigin: "center center" }}
+                  >
                     <div className="relative flex items-center justify-center">
                       <span
-                        className={`shrink-0 transition-transform duration-200 ${
+                        className={`shrink-0 transition-colors duration-200 ${
                           isHighlighted
-                            ? "text-azure-600 dark:text-white scale-120"
+                            ? "text-azure-700 dark:text-white"
                             : isSidebarHovered
-                            ? "text-slate-900 dark:text-white scale-115"
-                            : "text-slate-700 dark:text-sky-100/85 scale-105"
+                            ? "text-slate-800 dark:text-zinc-100"
+                            : "text-slate-600 dark:text-zinc-300"
                         }`}
                       >
                         {React.isValidElement(item.icon)
@@ -212,37 +227,45 @@ export function OverviewSidebar<T extends string>({
                       </span>
                       {item.badge !== undefined && item.badge > 0 && (
                         <span
-                          className={`absolute -top-1.5 -right-3 px-1.5 py-[0.5px] rounded-full text-[9px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider transition-transform duration-200 ${
-                            isSidebarHovered ? "scale-105" : ""
-                          }`}
+                          className="absolute -top-1.5 -right-3 px-1.5 py-[0.5px] rounded-full text-[9px] ios-num font-bold leading-none badge-glass badge-glass-critical tracking-wider"
                         >
                           {item.badge > 999 ? "999+" : item.badge}
                         </span>
                       )}
                     </div>
                     <span
-                      className={`font-semibold tracking-tight text-center leading-tight transition-all duration-200 ${
-                        isSidebarHovered
-                          ? "text-[12px] max-w-[110px] text-slate-950 dark:text-white font-bold"
-                          : "text-[11px] max-w-[92px] text-slate-850 dark:text-zinc-100"
+                      className={`font-bold tracking-tight text-center leading-tight transition-colors duration-200 select-none ${
+                        isHighlighted
+                          ? "text-slate-950 dark:text-white"
+                          : "text-slate-700 dark:text-zinc-300"
                       } ${
-                        isHighlighted ? "text-slate-950 dark:text-white font-bold" : ""
+                        isSidebarHovered
+                          ? "text-[12px] max-w-[110px]"
+                          : "text-[11px] max-w-[92px]"
                       }`}
+                      style={{ textShadow: "none", filter: "none" }}
                     >
                       {item.label}
                     </span>
-                  </>
+                  </div>
                 ) : (
                   <>
                     <span className="flex items-center gap-2.5 min-w-0">
                       <span
-                        className={`shrink-0 transition-transform duration-200 ${
-                          isHighlighted ? "text-azure-600 dark:text-white scale-105" : "text-slate-600 dark:text-sky-100/75"
+                        className={`shrink-0 transition-colors duration-200 ${
+                          isHighlighted ? "text-azure-700 dark:text-white" : "text-slate-600 dark:text-zinc-300"
                         }`}
                       >
                         {item.icon}
                       </span>
-                      <span className="truncate">{item.label}</span>
+                      <span
+                        className={`truncate select-none ${
+                          isHighlighted ? "text-slate-950 dark:text-white font-bold" : "text-slate-700 dark:text-zinc-200 font-medium"
+                        }`}
+                        style={{ textShadow: "none", filter: "none" }}
+                      >
+                        {item.label}
+                      </span>
                     </span>
 
                     {item.badge !== undefined && item.badge > 0 && (

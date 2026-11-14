@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import {
   ArrowLeftRight,
   BarChart3,
@@ -185,6 +185,35 @@ export const App: React.FC = () => {
     sort_by: "risk_score",
     sort_dir: "desc",
   });
+
+  // Dynamic Blank Space Tracker: Only displays the architectural watermark when right content is taller than the sidebar
+  const [extraGap, setExtraGap] = useState<number>(0);
+  const sidebarContainerRef = useRef<HTMLDivElement>(null);
+  const workspaceContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const updateGap = () => {
+      if (!sidebarContainerRef.current || !workspaceContainerRef.current) return;
+      const sH = sidebarContainerRef.current.offsetHeight;
+      const wH = workspaceContainerRef.current.offsetHeight;
+      setExtraGap(wH - sH);
+    };
+
+    updateGap();
+
+    const ro = new ResizeObserver(() => {
+      updateGap();
+    });
+
+    if (sidebarContainerRef.current) ro.observe(sidebarContainerRef.current);
+    if (workspaceContainerRef.current) ro.observe(workspaceContainerRef.current);
+    window.addEventListener("resize", updateGap);
+
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", updateGap);
+    };
+  }, [tab]);
 
   useEffect(() => {
     document.title = "YottaFlex | RiskOS";
@@ -819,28 +848,58 @@ export const App: React.FC = () => {
         <img
           src="/yottaflex-logo.webp"
           alt=""
-          className="absolute right-[4%] bottom-[8%] w-[640px] max-w-[62vw] opacity-[0.17] dark:opacity-[0.24] dark:brightness-125 dark:saturate-150 select-none drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)]"
+          className="absolute right-[4%] bottom-[8%] w-[640px] max-w-[62vw] opacity-[0.27] brightness-[0.82] contrast-[1.14] saturate-[1.18] dark:opacity-[0.24] dark:brightness-125 dark:contrast-100 dark:saturate-150 select-none drop-shadow-[0_14px_40px_rgba(10,40,110,0.38)] dark:drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)]"
         />
-        <div className="hidden lg:block absolute right-10 bottom-6 text-[88px] font-bold tracking-tighter text-white/35 dark:text-azure-400/[0.12] select-none leading-none">
+        <div className="hidden lg:block absolute right-10 bottom-6 text-[88px] font-bold tracking-tighter text-slate-900/[0.10] dark:text-azure-400/[0.12] select-none leading-none">
           YottaFlex
         </div>
       </div>
 
       {/* Unified Persistent Layout: Left Sidebar + Right Fluid Expanding Workspace */}
       <div className="relative z-10 flex-1 max-w-[1720px] w-full mx-auto px-4 sm:px-5 py-4 flex flex-col lg:flex-row items-start gap-4 lg:gap-5">
-        {/* Left Glassmorphic Window Navigation (Persistent across ALL tabs; shrinks smoothly when tab !== "overview") */}
-        <OverviewSidebar
-          items={sidebarNavItems}
-          activeId={tab}
-          onChange={setTab}
-          user={user}
-          onOpenProfile={() => setShowProfile(true)}
-          onOpenSupport={() => window.dispatchEvent(new CustomEvent("yottabot:open"))}
-          isCollapsed={tab !== "overview"}
-        />
+        {/* Left Column: Sidebar + Dynamic Adaptive Blank-Space Watermark */}
+        <div className="w-full lg:w-auto shrink-0 flex flex-col items-center">
+          <div ref={sidebarContainerRef} className="w-full">
+            <OverviewSidebar
+              items={sidebarNavItems}
+              activeId={tab}
+              onChange={setTab}
+              user={user}
+              onOpenProfile={() => setShowProfile(true)}
+              onOpenSupport={() => window.dispatchEvent(new CustomEvent("yottabot:open"))}
+              isCollapsed={tab !== "overview"}
+            />
+          </div>
+
+          {/* Translucent Subtle iOS Vertical Architectural Watermark (Only shown when right workspace creates genuine blank space) */}
+          {extraGap >= 280 && (
+            <div
+              aria-hidden="true"
+              className="hidden lg:flex flex-col items-center justify-center py-6 select-none pointer-events-none overflow-hidden transition-opacity duration-300"
+              style={{
+                height: Math.min(extraGap - 40, 680),
+                maxHeight: extraGap - 40,
+              }}
+            >
+              <span
+                className="font-black text-[64px] sm:text-[76px] lg:text-[92px] tracking-[0.05em] text-slate-900/[0.08] dark:text-sky-100/[0.07] select-none leading-none drop-shadow-sm"
+                style={{
+                  writingMode: "vertical-rl",
+                  transform: "rotate(180deg)",
+                  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Plus Jakarta Sans", sans-serif',
+                }}
+              >
+                RiskOS<sup className="text-[0.40em] font-bold tracking-normal align-super ml-1 opacity-75">TM</sup>
+              </span>
+            </div>
+          )}
+        </div>
 
         {/* Right Workspace: Smoothly expands to the left when the sidebar shrinks */}
-        <div className="flex-1 min-w-0 w-full flex flex-col gap-5 transition-[width,margin] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+        <div
+          ref={workspaceContainerRef}
+          className="flex-1 min-w-0 w-full flex flex-col gap-5 transition-[width,margin] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
+        >
           {/* Top Unified Executive Utility Header (Active Section Breadcrumb + Utilities, NO long nav bar) */}
           <header className="sticky top-3 z-30 w-full">
             {tab === "overview" ? (

@@ -37,6 +37,7 @@ import type {
   NetworkRiskAnalysis,
 } from "../types/workbench";
 import { Badge, fmtUSD, tierVariant } from "./Badge";
+import { LiquidGlassSegmented, useRowGlassMagnifier } from "./LiquidGlassSurface";
 
 interface NetworkIntelligenceViewProps {
   darkMode: boolean;
@@ -127,6 +128,8 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
   const [loadingPath, setLoadingPath] = useState(false);
   const [resolutions, setResolutions] = useState<EntityResolutionItem[]>([]);
   const [riskAnalysis, setRiskAnalysis] = useState<NetworkRiskAnalysis | null>(null);
+  const resMag = useRowGlassMagnifier();
+  const riskMag = useRowGlassMagnifier();
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
@@ -934,8 +937,8 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
         </div>
 
         {/* Right Entity Intelligence Inspector Panel */}
-        <div className="liquid-glass rounded-2xl p-4 border border-slate-200/80 dark:border-white/10 space-y-4">
-          <div className="flex items-center justify-between pb-3 border-b border-slate-200/60 dark:border-white/10">
+        <div className="liquid-glass rounded-2xl p-4 space-y-4">
+          <div className="flex items-center justify-between pb-3 border-b border-white/50 dark:border-white/10">
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white flex items-center gap-1.5">
               <Eye className="w-3.5 h-3.5 text-azure-600 dark:text-sky-400" />
               <span>Entity Intelligence</span>
@@ -991,9 +994,9 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
               {/* Specific Metadata Attributes */}
               <div className="space-y-1.5">
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">Entity Attributes</div>
-                <div className="p-2.5 rounded-xl bg-white/30 dark:bg-white/5 border border-slate-200/50 dark:border-white/5 space-y-1 text-[11.5px]">
+                <div className="p-3 rounded-xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-sm border border-white/60 dark:border-white/10 space-y-1 text-[11.5px]">
                   {Object.entries(selectedNode.metadata || {}).map(([k, v]) => (
-                    <div key={k} className="flex justify-between items-center py-0.5 border-b border-white/5 last:border-0">
+                    <div key={k} className="flex justify-between items-center py-1 border-b border-white/30 dark:border-white/5 last:border-0">
                       <span className="text-slate-500 dark:text-zinc-400 capitalize">{k.replace(/_/g, " ")}:</span>
                       <span className="font-semibold text-slate-900 dark:text-white font-mono text-[11px]">
                         {typeof v === "number" && k.toLowerCase().includes("balance") ? fmtUSD(v) : String(v)}
@@ -1022,7 +1025,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                         setPathSource(selectedNode.id);
                         setBottomTab("paths");
                       }}
-                      className="py-1.5 px-2.5 rounded-lg bg-white/60 dark:bg-white/10 hover:bg-white dark:hover:bg-zinc-800 border border-slate-200 dark:border-white/15 text-slate-800 dark:text-zinc-200 font-medium text-[11px] transition text-center"
+                      className="py-1.5 px-2.5 rounded-xl bg-white/60 dark:bg-white/10 hover:bg-white dark:hover:bg-zinc-800 border border-white/60 dark:border-white/15 text-slate-800 dark:text-zinc-200 font-medium text-[11px] transition text-center"
                     >
                       Set As Source
                     </button>
@@ -1032,7 +1035,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                         setPathDest(selectedNode.id);
                         setBottomTab("paths");
                       }}
-                      className="py-1.5 px-2.5 rounded-lg bg-white/60 dark:bg-white/10 hover:bg-white dark:hover:bg-zinc-800 border border-slate-200 dark:border-white/15 text-slate-800 dark:text-zinc-200 font-medium text-[11px] transition text-center"
+                      className="py-1.5 px-2.5 rounded-xl bg-white/60 dark:bg-white/10 hover:bg-white dark:hover:bg-zinc-800 border border-white/60 dark:border-white/15 text-slate-800 dark:text-zinc-200 font-medium text-[11px] transition text-center"
                     >
                       Set As Dest
                     </button>
@@ -1098,75 +1101,60 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
       </div>
 
       {/* 4. Bottom Analytical Investigation Deck (5 Specialized Tabs) */}
-      <div className="liquid-glass rounded-2xl overflow-hidden border border-slate-200/80 dark:border-white/10">
-        {/* Navigation Tabs Header */}
-        <div className="px-4 border-b border-slate-200/60 dark:border-white/10 flex items-center justify-between overflow-x-auto gap-2 bg-white/20 dark:bg-black/20">
-          <div className="flex items-center gap-1 py-2">
-            <button
-              type="button"
-              onClick={() => setBottomTab("patterns")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition ${
-                bottomTab === "patterns"
-                  ? "bg-azure-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-zinc-300 hover:bg-white/40 dark:hover:bg-white/10"
-              }`}
-            >
-              <Activity className="w-3.5 h-3.5" />
-              <span>Suspicious Patterns</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setBottomTab("cycles")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition ${
-                bottomTab === "cycles"
-                  ? "bg-azure-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-zinc-300 hover:bg-white/40 dark:hover:bg-white/10"
-              }`}
-            >
-              <RotateCcw className="w-3.5 h-3.5 text-amber-500" />
-              <span>Circular Transfers ({cycles.length})</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setBottomTab("paths")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition ${
-                bottomTab === "paths"
-                  ? "bg-azure-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-zinc-300 hover:bg-white/40 dark:hover:bg-white/10"
-              }`}
-            >
-              <ArrowLeftRight className="w-3.5 h-3.5 text-sky-500" />
-              <span>Fund Flow Paths</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setBottomTab("resolution")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition ${
-                bottomTab === "resolution"
-                  ? "bg-azure-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-zinc-300 hover:bg-white/40 dark:hover:bg-white/10"
-              }`}
-            >
-              <Users className="w-3.5 h-3.5 text-purple-500" />
-              <span>Entity Resolution ({resolutions.length})</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setBottomTab("risk")}
-              className={`px-3 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-1.5 transition ${
-                bottomTab === "risk"
-                  ? "bg-azure-600 text-white shadow-sm"
-                  : "text-slate-600 dark:text-zinc-300 hover:bg-white/40 dark:hover:bg-white/10"
-              }`}
-            >
-              <ShieldAlert className="w-3.5 h-3.5 text-rose-500" />
-              <span>Network Risk Analysis</span>
-            </button>
-          </div>
+      <div className="liquid-glass rounded-2xl overflow-hidden shadow-[0_12px_36px_rgba(0,0,0,0.18)]">
+        {/* Navigation Tabs Header with Liquid Glass Slider (matching Overview) */}
+        <div className="px-4 py-3 border-b border-white/50 dark:border-white/10 flex items-center justify-between overflow-x-auto gap-3 bg-white/25 dark:bg-white/[0.03] backdrop-blur-xl">
+          <LiquidGlassSegmented<BottomTab>
+            value={bottomTab}
+            onChange={setBottomTab}
+            options={[
+              {
+                value: "patterns",
+                label: (
+                  <span className="flex items-center gap-1.5 whitespace-nowrap">
+                    <Activity className="w-3.5 h-3.5 text-amber-500" />
+                    <span>Suspicious Patterns</span>
+                  </span>
+                ),
+              },
+              {
+                value: "cycles",
+                label: (
+                  <span className="flex items-center gap-1.5 whitespace-nowrap">
+                    <RotateCcw className="w-3.5 h-3.5 text-amber-500" />
+                    <span>Circular Transfers ({cycles.length})</span>
+                  </span>
+                ),
+              },
+              {
+                value: "paths",
+                label: (
+                  <span className="flex items-center gap-1.5 whitespace-nowrap">
+                    <ArrowLeftRight className="w-3.5 h-3.5 text-sky-500" />
+                    <span>Fund Flow Paths</span>
+                  </span>
+                ),
+              },
+              {
+                value: "resolution",
+                label: (
+                  <span className="flex items-center gap-1.5 whitespace-nowrap">
+                    <Users className="w-3.5 h-3.5 text-purple-500" />
+                    <span>Entity Resolution ({resolutions.length})</span>
+                  </span>
+                ),
+              },
+              {
+                value: "risk",
+                label: (
+                  <span className="flex items-center gap-1.5 whitespace-nowrap">
+                    <ShieldAlert className="w-3.5 h-3.5 text-rose-500" />
+                    <span>Network Risk Analysis</span>
+                  </span>
+                ),
+              },
+            ]}
+          />
         </div>
 
         {/* Tab 1: Suspicious Patterns (Concentration, Rapid Dispersion, Collusion) */}
@@ -1174,7 +1162,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
           <div className="p-4 space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {/* Fan-in Concentration */}
-              <div className="p-3.5 rounded-xl bg-white/40 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 space-y-3">
+              <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-md border border-white/60 dark:border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.04)] space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="font-bold text-xs text-slate-900 dark:text-white flex items-center gap-1.5">
                     <CornerDownRight className="w-3.5 h-3.5 text-amber-500" />
@@ -1189,13 +1177,13 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                   {patterns?.fan_in_concentration.slice(0, 3).map((item) => (
                     <div
                       key={item.destination_account}
-                      className="p-2 rounded-lg bg-white/60 dark:bg-black/30 border border-slate-200/50 dark:border-white/5 flex items-center justify-between text-xs"
+                      className="p-2.5 rounded-xl bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/60 dark:border-white/10 hover:border-azure-500/40 dark:hover:border-sky-400/30 transition flex items-center justify-between text-xs"
                     >
                       <div>
                         <div className="font-semibold text-slate-900 dark:text-white font-mono text-[11px]">
                           {item.destination_account}
                         </div>
-                        <div className="text-[10px] text-slate-500">
+                        <div className="text-[10px] text-slate-500 dark:text-zinc-400">
                           {item.customer_name} • {item.inflow_sources} sources
                         </div>
                       </div>
@@ -1206,7 +1194,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                         <button
                           type="button"
                           onClick={() => handleSelectSeed(item.destination_account)}
-                          className="text-[10px] text-azure-600 dark:text-sky-400 hover:underline"
+                          className="text-[10px] text-azure-600 dark:text-sky-400 hover:underline font-semibold"
                         >
                           Focus Graph
                         </button>
@@ -1217,7 +1205,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
               </div>
 
               {/* Rapid Fund Dispersion */}
-              <div className="p-3.5 rounded-xl bg-white/40 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 space-y-3">
+              <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-md border border-white/60 dark:border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.04)] space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="font-bold text-xs text-slate-900 dark:text-white flex items-center gap-1.5">
                     <Share2 className="w-3.5 h-3.5 text-sky-500" />
@@ -1232,13 +1220,13 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                   {patterns?.rapid_dispersion.slice(0, 3).map((item) => (
                     <div
                       key={item.origin_account}
-                      className="p-2 rounded-lg bg-white/60 dark:bg-black/30 border border-slate-200/50 dark:border-white/5 flex items-center justify-between text-xs"
+                      className="p-2.5 rounded-xl bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/60 dark:border-white/10 hover:border-azure-500/40 dark:hover:border-sky-400/30 transition flex items-center justify-between text-xs"
                     >
                       <div>
                         <div className="font-semibold text-slate-900 dark:text-white font-mono text-[11px]">
                           {item.origin_account}
                         </div>
-                        <div className="text-[10px] text-slate-500">
+                        <div className="text-[10px] text-slate-500 dark:text-zinc-400">
                           {item.customer_name} • {item.outflow_targets} targets
                         </div>
                       </div>
@@ -1249,7 +1237,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                         <button
                           type="button"
                           onClick={() => handleSelectSeed(item.origin_account)}
-                          className="text-[10px] text-azure-600 dark:text-sky-400 hover:underline"
+                          className="text-[10px] text-azure-600 dark:text-sky-400 hover:underline font-semibold"
                         >
                           Focus Graph
                         </button>
@@ -1260,7 +1248,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
               </div>
 
               {/* Shared Device Collusion Rings */}
-              <div className="p-3.5 rounded-xl bg-white/40 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 space-y-3">
+              <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-md border border-white/60 dark:border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.04)] space-y-3">
                 <div className="flex items-center justify-between">
                   <div className="font-bold text-xs text-slate-900 dark:text-white flex items-center gap-1.5">
                     <Smartphone className="w-3.5 h-3.5 text-orange-500" />
@@ -1275,7 +1263,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                   {patterns?.shared_device_clusters.slice(0, 3).map((item) => (
                     <div
                       key={item.device_id}
-                      className="p-2 rounded-lg bg-white/60 dark:bg-black/30 border border-slate-200/50 dark:border-white/5 flex items-center justify-between text-xs"
+                      className="p-2.5 rounded-xl bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/60 dark:border-white/10 hover:border-azure-500/40 dark:hover:border-sky-400/30 transition flex items-center justify-between text-xs"
                     >
                       <div>
                         <div className="font-semibold text-slate-900 dark:text-white font-mono text-[11px]">
@@ -1305,7 +1293,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
         {/* Tab 2: Circular Transfers (Cycles) */}
         {bottomTab === "cycles" && (
           <div className="p-4 space-y-3">
-            <div className="flex items-center justify-between text-xs text-slate-500">
+            <div className="flex items-center justify-between text-xs text-slate-500 dark:text-zinc-400">
               <span>Closed transfer loops where money returns to an initiating account:</span>
               <span className="font-semibold text-slate-900 dark:text-white">{cycles.length} loops detected</span>
             </div>
@@ -1317,7 +1305,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                 {cycles.map((c) => (
                   <div
                     key={c.cycle_id}
-                    className="p-3.5 rounded-xl bg-white/40 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 space-y-2.5"
+                    className="p-4 rounded-2xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-md border border-white/60 dark:border-white/10 shadow-[0_4px_20px_rgba(0,0,0,0.04)] space-y-3"
                   >
                     <div className="flex items-center justify-between">
                       <div className="font-mono font-bold text-xs text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
@@ -1335,7 +1323,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                           <button
                             type="button"
                             onClick={() => handleSelectSeed(node)}
-                            className="px-2 py-0.5 rounded-md bg-white/80 dark:bg-black/40 border border-slate-200 dark:border-white/10 hover:border-azure-500 transition text-[11px]"
+                            className="px-2.5 py-1 rounded-full bg-white/70 dark:bg-white/10 backdrop-blur-sm border border-white/60 dark:border-white/15 hover:border-azure-500 hover:bg-white dark:hover:bg-white/20 transition text-[11px] font-semibold text-slate-800 dark:text-zinc-200"
                           >
                             {node}
                           </button>
@@ -1344,8 +1332,8 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                       ))}
                     </div>
 
-                    <div className="flex items-center justify-between text-[11px] pt-1 border-t border-white/5">
-                      <div className="text-slate-500">
+                    <div className="flex items-center justify-between text-[11px] pt-1.5 border-t border-white/40 dark:border-white/10">
+                      <div className="text-slate-500 dark:text-zinc-400">
                         Total Loop Volume:{" "}
                         <span className="font-bold text-slate-900 dark:text-white font-mono">
                           {fmtUSD(c.total_cycle_volume)}
@@ -1371,7 +1359,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
         {bottomTab === "paths" && (
           <div className="p-4 space-y-4">
             {/* Input Picker Bar */}
-            <div className="p-3 rounded-xl bg-white/40 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 flex flex-wrap items-center gap-3">
+            <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-md border border-white/60 dark:border-white/10 shadow-sm flex flex-wrap items-center gap-3">
               <div className="flex-1 min-w-[200px]">
                 <label className="block text-[10px] uppercase font-bold text-slate-400 mb-1">Source Account</label>
                 <input
@@ -1379,7 +1367,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                   value={pathSource}
                   onChange={(e) => setPathSource(e.target.value)}
                   placeholder="e.g. ACC-CUS-000003-01"
-                  className="w-full h-8 px-3 text-xs bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-white/15 rounded-lg text-slate-900 dark:text-white font-mono focus:outline-none focus:border-azure-500"
+                  className="w-full h-8 px-3 text-xs bg-white/80 dark:bg-black/40 backdrop-blur-sm border border-white/60 dark:border-white/15 rounded-xl text-slate-900 dark:text-white font-mono focus:outline-none focus:border-azure-500"
                 />
               </div>
 
@@ -1392,7 +1380,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                   value={pathDest}
                   onChange={(e) => setPathDest(e.target.value)}
                   placeholder="e.g. ACC-CUS-000588-01"
-                  className="w-full h-8 px-3 text-xs bg-white/80 dark:bg-black/50 border border-slate-200 dark:border-white/15 rounded-lg text-slate-900 dark:text-white font-mono focus:outline-none focus:border-azure-500"
+                  className="w-full h-8 px-3 text-xs bg-white/80 dark:bg-black/40 backdrop-blur-sm border border-white/60 dark:border-white/15 rounded-xl text-slate-900 dark:text-white font-mono focus:outline-none focus:border-azure-500"
                 />
               </div>
 
@@ -1401,7 +1389,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                   type="button"
                   onClick={() => handleTracePath()}
                   disabled={loadingPath || !pathSource || !pathDest}
-                  className="h-8 px-4 rounded-lg bg-azure-600 hover:bg-azure-700 disabled:opacity-50 text-white font-semibold text-xs transition flex items-center gap-1.5"
+                  className="h-8 px-4 rounded-xl bg-azure-600 hover:bg-azure-700 disabled:opacity-50 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-sm"
                 >
                   {loadingPath ? <RefreshCw className="w-3.5 h-3.5 animate-spin" /> : <GitFork className="w-3.5 h-3.5" />}
                   <span>Trace Money Path</span>
@@ -1410,7 +1398,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
             </div>
 
             {/* Quick Demo Pre-fills */}
-            <div className="flex items-center gap-2 text-xs text-slate-500">
+            <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-zinc-400">
               <span className="text-[11px]">Quick Pre-fills:</span>
               <button
                 type="button"
@@ -1419,7 +1407,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                   setPathDest("ACC-CUS-000588-01");
                   handleTracePath("ACC-CUS-000003-01", "ACC-CUS-000588-01");
                 }}
-                className="px-2 py-0.5 rounded-md bg-white/60 dark:bg-white/10 hover:border-azure-500 border border-transparent font-mono text-[10px] text-azure-600 dark:text-sky-400 transition"
+                className="px-2.5 py-1 rounded-full bg-white/60 dark:bg-white/10 backdrop-blur-sm border border-white/60 dark:border-white/15 hover:border-azure-500 font-mono text-[10px] text-azure-600 dark:text-sky-400 transition"
               >
                 3-Hop Chain (ACC-003 → ACC-588)
               </button>
@@ -1427,8 +1415,8 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
 
             {/* Path Result Card */}
             {pathResult && (
-              <div className="p-4 rounded-xl bg-white/40 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 space-y-4">
-                <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-200/60 dark:border-white/10">
+              <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-md border border-white/60 dark:border-white/10 shadow-sm space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-white/40 dark:border-white/10">
                   <div>
                     <div className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
                       <span>Directional Path Reconstruction</span>
@@ -1466,7 +1454,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                         {p.map((hop) => (
                           <div
                             key={hop.hop}
-                            className="p-3 rounded-lg bg-white/60 dark:bg-black/30 border border-slate-200/50 dark:border-white/10 space-y-1.5"
+                            className="p-3 rounded-xl bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/60 dark:border-white/10 space-y-1.5"
                           >
                             <div className="flex items-center justify-between text-[11px]">
                               <span className="font-bold text-slate-900 dark:text-white">Hop #{hop.hop}</span>
@@ -1479,7 +1467,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                               <ArrowRight className="w-3 h-3 text-slate-400 shrink-0" />
                               <span className="truncate max-w-[90px]">{hop.to_account}</span>
                             </div>
-                            <div className="text-[9.5px] text-slate-400 flex justify-between pt-1 border-t border-white/5">
+                            <div className="text-[9.5px] text-slate-400 flex justify-between pt-1 border-t border-white/30 dark:border-white/10">
                               <span>{hop.transfer_id}</span>
                               <span>{new Date(hop.initiated_at).toLocaleDateString()}</span>
                             </div>
@@ -1497,40 +1485,45 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
         {/* Tab 4: Entity Resolution (Confirmed vs Potential Matches) */}
         {bottomTab === "resolution" && (
           <div className="p-4 space-y-3">
-            <div className="flex items-center justify-between text-xs text-slate-500">
+            <div className="flex items-center justify-between text-xs text-slate-500 dark:text-zinc-400">
               <span>Conservative entity matching across shared devices, contact details and addresses:</span>
               <span className="font-semibold text-slate-900 dark:text-white">{resolutions.length} clusters identified</span>
             </div>
 
-            <div className="overflow-x-auto">
-              <table className="w-full text-left text-xs">
+            <div ref={resMag.containerRef} onMouseLeave={resMag.onContainerLeave} className="relative overflow-x-auto">
+              {resMag.lensElement}
+              <table className="w-full text-left text-xs border-collapse">
                 <thead>
-                  <tr className="border-b border-slate-200/60 dark:border-white/10 text-slate-400 text-[10px] uppercase font-bold tracking-wider">
-                    <th className="py-2 px-3">Cluster</th>
-                    <th className="py-2 px-3">Primary Entity</th>
-                    <th className="py-2 px-3">Matched Entity</th>
-                    <th className="py-2 px-3">Confidence</th>
-                    <th className="py-2 px-3">Shared Identifiers</th>
-                    <th className="py-2 px-3">Status</th>
-                    <th className="py-2 px-3 text-right">Action</th>
+                  <tr className="border-b border-white/50 dark:border-white/10 text-slate-500 dark:text-zinc-400 text-[10px] uppercase font-bold tracking-wider">
+                    <th className="py-2.5 px-3">Cluster</th>
+                    <th className="py-2.5 px-3">Primary Entity</th>
+                    <th className="py-2.5 px-3">Matched Entity</th>
+                    <th className="py-2.5 px-3">Confidence</th>
+                    <th className="py-2.5 px-3">Shared Identifiers</th>
+                    <th className="py-2.5 px-3">Status</th>
+                    <th className="py-2.5 px-3 text-right">Action</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-200/40 dark:divide-white/5">
+                <tbody className="divide-y divide-white/30 dark:divide-white/[0.06]">
                   {resolutions.map((item) => (
-                    <tr key={item.cluster_id} className="hover:bg-white/30 dark:hover:bg-white/5 transition">
-                      <td className="py-2.5 px-3 font-mono text-[11px] font-semibold text-slate-500">{item.cluster_id}</td>
+                    <tr
+                      key={item.cluster_id}
+                      onMouseEnter={(e) => resMag.onRowEnter(e.currentTarget)}
+                      className="liquid-row-magnify cursor-pointer transition"
+                    >
+                      <td className="py-2.5 px-3 font-mono text-[11px] font-semibold text-slate-500 dark:text-zinc-400">{item.cluster_id}</td>
                       <td className="py-2.5 px-3 font-semibold text-slate-900 dark:text-white">
                         <div>{item.primary_name}</div>
-                        <div className="font-mono text-[10px] text-slate-400">{item.primary_customer_id}</div>
+                        <div className="font-mono text-[10px] text-slate-500 dark:text-zinc-400">{item.primary_customer_id}</div>
                       </td>
                       <td className="py-2.5 px-3 font-semibold text-slate-900 dark:text-white">
                         <div>{item.matched_name}</div>
-                        <div className="font-mono text-[10px] text-slate-400">{item.matched_customer_id}</div>
+                        <div className="font-mono text-[10px] text-slate-500 dark:text-zinc-400">{item.matched_customer_id}</div>
                       </td>
                       <td className="py-2.5 px-3 font-bold font-mono text-azure-600 dark:text-sky-400">
                         {item.match_confidence}%
                       </td>
-                      <td className="py-2.5 px-3 text-[11px] text-slate-600 dark:text-zinc-300">
+                      <td className="py-2.5 px-3 text-[11px] text-slate-700 dark:text-zinc-300">
                         {item.shared_identifiers.join(", ")}
                       </td>
                       <td className="py-2.5 px-3">
@@ -1542,7 +1535,7 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
                         <button
                           type="button"
                           onClick={() => handleSelectSeed(item.primary_customer_id)}
-                          className="px-2.5 py-1 rounded-md bg-azure-600/10 text-azure-600 dark:text-sky-400 hover:bg-azure-600/20 font-semibold text-[11px] transition"
+                          className="px-2.5 py-1 rounded-full bg-azure-600/15 dark:bg-white/10 text-azure-700 dark:text-sky-300 hover:bg-azure-600/25 dark:hover:bg-white/20 font-semibold text-[11px] transition"
                         >
                           Graph Link
                         </button>
@@ -1558,9 +1551,9 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
         {/* Tab 5: Network Risk Analysis */}
         {bottomTab === "risk" && (
           <div className="p-4 space-y-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
               {/* Overall Score Card */}
-              <div className="p-4 rounded-xl bg-white/40 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 space-y-2">
+              <div className="p-4 rounded-2xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-md border border-white/60 dark:border-white/10 shadow-sm space-y-2">
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
                   Network Intelligence Risk Score
                 </div>
@@ -1580,30 +1573,30 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
               </div>
 
               {/* Subgraph Topology Stats */}
-              <div className="md:col-span-2 p-4 rounded-xl bg-white/40 dark:bg-white/5 border border-slate-200/60 dark:border-white/10 space-y-3">
+              <div className="md:col-span-2 p-4 rounded-2xl bg-white/40 dark:bg-white/[0.04] backdrop-blur-md border border-white/60 dark:border-white/10 shadow-sm space-y-3">
                 <div className="text-[10px] uppercase font-bold text-slate-400 tracking-wider">
                   Topology Diagnostics &amp; Metrics
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
-                  <div className="p-2 rounded-lg bg-white/50 dark:bg-black/30">
+                  <div className="p-2.5 rounded-xl bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/50 dark:border-white/10">
                     <div className="text-[10px] text-slate-400">Nodes in Subgraph</div>
                     <div className="font-bold text-slate-900 dark:text-white font-mono text-sm mt-0.5">
                       {riskAnalysis?.subgraph_metrics.total_nodes ?? visibleNodes.length}
                     </div>
                   </div>
-                  <div className="p-2 rounded-lg bg-white/50 dark:bg-black/30">
+                  <div className="p-2.5 rounded-xl bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/50 dark:border-white/10">
                     <div className="text-[10px] text-slate-400">Edges in Subgraph</div>
                     <div className="font-bold text-slate-900 dark:text-white font-mono text-sm mt-0.5">
                       {riskAnalysis?.subgraph_metrics.total_edges ?? visibleEdges.length}
                     </div>
                   </div>
-                  <div className="p-2 rounded-lg bg-white/50 dark:bg-black/30">
+                  <div className="p-2.5 rounded-xl bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/50 dark:border-white/10">
                     <div className="text-[10px] text-slate-400">Avg Node Degree</div>
                     <div className="font-bold text-slate-900 dark:text-white font-mono text-sm mt-0.5">
                       {riskAnalysis?.subgraph_metrics.avg_node_degree ?? 2.4}
                     </div>
                   </div>
-                  <div className="p-2 rounded-lg bg-white/50 dark:bg-black/30">
+                  <div className="p-2.5 rounded-xl bg-white/60 dark:bg-white/[0.05] backdrop-blur-sm border border-white/50 dark:border-white/10">
                     <div className="text-[10px] text-slate-400">Volume Flowed</div>
                     <div className="font-bold text-amber-600 dark:text-amber-400 font-mono text-xs mt-0.5">
                       {fmtUSD(riskAnalysis?.subgraph_metrics.total_volume ?? 1250000)}
@@ -1614,26 +1607,31 @@ export const NetworkIntelligenceView: React.FC<NetworkIntelligenceViewProps> = (
             </div>
 
             {/* Factor Attribution Breakdown */}
-            <div className="space-y-2">
+            <div className="space-y-2 pt-1">
               <div className="text-xs font-bold text-slate-900 dark:text-white">Factor Attribution Breakdown</div>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left text-xs">
+              <div ref={riskMag.containerRef} onMouseLeave={riskMag.onContainerLeave} className="relative overflow-x-auto">
+                {riskMag.lensElement}
+                <table className="w-full text-left text-xs border-collapse">
                   <thead>
-                    <tr className="border-b border-slate-200/60 dark:border-white/10 text-slate-400 text-[10px] uppercase font-bold">
-                      <th className="py-2 px-3">Factor Name</th>
-                      <th className="py-2 px-3">Factor Score</th>
-                      <th className="py-2 px-3">Model Weight</th>
-                      <th className="py-2 px-3">Factual Detail</th>
+                    <tr className="border-b border-white/50 dark:border-white/10 text-slate-500 dark:text-zinc-400 text-[10px] uppercase font-bold tracking-wider">
+                      <th className="py-2.5 px-3">Factor Name</th>
+                      <th className="py-2.5 px-3">Factor Score</th>
+                      <th className="py-2.5 px-3">Model Weight</th>
+                      <th className="py-2.5 px-3">Factual Detail</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200/40 dark:divide-white/5">
+                  <tbody className="divide-y divide-white/30 dark:divide-white/[0.06]">
                     {riskAnalysis?.factors.map((f, i) => (
-                      <tr key={i} className="hover:bg-white/30 dark:hover:bg-white/5 transition">
+                      <tr
+                        key={i}
+                        onMouseEnter={(e) => riskMag.onRowEnter(e.currentTarget)}
+                        className="liquid-row-magnify cursor-pointer transition"
+                      >
                         <td className="py-2.5 px-3 font-semibold text-slate-900 dark:text-white">{f.factor}</td>
                         <td className="py-2.5 px-3 font-mono font-bold text-rose-600 dark:text-rose-400">
                           {f.score}/100
                         </td>
-                        <td className="py-2.5 px-3 font-mono text-slate-500">{(f.weight * 100).toFixed(0)}%</td>
+                        <td className="py-2.5 px-3 font-mono text-slate-500 dark:text-zinc-400">{(f.weight * 100).toFixed(0)}%</td>
                         <td className="py-2.5 px-3 text-[11px] text-slate-600 dark:text-zinc-300">{f.detail}</td>
                       </tr>
                     ))}

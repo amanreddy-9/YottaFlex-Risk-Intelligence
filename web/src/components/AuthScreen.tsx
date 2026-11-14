@@ -97,7 +97,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ darkMode, onToggleTheme,
         <img
           src="/yottaflex-logo.webp"
           alt=""
-          className="absolute right-[6%] bottom-[8%] w-[520px] max-w-[54vw] opacity-[0.15] dark:opacity-[0.22] dark:brightness-125 dark:saturate-150 select-none drop-shadow-[0_12px_36px_rgba(22,90,220,0.32)]"
+          className="absolute right-[6%] bottom-[8%] w-[520px] max-w-[54vw] opacity-[0.26] brightness-[0.82] contrast-[1.14] saturate-[1.18] dark:opacity-[0.22] dark:brightness-125 dark:contrast-100 dark:saturate-150 select-none drop-shadow-[0_14px_40px_rgba(10,40,110,0.35)] dark:drop-shadow-[0_12px_36px_rgba(22,90,220,0.32)]"
         />
         <div className="hidden md:block absolute left-10 bottom-8 text-[96px] font-bold tracking-tighter text-white/35 dark:text-azure-400/[0.10] select-none leading-none">
           Sign In

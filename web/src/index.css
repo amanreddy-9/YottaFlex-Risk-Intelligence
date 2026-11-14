@@ -1010,6 +1010,7 @@ select option {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   line-height: 1.2;
+  text-shadow: none !important;
   transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
 }
 
@@ -1028,78 +1029,65 @@ select option {
     0 0 10px rgba(255, 255, 255, 0.04),
     inset 0 1.5px 1.5px rgba(255, 255, 255, 0.60),
     inset 0 -1px 1.5px rgba(255, 255, 255, 0.18);
+  text-shadow: none !important;
 }
 
-/* Radiant Neon Text Colors with Specular Phosphor Aura (Image 3: GROUPED emerald glow) */
+/* Crisp Clean Semantic Text Colors (No glow or text shadow) */
 .badge-glass-low {
   color: #059669;
-  text-shadow: 0 0 8px rgba(16, 185, 129, 0.40);
+  text-shadow: none !important;
 }
 .dark .badge-glass-low {
   color: #2ee59d;
-  text-shadow:
-    0 0 6px rgba(46, 229, 157, 0.95),
-    0 0 14px rgba(46, 229, 157, 0.65),
-    0 0 24px rgba(46, 229, 157, 0.30);
+  text-shadow: none !important;
 }
 
-/* Radiant Neon Crimson Aura (Image 2: SLA red glow) */
+/* Critical Alert Red */
 .badge-glass-critical {
   color: #dc2626;
-  text-shadow: 0 0 8px rgba(239, 68, 68, 0.40);
+  text-shadow: none !important;
 }
 .dark .badge-glass-critical {
   color: #ff4d6d;
-  text-shadow:
-    0 0 6px rgba(255, 77, 109, 0.95),
-    0 0 14px rgba(255, 77, 109, 0.65),
-    0 0 24px rgba(255, 77, 109, 0.30);
+  text-shadow: none !important;
 }
 
-/* Radiant Neon Amber Aura */
+/* High Risk Amber */
 .badge-glass-high {
   color: #d97706;
-  text-shadow: 0 0 8px rgba(245, 158, 11, 0.40);
+  text-shadow: none !important;
 }
 .dark .badge-glass-high {
   color: #fbbf24;
-  text-shadow:
-    0 0 6px rgba(251, 191, 36, 0.95),
-    0 0 14px rgba(251, 191, 36, 0.65),
-    0 0 24px rgba(251, 191, 36, 0.30);
+  text-shadow: none !important;
 }
 
-/* Radiant Neon Cyan / Sky Aura (Image 4: SHARED_DEVICE blue glow) */
+/* Medium Risk Sky / Cyan */
 .badge-glass-medium {
   color: #0284c7;
-  text-shadow: 0 0 8px rgba(14, 165, 233, 0.40);
+  text-shadow: none !important;
 }
 .dark .badge-glass-medium {
   color: #38bdf8;
-  text-shadow:
-    0 0 6px rgba(56, 189, 248, 0.95),
-    0 0 14px rgba(56, 189, 248, 0.65),
-    0 0 24px rgba(56, 189, 248, 0.30);
+  text-shadow: none !important;
 }
 
-/* Radiant Neon Azure Aura */
+/* Informational Azure */
 .badge-glass-blue {
   color: #0284c7;
-  text-shadow: 0 0 8px rgba(14, 165, 233, 0.40);
+  text-shadow: none !important;
 }
 .dark .badge-glass-blue {
   color: #60a5fa;
-  text-shadow:
-    0 0 6px rgba(96, 165, 250, 0.95),
-    0 0 14px rgba(96, 165, 250, 0.65),
-    0 0 24px rgba(96, 165, 250, 0.30);
+  text-shadow: none !important;
 }
 
-/* Crisp Institutional Neutral Aura */
+/* Institutional Neutral */
 .badge-glass-neutral {
   color: #475569;
+  text-shadow: none !important;
 }
 .dark .badge-glass-neutral {
   color: #f1f5f9;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.45);
+  text-shadow: none !important;
 }

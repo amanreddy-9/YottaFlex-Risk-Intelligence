@@ -324,7 +324,7 @@ export const EnterpriseOpsSection: React.FC<EnterpriseOpsSectionProps> = ({
                 value={draftName}
                 onChange={(e) => setDraftName(e.target.value)}
                 placeholder="Rule name..."
-                className="glass-pill flex-1 px-3 py-1.5 rounded-full text-slate-900 dark:text-white focus:outline-none"
+                className="glass-pill flex-1 min-w-[140px] px-3 py-1.5 rounded-full text-slate-900 dark:text-white focus:outline-none"
               />
               <input
                 type="number"
@@ -559,14 +559,14 @@ export const EnterpriseOpsSection: React.FC<EnterpriseOpsSectionProps> = ({
               value={whName}
               onChange={(e) => setWhName(e.target.value)}
               placeholder="SOC Splunk Receiver..."
-              className="glass-pill flex-1 px-3 py-1.5 rounded-full text-slate-900 dark:text-white focus:outline-none"
+              className="glass-pill flex-1 min-w-[140px] px-3 py-1.5 rounded-full text-slate-900 dark:text-white focus:outline-none"
             />
             <input
               type="url"
               required
               value={whUrl}
               onChange={(e) => setWhUrl(e.target.value)}
-              className="glass-pill flex-1 px-3 py-1.5 rounded-full font-mono text-[11px] text-slate-900 dark:text-white focus:outline-none"
+              className="glass-pill flex-1 min-w-[140px] px-3 py-1.5 rounded-full font-mono text-[11px] text-slate-900 dark:text-white focus:outline-none"
             />
             <button
               type="submit"

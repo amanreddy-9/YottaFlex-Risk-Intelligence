@@ -205,7 +205,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
           <div className="text-xs font-semibold text-slate-900 dark:text-zinc-100 mb-3">
             Transaction Risk Classification Breakdown
           </div>
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
             <LiquidGlassCard
               variant="rose"
               onClick={() => onFilterTransactionsRisk("HIGH")}
@@ -260,7 +260,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
           <div className="text-xs font-semibold text-slate-900 dark:text-zinc-100 mb-3">
             Investigation Case Lifecycle Status
           </div>
-          <div className="grid grid-cols-4 gap-2.5">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
             {[
               { label: "Open", val: s.open_cases, cls: "text-azure-700 dark:text-white" },
               { label: "Under Review", val: s.under_investigation_cases, cls: "text-amber-700 dark:text-amber-300" },

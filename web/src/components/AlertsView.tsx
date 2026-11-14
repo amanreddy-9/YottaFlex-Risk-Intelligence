@@ -406,7 +406,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
 
         {/* Functions 101-106, 108: Interactive Alert Triage, Escalation & Audit Timeline */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
-          <div className="lg:col-span-7 liquid-glass rounded-2xl p-5 space-y-3.5 text-xs">
+          <div className="lg:col-span-7 liquid-glass rounded-2xl p-5 space-y-3.5 text-xs overflow-hidden">
             <div className="flex flex-wrap items-center justify-between gap-2">
               <div className="flex items-center gap-2 text-sm font-semibold text-slate-950 dark:text-white">
                 <UserCheck className="w-4 h-4 text-azure-600 dark:text-sky-400" />
@@ -419,92 +419,96 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
               )}
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
-              <div className="flex items-center gap-1.5">
-                <select
-                  value={ownerInput}
-                  onChange={(e) => setOwnerInput(e.target.value)}
-                  className="flex-1 glass-pill rounded-full px-2.5 py-1.5 text-xs"
-                >
-                  <option value="ANL-001">ANL-001 (Ops Analyst)</option>
-                  <option value="ANL-002">ANL-002 (Ops Analyst)</option>
-                  <option value="ANL-003">ANL-003 (Risk Reviewer)</option>
-                  <option value="ADM-001">ADM-001 (System Admin)</option>
-                </select>
-                <button
-                  type="button"
-                  disabled={savingDetail}
-                  onClick={async () => {
-                    setSavingDetail(true);
-                    setDetailMsg(null);
-                    try {
-                      await api.triageAlert(al.alert_id, { owner_analyst_id: ownerInput });
-                      setDetailMsg({ ok: true, text: `Assigned to ${ownerInput}.` });
-                      await onAlertsUpdated();
-                      onSelectAlert(al.alert_id);
-                    } catch (err) {
-                      setDetailMsg({ ok: false, text: err instanceof Error ? err.message : "Assign failed" });
-                    } finally {
-                      setSavingDetail(false);
-                    }
-                  }}
-                  className="px-3 py-1.5 rounded-full bg-azure-600/90 dark:bg-white text-white dark:text-black font-semibold"
-                >
-                  Assign
-                </button>
+            <div className="space-y-3">
+              {/* Row 1: Analyst Assignment & Disposition Status */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <div className="flex items-center gap-1.5">
+                  <select
+                    value={ownerInput}
+                    onChange={(e) => setOwnerInput(e.target.value)}
+                    className="flex-1 min-w-0 glass-pill rounded-full px-3 py-1.5 text-xs truncate focus:outline-none"
+                  >
+                    <option value="ANL-001">ANL-001 (Ops Analyst)</option>
+                    <option value="ANL-002">ANL-002 (Ops Analyst)</option>
+                    <option value="ANL-003">ANL-003 (Risk Reviewer)</option>
+                    <option value="ADM-001">ADM-001 (System Admin)</option>
+                  </select>
+                  <button
+                    type="button"
+                    disabled={savingDetail}
+                    onClick={async () => {
+                      setSavingDetail(true);
+                      setDetailMsg(null);
+                      try {
+                        await api.triageAlert(al.alert_id, { owner_analyst_id: ownerInput });
+                        setDetailMsg({ ok: true, text: `Assigned to ${ownerInput}.` });
+                        await onAlertsUpdated();
+                        onSelectAlert(al.alert_id);
+                      } catch (err) {
+                        setDetailMsg({ ok: false, text: err instanceof Error ? err.message : "Assign failed" });
+                      } finally {
+                        setSavingDetail(false);
+                      }
+                    }}
+                    className="px-3.5 py-1.5 rounded-full bg-azure-600/90 hover:bg-azure-600 dark:bg-white dark:hover:bg-zinc-200 text-white dark:text-black font-semibold shrink-0 transition"
+                  >
+                    Assign
+                  </button>
+                </div>
+
+                <div className="flex items-center gap-1.5">
+                  <select
+                    value={statusInput}
+                    onChange={(e) => setStatusInput(e.target.value)}
+                    className="flex-1 min-w-0 glass-pill rounded-full px-3 py-1.5 text-xs truncate focus:outline-none"
+                  >
+                    <option value="ACKNOWLEDGED">ACKNOWLEDGED</option>
+                    <option value="UNDER_INVESTIGATION">UNDER_INVESTIGATION</option>
+                    <option value="ESCALATED">ESCALATED (True Positive)</option>
+                    <option value="FALSE_POSITIVE">FALSE_POSITIVE (Suppress)</option>
+                    <option value="DISMISSED">DISMISSED</option>
+                  </select>
+                  <button
+                    type="button"
+                    disabled={savingDetail}
+                    onClick={async () => {
+                      setSavingDetail(true);
+                      setDetailMsg(null);
+                      try {
+                        await api.triageAlert(al.alert_id, {
+                          status: statusInput,
+                          disposition:
+                            statusInput === "FALSE_POSITIVE" || statusInput === "DISMISSED"
+                              ? "FALSE_POSITIVE"
+                              : statusInput === "ESCALATED"
+                              ? "TRUE_POSITIVE"
+                              : undefined,
+                          suppression_reason: suppressionInput || undefined,
+                        });
+                        setDetailMsg({ ok: true, text: `Updated status to ${statusInput}.` });
+                        await onAlertsUpdated();
+                        onSelectAlert(al.alert_id);
+                      } catch (err) {
+                        setDetailMsg({ ok: false, text: err instanceof Error ? err.message : "Status update failed" });
+                      } finally {
+                        setSavingDetail(false);
+                      }
+                    }}
+                    className="px-3.5 py-1.5 rounded-full bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/20 font-semibold text-azure-700 dark:text-white shrink-0 hover:bg-white/90 transition"
+                  >
+                    Apply
+                  </button>
+                </div>
               </div>
 
-              <div className="flex items-center gap-1.5">
-                <select
-                  value={statusInput}
-                  onChange={(e) => setStatusInput(e.target.value)}
-                  className="flex-1 glass-pill rounded-full px-2.5 py-1.5 text-xs"
-                >
-                  <option value="ACKNOWLEDGED">ACKNOWLEDGED</option>
-                  <option value="UNDER_INVESTIGATION">UNDER_INVESTIGATION</option>
-                  <option value="ESCALATED">ESCALATED (True Positive)</option>
-                  <option value="FALSE_POSITIVE">FALSE_POSITIVE (Suppress)</option>
-                  <option value="DISMISSED">DISMISSED</option>
-                </select>
-                <button
-                  type="button"
-                  disabled={savingDetail}
-                  onClick={async () => {
-                    setSavingDetail(true);
-                    setDetailMsg(null);
-                    try {
-                      await api.triageAlert(al.alert_id, {
-                        status: statusInput,
-                        disposition:
-                          statusInput === "FALSE_POSITIVE" || statusInput === "DISMISSED"
-                            ? "FALSE_POSITIVE"
-                            : statusInput === "ESCALATED"
-                            ? "TRUE_POSITIVE"
-                            : undefined,
-                        suppression_reason: suppressionInput || undefined,
-                      });
-                      setDetailMsg({ ok: true, text: `Updated status to ${statusInput}.` });
-                      await onAlertsUpdated();
-                      onSelectAlert(al.alert_id);
-                    } catch (err) {
-                      setDetailMsg({ ok: false, text: err instanceof Error ? err.message : "Status update failed" });
-                    } finally {
-                      setSavingDetail(false);
-                    }
-                  }}
-                  className="px-3 py-1.5 rounded-full bg-white/70 dark:bg-zinc-900 border border-white/80 dark:border-white/20 font-semibold text-azure-700 dark:text-white"
-                >
-                  Apply
-                </button>
-              </div>
-
-              <div className="flex items-center gap-1.5">
+              {/* Row 2: Dedicated Case Escalation Row */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 pt-0.5">
                 <input
                   type="text"
                   value={escalateCaseInput}
                   onChange={(e) => setEscalateCaseInput(e.target.value)}
-                  placeholder="Optional CASE-2026-..."
-                  className="flex-1 glass-pill rounded-full px-2.5 py-1.5 text-xs font-mono"
+                  placeholder="Optional target case ID (e.g. CASE-2026-000001, leave blank to create new)..."
+                  className="flex-1 min-w-0 glass-pill rounded-full px-3.5 py-1.5 text-xs font-mono placeholder:text-slate-500 dark:placeholder:text-zinc-400 focus:outline-none"
                 />
                 <button
                   type="button"
@@ -529,50 +533,51 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
                       setSavingDetail(false);
                     }
                   }}
-                  className="px-3 py-1.5 rounded-full bg-rose-600/90 text-white font-semibold shrink-0"
+                  className="px-4 py-1.5 rounded-full bg-rose-600/90 hover:bg-rose-600 text-white font-semibold shrink-0 transition shadow-sm whitespace-nowrap"
                 >
                   Escalate → Case
                 </button>
               </div>
-            </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-              <input
-                type="text"
-                value={suppressionInput}
-                onChange={(e) => setSuppressionInput(e.target.value)}
-                placeholder="FP suppression tag (e.g. VERIFIED_PAYROLL_BONUS)"
-                className="glass-pill rounded-full px-3 py-1.5 text-xs"
-              />
-              <div className="flex items-center gap-1.5">
+              {/* Row 3: Suppression Tag & Investigation Note */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-0.5">
                 <input
                   type="text"
-                  value={noteInput}
-                  onChange={(e) => setNoteInput(e.target.value)}
-                  placeholder="Add timestamped investigation note..."
-                  className="flex-1 glass-pill rounded-full px-3 py-1.5 text-xs"
+                  value={suppressionInput}
+                  onChange={(e) => setSuppressionInput(e.target.value)}
+                  placeholder="FP suppression tag (e.g. VERIFIED_PAYROLL_BONUS)"
+                  className="w-full min-w-0 glass-pill rounded-full px-3.5 py-1.5 text-xs placeholder:text-slate-500 dark:placeholder:text-zinc-400 focus:outline-none"
                 />
-                <button
-                  type="button"
-                  disabled={savingDetail || !noteInput.trim()}
-                  onClick={async () => {
-                    setSavingDetail(true);
-                    setDetailMsg(null);
-                    try {
-                      await api.triageAlert(al.alert_id, { note: noteInput });
-                      setNoteInput("");
-                      setDetailMsg({ ok: true, text: "Investigation note logged." });
-                      onSelectAlert(al.alert_id);
-                    } catch (err) {
-                      setDetailMsg({ ok: false, text: err instanceof Error ? err.message : "Note failed" });
-                    } finally {
-                      setSavingDetail(false);
-                    }
-                  }}
-                  className="px-3 py-1.5 rounded-full bg-azure-600/90 dark:bg-white text-white dark:text-black font-semibold disabled:opacity-40"
-                >
-                  Log Note
-                </button>
+                <div className="flex items-center gap-1.5">
+                  <input
+                    type="text"
+                    value={noteInput}
+                    onChange={(e) => setNoteInput(e.target.value)}
+                    placeholder="Add timestamped investigation note..."
+                    className="flex-1 min-w-0 glass-pill rounded-full px-3.5 py-1.5 text-xs placeholder:text-slate-500 dark:placeholder:text-zinc-400 focus:outline-none"
+                  />
+                  <button
+                    type="button"
+                    disabled={savingDetail || !noteInput.trim()}
+                    onClick={async () => {
+                      setSavingDetail(true);
+                      setDetailMsg(null);
+                      try {
+                        await api.triageAlert(al.alert_id, { note: noteInput });
+                        setNoteInput("");
+                        setDetailMsg({ ok: true, text: "Investigation note logged." });
+                        onSelectAlert(al.alert_id);
+                      } catch (err) {
+                        setDetailMsg({ ok: false, text: err instanceof Error ? err.message : "Note failed" });
+                      } finally {
+                        setSavingDetail(false);
+                      }
+                    }}
+                    className="px-3.5 py-1.5 rounded-full bg-azure-600/90 hover:bg-azure-600 dark:bg-white dark:hover:bg-zinc-200 text-white dark:text-black font-semibold shrink-0 disabled:opacity-40 transition"
+                  >
+                    Log Note
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -584,7 +589,7 @@ export const AlertsView: React.FC<AlertsViewProps> = ({
           </div>
 
           {/* Function 108: Alert Audit Timeline */}
-          <div className="lg:col-span-5 liquid-glass rounded-2xl p-5 space-y-2.5 text-xs">
+          <div className="lg:col-span-5 liquid-glass rounded-2xl p-5 space-y-2.5 text-xs overflow-hidden">
             <div className="flex items-center gap-2 text-sm font-semibold text-slate-950 dark:text-white">
               <Clock className="w-4 h-4 text-azure-600 dark:text-sky-400" />
               <span>Alert Audit Timeline ({(selectedDetail.audit_events || []).length})</span>

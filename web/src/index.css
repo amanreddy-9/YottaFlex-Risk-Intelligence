@@ -33,7 +33,15 @@
     linear-gradient(145deg, #9EC0E6 0%, #7AA9DF 40%, #528CD5 78%, #346EC2 100%);
 }
 
-.dark .yf-backdrop-light {
+.yf-backdrop-dark {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(29, 132, 250, 0.20) 0%, rgba(0, 0, 0, 0) 44%),
+    radial-gradient(circle at 88% 88%, rgba(22, 82, 205, 0.54) 0%, rgba(15, 50, 135, 0.25) 36%, rgba(0, 0, 0, 0) 68%),
+    radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.03) 0%, rgba(0, 0, 0, 0) 55%),
+    linear-gradient(155deg, #000000 0%, #040508 58%, #020817 100%);
+}
+
+html:not(.chameleon-transitioning).dark .yf-backdrop-light {
   background:
     radial-gradient(circle at 12% 10%, rgba(29, 132, 250, 0.20) 0%, rgba(0, 0, 0, 0) 44%),
     radial-gradient(circle at 88% 88%, rgba(22, 82, 205, 0.54) 0%, rgba(15, 50, 135, 0.25) 36%, rgba(0, 0, 0, 0) 68%),
@@ -1090,4 +1098,204 @@ select option {
 .dark .badge-glass-neutral {
   color: #f1f5f9;
   text-shadow: none !important;
+}
+
+/* ============================================================================
+   CHAMELEON GRADUAL COLOR DIFFUSION & PROPAGATION
+   Flows color gradually with wide gradient edges like a chameleon changing skin:
+   originating at the appearance button, washing through the top 4 buttons
+   (Profile -> Shortcuts -> Bell -> Search), across the header and cards,
+   all the way to the bottom-left corner with zero hard lines.
+   ============================================================================ */
+
+/* 1. Staggered Live DOM Cascading Transitions */
+html.chameleon-transitioning,
+html.chameleon-transitioning body {
+  transition: background-color 700ms cubic-bezier(0.25, 1, 0.5, 1) 150ms,
+              color 600ms cubic-bezier(0.25, 1, 0.5, 1) 150ms !important;
+}
+
+/* 0. Appearance / Theme Toggle: 0ms delay (origin point) */
+html.chameleon-transitioning .chameleon-btn-theme,
+html.chameleon-transitioning .glass-theme-slider-track {
+  transition: all 450ms cubic-bezier(0.25, 1, 0.5, 1) 0ms !important;
+}
+
+/* 1. Profile Button: 75ms delay */
+html.chameleon-transitioning .chameleon-btn-profile,
+html.chameleon-transitioning .chameleon-btn-profile * {
+  transition: all 480ms cubic-bezier(0.25, 1, 0.5, 1) 75ms !important;
+}
+
+/* 2. Keyboard Shortcuts Button: 150ms delay */
+html.chameleon-transitioning .chameleon-btn-shortcuts,
+html.chameleon-transitioning .chameleon-btn-shortcuts * {
+  transition: all 480ms cubic-bezier(0.25, 1, 0.5, 1) 150ms !important;
+}
+
+/* 3. Notification Bell Button: 225ms delay */
+html.chameleon-transitioning .chameleon-btn-bell,
+html.chameleon-transitioning .chameleon-btn-bell * {
+  transition: all 480ms cubic-bezier(0.25, 1, 0.5, 1) 225ms !important;
+}
+
+/* 4. Global Spotlight Search Button: 300ms delay */
+html.chameleon-transitioning .chameleon-btn-search,
+html.chameleon-transitioning .chameleon-btn-search * {
+  transition: all 480ms cubic-bezier(0.25, 1, 0.5, 1) 300ms !important;
+}
+
+/* Delicate Chromatic Shimmer Pulse as the Wave Sweeps Each Button */
+html.chameleon-transitioning.chameleon-to-dark .chameleon-btn-profile {
+  animation: chameleon-shimmer-dark 520ms ease 75ms forwards;
+}
+html.chameleon-transitioning.chameleon-to-dark .chameleon-btn-shortcuts {
+  animation: chameleon-shimmer-dark 520ms ease 150ms forwards;
+}
+html.chameleon-transitioning.chameleon-to-dark .chameleon-btn-bell {
+  animation: chameleon-shimmer-dark 520ms ease 225ms forwards;
+}
+html.chameleon-transitioning.chameleon-to-dark .chameleon-btn-search {
+  animation: chameleon-shimmer-dark 520ms ease 300ms forwards;
+}
+
+html.chameleon-transitioning.chameleon-to-light .chameleon-btn-profile {
+  animation: chameleon-shimmer-light 520ms ease 75ms forwards;
+}
+html.chameleon-transitioning.chameleon-to-light .chameleon-btn-shortcuts {
+  animation: chameleon-shimmer-light 520ms ease 150ms forwards;
+}
+html.chameleon-transitioning.chameleon-to-light .chameleon-btn-bell {
+  animation: chameleon-shimmer-light 520ms ease 225ms forwards;
+}
+html.chameleon-transitioning.chameleon-to-light .chameleon-btn-search {
+  animation: chameleon-shimmer-light 520ms ease 300ms forwards;
+}
+
+@keyframes chameleon-shimmer-dark {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  45% {
+    box-shadow: 0 0 16px rgba(56, 189, 248, 0.65), 0 0 4px rgba(125, 211, 252, 0.9);
+    border-color: rgba(125, 211, 252, 0.85);
+  }
+  100% {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65);
+    border-color: rgba(255, 255, 255, 0.38);
+  }
+}
+
+@keyframes chameleon-shimmer-light {
+  0% {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65);
+  }
+  45% {
+    box-shadow: 0 0 16px rgba(251, 191, 36, 0.65), 0 0 4px rgba(253, 230, 138, 0.9);
+    border-color: rgba(251, 191, 36, 0.85);
+  }
+  100% {
+    box-shadow: 0 6px 18px rgba(10, 48, 110, 0.10);
+    border-color: rgba(255, 255, 255, 0.88);
+  }
+}
+
+/* 5. Header Title & Greeting Breadcrumbs: 260ms */
+html.chameleon-transitioning header,
+html.chameleon-transitioning header .liquid-glass,
+html.chameleon-transitioning header h1,
+html.chameleon-transitioning header p {
+  transition: all 520ms cubic-bezier(0.25, 1, 0.5, 1) 260ms !important;
+}
+
+/* 6. Overview Hero & KPI Cards: 400ms */
+html.chameleon-transitioning .liquid-glass-hero {
+  transition: all 560ms cubic-bezier(0.25, 1, 0.5, 1) 400ms !important;
+}
+
+/* 7. Mid Charts & Main Analytics Glass Panels: 540ms */
+html.chameleon-transitioning .liquid-glass,
+html.chameleon-transitioning .liquid-glass-amber,
+html.chameleon-transitioning .liquid-glass-rose,
+html.chameleon-transitioning .liquid-glass-emerald {
+  transition: background 600ms cubic-bezier(0.25, 1, 0.5, 1) 540ms,
+              border-color 600ms cubic-bezier(0.25, 1, 0.5, 1) 540ms,
+              color 600ms cubic-bezier(0.25, 1, 0.5, 1) 540ms,
+              box-shadow 600ms cubic-bezier(0.25, 1, 0.5, 1) 540ms !important;
+}
+
+/* 8. Left Architectural Sidebar: 680ms */
+html.chameleon-transitioning .overview-glass-sidebar,
+html.chameleon-transitioning aside {
+  transition: all 650ms cubic-bezier(0.25, 1, 0.5, 1) 680ms !important;
+}
+
+/* 9. Bottom-Left Area & Footer: 820ms */
+html.chameleon-transitioning footer {
+  transition: all 700ms cubic-bezier(0.25, 1, 0.5, 1) 820ms !important;
+}
+
+/* ============================================================================
+   2. SOFT GRADIENT CHAMELEON BACKGROUND WAVE LAYER (280px Feather Zone)
+   ============================================================================ */
+.chameleon-bg-wave {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  will-change: mask-image, -webkit-mask-image;
+  -webkit-mask-image: radial-gradient(
+    circle at var(--origin-x, 90vw) var(--origin-y, 24px),
+    #000 0%,
+    #000 calc(var(--wave-r, 0px) - 280px),
+    rgba(0, 0, 0, 0.72) calc(var(--wave-r, 0px) - 160px),
+    rgba(0, 0, 0, 0.28) calc(var(--wave-r, 0px) - 60px),
+    transparent var(--wave-r, 0px)
+  );
+  mask-image: radial-gradient(
+    circle at var(--origin-x, 90vw) var(--origin-y, 24px),
+    #000 0%,
+    #000 calc(var(--wave-r, 0px) - 280px),
+    rgba(0, 0, 0, 0.72) calc(var(--wave-r, 0px) - 160px),
+    rgba(0, 0, 0, 0.28) calc(var(--wave-r, 0px) - 60px),
+    transparent var(--wave-r, 0px)
+  );
+}
+
+/* ============================================================================
+   3. LUMINOUS CHAMELEON CHROMATIC CREST WAVE (Sweeps with Wavefront)
+   ============================================================================ */
+.chameleon-crest-wave {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99998;
+  mix-blend-mode: screen;
+  isolation: isolate;
+  will-change: opacity, background;
+  transition: opacity 120ms ease;
+}
+
+.chameleon-crest-to-dark {
+  background: radial-gradient(
+    circle at var(--origin-x, 90vw) var(--origin-y, 24px),
+    transparent 0%,
+    transparent calc(var(--wave-r, 0px) - 220px),
+    rgba(56, 189, 248, 0.45) calc(var(--wave-r, 0px) - 110px),
+    rgba(147, 197, 253, 0.25) calc(var(--wave-r, 0px) - 40px),
+    transparent calc(var(--wave-r, 0px) + 50px)
+  );
+}
+
+.chameleon-crest-to-light {
+  background: radial-gradient(
+    circle at var(--origin-x, 90vw) var(--origin-y, 24px),
+    transparent 0%,
+    transparent calc(var(--wave-r, 0px) - 220px),
+    rgba(251, 191, 36, 0.50) calc(var(--wave-r, 0px) - 110px),
+    rgba(253, 230, 138, 0.28) calc(var(--wave-r, 0px) - 40px),
+    transparent calc(var(--wave-r, 0px) + 50px)
+  );
 }

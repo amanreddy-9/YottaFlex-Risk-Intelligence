@@ -48,8 +48,8 @@ export const NotificationBellButton: React.FC<NotificationBellButtonProps> = ({
 }) => {
   const baseClass =
     variant === "overview"
-      ? "liquid-dock inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white cursor-pointer"
-      : "glass-pill h-8 min-w-[32px] px-2.5 rounded-full inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-slate-800 dark:text-white shrink-0 cursor-pointer";
+      ? "liquid-dock chameleon-btn-bell inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold text-slate-800 dark:text-white cursor-pointer"
+      : "glass-pill chameleon-btn-bell h-8 min-w-[32px] px-2.5 rounded-full inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-slate-800 dark:text-white shrink-0 cursor-pointer";
 
   return (
     <button

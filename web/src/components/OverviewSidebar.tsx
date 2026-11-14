@@ -139,16 +139,26 @@ export function OverviewSidebar<T extends string>({
             className={`overflow-hidden transition-all duration-400 ease-in-out ${
               isCollapsed
                 ? "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
-                : "max-h-24 opacity-100 translate-y-0 mt-2.5"
+                : "max-h-32 opacity-100 translate-y-0 mt-2.5"
             }`}
           >
-            <div className="text-[19px] font-bold tracking-tight text-slate-950 dark:text-white group-hover:text-azure-700 dark:group-hover:text-sky-300 transition-colors">
-              YottaFlex
+            <div
+              className="text-[26px] font-light tracking-[0.03em] text-slate-950 dark:text-white group-hover:text-azure-700 dark:group-hover:text-sky-300 transition-colors flex items-center justify-center leading-none"
+              style={{
+                fontFamily: '"Urbanist", "Outfit", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Plus Jakarta Sans", sans-serif',
+                fontWeight: 300,
+              }}
+            >
+              RiskOS<sup className="text-[0.38em] font-light tracking-normal align-super ml-0.5 opacity-80">TM</sup>
             </div>
-            <div className="text-[12.5px] font-medium text-slate-700/85 dark:text-sky-100/75 leading-snug mt-0.5">
-              AML Risk &amp; Ledger
-              <br />
-              Triage
+            <div
+              className="text-[12px] font-semibold text-slate-700/80 dark:text-sky-100/70 tracking-tight mt-1.5 flex items-center justify-center gap-1 leading-tight"
+              style={{
+                fontFamily: '"Plus Jakarta Sans", sans-serif',
+              }}
+            >
+              <span className="text-[10px] uppercase tracking-wider font-medium opacity-70">By</span>
+              <span className="font-bold tracking-tight text-slate-900 dark:text-white">YottaFlex.ai</span>
             </div>
           </div>
         </a>

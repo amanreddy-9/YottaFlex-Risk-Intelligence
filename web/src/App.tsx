@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import { flushSync } from "react-dom";
 import {
   ArrowLeftRight,
   BarChart3,
@@ -586,6 +587,101 @@ export const App: React.FC = () => {
     }
   };
 
+  const [chameleonWave, setChameleonWave] = useState<{
+    active: boolean;
+    toDark: boolean;
+    x: number;
+    y: number;
+  }>({ active: false, toDark: false, x: 0, y: 0 });
+  const waveOverlayRef = useRef<HTMLDivElement>(null);
+  const waveCrestRef = useRef<HTMLDivElement>(null);
+  const waveAnimFrameRef = useRef<number | null>(null);
+
+  const triggerChameleonThemeFlow = useCallback(
+    (targetDark: boolean, event?: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) => {
+      const root = document.documentElement;
+
+      // Calculate origin coordinates of the appearance toggle button (or click)
+      let x = window.innerWidth - 60;
+      let y = 30;
+      if (event && "clientX" in event && typeof event.clientX === "number" && event.clientX > 0) {
+        x = event.clientX;
+        y = event.clientY;
+      } else if (event && event.currentTarget instanceof HTMLElement) {
+        const rect = event.currentTarget.getBoundingClientRect();
+        x = rect.left + rect.width / 2;
+        y = rect.top + rect.height / 2;
+      }
+
+      // Max radius to reach furthest corner (bottom-left at 0, innerHeight) + feather buffer
+      const maxR = Math.hypot(Math.max(x, window.innerWidth - x), Math.max(y, window.innerHeight - y)) + 380;
+
+      // Cancel any ongoing animation frame
+      if (waveAnimFrameRef.current) {
+        cancelAnimationFrame(waveAnimFrameRef.current);
+      }
+
+      // 1. Activate chameleon mode on root DOM
+      root.classList.add("chameleon-transitioning");
+      if (targetDark) {
+        root.classList.add("chameleon-to-dark");
+        root.classList.remove("chameleon-to-light");
+      } else {
+        root.classList.add("chameleon-to-light");
+        root.classList.remove("chameleon-to-dark");
+      }
+
+      // 2. Set theme in state and storage
+      if (targetDark) {
+        root.classList.add("dark");
+        localStorage.setItem("yottaflex_theme", "dark");
+      } else {
+        root.classList.remove("dark");
+        localStorage.setItem("yottaflex_theme", "light");
+      }
+      setDarkMode(targetDark);
+
+      // 3. Mount chameleon wave layers synchronously
+      flushSync(() => {
+        setChameleonWave({ active: true, toDark: targetDark, x, y });
+      });
+
+      const startTime = performance.now();
+      const duration = 960; // 960ms continuous organic chameleon flow
+
+      const tick = (now: number) => {
+        const elapsed = now - startTime;
+        const progress = Math.min(1, elapsed / duration);
+        // Ultra-smooth organic quintic ease-out curve
+        const eased = 1 - Math.pow(1 - progress, 2.8);
+        const currentR = eased * maxR;
+        const opacity = progress > 0.75 ? Math.max(0, 1 - (progress - 0.75) / 0.25) : 1;
+
+        if (waveOverlayRef.current) {
+          waveOverlayRef.current.style.setProperty("--origin-x", `${x}px`);
+          waveOverlayRef.current.style.setProperty("--origin-y", `${y}px`);
+          waveOverlayRef.current.style.setProperty("--wave-r", `${currentR.toFixed(1)}px`);
+        }
+        if (waveCrestRef.current) {
+          waveCrestRef.current.style.setProperty("--origin-x", `${x}px`);
+          waveCrestRef.current.style.setProperty("--origin-y", `${y}px`);
+          waveCrestRef.current.style.setProperty("--wave-r", `${currentR.toFixed(1)}px`);
+          waveCrestRef.current.style.opacity = opacity.toFixed(3);
+        }
+
+        if (progress < 1) {
+          waveAnimFrameRef.current = requestAnimationFrame(tick);
+        } else {
+          setChameleonWave({ active: false, toDark: targetDark, x, y });
+          root.classList.remove("chameleon-transitioning", "chameleon-to-dark", "chameleon-to-light");
+        }
+      };
+
+      waveAnimFrameRef.current = requestAnimationFrame(tick);
+    },
+    []
+  );
+
   if (!authChecked) {
     return (
       <div className="yf-backdrop-light min-h-screen flex items-center justify-center text-xs font-semibold text-slate-700 dark:text-zinc-300">
@@ -599,10 +695,19 @@ export const App: React.FC = () => {
       <>
         <AuthScreen
           darkMode={darkMode}
-          onToggleTheme={() => setDarkMode((d) => !d)}
+          onToggleTheme={() => triggerChameleonThemeFlow(!darkMode)}
           onAuthenticated={(u) => setUser(u)}
         />
         <YottaBotWidget isAuthenticated={false} />
+        {chameleonWave.active && (
+          <div
+            ref={waveCrestRef}
+            aria-hidden="true"
+            className={`chameleon-crest-wave ${
+              chameleonWave.toDark ? "chameleon-crest-to-dark" : "chameleon-crest-to-light"
+            }`}
+          />
+        )}
       </>
     );
   }
@@ -675,7 +780,7 @@ export const App: React.FC = () => {
       onClick={() => setShowShortcuts(true)}
       title="Keyboard Shortcuts (?)"
       aria-label="Keyboard Shortcuts"
-      className={`glass-pill h-8 inline-flex items-center gap-1.5 px-2.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0 ${extraClass}`}
+      className={`glass-pill chameleon-btn-shortcuts h-8 inline-flex items-center gap-1.5 px-2.5 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0 ${extraClass}`}
     >
       <Keyboard className="w-3.5 h-3.5 text-slate-700 dark:text-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
       <span className="hidden xl:inline font-mono text-[10px] text-slate-700 dark:text-zinc-200">?</span>
@@ -705,7 +810,7 @@ export const App: React.FC = () => {
       onClick={() => setShowProfile(true)}
       title={`Profile: ${user.full_name || "Analyst"}`}
       aria-label="User Profile"
-      className={`glass-pill w-8 h-8 rounded-full flex items-center justify-center text-slate-700 dark:text-white/90 shrink-0 ${extraClass}`}
+      className={`glass-pill chameleon-btn-profile w-8 h-8 rounded-full flex items-center justify-center text-slate-700 dark:text-white/90 shrink-0 ${extraClass}`}
     >
       <UserCircle2 className="w-4 h-4 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
     </button>
@@ -722,21 +827,18 @@ export const App: React.FC = () => {
         // Clicking right side activates Dark Mode (slides right)
         // Clicking left side activates Light Mode (slides left)
         // If clicking the current active side, toggle to the opposite side
-        setDarkMode((current) => {
-          if (clickedRight && !current) return true; // Slide Right to Dark
-          if (!clickedRight && current) return false; // Slide Left to Light
-          return !current; // Toggle
-        });
+        const nextDark = clickedRight && !darkMode ? true : !clickedRight && darkMode ? false : !darkMode;
+        triggerChameleonThemeFlow(nextDark, e);
       }}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          setDarkMode((d) => !d);
+          triggerChameleonThemeFlow(!darkMode, e);
         }
       }}
       title={darkMode ? "Theme: Dark Mode (Click to switch to Light)" : "Theme: Light Mode (Click to switch to Dark)"}
       aria-label="Toggle Light / Dark Theme"
-      className={`glass-theme-slider-track shrink-0 cursor-pointer ${extraClass}`}
+      className={`glass-theme-slider-track chameleon-btn-theme shrink-0 cursor-pointer ${extraClass}`}
     >
       {/* Elevated 3D Transparent Liquid Glass Sliding Thumb */}
       <div
@@ -840,17 +942,41 @@ export const App: React.FC = () => {
   }[tab];
 
   return (
-    <div className="yf-backdrop-light relative min-h-screen flex flex-col text-slate-900 dark:text-zinc-100 transition-colors duration-300 overflow-x-hidden">
-      {/* Translucent Atmospheric Geometric Background + Larger Darker YottaFlex Watermark */}
+    <div className="relative min-h-screen flex flex-col text-slate-900 dark:text-zinc-100 overflow-x-hidden">
+      {/* Dynamic Chameleon Dual Atmospheric Background (Zero-jerk gradual color flow) */}
       <div aria-hidden="true" className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        <div className="absolute -top-24 -right-24 w-[560px] h-[560px] rounded-[72px] rotate-12 bg-white/25 dark:bg-azure-500/[0.04] border border-white/45 dark:border-azure-400/[0.12] backdrop-blur-3xl" />
-        <div className="absolute bottom-[-120px] -left-24 w-[460px] h-[460px] rounded-[64px] -rotate-12 bg-white/20 dark:bg-white/[0.02] border border-white/40 dark:border-white/[0.05]" />
+        {/* Base Static Atmospheric Backdrop */}
+        <div
+          className={`absolute inset-0 transition-opacity duration-300 ${
+            darkMode && !chameleonWave.active
+              ? "yf-backdrop-dark"
+              : !darkMode && !chameleonWave.active
+              ? "yf-backdrop-light"
+              : chameleonWave.toDark
+              ? "yf-backdrop-light"
+              : "yf-backdrop-dark"
+          }`}
+        />
+
+        {/* Chameleon Flowing Wave Backdrop Layer (Soft 280px feathered radial gradient) */}
+        {chameleonWave.active && (
+          <div
+            ref={waveOverlayRef}
+            className={`chameleon-bg-wave absolute inset-0 ${
+              chameleonWave.toDark ? "yf-backdrop-dark" : "yf-backdrop-light"
+            }`}
+          />
+        )}
+
+        {/* Geometric Glass Orbs & Monoline Watermark */}
+        <div className="absolute -top-24 -right-24 w-[560px] h-[560px] rounded-[72px] rotate-12 bg-white/25 dark:bg-azure-500/[0.04] border border-white/45 dark:border-azure-400/[0.12] backdrop-blur-3xl transition-colors duration-700" />
+        <div className="absolute bottom-[-120px] -left-24 w-[460px] h-[460px] rounded-[64px] -rotate-12 bg-white/20 dark:bg-white/[0.02] border border-white/40 dark:border-white/[0.05] transition-colors duration-700" />
         <img
           src="/yottaflex-logo.webp"
           alt=""
-          className="absolute right-[4%] bottom-[8%] w-[640px] max-w-[62vw] opacity-[0.27] brightness-[0.82] contrast-[1.14] saturate-[1.18] dark:opacity-[0.24] dark:brightness-125 dark:contrast-100 dark:saturate-150 select-none drop-shadow-[0_14px_40px_rgba(10,40,110,0.38)] dark:drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)]"
+          className="absolute right-[4%] bottom-[8%] w-[640px] max-w-[62vw] opacity-[0.27] brightness-[0.82] contrast-[1.14] saturate-[1.18] dark:opacity-[0.24] dark:brightness-125 dark:contrast-100 dark:saturate-150 select-none drop-shadow-[0_14px_40px_rgba(10,40,110,0.38)] dark:drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)] transition-all duration-700"
         />
-        <div className="hidden lg:block absolute right-10 bottom-6 text-[88px] font-bold tracking-tighter text-slate-900/[0.10] dark:text-azure-400/[0.12] select-none leading-none">
+        <div className="hidden lg:block absolute right-10 bottom-6 text-[88px] font-bold tracking-tighter text-slate-900/[0.10] dark:text-azure-400/[0.12] select-none leading-none transition-colors duration-700">
           YottaFlex
         </div>
       </div>
@@ -871,26 +997,36 @@ export const App: React.FC = () => {
             />
           </div>
 
-          {/* Translucent Subtle iOS Vertical Architectural Watermark (Only shown when right workspace creates genuine blank space) */}
+          {/* Translucent Subtle Monoline Sans Vertical Architectural Watermark (Image 06: Minimal · Elegant · Contemporary) */}
           {extraGap >= 280 && (
             <div
               aria-hidden="true"
-              className="hidden lg:flex flex-col items-center justify-center py-6 select-none pointer-events-none overflow-hidden transition-opacity duration-300"
+              className="hidden lg:flex flex-col items-center justify-center gap-3 py-6 select-none pointer-events-none overflow-hidden transition-opacity duration-300"
               style={{
-                height: Math.min(extraGap - 40, 680),
+                height: Math.min(extraGap - 40, 780),
                 maxHeight: extraGap - 40,
               }}
             >
               <span
-                className="font-black text-[64px] sm:text-[76px] lg:text-[92px] tracking-[0.05em] text-slate-900/[0.08] dark:text-sky-100/[0.07] select-none leading-none drop-shadow-sm"
+                className="font-light text-[80px] sm:text-[98px] lg:text-[120px] tracking-[0.04em] text-slate-900/[0.13] dark:text-sky-100/[0.11] select-none leading-none drop-shadow-sm"
                 style={{
                   writingMode: "vertical-rl",
                   transform: "rotate(180deg)",
-                  fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Plus Jakarta Sans", sans-serif',
+                  fontFamily: '"Urbanist", "Outfit", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Plus Jakarta Sans", sans-serif',
+                  fontWeight: 300,
                 }}
               >
-                RiskOS<sup className="text-[0.40em] font-bold tracking-normal align-super ml-1 opacity-75">TM</sup>
+                RiskOS<sup className="text-[0.34em] font-light tracking-normal align-super ml-1 opacity-80">TM</sup>
               </span>
+              <div
+                className="flex items-center gap-1.5 text-xs font-bold tracking-tight text-slate-900/[0.22] dark:text-azure-400/[0.28] select-none"
+                style={{
+                  fontFamily: '"Plus Jakarta Sans", sans-serif',
+                }}
+              >
+                <span className="text-[10px] tracking-widest uppercase font-semibold text-slate-800/40 dark:text-zinc-400/50">By</span>
+                <span className="text-[12.5px] font-bold tracking-tight">YottaFlex.ai</span>
+              </div>
             </div>
           )}
         </div>
@@ -935,7 +1071,7 @@ export const App: React.FC = () => {
                     type="button"
                     onClick={() => setShowSpotlight(true)}
                     title="Global Spotlight Search (Cmd/Ctrl + K)"
-                    className="glass-pill h-8 inline-flex items-center gap-1.5 px-3 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0"
+                    className="glass-pill chameleon-btn-search h-8 inline-flex items-center gap-1.5 px-3 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0"
                   >
                     <Search className="w-3.5 h-3.5 text-slate-700 dark:text-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
                     <span className="hidden md:inline font-mono ios-num text-[10px] text-slate-700 dark:text-zinc-200">⌘K</span>
@@ -980,7 +1116,7 @@ export const App: React.FC = () => {
                     type="button"
                     onClick={() => setShowSpotlight(true)}
                     title="Global Spotlight Search (Cmd/Ctrl + K)"
-                    className="glass-pill h-8 inline-flex items-center gap-1.5 px-3 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0"
+                    className="glass-pill chameleon-btn-search h-8 inline-flex items-center gap-1.5 px-3 rounded-full text-xs font-semibold text-slate-800 dark:text-white shrink-0"
                   >
                     <Search className="w-3.5 h-3.5 text-slate-700 dark:text-white/90 drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]" />
                     <span className="hidden md:inline font-mono ios-num text-[10px] text-slate-700 dark:text-zinc-200">⌘K</span>
@@ -1341,6 +1477,17 @@ export const App: React.FC = () => {
       />
 
       <YottaBotWidget isAuthenticated={true} onAction={handleBotAction} />
+
+      {/* Luminous Chameleon Chromatic Wavefront Crest */}
+      {chameleonWave.active && (
+        <div
+          ref={waveCrestRef}
+          aria-hidden="true"
+          className={`chameleon-crest-wave ${
+            chameleonWave.toDark ? "chameleon-crest-to-dark" : "chameleon-crest-to-light"
+          }`}
+        />
+      )}
     </div>
   );
 };

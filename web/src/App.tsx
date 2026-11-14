@@ -947,7 +947,7 @@ export const App: React.FC = () => {
       <div aria-hidden="true" className="fixed inset-0 pointer-events-none overflow-hidden z-0">
         {/* Base Static Atmospheric Backdrop */}
         <div
-          className={`absolute inset-0 transition-opacity duration-300 ${
+          className={`absolute inset-0 ${
             darkMode && !chameleonWave.active
               ? "yf-backdrop-dark"
               : !darkMode && !chameleonWave.active
@@ -956,7 +956,57 @@ export const App: React.FC = () => {
               ? "yf-backdrop-light"
               : "yf-backdrop-dark"
           }`}
-        />
+        >
+          {/* Base Atmospheric Orbs & Watermark (Displaying previous theme during active wave, switching instantly with 0 change on completion) */}
+          <div
+            className={`bg-orb-top-right absolute -top-24 -right-24 w-[560px] h-[560px] rounded-[72px] rotate-12 backdrop-blur-3xl ${
+              darkMode && !chameleonWave.active
+                ? "bg-azure-500/[0.04] border border-azure-400/[0.12]"
+                : !darkMode && !chameleonWave.active
+                ? "bg-white/25 border border-white/45"
+                : chameleonWave.toDark
+                ? "bg-white/25 border border-white/45"
+                : "bg-azure-500/[0.04] border border-azure-400/[0.12]"
+            }`}
+          />
+          <div
+            className={`bg-orb-bottom-left absolute bottom-[-120px] -left-24 w-[460px] h-[460px] rounded-[64px] -rotate-12 ${
+              darkMode && !chameleonWave.active
+                ? "bg-white/[0.02] border border-white/[0.05]"
+                : !darkMode && !chameleonWave.active
+                ? "bg-white/20 border border-white/40"
+                : chameleonWave.toDark
+                ? "bg-white/20 border border-white/40"
+                : "bg-white/[0.02] border border-white/[0.05]"
+            }`}
+          />
+          <img
+            src="/yottaflex-logo.webp"
+            alt=""
+            className={`bg-watermark-logo absolute right-[4%] bottom-[8%] w-[640px] max-w-[62vw] select-none ${
+              darkMode && !chameleonWave.active
+                ? "opacity-[0.24] brightness-125 contrast-100 saturate-150 drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)]"
+                : !darkMode && !chameleonWave.active
+                ? "opacity-[0.27] brightness-[0.82] contrast-[1.14] saturate-[1.18] drop-shadow-[0_14px_40px_rgba(10,40,110,0.38)]"
+                : chameleonWave.toDark
+                ? "opacity-[0.27] brightness-[0.82] contrast-[1.14] saturate-[1.18] drop-shadow-[0_14px_40px_rgba(10,40,110,0.38)]"
+                : "opacity-[0.24] brightness-125 contrast-100 saturate-150 drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)]"
+            }`}
+          />
+          <div
+            className={`bg-watermark-text hidden lg:block absolute right-10 bottom-6 text-[88px] font-bold tracking-tighter select-none leading-none ${
+              darkMode && !chameleonWave.active
+                ? "text-azure-400/[0.12]"
+                : !darkMode && !chameleonWave.active
+                ? "text-slate-900/[0.10]"
+                : chameleonWave.toDark
+                ? "text-slate-900/[0.10]"
+                : "text-azure-400/[0.12]"
+            }`}
+          >
+            YottaFlex
+          </div>
+        </div>
 
         {/* Chameleon Flowing Wave Backdrop Layer (Soft 280px feathered radial gradient) */}
         {chameleonWave.active && (
@@ -965,20 +1015,40 @@ export const App: React.FC = () => {
             className={`chameleon-bg-wave absolute inset-0 ${
               chameleonWave.toDark ? "yf-backdrop-dark" : "yf-backdrop-light"
             }`}
-          />
+          >
+            {/* Target theme's orbs & watermark revealed dynamically from top-right to bottom-left as wavefront expands */}
+            <div
+              className={`absolute -top-24 -right-24 w-[560px] h-[560px] rounded-[72px] rotate-12 backdrop-blur-3xl ${
+                chameleonWave.toDark
+                  ? "bg-azure-500/[0.04] border border-azure-400/[0.12]"
+                  : "bg-white/25 border border-white/45"
+              }`}
+            />
+            <div
+              className={`absolute bottom-[-120px] -left-24 w-[460px] h-[460px] rounded-[64px] -rotate-12 ${
+                chameleonWave.toDark
+                  ? "bg-white/[0.02] border border-white/[0.05]"
+                  : "bg-white/20 border border-white/40"
+              }`}
+            />
+            <img
+              src="/yottaflex-logo.webp"
+              alt=""
+              className={`absolute right-[4%] bottom-[8%] w-[640px] max-w-[62vw] select-none ${
+                chameleonWave.toDark
+                  ? "opacity-[0.24] brightness-125 contrast-100 saturate-150 drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)]"
+                  : "opacity-[0.27] brightness-[0.82] contrast-[1.14] saturate-[1.18] drop-shadow-[0_14px_40px_rgba(10,40,110,0.38)]"
+              }`}
+            />
+            <div
+              className={`hidden lg:block absolute right-10 bottom-6 text-[88px] font-bold tracking-tighter select-none leading-none ${
+                chameleonWave.toDark ? "text-azure-400/[0.12]" : "text-slate-900/[0.10]"
+              }`}
+            >
+              YottaFlex
+            </div>
+          </div>
         )}
-
-        {/* Geometric Glass Orbs & Monoline Watermark */}
-        <div className="absolute -top-24 -right-24 w-[560px] h-[560px] rounded-[72px] rotate-12 bg-white/25 dark:bg-azure-500/[0.04] border border-white/45 dark:border-azure-400/[0.12] backdrop-blur-3xl transition-colors duration-700" />
-        <div className="absolute bottom-[-120px] -left-24 w-[460px] h-[460px] rounded-[64px] -rotate-12 bg-white/20 dark:bg-white/[0.02] border border-white/40 dark:border-white/[0.05] transition-colors duration-700" />
-        <img
-          src="/yottaflex-logo.webp"
-          alt=""
-          className="absolute right-[4%] bottom-[8%] w-[640px] max-w-[62vw] opacity-[0.27] brightness-[0.82] contrast-[1.14] saturate-[1.18] dark:opacity-[0.24] dark:brightness-125 dark:contrast-100 dark:saturate-150 select-none drop-shadow-[0_14px_40px_rgba(10,40,110,0.38)] dark:drop-shadow-[0_12px_36px_rgba(22,90,220,0.35)] transition-all duration-700"
-        />
-        <div className="hidden lg:block absolute right-10 bottom-6 text-[88px] font-bold tracking-tighter text-slate-900/[0.10] dark:text-azure-400/[0.12] select-none leading-none transition-colors duration-700">
-          YottaFlex
-        </div>
       </div>
 
       {/* Unified Persistent Layout: Left Sidebar + Right Fluid Expanding Workspace */}
@@ -1422,14 +1492,14 @@ export const App: React.FC = () => {
 
       {showShortcuts && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-sky-950/20 dark:bg-black/55 backdrop-blur-md"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/35 dark:bg-black/65 backdrop-blur-md"
           onClick={() => setShowShortcuts(false)}
         >
           <div
-            className="liquid-glass w-full max-w-md rounded-3xl p-5 space-y-4 shadow-2xl"
+            className="liquid-glass-search w-full max-w-md rounded-3xl p-5 space-y-4 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between border-b border-white/60 dark:border-white/10 pb-3">
+            <div className="flex items-center justify-between border-b border-slate-200/70 dark:border-white/10 pb-3">
               <div className="flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-white">
                 <Keyboard className="w-4 h-4 text-azure-600 dark:text-sky-300" />
                 <span>Workbench Keyboard Shortcuts</span>
@@ -1437,7 +1507,7 @@ export const App: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setShowShortcuts(false)}
-                className="glass-pill p-1.5 rounded-full text-slate-700 dark:text-zinc-200 hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+                className="glass-pill p-1.5 rounded-full text-slate-700 dark:text-zinc-200 bg-white/60 dark:bg-white/10 hover:bg-white/90 dark:hover:bg-white/20 border border-white/80 dark:border-white/15 transition"
               >
                 <X className="w-4 h-4" />
               </button>
@@ -1452,10 +1522,10 @@ export const App: React.FC = () => {
               ].map((row) => (
                 <div
                   key={row.keys}
-                  className="flex items-center justify-between gap-3 rounded-xl bg-white/22 dark:bg-white/[0.04] backdrop-blur-md px-3 py-2 border border-white/65 dark:border-white/12"
+                  className="flex items-center justify-between gap-3 rounded-xl bg-white/40 dark:bg-white/[0.06] backdrop-blur-md px-3 py-2 border border-white/80 dark:border-white/15"
                 >
-                  <span className="text-slate-700 dark:text-zinc-300">{row.desc}</span>
-                  <kbd className="glass-pill font-mono ios-num text-[11px] font-semibold px-2.5 py-0.5 rounded-full text-slate-900 dark:text-white shrink-0">
+                  <span className="text-slate-800 dark:text-zinc-200 font-medium">{row.desc}</span>
+                  <kbd className="glass-pill font-mono ios-num text-[11px] font-bold px-2.5 py-0.5 rounded-full text-slate-900 dark:text-white bg-white/70 dark:bg-white/10 border border-white/80 dark:border-white/20 shrink-0">
                     {row.keys}
                   </kbd>
                 </div>

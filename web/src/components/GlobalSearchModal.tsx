@@ -57,14 +57,14 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-start justify-center pt-16 p-4 bg-sky-950/25 dark:bg-black/60 backdrop-blur-md"
+      className="fixed inset-0 z-50 flex items-start justify-center pt-16 p-4 bg-slate-950/35 dark:bg-black/65 backdrop-blur-md"
       onClick={onClose}
     >
       <div
-        className="liquid-glass w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl"
+        className="liquid-glass-search w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-white/50 dark:border-white/10">
+        <div className="flex items-center gap-3 px-4 py-3.5 border-b border-slate-200/70 dark:border-white/10">
           <Search className="w-4 h-4 text-azure-600 dark:text-sky-400 shrink-0" />
           <input
             ref={inputRef}
@@ -72,12 +72,12 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Spotlight search across Cases, Alerts, Customers, Accounts, Txns, Quarantine..."
-            className="flex-1 bg-transparent text-sm text-slate-950 dark:text-white placeholder:text-slate-500 dark:placeholder:text-zinc-400 focus:outline-none"
+            className="flex-1 bg-transparent text-sm font-semibold text-slate-900 dark:text-white placeholder:text-slate-600 dark:placeholder:text-zinc-400 placeholder:font-normal focus:outline-none"
           />
           <button
             type="button"
             onClick={onClose}
-            className="glass-pill p-1.5 rounded-full text-slate-700 dark:text-zinc-200 hover:bg-white/45 dark:hover:bg-white/[0.12] transition"
+            className="glass-pill p-1.5 rounded-full text-slate-700 dark:text-zinc-200 bg-white/60 dark:bg-white/10 hover:bg-white/90 dark:hover:bg-white/20 border border-white/80 dark:border-white/15 transition"
           >
             <X className="w-3.5 h-3.5" />
           </button>
@@ -85,17 +85,17 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
 
         <div className="max-h-[65vh] overflow-y-auto p-4 space-y-4">
           {!query.trim() && (
-            <div className="text-xs text-slate-600 dark:text-zinc-400 py-6 text-center">
-              Type any entity ID (e.g. <code>CASE-2026-</code>, <code>ALT-2026-</code>, <code>CUS-</code>, <code>TXN-</code>) or customer name. Press <code>Esc</code> to close.
+            <div className="text-xs text-slate-700 dark:text-zinc-300 font-medium py-6 text-center leading-relaxed">
+              Type any entity ID (e.g. <code className="px-1.5 py-0.5 rounded-md bg-white/80 dark:bg-white/10 text-azure-700 dark:text-sky-300 font-mono font-semibold border border-azure-200/60 dark:border-white/15 shadow-sm">CASE-2026-</code>, <code className="px-1.5 py-0.5 rounded-md bg-white/80 dark:bg-white/10 text-azure-700 dark:text-sky-300 font-mono font-semibold border border-azure-200/60 dark:border-white/15 shadow-sm">ALT-2026-</code>, <code className="px-1.5 py-0.5 rounded-md bg-white/80 dark:bg-white/10 text-azure-700 dark:text-sky-300 font-mono font-semibold border border-azure-200/60 dark:border-white/15 shadow-sm">CUS-</code>, <code className="px-1.5 py-0.5 rounded-md bg-white/80 dark:bg-white/10 text-azure-700 dark:text-sky-300 font-mono font-semibold border border-azure-200/60 dark:border-white/15 shadow-sm">TXN-</code>) or customer name. Press <code className="px-1.5 py-0.5 rounded-md bg-white/80 dark:bg-white/10 text-slate-800 dark:text-zinc-200 font-mono font-semibold border border-slate-200/60 dark:border-white/15 shadow-sm">Esc</code> to close.
             </div>
           )}
 
           {loading && (
-            <div className="text-xs text-slate-500 dark:text-zinc-400 py-2">Searching SQLite workbench...</div>
+            <div className="text-xs font-medium text-slate-700 dark:text-zinc-300 py-2">Searching SQLite workbench...</div>
           )}
 
           {result && result.total_hits === 0 && !loading && (
-            <div className="text-xs text-slate-500 dark:text-zinc-400 py-6 text-center">
+            <div className="text-xs font-medium text-slate-700 dark:text-zinc-300 py-6 text-center">
               No matching records found for &ldquo;{result.query}&rdquo;.
             </div>
           )}
@@ -106,7 +106,7 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
               if (rows.length === 0) return null;
               return (
                 <div key={key} className="space-y-1.5">
-                  <div className="text-[10.5px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 px-1">
+                  <div className="text-[11px] font-bold uppercase tracking-wider text-slate-700 dark:text-zinc-300 px-1">
                     {label} ({rows.length})
                   </div>
                   {rows.map((r) => (
@@ -117,12 +117,12 @@ export const GlobalSearchModal: React.FC<GlobalSearchModalProps> = ({
                         onSelectEntity(key, r.id);
                         onClose();
                       }}
-                      className="w-full text-left flex items-center justify-between gap-3 px-3 py-2 rounded-2xl bg-white/25 dark:bg-white/[0.05] hover:bg-white/45 dark:hover:bg-white/[0.10] backdrop-blur-md border border-white/65 dark:border-white/12 transition text-xs"
+                      className="w-full text-left flex items-center justify-between gap-3 px-3 py-2 rounded-2xl bg-white/40 dark:bg-white/[0.06] hover:bg-white/70 dark:hover:bg-white/[0.12] backdrop-blur-md border border-white/80 dark:border-white/15 transition text-xs"
                     >
                       <div className="min-w-0">
                         <div className="font-mono font-bold text-azure-700 dark:text-sky-300">{r.id}</div>
-                        <div className="font-medium text-slate-900 dark:text-white truncate">{r.title}</div>
-                        <div className="text-[11px] text-slate-600 dark:text-zinc-400 truncate">{r.subtitle}</div>
+                        <div className="font-semibold text-slate-900 dark:text-white truncate">{r.title}</div>
+                        <div className="text-[11.5px] text-slate-600 dark:text-zinc-400 truncate">{r.subtitle}</div>
                       </div>
                       <Badge variant={tierVariant(r.badge)}>{r.badge}</Badge>
                     </button>
